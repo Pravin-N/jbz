@@ -1,10 +1,27 @@
 import React from "react";
 
 const Sidebar = () => {
+  const offCanvasOpen = () => {
+    var el1 = document.querySelector(".offcanvas-wrapper");
+    var el2 = document.querySelector(".offcanvas-overlay");
+    el1.classList.add("active");
+    el2.classList.add("show");
+  };
+
+  const offCanvasClose = () => {
+    var el1 = document.querySelector(".offcanvas-wrapper");
+    var el2 = document.querySelector(".offcanvas-overlay");
+    el2.classList.remove("show");
+    el1.classList.remove("active");
+  };
+
   return (
     <>
       {/* Offcanvas Holder Trigger */}
-      <span className="offcanvas-trigger text-right d-none d-lg-block">
+      <span
+        className="offcanvas-trigger text-right d-none d-lg-block"
+        onClick={offCanvasOpen}
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -15,7 +32,10 @@ const Sidebar = () => {
       <div className="offcanvas-overlay fixed-top w-100 h-100"></div>
       <div className="offcanvas-wrapper bg-white fixed-top h-100">
         {/* Offcanvas Close Button Begin */}
-        <div className="offcanvas-close position-absolute">
+        <div
+          className="offcanvas-close position-absolute"
+          onClick={offCanvasClose}
+        >
           <img src="assets/img/icons/close.svg" className="svg" alt="" />
         </div>
         {/* Offcanvas Close Button End */}

@@ -34,9 +34,16 @@ We may release future updates so it will overwrite this file. it's better and sa
   /*===================
     01: Main Menu
     =====================*/
-  $('.header-menu a[href="#"]').on("click", function (event) {
-    event.preventDefault();
-  });
+  //   $('.header-main a[href="#"]').on("click", function (event) {
+  //     event.preventDefault();
+  //   });
+
+  //   Pure js
+  //   document.addEventListener("click", function (event) {
+  //     // If the clicked element does not have and is not contained by an element with the .click-me class, ignore it
+  //     if (event.target.matches('.header-main a[href="#"]')) {
+  //       event.preventDefault();
+  //     }
 
   /* Menu Maker */
   $(".main-menu").menumaker({
@@ -44,47 +51,83 @@ We may release future updates so it will overwrite this file. it's better and sa
     format: "multitoggle",
   });
 
-  $($(window)).on("scroll", function () {
-    if (!$("ul.nav").hasClass("open")) {
-      $("#menu-button").removeClass("menu-opened");
-    }
-  });
+  //   $($(window)).on("scroll", function () {
+  //     if (!$("ul.nav").hasClass("open")) {
+  //       $("#menu-button").removeClass("menu-opened");
+  //     }
+  //   });
+
+  //   Pure js
+  //   window.addEventListener("scroll", function () {
+  //       el = document.querySelector("ul.nav")
+  //       menubut = document.querySelector("#menu-button")
+  //     if (!el.classList.contains("open")) {
+  //         menubut.classList.remove("menu-opened");
+  //         console.log("removed menu opened")
+  //     }
+  //   });
 
   /*========================
     02: Sticky Nav
     ==========================*/
-  $(window).on("scroll", function () {
-    var scroll = $(window).scrollTop();
-    if (scroll < 100) {
-      $(".header-main.style--one").removeClass("sticky fadeInDown animated");
-    } else {
-      $(".header-main.style--one").addClass("sticky fadeInDown animated");
-    }
-  });
+  //   $(window).on("scroll", function () {
+  //     var scroll = $(window).scrollTop();
+  //     if (scroll < 100) {
+  //       $(".header-main.style--one").removeClass("sticky fadeInDown animated");
+  //     } else {
+  //       $(".header-main.style--one").addClass("sticky fadeInDown animated");
+  //     }
+  //   });
+
+  //   Pure js
+  //   window.addEventListener("scroll", function () {
+  //     var scroll = window.scrollTop;
+  //     if (scroll < 100) {
+  //         el = document.querySelector(".header-main.style--one")
+  //         el.classList.remove("sticky fadeInDown animated");
+  //     } else {
+  //         el.classList.add("sticky fadeInDown animated");
+  //     }
+  //       });
 
   /*========================
     03: Offcanvas
     ==========================*/
-  $(".offcanvas-trigger").on("click", function () {
-    $(".offcanvas-wrapper").addClass("active");
-    $(".offcanvas-overlay").addClass("show");
-  });
+  //   $(".offcanvas-trigger").on("click", function () {
+  //     $(".offcanvas-wrapper").addClass("active");
+  //     $(".offcanvas-overlay").addClass("show");
+  //   });
 
-  $(".offcanvas-overlay,.offcanvas-close").on("click", function () {
-    $(".offcanvas-overlay").removeClass("show");
-    $(".offcanvas-wrapper").removeClass("active");
-  });
+  //   $(".offcanvas-overlay,.offcanvas-close").on("click", function () {
+  //     $(".offcanvas-overlay").removeClass("show");
+  //     $(".offcanvas-wrapper").removeClass("active");
+  //   });
+
+  //   pure js
+  //   const offCanvasOpen = () => {
+  //     var el1 = document.querySelector(".offcanvas-wrapper");
+  //     var el2 = document.querySelector(".offcanvas-overlay");
+  //     el1.classList.add("active");
+  //     el2.classList.add("show");
+  //   };
+
+  //   const offCanvasClose = () => {
+  //     var el1 = document.querySelector(".offcanvas-wrapper");
+  //     var el2 = document.querySelector(".offcanvas-overlay");
+  //     el2.classList.remove("show");
+  //     el1.classList.remove("active");
+  //   };
 
   /*========================
     04: Background Image
     ==========================*/
-  var $bgImg = $("[data-bg-img]");
-  $bgImg
-    .css("background-image", function () {
-      return 'url("' + $(this).data("bg-img") + '")';
-    })
-    .removeAttr("data-bg-img")
-    .addClass("bg-img");
+  //   var $bgImg = $("[data-bg-img]");
+  //   $bgImg
+  //     .css("background-image", function () {
+  //       return 'url("' + $(this).data("bg-img") + '")';
+  //     })
+  //     .removeAttr("data-bg-img")
+  //     .addClass("bg-img");
 
   /*==================================
     05: Check Data
@@ -123,285 +166,339 @@ We may release future updates so it will overwrite this file. it's better and sa
   /*==================================
     07: Counter Up
     ====================================*/
-  $(".count span").counterUp({
-    delay: 30,
-    time: 2000,
-  });
+  // $(".count span").counterUp({
+  //   delay: 30,
+  //   time: 2000,
+  // });
 
   /*========================
     08: Video Popup
     ==========================*/
-  var $popUpVideo = $(".popup-video");
-  if ($popUpVideo.length) {
-    $popUpVideo.magnificPopup({
-      type: "iframe",
-    });
-  }
+  // var $popUpVideo = $(".popup-video");
+  // if ($popUpVideo.length) {
+  //   $popUpVideo.magnificPopup({
+  //     type: "iframe",
+  //   });
+  // }
 
   /*==================================
     09: Changing svg color 
     ====================================*/
-  jQuery("img.svg").each(function () {
-    var $img = jQuery(this);
-    var imgID = $img.attr("id");
-    var imgClass = $img.attr("class");
-    var imgURL = $img.attr("src");
+  // var imgSvg = document.querySelectorAll("img.svg");
 
-    jQuery.get(
-      imgURL,
-      function (data) {
-        // Get the SVG tag, ignore the rest
-        var $svg = jQuery(data).find("svg");
+  //   jQuery("img.svg").each(function () {
+  //     var $img = jQuery(this);
+  //     console.log("$img-", $img);
+  //     var imgID = $img.attr("id");
+  //     console.log("imgID-", imgID);
+  //     var imgClass = $img.attr("class");
+  //     console.log("imgClass-", imgClass);
+  //     var imgURL = $img.attr("src");
+  //     console.log("imgURL-", imgURL);
 
-        // Add replaced image's ID to the new SVG
-        if (typeof imgID !== "undefined") {
-          $svg = $svg.attr("id", imgID);
-        }
-        // Add replaced image's classes to the new SVG
-        if (typeof imgClass !== "undefined") {
-          $svg = $svg.attr("class", imgClass + " replaced-svg");
-        }
+  //     jQuery.get(
+  //       imgURL,
+  //       function (data) {
+  //         // Get the SVG tag, ignore the rest
+  //         var $svg = jQuery(data).find("svg");
 
-        // Remove any invalid XML tags as per http://validator.w3.org
-        $svg = $svg.removeAttr("xmlns:a");
+  //         // Add replaced image's ID to the new SVG
+  //         if (typeof imgID !== "undefined") {
+  //           $svg = $svg.attr("id", imgID);
+  //         }
+  //         // Add replaced image's classes to the new SVG
+  //         if (typeof imgClass !== "undefined") {
+  //           $svg = $svg.attr("class", imgClass + " replaced-svg");
+  //         }
 
-        // Check if the viewport is set, else we gonna set it if we can.
-        if (
-          !$svg.attr("viewBox") &&
-          $svg.attr("height") &&
-          $svg.attr("width")
-        ) {
-          $svg.attr(
-            "viewBox",
-            "0 0 " + $svg.attr("height") + " " + $svg.attr("width")
-          );
-        }
+  //         // Remove any invalid XML tags as per http://validator.w3.org
+  //         $svg = $svg.removeAttr("xmlns:a");
 
-        // Replace image with new SVG
-        $img.replaceWith($svg);
-      },
-      "xml"
-    );
-  });
+  //         // Check if the viewport is set, else we gonna set it if we can.
+  //         if (
+  //           !$svg.attr("viewBox") &&
+  //           $svg.attr("height") &&
+  //           $svg.attr("width")
+  //         ) {
+  //           $svg.attr(
+  //             "viewBox",
+  //             "0 0 " + $svg.attr("height") + " " + $svg.attr("width")
+  //           );
+  //         }
+
+  //         // Replace image with new SVG
+  //         $img.replaceWith($svg);
+  //       },
+  //       "xml"
+  //     );
+  // });
+
+  // pure js
+  // var imgSvg = document.querySelectorAll("img.svg");
+
+  // imgSvg.forEach(async (element) => {
+  //   var imgElem = element;
+  //   console.log("$img-", imgElem);
+  //   var imgID = imgElem.getAttribute("id");
+  //   console.log("imgID", imgID);
+  //   var imgClass = imgElem.getAttribute("class");
+  //   console.log("imgClass", imgClass);
+  //   var imgURL = imgElem.getAttribute("src");
+  //   console.log("imgURL", imgURL);
+
+  //   await fetch(imgURL)
+  //     .then((response) => response.text())
+  //     .then((html) => {
+  //       // Convert the HTML string into a document object
+  //       var parser = new DOMParser();
+  //       var doc = parser.parseFromString(html, "text/html");
+  //       var svg = doc.querySelector("svg");
+
+  //       if (typeof imgID !== "null") {
+  //         svg.setAttribute("id", imgID);
+  //       }
+  //       if (typeof imgClass !== "null") {
+  //         svg.setAttribute("class", imgClass + " replaced-svg");
+  //       }
+  //       svg.removeAttribute("xmlns:a");
+
+  //       if (
+  //         !svg.getAttribute("viewBox") &&
+  //         svg.getAttribute("height") &&
+  //         svg.getAttribute("width")
+  //       ) {
+  //         svg.setAttribute(
+  //           "viewBox",
+  //           "0 0 " +
+  //             svg.getAttribute("height") +
+  //             " " +
+  //             svg.getAttribute("width")
+  //         );
+  //       }
+  //       imgElem.parentNode.replaceChild(svg, imgElem);
+  //     });
+  // });
 
   /*==================================
     10: Google map 
     ====================================*/
-  var $map = $('[data-trigger="map"]'),
-    $mapOps;
+  // var $map = $('[data-trigger="map"]'),
+  //   $mapOps;
 
-  if ($map.length) {
-    // Map Options
-    $mapOps = $map.data("map-options");
+  // if ($map.length) {
+  //   // Map Options
+  //   $mapOps = $map.data("map-options");
 
-    // Map Initialization
-    window.initMap = function () {
-      $map.css("min-height", "600px");
-      $map.each(function () {
-        var $t = $(this),
-          map,
-          lat,
-          lng,
-          zoom;
+  //   // Map Initialization
+  //   window.initMap = function () {
+  //     $map.css("min-height", "600px");
+  //     $map.each(function () {
+  //       var $t = $(this),
+  //         map,
+  //         lat,
+  //         lng,
+  //         zoom;
 
-        $mapOps = $t.data("map-options");
-        lat = parseFloat($mapOps.latitude, 10);
-        lng = parseFloat($mapOps.longitude, 10);
-        zoom = parseFloat($mapOps.zoom, 10);
+  //       $mapOps = $t.data("map-options");
+  //       lat = parseFloat($mapOps.latitude, 10);
+  //       lng = parseFloat($mapOps.longitude, 10);
+  //       zoom = parseFloat($mapOps.zoom, 10);
 
-        map = new google.maps.Map($t[0], {
-          center: { lat: lat, lng: lng },
-          zoom: zoom,
-          scrollwheel: false,
-          disableDefaultUI: true,
-          zoomControl: true,
-          styles: [
-            {
-              featureType: "all",
-              elementType: "labels.text.fill",
-              stylers: [
-                {
-                  saturation: 36,
-                },
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 40,
-                },
-              ],
-            },
-            {
-              featureType: "all",
-              elementType: "labels.text.stroke",
-              stylers: [
-                {
-                  visibility: "on",
-                },
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 16,
-                },
-              ],
-            },
-            {
-              featureType: "all",
-              elementType: "labels.icon",
-              stylers: [
-                {
-                  visibility: "off",
-                },
-              ],
-            },
-            {
-              featureType: "administrative",
-              elementType: "geometry.fill",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 20,
-                },
-              ],
-            },
-            {
-              featureType: "administrative",
-              elementType: "geometry.stroke",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 17,
-                },
-                {
-                  weight: 1.2,
-                },
-              ],
-            },
-            {
-              featureType: "landscape",
-              elementType: "geometry",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 20,
-                },
-              ],
-            },
-            {
-              featureType: "poi",
-              elementType: "geometry",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 21,
-                },
-              ],
-            },
-            {
-              featureType: "road.highway",
-              elementType: "geometry.fill",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 17,
-                },
-              ],
-            },
-            {
-              featureType: "road.highway",
-              elementType: "geometry.stroke",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 29,
-                },
-                {
-                  weight: 0.2,
-                },
-              ],
-            },
-            {
-              featureType: "road.arterial",
-              elementType: "geometry",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 18,
-                },
-              ],
-            },
-            {
-              featureType: "road.local",
-              elementType: "geometry",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 16,
-                },
-              ],
-            },
-            {
-              featureType: "transit",
-              elementType: "geometry",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 19,
-                },
-              ],
-            },
-            {
-              featureType: "water",
-              elementType: "geometry",
-              stylers: [
-                {
-                  color: "#000000",
-                },
-                {
-                  lightness: 17,
-                },
-              ],
-            },
-          ],
-        });
+  //       map = new google.maps.Map($t[0], {
+  //         center: { lat: lat, lng: lng },
+  //         zoom: zoom,
+  //         scrollwheel: false,
+  //         disableDefaultUI: true,
+  //         zoomControl: true,
+  //         styles: [
+  //           {
+  //             featureType: "all",
+  //             elementType: "labels.text.fill",
+  //             stylers: [
+  //               {
+  //                 saturation: 36,
+  //               },
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 40,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "all",
+  //             elementType: "labels.text.stroke",
+  //             stylers: [
+  //               {
+  //                 visibility: "on",
+  //               },
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 16,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "all",
+  //             elementType: "labels.icon",
+  //             stylers: [
+  //               {
+  //                 visibility: "off",
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "administrative",
+  //             elementType: "geometry.fill",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 20,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "administrative",
+  //             elementType: "geometry.stroke",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 17,
+  //               },
+  //               {
+  //                 weight: 1.2,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "landscape",
+  //             elementType: "geometry",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 20,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "poi",
+  //             elementType: "geometry",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 21,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "road.highway",
+  //             elementType: "geometry.fill",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 17,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "road.highway",
+  //             elementType: "geometry.stroke",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 29,
+  //               },
+  //               {
+  //                 weight: 0.2,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "road.arterial",
+  //             elementType: "geometry",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 18,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "road.local",
+  //             elementType: "geometry",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 16,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "transit",
+  //             elementType: "geometry",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 19,
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             featureType: "water",
+  //             elementType: "geometry",
+  //             stylers: [
+  //               {
+  //                 color: "#000000",
+  //               },
+  //               {
+  //                 lightness: 17,
+  //               },
+  //             ],
+  //           },
+  //         ],
+  //       });
 
-        map = new google.maps.Marker({
-          position: { lat: lat, lng: lng },
-          map: map,
-          animation: google.maps.Animation.DROP,
-          draggable: false,
-          icon: "assets/img/map-marker.png",
-        });
-      });
-    };
-    initMap();
-  }
+  //       map = new google.maps.Marker({
+  //         position: { lat: lat, lng: lng },
+  //         map: map,
+  //         animation: google.maps.Animation.DROP,
+  //         draggable: false,
+  //         icon: "assets/img/map-marker.png",
+  //       });
+  //     });
+  //   };
+  //   initMap();
+  // }
+
+  // pure js
 
   /*==================================
     11: Preloader 
     ====================================*/
-  $(window).on("load", function () {
-    $(".preloader").fadeOut(1000);
-  });
+  //   $(window).on("load", function () {
+  //     $(".preloader").fadeOut(1000);
+  //   });
 
   /*==================================
     12: Isotope
@@ -432,52 +529,53 @@ We may release future updates so it will overwrite this file. it's better and sa
   /*==================================
     13: Contact Form
     ====================================*/
-  $(".contact-form-wrapper").on("submit", "form", function (e) {
-    e.preventDefault();
+  //   $(".contact-form-wrapper").on("submit", "form", function (e) {
+  //     e.preventDefault();
 
-    var $el = $(this);
+  //     var $el = $(this);
 
-    $.post($el.attr("action"), $el.serialize(), function (res) {
-      res = $.parseJSON(res);
-      $el
-        .parent(".contact-form-wrapper")
-        .find(".form-response")
-        .html("<span>" + res[1] + "</span>");
-    });
-  });
+  //     $.post($el.attr("action"), $el.serialize(), function (res) {
+  //       res = $.parseJSON(res);
+  //       $el
+  //         .parent(".contact-form-wrapper")
+  //         .find(".form-response")
+  //         .html("<span>" + res[1] + "</span>");
+  //     });
+  //   });
 
   /*============================================
     14: Back to top button
     ==============================================*/
-  var $backToTopBtn = $(".back-to-top");
+  //   var $backToTopBtn = $(".back-to-top");
 
-  if ($backToTopBtn.length) {
-    var scrollTrigger = 400, // px
-      backToTop = function () {
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > scrollTrigger) {
-          $backToTopBtn.addClass("show");
-        } else {
-          $backToTopBtn.removeClass("show");
-        }
-      };
+  //   if ($backToTopBtn.length) {
+  //     var scrollTrigger = 400, // px
+  //       backToTop = function () {
+  //         var scrollTop = $(window).scrollTop();
+  //         if (scrollTop > scrollTrigger) {
+  //           $backToTopBtn.addClass("show");
 
-    backToTop();
+  //         } else {
+  //           $backToTopBtn.removeClass("show");
+  //         }
+  //       };
 
-    $(window).on("scroll", function () {
-      backToTop();
-    });
+  //     backToTop();
 
-    $backToTopBtn.on("click", function (e) {
-      e.preventDefault();
-      $("html,body").animate(
-        {
-          scrollTop: 0,
-        },
-        700
-      );
-    });
-  }
+  //     $(window).on("scroll", function () {
+  //       backToTop();
+  //     });
+
+  //     $backToTopBtn.on("click", function (e) {
+  //       e.preventDefault();
+  //       $("html,body").animate(
+  //         {
+  //           scrollTop: 0,
+  //         },
+  //         700
+  //       );
+  //     });
+  //   }
 
   /*==================================
     15: Countdown

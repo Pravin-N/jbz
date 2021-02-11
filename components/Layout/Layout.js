@@ -1,10 +1,94 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer/Footer";
 import Meta from "./Meta";
 import Navbar from "./Navbar.js/Navbar";
 import Preloader from "./Preloader/Preloader";
 
 const Layout = ({ children }) => {
+  // TODO: Remove all the background images and replace it with svg.
+  useEffect(() => {
+    var bgimg = document.querySelectorAll("[data-bg-img]");
+    bgimg.forEach((bimg) => {
+      bimg.style.backgroundImage = 'url("' + bimg.dataset.bgImg + '")';
+      bimg.removeAttribute("data-bg-img");
+      bimg.classList.add("bg-img");
+    });
+
+    var backToTopBtn = document.querySelector(".back-to-top");
+
+    if (backToTopBtn) {
+      var scrollTrigger = 400, // px
+        backToTop = function () {
+          var scrollTop = window.scrollY;
+          if (scrollTop > scrollTrigger) {
+            backToTopBtn.classList.add("show");
+          } else {
+            backToTopBtn.classList.remove("show");
+          }
+        };
+
+      backToTop();
+
+      window.addEventListener("scroll", function () {
+        backToTop();
+      });
+
+      const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(-15, c - c / 12);
+        }
+      };
+
+      backToTopBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        scrollToTop();
+      });
+    }
+
+    var imgSvg = document.querySelectorAll("img.svg");
+
+    imgSvg.forEach(async (element) => {
+      var imgElem = element;
+      var imgID = imgElem.getAttribute("id");
+      var imgClass = imgElem.getAttribute("class");
+      var imgURL = imgElem.getAttribute("src");
+
+      await fetch(imgURL)
+        .then((response) => response.text())
+        .then((html) => {
+          // Convert the HTML string into a document object
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(html, "text/html");
+          var svg = doc.querySelector("svg");
+
+          if (typeof imgID !== "null") {
+            svg.setAttribute("id", imgID);
+          }
+          if (typeof imgClass !== "null") {
+            svg.setAttribute("class", imgClass + " replaced-svg");
+          }
+          svg.removeAttribute("xmlns:a");
+
+          if (
+            !svg.getAttribute("viewBox") &&
+            svg.getAttribute("height") &&
+            svg.getAttribute("width")
+          ) {
+            svg.setAttribute(
+              "viewBox",
+              "0 0 " +
+                svg.getAttribute("height") +
+                " " +
+                svg.getAttribute("width")
+            );
+          }
+          imgElem.parentNode.replaceChild(svg, imgElem);
+        });
+    });
+  }, []);
+
   return (
     <>
       <Meta />

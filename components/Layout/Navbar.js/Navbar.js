@@ -1,13 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar";
 
 const Navbar = () => {
+  const [navBar, setnavBar] = useState(false);
+
+  const navSticky = () => {
+    if (window.scrollY >= 20) {
+      setnavBar(true);
+    } else {
+      setnavBar(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", function (event) {
+      if (event.target.matches('.header-main a[href="#"]')) {
+        event.preventDefault();
+      }
+    });
+
+    window.addEventListener("scroll", navSticky);
+  }, []);
   return (
     <>
       {/* Header Begin */}
       <header className="header fixed-top">
         {/* Header Style One Begin */}
-        <div className="fixed-top header-main style--one">
+        <div
+          className={
+            navBar
+              ? "fixed-top header-main style--one sticky animated fadeInDown"
+              : "fixed-top header-main style--one"
+          }
+        >
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-3 col-sm-4 col-8">

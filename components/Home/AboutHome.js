@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import ModalVideo from "react-modal-video";
 
 const AboutHome = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <>
       {/* About Begin */}
@@ -125,13 +128,21 @@ const AboutHome = () => {
                 data-rjs="2"
                 alt=""
               />
-              <a
-                href="https://www.youtube.com/watch?v=ctvlUvN6wSE"
+              <ModalVideo
+                channel="youtube"
+                autoplay
+                isOpen={isOpen}
+                videoId="ctvlUvN6wSE"
+                onClose={() => setOpen(false)}
+              />
+              <button
+                // href="https://www.youtube.com/watch?v=ctvlUvN6wSE"
                 className="vdo-btn popup-video"
+                onClick={() => setOpen(true)}
               >
                 <img src="assets/img/icons/play.svg" className="svg" alt="" />{" "}
                 Watch Video
-              </a>
+              </button>
             </div>
           </div>
         </div>

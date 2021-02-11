@@ -1,6 +1,213 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const contact = () => {
+  // TODO: Add google maps to the contact form.
+  // useEffect(() => {
+  //   var map = document.querySelector('[data-trigger="map"]'),
+  //     mapOps;
+  //   console.log(map);
+
+  //   if (map) {
+  //     // Map Options
+  //     mapOps = map.dataset.mapOptions;
+
+  //     // Map Initialization
+  //     window.initMap = function () {
+  //       map.style.minHeight = "600px";
+  //       (function (mapOps, map) {
+  //         var map1, lat, lng, zoom;
+
+  //         lat = parseFloat(mapOps.latitude, 10);
+  //         lng = parseFloat(mapOps.longitude, 10);
+  //         zoom = parseFloat(mapOps.zoom, 10);
+
+  //         map1 = new google.maps.Map(map, {
+  //           center: { lat: lat, lng: lng },
+  //           zoom: zoom,
+  //           scrollwheel: false,
+  //           disableDefaultUI: true,
+  //           zoomControl: true,
+  //           styles: [
+  //             {
+  //               featureType: "all",
+  //               elementType: "labels.text.fill",
+  //               stylers: [
+  //                 {
+  //                   saturation: 36,
+  //                 },
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 40,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "all",
+  //               elementType: "labels.text.stroke",
+  //               stylers: [
+  //                 {
+  //                   visibility: "on",
+  //                 },
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 16,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "all",
+  //               elementType: "labels.icon",
+  //               stylers: [
+  //                 {
+  //                   visibility: "off",
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "administrative",
+  //               elementType: "geometry.fill",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 20,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "administrative",
+  //               elementType: "geometry.stroke",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 17,
+  //                 },
+  //                 {
+  //                   weight: 1.2,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "landscape",
+  //               elementType: "geometry",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 20,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "poi",
+  //               elementType: "geometry",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 21,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "road.highway",
+  //               elementType: "geometry.fill",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 17,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "road.highway",
+  //               elementType: "geometry.stroke",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 29,
+  //                 },
+  //                 {
+  //                   weight: 0.2,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "road.arterial",
+  //               elementType: "geometry",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 18,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "road.local",
+  //               elementType: "geometry",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 16,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "transit",
+  //               elementType: "geometry",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 19,
+  //                 },
+  //               ],
+  //             },
+  //             {
+  //               featureType: "water",
+  //               elementType: "geometry",
+  //               stylers: [
+  //                 {
+  //                   color: "#000000",
+  //                 },
+  //                 {
+  //                   lightness: 17,
+  //                 },
+  //               ],
+  //             },
+  //           ],
+  //         });
+
+  //         map1 = new google.maps.Marker({
+  //           position: { lat: lat, lng: lng },
+  //           map: map1,
+  //           animation: google.maps.Animation.DROP,
+  //           draggable: false,
+  //           icon: "assets/img/map-marker.png",
+  //         });
+  //       })(mapOps, map);
+  //     };
+  //     initMap();
+  //   }
+  // }, []);
   return (
     <>
       {/* Page Title Begin TODO: Change the header section.*/}

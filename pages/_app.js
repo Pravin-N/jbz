@@ -1,4 +1,6 @@
+import "../styles/videomodal.css";
 import "../styles/globals.css";
+
 // // import "../styles/font-awesome.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "owl.carousel/dist/assets/owl.carousel.css";

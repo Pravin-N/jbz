@@ -1,4 +1,6 @@
 import React from "react";
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Counter = () => {
   return (
@@ -11,7 +13,13 @@ const Counter = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-counter text-center text-white">
                 <h2 className="count">
-                  <span>15</span>
+                  <CountUp end={15} redraw={true}>
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </h2>
                 <p>Years of experience</p>
               </div>
@@ -22,7 +30,13 @@ const Counter = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-counter text-center text-white">
                 <h2 className="count">
-                  <span>1250</span>+
+                  <CountUp end={1250} redraw={true} suffix="+">
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </h2>
                 <p>Happy Clients</p>
               </div>
@@ -33,7 +47,13 @@ const Counter = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-counter text-center text-white">
                 <h2 className="count">
-                  <span>1</span>k+
+                  <CountUp end={1} redraw={true} suffix="k+">
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </h2>
                 <p>Project Done</p>
               </div>
@@ -44,7 +64,13 @@ const Counter = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-counter text-center text-white">
                 <h2 className="count">
-                  <span>100</span>+
+                  <CountUp end={100} redraw={true} suffix="+">
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </h2>
                 <p>Giving Consultancy</p>
               </div>

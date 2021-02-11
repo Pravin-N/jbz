@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Preloader = () => {
+  useEffect(() => {
+    var preload = document.querySelector(".preloader");
+    window.onload = function () {
+      preload.classList.add("hide");
+      preload.classList.remove("show");
+    };
+  }, []);
   return (
     <>
       {/* Preloader Begin  */}
