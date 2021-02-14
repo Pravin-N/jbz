@@ -93,7 +93,7 @@ const Team = () => {
 
           <div className="row">
             {teamMembers.map((memberDetails) => (
-              <div className="col-lg-4 col-sm-6">
+              <div className="col-lg-4 col-sm-6" key={memberDetails.name}>
                 <TeamMember {...memberDetails} />
               </div>
             ))}
