@@ -10,12 +10,10 @@ import Counter from "../components/Counter";
 import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
 import Projects from "../components/Projects";
-//import Team from "../components/Team/Team";
+import Team from "../components/Team/Team";
 import CTASection from "../components/CTASection";
 import BlogHome from "../components/Home/BlogHome";
 import ClientsLogo from "../components/ClientsLogo";
-
-const Team = dynamic(() => import("../components/Team/Team"));
 
 export default function Home() {
   return (

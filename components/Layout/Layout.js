@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Meta />
-      <Preloader />
+      {/* <Preloader /> */}
       <Navbar />
       {children}
       <Footer />

@@ -46,10 +46,16 @@ We may release future updates so it will overwrite this file. it's better and sa
   //     }
 
   /* Menu Maker */
-  $(".main-menu").menumaker({
-    title: "<span></span>",
-    format: "multitoggle",
-  });
+  // $(".main-menu").menumaker({
+  //   title: "<span></span>",
+  //   format: "multitoggle",
+  // });
+
+  // mainMenu = document.querySelectorAll(".main-menu");
+  // mainMenu.menumaker({
+  //   title: "<span></span>",
+  //   format: "multitoggle",
+  // });
 
   //   $($(window)).on("scroll", function () {
   //     if (!$("ul.nav").hasClass("open")) {
@@ -503,28 +509,28 @@ We may release future updates so it will overwrite this file. it's better and sa
   /*==================================
     12: Isotope
     ====================================*/
-  $(window).on("load", function () {
-    $(".project-items").isotope({
-      itemSelector: ".grid-item",
-      percentPosition: true,
-      animationOptions: {
-        duration: 750,
-        easing: "linear",
-        queue: false,
-      },
-      masonry: {
-        columnWidth: ".grid-item",
-      },
-    });
+  // $(window).on("load", function () {
+  //   $(".project-items").isotope({
+  //     itemSelector: ".grid-item",
+  //     percentPosition: true,
+  //     animationOptions: {
+  //       duration: 750,
+  //       easing: "linear",
+  //       queue: false,
+  //     },
+  //     masonry: {
+  //       columnWidth: ".grid-item",
+  //     },
+  //   });
 
-    $(".project_filter li").on("click", function () {
-      $(this).addClass("active").siblings().removeClass("active");
-      var filterValue = $(this).attr("data-filter");
-      $(".grid").isotope({
-        filter: filterValue,
-      });
-    });
-  });
+  //   $(".project_filter li").on("click", function () {
+  //     $(this).addClass("active").siblings().removeClass("active");
+  //     var filterValue = $(this).attr("data-filter");
+  //     $(".grid").isotope({
+  //       filter: filterValue,
+  //     });
+  //   });
+  // });
 
   /*==================================
     13: Contact Form
@@ -580,7 +586,7 @@ We may release future updates so it will overwrite this file. it's better and sa
   /*==================================
     15: Countdown
     ====================================*/
-  $("#countdown").countdown({
-    date: "08/16/2020 23:59:59",
-  });
+  //   $("#countdown").countdown({
+  //     date: "08/16/2020 23:59:59",
+  //   });
 })(jQuery);
