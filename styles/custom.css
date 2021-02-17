@@ -1,0 +1,59 @@
+body,
+.header .header-main.style--one .main-menu .nav li ul,
+.header .header-main.sticky,
+.offcanvas-wrapper {
+  background-color: #131417;
+}
+
+.footer {
+  background-color: #000;
+}
+
+/* h1 span,
+.header .header-main.style--one .main-menu .nav li.current-menu-parent > a,
+.header .header-main.style--one .main-menu .nav > li > a:hover,
+.header .header-main.style--one .main-menu .nav li ul li a:hover,
+.header .header-main.style--one .main-menu .nav li.current-menu-item > a {
+  color: #EC4D37;
+}
+
+.header .header-main.style--one .main-menu .nav > li > a,
+.header .header-main.style--one .main-menu .nav li ul li a {
+  color: #fff;
+} */
+
+.about-nav-tab .nav-tabs .nav-link {
+  background-color: #1d1e22;
+  border-color: #fff;
+}
+
+.single-service,
+.single-project-item .project-body,
+.single-project-item .single-team-member .team-info .info-front,
+.single-team-member .team-info .info-front,
+.single-team-member .team-info .info-back {
+  background-color: #1d1e22;
+}
+
+.cls-1 {
+  fill: #131417;
+  fill-rule: evenodd;
+  background-color: #000;
+}
+
+.single-team-member {
+  background-color: #131417;
+}
+
+.header .header-main.style--one .main-menu .nav li ul li a {
+  color: #fff;
+}
+
+.btn {
+  background-color: #ec4d37 !important;
+  color: #fff !important;
+}
+
+.btn.btn-white span {
+  color: #ec4d37 !important;
+}

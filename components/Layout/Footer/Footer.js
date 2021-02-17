@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       {/* Footer Begin */}
       <footer
-        className="footer bg-light section-pattern footer-bg"
+        className="footer section-pattern footer-bg"
         data-bg-img="assets/img/section-pattern/footer-pattern.png"
       >
         {/* Footer Top Begin */}

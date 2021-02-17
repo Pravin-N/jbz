@@ -30,7 +30,7 @@ const Sidebar = () => {
 
       {/* Offcanvas Begin */}
       <div className="offcanvas-overlay fixed-top w-100 h-100"></div>
-      <div className="offcanvas-wrapper bg-white fixed-top h-100">
+      <div className="offcanvas-wrapper fixed-top h-100">
         {/* Offcanvas Close Button Begin */}
         <div
           className="offcanvas-close position-absolute"

@@ -135,39 +135,39 @@ We may release future updates so it will overwrite this file. it's better and sa
   //     .removeAttr("data-bg-img")
   //     .addClass("bg-img");
 
-  /*==================================
-    05: Check Data
-    ====================================*/
-  var checkData = function (data, value) {
-    return typeof data === "undefined" ? value : data;
-  };
+  // /*==================================
+  //   05: Check Data
+  //   ====================================*/
+  // var checkData = function (data, value) {
+  //   return typeof data === "undefined" ? value : data;
+  // };
 
-  /*==================================
-    06: Owl Carousel
-    ====================================*/
-  var $owlCarousel = $(".owl-carousel");
-  $owlCarousel.each(function () {
-    var $t = $(this);
+  // /*==================================
+  //   06: Owl Carousel
+  //   ====================================*/
+  // var $owlCarousel = $(".owl-carousel");
+  // $owlCarousel.each(function () {
+  //   var $t = $(this);
 
-    $t.owlCarousel({
-      items: checkData($t.data("owl-items"), 1),
-      margin: checkData($t.data("owl-margin"), 0),
-      loop: checkData($t.data("owl-loop"), true),
-      smartSpeed: 450,
-      autoplay: checkData($t.data("owl-autoplay"), true),
-      autoplayTimeout: checkData($t.data("owl-speed"), 8000),
-      center: checkData($t.data("owl-center"), false),
-      animateIn: checkData($t.data("owl-animate-in"), false),
-      animateOut: checkData($t.data("owl-animate-out"), false),
-      nav: checkData($t.data("owl-nav"), false),
-      navText: [
-        '<img src="assets/img/icons/angle-left.svg" class="svg">',
-        '<img src="assets/img/icons/angle-right.svg" class="svg">',
-      ],
-      dots: checkData($t.data("owl-dots"), false),
-      responsive: checkData($t.data("owl-responsive"), {}),
-    });
-  });
+  //   $t.owlCarousel({
+  //     items: checkData($t.data("owl-items"), 1),
+  //     margin: checkData($t.data("owl-margin"), 0),
+  //     loop: checkData($t.data("owl-loop"), true),
+  //     smartSpeed: 450,
+  //     autoplay: checkData($t.data("owl-autoplay"), true),
+  //     autoplayTimeout: checkData($t.data("owl-speed"), 8000),
+  //     center: checkData($t.data("owl-center"), false),
+  //     animateIn: checkData($t.data("owl-animate-in"), false),
+  //     animateOut: checkData($t.data("owl-animate-out"), false),
+  //     nav: checkData($t.data("owl-nav"), false),
+  //     navText: [
+  //       '<img src="assets/img/icons/angle-left.svg" class="svg">',
+  //       '<img src="assets/img/icons/angle-right.svg" class="svg">',
+  //     ],
+  //     dots: checkData($t.data("owl-dots"), false),
+  //     responsive: checkData($t.data("owl-responsive"), {}),
+  //   });
+  // });
 
   /*==================================
     07: Counter Up
@@ -589,4 +589,5 @@ We may release future updates so it will overwrite this file. it's better and sa
   //   $("#countdown").countdown({
   //     date: "08/16/2020 23:59:59",
   //   });
+
 })(jQuery);

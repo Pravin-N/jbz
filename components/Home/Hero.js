@@ -10,10 +10,22 @@ const Hero = () => {
       >
         {/* Banner Slider Begin */}
         <div
-          id="carouselExampleControls"
+          id="carouselExampleIndicators"
           className="carousel slide banner-slider owl-carousel d-flex align-items-center justify-content-center"
           data-ride="carousel"
         >
+          <ol className="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              className="active bg-dark"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="1"
+              className="bg-dark"
+            ></li>
+          </ol>
           {/* Single Slide Begin */}
           <div className="carousel-inner">
             <div className="single-banner-slider carousel-item active">
@@ -46,11 +58,7 @@ const Hero = () => {
                   <div className="col-lg-6">
                     {/* Banner Content Begin */}
                     <div className="banner-image mt-50 mt-lg-0 text-center text-lg-right">
-                      <img
-                        src="assets/img/banner/slider-1.png"
-                        data-rjs="2"
-                        alt=""
-                      />
+                      <img src="assets/img/banner/slider-1.png" alt="" />
                     </div>
                     {/* Banner Content End */}
                   </div>
@@ -71,11 +79,16 @@ const Hero = () => {
                         Is Your Business
                       </h1>
                       <p>
-                        Tolerably we as extremity exquisite do commanded.
-                        Doubtful offended do entrance of landlord moreover is
-                        mistress in. Nay was appear entire ladies.
+                        Prospect humoured mistress to by proposal marianne
+                        attended. Simplicity the far admiration preference
+                        everything. Up help home head spot an he room in.
                       </p>
-                      <a href="#" className="banner-btn btn">
+                      <a
+                        href="#"
+                        className="banner-btn btn"
+                        data-toggle="modal"
+                        data-target="#appointmentModalForm"
+                      >
                         <span>Get Appointment</span>
                       </a>
                     </div>
@@ -84,11 +97,7 @@ const Hero = () => {
                   <div className="col-lg-6">
                     {/* Banner Content Begin */}
                     <div className="banner-image mt-50 mt-lg-0 text-center text-lg-right">
-                      <img
-                        src="assets/img/banner/slider-2.png"
-                        data-rjs="2"
-                        alt=""
-                      />
+                      <img src="assets/img/banner/slider-1.png" alt="" />
                     </div>
                     {/* Banner Content End */}
                   </div>
@@ -97,7 +106,7 @@ const Hero = () => {
             </div>
             {/* Single Slide End */}
           </div>
-          <button
+          {/* <button
             className="carousel-control-prev"
             href="#carouselExampleControls"
             role="button"
@@ -120,7 +129,7 @@ const Hero = () => {
               aria-hidden="true"
             ></span>
             <span className="sr-only">Next</span>
-          </button>
+          </button> */}
         </div>
         {/* Banner Slider End */}
       </section>

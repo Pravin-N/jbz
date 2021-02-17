@@ -31,7 +31,7 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
 
           {/* ======= Font Awesome CSS ======= */}
@@ -69,7 +69,7 @@ class MyDocument extends Document {
           <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           ></script>
 
           {/* ======= Owl Carousel JS ======= */}
@@ -85,7 +85,7 @@ class MyDocument extends Document {
           <script
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           ></script>
 
           {/* =======  Mobile Menu JS ======= */}

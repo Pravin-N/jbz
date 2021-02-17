@@ -1,11 +1,6 @@
 import "../styles/videomodal.css";
-import "../styles/globals.css";
-
-// // import "../styles/font-awesome.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "owl.carousel/dist/assets/owl.carousel.css";
-// // import "../styles/magnific-popup.min.css";
 import "../styles/style.css";
+import "../styles/custom.css";
 
 import Layout from "../components/Layout/Layout";
 
