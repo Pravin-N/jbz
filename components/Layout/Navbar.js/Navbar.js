@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [navBar, setnavBar] = useState(false);
@@ -185,20 +187,26 @@ const Navbar = () => {
               <div className="col-lg-3 col-sm-4 col-8">
                 {/* Logo Begin */}
                 <div className="logo">
-                  <a href="index.html">
-                    <img
-                      className="default-logo"
-                      src="assets/img/logo.png"
-                      data-rjs="2"
-                      alt=""
-                    />
-                    <img
-                      className="sticky-logo"
-                      src="assets/img/sticky_logo.png"
-                      data-rjs="2"
-                      alt=""
-                    />
-                  </a>
+                  <Link href="/">
+                    <a>
+                      <img
+                        className="default-logo"
+                        src="/assets/img/Just Business Dubai.png"
+                        data-rjs="2"
+                        alt="Just Business Setup Dubai Logo"
+                        width={200}
+                        height={55}
+                      />
+                      <img
+                        className="sticky-logo"
+                        src="/assets/img/Just Business Dubai.png"
+                        data-rjs="2"
+                        alt="Just Business Setup Dubai Logo"
+                        width={200}
+                        height={55}
+                      />
+                    </a>
+                  </Link>
                 </div>
                 {/* Logo End */}
               </div>
@@ -208,34 +216,33 @@ const Navbar = () => {
                 <div className="main-menu d-flex align-items-center justify-content-end">
                   <ul className="nav align-items-center">
                     <li className="current-menu-parent menu-item-has-children">
-                      <a href="#">Home</a>
+                      <Link href="/">
+                        <a>Home</a>
+                      </Link>
+                    </li>
+                    <li className="menu-item-has-children">
+                      <Link href="/business-setup-pro-services">
+                        <a>Services</a>
+                      </Link>
                       <ul className="sub-menu">
-                        <li className="current-menu-item">
-                          <a href="index.html">Landing Page</a>
+                        <li>
+                          <Link href="/single-service">
+                            <a>service 1</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="home-1.html">home v1</a>
+                          <Link href="/single-service">
+                            <a>service 2</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="home-2.html">home v2</a>
+                          <Link href="/single-service">
+                            <a>service 3</a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
-                    <li className="menu-item-has-children">
-                      <a href="#">Services</a>
-                      <ul className="sub-menu">
-                        <li>
-                          <a href="service.html">service v1</a>
-                        </li>
-                        <li>
-                          <a href="service-two.html">service v2</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">service details</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="menu-item-has-children">
+                    {/* <li className="menu-item-has-children">
                       <a href="#">Project</a>
                       <ul className="sub-menu">
                         <li>
@@ -245,8 +252,8 @@ const Navbar = () => {
                           <a href="project-details.html">project details</a>
                         </li>
                       </ul>
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <a href="#">Pages</a>
                       <ul className="sub-menu">
                         <li>
@@ -259,10 +266,12 @@ const Navbar = () => {
                           <a href="404.html">404</a>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li className="menu-item-has-children">
-                      <a href="#">Blog</a>
-                      <ul className="sub-menu">
+                      <Link href="/dubai-business-setup-blogs">
+                        <a>Blog</a>
+                      </Link>
+                      {/* <ul className="sub-menu">
                         <li>
                           <a href="blog.html">Blog Default</a>
                         </li>
@@ -280,10 +289,12 @@ const Navbar = () => {
                         <li>
                           <a href="blog-details.html">blog details</a>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <Link href="/contact">
+                        <a>Contact</a>
+                      </Link>
                     </li>
                   </ul>
                   <Sidebar />

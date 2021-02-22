@@ -761,9 +761,9 @@ body,
 .pricing-navtab .nav-tabs .nav-link:after,
 .theme-input-group input,
 /* :before, */
-.btn:after,
-.btn span:before,
-.btn span:after,
+/* .btn:after, */
+/* .btn span:before,
+.btn span:after, */
 .back-to-top,
 -thumb.offcanvas-wrapper::-webkit-scrollbar,
 .coming-soon-content h1 {
@@ -816,8 +816,8 @@ body,
 .single-project-item,
 .single-team-member .team-info .info-front,
 .single-team-member .team-info .info-back {
-  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
 }
 
 /* Border Radius */
@@ -857,8 +857,8 @@ body,
 .single-project-item,
 .single-team-member .team-info .info-front,
 .single-team-member .team-info .info-back {
-  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
 }
 
 .no-shadow,
@@ -1134,8 +1134,8 @@ body,
   position: relative;
   width: 100%;
   overflow: hidden;
-  -webkit-box-shadow: 0 4px 40px rgba(251, 67, 116, 0.4);
-  box-shadow: 0 4px 40px rgba(251, 67, 116, 0.4);
+  -webkit-box-shadow: 0 4px 40px rgb(166, 54, 49, 0.4);
+  box-shadow: 0 4px 40px rgb(166, 54, 49, 0.4);
 }
 
 .theme-input-group input {
@@ -1288,7 +1288,7 @@ blockquote {
 
 /* Form Response */
 .form-response {
-  background-color: rgba(251, 66, 117, 0.2);
+  background-color: rgb(166, 54, 49, 0.2);
 }
 
 .form-response span {
@@ -1525,7 +1525,7 @@ blockquote {
   transition: 0.3s ease-in-out 0.2s;
   z-index: 9;
   color: #ec4d37 !important;
-  background-color: rgba(251, 66, 117, 0.1) !important;
+  background-color: rgb(166, 54, 49, 0.1) !important;
 }
 
 .btn span {
@@ -1898,8 +1898,8 @@ blockquote {
   cursor: pointer;
   width: 35px;
   height: 35px;
-  -webkit-box-shadow: 0 4px 40px rgba(251, 67, 116, 0.4);
-  box-shadow: 0 4px 40px rgba(251, 67, 116, 0.4);
+  -webkit-box-shadow: 0 4px 40px rgb(166, 54, 49, 0.4);
+  box-shadow: 0 4px 40px rgb(166, 54, 49, 0.4);
   font-size: 16px;
   color: #ffffff;
   border-radius: 50%;
@@ -2247,7 +2247,7 @@ blockquote {
     left: 50%;
     right: 50%;
     width: calc(100% - 30px);
-    background: #fff;
+    background: #202125;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     max-height: 350px;
@@ -2259,6 +2259,7 @@ blockquote {
     transform: translateX(-50%);
     z-index: 99999;
     margin-right: 0;
+    overflow: hidden;
   }
   .header .header-main.style--one .main-menu ul.nav > li {
     padding: 0;
@@ -2326,6 +2327,7 @@ blockquote {
   .header .header-main.style--one .main-menu .submenu-button:before {
     font-family: "FontAwesome";
     content: "";
+    color: #fff;
   }
   .header
     .header-main.style--one
@@ -2478,8 +2480,6 @@ blockquote {
    03.4: Banner
    ********************* */
 .banner {
-  padding-top: 200px;
-  min-height: 890px;
   position: relative;
   overflow: hidden;
 }
@@ -3414,6 +3414,7 @@ blockquote {
   position: absolute;
   left: 250px;
   bottom: 40px;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 991px) {

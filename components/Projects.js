@@ -5,7 +5,7 @@ const Projects = () => {
     <>
       {/* Project Begin */}
       <section
-        className="pt-120 pb-90 section-pattern"
+        className="pt-120 pb-90 section-pattern l-gray"
         data-bg-img="assets/img/section-pattern/case-study-pattern.png"
       >
         <div className="container">

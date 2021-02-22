@@ -1,11 +1,10 @@
 import dynamic from "next/dynamic";
-
-import Hero from "../components/Home/Hero";
+import Hero from "../components/Hero/Hero";
 import ModalForm from "../components/ModalForm";
-import Features from "../components/Home/Features";
+import Features from "../components/features/Features";
 import AboutHome from "../components/Home/AboutHome";
 import Steps from "../components/Home/Steps";
-import ServicesHome from "../components/Home/ServicesHome";
+import ServicesHome from "../components/Home/services/ServicesHome";
 import Counter from "../components/Counter";
 import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";

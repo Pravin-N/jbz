@@ -6,6 +6,7 @@ const BlogHome = () => {
       {/* Blog Begin */}
       <section
         className="pt-120 pb-120 section-pattern"
+        id="l-gray"
         data-bg-img="assets/img/section-pattern/blog-pattern.png"
       >
         <div className="container">

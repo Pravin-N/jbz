@@ -5,7 +5,7 @@ const Pricing = () => {
     <>
       {/* Pricing Plan Begin */}
       <section
-        className="pt-120 pb-120 section-pattern"
+        className="pt-120 pb-120 section-pattern l-gray"
         data-bg-img="assets/img/section-pattern/price-pattern.png"
       >
         <div className="container">

@@ -45,7 +45,13 @@ const Sidebar = () => {
           {/* About Widget Begin */}
           <div className="widget widget_about">
             <div className="widget-logo">
-              <img src="assets/img/logo.png" data-rjs="2" alt="" />
+              <img
+                src="/assets/img/Just Business Dubai.png"
+                data-rjs="2"
+                alt="Just Business Setup Dubai Logo"
+                width={200}
+                height={55}
+              />
             </div>
 
             <div className="about-content">

@@ -37,7 +37,8 @@ const Service = () => {
           <div className="row">
             <div className="col-lg-4 order-last order-lg-first">
               <SideBar />
-
+            </div>
+            <div className="col-lg-8">
               <ServiceInfo />
             </div>
           </div>
