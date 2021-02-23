@@ -1,4 +1,16 @@
-const HeroSlide = ({ line1, bold, line3, line4, para, contact, active }) => {
+import Image from "next/image";
+
+const HeroSlide = ({
+  line1,
+  bold,
+  line3,
+  line4,
+  para,
+  contact,
+  active,
+  image,
+  alt,
+}) => {
   return (
     <div
       className={
@@ -32,7 +44,7 @@ const HeroSlide = ({ line1, bold, line3, line4, para, contact, active }) => {
           <div className="col-lg-6">
             {/* Banner Content Begin */}
             <div className="banner-image mt-50 mt-lg-0 text-center text-lg-right">
-              <img src="assets/img/banner/slider-1.png" alt="" />
+              <Image src={image} alt={alt} height="606" width="535" />
             </div>
             {/* Banner Content End */}
           </div>

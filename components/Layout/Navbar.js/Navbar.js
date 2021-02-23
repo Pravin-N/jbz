@@ -170,6 +170,7 @@ const Navbar = () => {
 
     menumaker(settings, appenderHtml, slideUp, slideDown, show, hide);
   }, []);
+
   return (
     <>
       {/* Header Begin */}
@@ -221,23 +222,33 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li className="menu-item-has-children">
+                      <Link href="/dubai-business-setup-about-jbz">
+                        <a>About</a>
+                      </Link>
+                    </li>
+                    <li className="menu-item-has-children">
                       <Link href="/business-setup-pro-services">
                         <a>Services</a>
                       </Link>
                       <ul className="sub-menu">
                         <li>
                           <Link href="/single-service">
-                            <a>service 1</a>
+                            <a>Business Registration / Licensing</a>
                           </Link>
                         </li>
                         <li>
                           <Link href="/single-service">
-                            <a>service 2</a>
+                            <a>Business Center</a>
                           </Link>
                         </li>
                         <li>
                           <Link href="/single-service">
-                            <a>service 3</a>
+                            <a>PRO Services</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/single-service">
+                            <a>VAT Registration</a>
                           </Link>
                         </li>
                       </ul>

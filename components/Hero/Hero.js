@@ -1,7 +1,10 @@
 import HeroSlide from "./HeroSlide";
 import CarouselIndicators from "./CarouselIndicators";
+// import { useEffect, useState } from "react";
 
 const Hero = () => {
+  // const [count, setCount] = useState(0);
+
   const heroData = [
     {
       id: "0",
@@ -9,9 +12,12 @@ const Hero = () => {
       bold: "Business",
       line3: "in",
       line4: "Dubai Today",
-      para: "Something about setting up a business which grabs more attention",
+      para:
+        "With more than 10 years of experience, we have the expertise and know how to help your business get started in Dubai or UAE immediately.",
       contact: "Get Started",
       active: true,
+      image: "/assets/img/banner/Dubai business setup image.png",
+      alt: "Dubai businesss setup image",
     },
     {
       id: "1",
@@ -19,9 +25,12 @@ const Hero = () => {
       bold: "Business Setup",
       line3: "Services",
       line4: "in UAE",
-      para: "Something about setting up a business which grabs more attention",
+      para:
+        "Stop wasting time trying to figure out the necessary license requirements to start your business. Contact us and we will do that for you.",
       contact: "Get Free Quote",
       active: false,
+      image: "/assets/img/banner/UAE business setup.png",
+      alt: "UAE business setup",
     },
     {
       id: "2",
@@ -29,9 +38,12 @@ const Hero = () => {
       bold: "Mainland or Freezone",
       line3: "of",
       line4: "Your Choice",
-      para: "Something about setting up a business which grabs more attention",
+      para:
+        "Worried about ownership, start a business in any freezone in UAE and own 100% of your business.",
       contact: "Free Consultation",
       active: false,
+      image: "/assets/img/banner/freezone business setup.png",
+      alt: "",
     },
     {
       id: "3",
@@ -39,11 +51,28 @@ const Hero = () => {
       bold: "PRO Services",
       line3: "in",
       line4: "Dubai",
-      para: "Something about setting up a business which grabs more attention",
+      para:
+        "We provide pro services to help your business get employee visas and other regulatory approvals, so you can focus on your core business rather than government formalities.",
       contact: "Get Free Quote",
       active: false,
+      image: "/assets/img/banner/PRO services.png",
+      alt: "PRO Services Dubai",
     },
   ];
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     console.log(count);
+  //     if (count < 3) {
+  //       setCount(count + 1);
+  //     } else {
+  //       setCount(0);
+  //     }
+  //   }, 5000);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, [count]);
 
   // TODO: change the para
   return (
@@ -58,7 +87,7 @@ const Hero = () => {
           data-ride="carousel"
         >
           <ol className="carousel-indicators">
-            {heroData.map((singleData) => {
+            {heroData.map((singleData, count) => {
               return (
                 <CarouselIndicators id={singleData.id} key={singleData.id} />
               );
@@ -76,6 +105,8 @@ const Hero = () => {
                   contact={singleData.contact}
                   active={singleData.active}
                   key={singleData.id}
+                  image={singleData.image}
+                  alt={singleData.alt}
                 />
               );
             })}

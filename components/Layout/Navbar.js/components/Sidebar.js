@@ -56,8 +56,8 @@ const Sidebar = () => {
 
             <div className="about-content">
               <p>
-                Really regard excuse off ten pulled. Lady am room head so lady
-                four or eyes an household behaviour.
+                One stop shop for all needs regarding business setup and pro
+                services in Dubai, UAE.
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const Sidebar = () => {
           <div className="widget widget_flicker">
             {/* Widget Logo Begin */}
             <div className="widget-title">
-              <h4>Latest Shots</h4>
+              <h4>Latest Blogs</h4>
             </div>
             {/* Widget Logo End */}
 
