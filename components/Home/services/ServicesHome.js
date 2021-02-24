@@ -1,4 +1,5 @@
 import ServiceCard from "./ServiceCard";
+import Link from "next/link";
 
 // Todo: change the subtitle and description also the service left section.
 const serviceData = [
@@ -6,7 +7,7 @@ const serviceData = [
     title: "Business Setup",
     image: "assets/img/icons/service-1.png",
     description:
-      "Saved he do fruit woody of to. Met defective are allowance two.",
+      "Get any business license anywhere in UAE. Mainland or Freezone.",
   },
   {
     title: "PRO Services",
@@ -43,22 +44,24 @@ const ServicesHome = () => {
               <div className="section-title">
                 <h3>Our Services</h3>
                 <h2>
-                  We’re Providing <br />
-                  Best Solutions <br />
-                  For Your Business
+                  We Offer a Wide <br />
+                  Range of Services <br />
+                  to Kick Start Your Business in UAE.
                 </h2>
-                <p>
+                {/* <p>
                   We highest ye friends is exposed equally in. Ignorant had too
                   strictly followed. Astonished as travelling assistance or
                   unreserved oh pianoforte ye.
-                </p>
+                </p> */}
               </div>
               {/* Section Title End */}
 
               {/* Button Begin */}
-              <a href="#" className="btn">
-                <span>view All</span>
-              </a>
+              <Link href="/business-setup-pro-services">
+                <a className="btn">
+                  <span>view All</span>
+                </a>
+              </Link>
               {/* Button End */}
             </div>
 
@@ -70,6 +73,7 @@ const ServicesHome = () => {
                       title={title}
                       image={image}
                       description={description}
+                      key={title}
                     />
                   );
                 })}
