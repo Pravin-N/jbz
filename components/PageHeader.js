@@ -1,6 +1,7 @@
 import React from "react";
+import Link from "next/link";
 
-const AboutHeader = () => {
+const AboutHeader = ({ title, background }) => {
   return (
     <>
       {/* Page Title Begin */}
@@ -15,7 +16,9 @@ const AboutHeader = () => {
                 <h2>About</h2>
                 <ul className="list-inline">
                   <li>
-                    <a href="index.html">Home</a>
+                    <Link href="/">
+                      <a>Home</a>
+                    </Link>
                   </li>
                   <li>About</li>
                 </ul>
