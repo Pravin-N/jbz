@@ -255,7 +255,7 @@ body {
   overflow-x: hidden !important;
   font-size: 16px;
   line-height: 1.625;
-  color: #c7c9d3;
+  color: #fff;
 }
 
 /* ************************
@@ -2996,7 +2996,7 @@ blockquote {
 .single-feature,
 .single-process {
   padding: 60px 30px;
-  background-color: #1d1e22;
+  background-color: #18191b;
   margin-bottom: 30px;
 }
 
@@ -3360,7 +3360,7 @@ blockquote {
 
 .pricing-navtab .tab-content .tab-pane {
   padding: 60px 40px;
-  background-color: #1d1e22;
+  background-color: #18191b;
 }
 
 .pricing-navtab .tab-content .tab-pane .tab-pane-text .list-check {

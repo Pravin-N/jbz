@@ -12,7 +12,7 @@ const JBZServices = () => {
       <PageHeader />
       <OfferExplain />
       <ServicesBreakdown />
-      <Pricing />
+      {/* <Pricing /> */}
       <Counter />
       <Testimonials />
       <ClientsLogo />

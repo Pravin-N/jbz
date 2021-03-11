@@ -1,6 +1,7 @@
 import React from "react";
+import Link from "next/link";
 
-const ServiceCard = ({ title, image, description }) => {
+const ServiceCard = ({ title, image, description, link }) => {
   return (
     <div className="col-sm-6 single-service-wrapper">
       {/* Single Service Begin */}
@@ -15,9 +16,9 @@ const ServiceCard = ({ title, image, description }) => {
         <div className="content">
           <h4>{title}</h4>
           <p>{description}</p>
-          <a href="#" className="btn-inline">
-            Read More
-          </a>
+          <Link href={link}>
+            <a className="btn-inline">Read More</a>
+          </Link>
         </div>
         {/* Content End */}
       </div>

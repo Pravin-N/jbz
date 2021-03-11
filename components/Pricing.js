@@ -13,12 +13,13 @@ const Pricing = () => {
             <div className="col-12">
               {/* Section Title Begin */}
               <div className="section-title text-center">
-                <h3>Pricing</h3>
-                <h2>Choose Your Best Plan</h2>
+                <h3>License Costs</h3>
+                <h2>Business Setup in Dubai</h2>
                 <p>
-                  On recommend tolerably my belonging or am. Mutual has cannot
-                  beauty indeed now sussex merely you. It possible no husbands
-                  jennings ye offended packages pleasant he.
+                  License costs varies on many factors like business activity,
+                  location of the business and the type of license. Below are
+                  some approximate figures of the costs to open a business in
+                  dubai depending on the type of license.
                 </p>
               </div>
               {/* Section Title End */}
@@ -37,8 +38,8 @@ const Pricing = () => {
                   data-toggle="tab"
                   role="tab"
                 >
-                  <h4>Personal</h4>
-                  <h2>$250</h2>
+                  <h4>Commercial License</h4>
+                  <h2>AED 28,970*</h2>
                 </a>
               </li>
 
@@ -52,8 +53,8 @@ const Pricing = () => {
                   data-toggle="tab"
                   role="tab"
                 >
-                  <h4>Startup</h4>
-                  <h2>$500</h2>
+                  <h4>Professional License</h4>
+                  <h2>AED 19,770*</h2>
                 </a>
               </li>
               {/* Single Nav End */}
@@ -66,8 +67,8 @@ const Pricing = () => {
                   data-toggle="tab"
                   role="tab"
                 >
-                  <h4>Business</h4>
-                  <h2>$1050</h2>
+                  <h4>Freezone License</h4>
+                  <h2>AED 25,700*</h2>
                 </a>
               </li>
               {/* Single Nav End */}
@@ -80,8 +81,8 @@ const Pricing = () => {
                   data-toggle="tab"
                   role="tab"
                 >
-                  <h4>Entrepreneur</h4>
-                  <h2>$3000</h2>
+                  <h4>Offshore License</h4>
+                  <h2>AED 8,000*</h2>
                 </a>
               </li>
               {/* Single Nav End */}
@@ -100,31 +101,41 @@ const Pricing = () => {
                   <div className="col-lg-6">
                     {/* Tab Pane Text Begin */}
                     <div className="tab-pane-text">
-                      <h3>What’s included in this package</h3>
+                      <h3>What’s included in this package?</h3>
                       <ul className="list-unstyled list-check">
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Market sizing and share analysis
+                          Initial Approval - Trade Name Reservation
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Product value proposition analysis
+                          Trade License Fee
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Identify strategic partnership
+                          Annual Sponsorship Fee
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Implementation milestone review
+                          Establishment Card
                         </li>
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Innovation opportunities
+                          <i className="fa fa-check" aria-hidden="true"></i>1
+                          Labour Card
                         </li>
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Distribution channel opportunities
+                          <i className="fa fa-check" aria-hidden="true"></i>1
+                          Partner Visa
+                        </li>
+                        <li>
+                          <i className="fa fa-check" aria-hidden="true"></i>
+                          JBZ Service Fee
+                        </li>
+                        <li>
+                          <h6>
+                            * Approx Costs - Depends on the type to business
+                            activity.
+                          </h6>
                         </li>
                       </ul>
                     </div>
@@ -133,25 +144,28 @@ const Pricing = () => {
                   <div className="col-lg-6">
                     {/* Tab Pane Text Begin */}
                     <div className="tab-pane-text mt-50 mt-lg-0">
-                      <h3>Business approach -</h3>
-                      <p>
-                        Our experts follow the business strategy to grow up your
-                        business and engage more customers to your door.
-                      </p>
+                      <h3>Our Approach</h3>
                       <ul className="list-unstyled list-check">
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Getting to know your business vision and the key
-                          strategic drivers.
+                          <i className="fa fa-check" aria-hidden="true"></i> We
+                          layout all the details and the timeline of each of the
+                          tasks that would be completed once you hire us for
+                          business setup.
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Detailed research of the business environment, target
-                          market, and marketing as well as growth opportunities.
+                          Guide you throughout the process to make it easy
+                          during each step.
+                        </li>
+                        <li>
+                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
+                          With extensive experience working with mainland
+                          government authorities, we can complete the process of
+                          business setup with relative ease.
                         </li>
                       </ul>
                       <a href="#" className="btn">
-                        <span>purchase</span>
+                        <span>Get a free Quote</span>
                       </a>
                     </div>
                     {/* Tab Pane Text End */}
@@ -170,31 +184,37 @@ const Pricing = () => {
                   <div className="col-lg-6">
                     {/* Tab Pane Text Begin */}
                     <div className="tab-pane-text">
-                      <h3>What’s included in this package</h3>
+                      <h3>What’s included in this package?</h3>
                       <ul className="list-unstyled list-check">
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Market sizing and share analysis
+                          <i className="fa fa-check" aria-hidden="true"></i>
+                          Initial Approval - Trade Name Reservation
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Product value proposition analysis
+                          Trade License Fee
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Identify strategic partnership
+                          Establishment Card
                         </li>
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Implementation milestone review
+                          <i className="fa fa-check" aria-hidden="true"></i>1
+                          Labour Card
                         </li>
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Innovation opportunities
+                          <i className="fa fa-check" aria-hidden="true"></i>1
+                          Employee Visa
                         </li>
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Distribution channel opportunities
+                          <i className="fa fa-check" aria-hidden="true"></i>
+                          JBZ Service Fee
+                        </li>
+                        <li>
+                          <h6>
+                            * Approx Costs - Depends on the type to business
+                            activity.
+                          </h6>
                         </li>
                       </ul>
                     </div>
@@ -203,25 +223,28 @@ const Pricing = () => {
                   <div className="col-lg-6">
                     {/* Tab Pane Text Begin */}
                     <div className="tab-pane-text mt-50 mt-lg-0">
-                      <h3>Business approach -</h3>
-                      <p>
-                        Our experts follow the business strategy to grow up your
-                        business and engage more customers to your door.
-                      </p>
+                      <h3>Our Approach</h3>
                       <ul className="list-unstyled list-check">
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Getting to know your business vision and the key
-                          strategic drivers.
+                          <i className="fa fa-check" aria-hidden="true"></i> We
+                          layout all the details and the timeline of each of the
+                          tasks that would be completed once you hire us for
+                          business setup.
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Detailed research of the business environment, target
-                          market, and marketing as well as growth opportunities.
+                          Guide you throughout the process to make it easy
+                          during each step.
+                        </li>
+                        <li>
+                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
+                          With extensive experience working with mainland
+                          government authorities, we can complete the process of
+                          business setup with relative ease.
                         </li>
                       </ul>
                       <a href="#" className="btn">
-                        <span>purchase</span>
+                        <span>Get a free Quote</span>
                       </a>
                     </div>
                     {/* Tab Pane Text End */}
@@ -240,31 +263,33 @@ const Pricing = () => {
                   <div className="col-lg-6">
                     {/* Tab Pane Text Begin */}
                     <div className="tab-pane-text">
-                      <h3>What’s included in this package</h3>
+                      <h3>What’s included in this package?</h3>
                       <ul className="list-unstyled list-check">
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Market sizing and share analysis
+                          License Fees
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Product value proposition analysis
+                          E-Channel
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Identify strategic partnership
+                          Investor Visa
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Implementation milestone review
+                          Security Deposit
                         </li>
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Innovation opportunities
+                          <i className="fa fa-check" aria-hidden="true"></i> UAE
+                          JBZ Service Fee
                         </li>
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Distribution channel opportunities
+                          <h6>
+                            * Approx Costs - Depends on the type to business
+                            activity.
+                          </h6>
                         </li>
                       </ul>
                     </div>
@@ -273,25 +298,28 @@ const Pricing = () => {
                   <div className="col-lg-6">
                     {/* Tab Pane Text Begin */}
                     <div className="tab-pane-text mt-50 mt-lg-0">
-                      <h3>Business approach -</h3>
-                      <p>
-                        Our experts follow the business strategy to grow up your
-                        business and engage more customers to your door.
-                      </p>
+                      <h3>Our Approach</h3>
                       <ul className="list-unstyled list-check">
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Getting to know your business vision and the key
-                          strategic drivers.
+                          <i className="fa fa-check" aria-hidden="true"></i> We
+                          layout all the details and the timeline of each of the
+                          tasks that would be completed once you hire us for
+                          business setup.
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Detailed research of the business environment, target
-                          market, and marketing as well as growth opportunities.
+                          Guide you throughout the process to make it easy
+                          during each step.
+                        </li>
+                        <li>
+                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
+                          With extensive experience working with freezone
+                          authorities, we can complete the process of business
+                          setup with relative ease.
                         </li>
                       </ul>
                       <a href="#" className="btn">
-                        <span>purchase</span>
+                        <span>Get a free Quote</span>
                       </a>
                     </div>
                     {/* Tab Pane Text End */}
@@ -310,31 +338,29 @@ const Pricing = () => {
                   <div className="col-lg-6">
                     {/* Tab Pane Text Begin */}
                     <div className="tab-pane-text">
-                      <h3>What’s included in this package</h3>
+                      <h3>What’s included in this package?</h3>
                       <ul className="list-unstyled list-check">
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Market sizing and share analysis
+                          License Fees
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Product value proposition analysis
+                          Offshore Agent Fee
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Identify strategic partnership
+                          Security Deposit
                         </li>
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Implementation milestone review
+                          <i className="fa fa-check" aria-hidden="true"></i> UAE
+                          JBZ Service Fee
                         </li>
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Innovation opportunities
-                        </li>
-                        <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Distribution channel opportunities
+                          <h6>
+                            * Approx Costs - Depends on the type to business
+                            activity.
+                          </h6>
                         </li>
                       </ul>
                     </div>
@@ -343,25 +369,28 @@ const Pricing = () => {
                   <div className="col-lg-6">
                     {/* Tab Pane Text Begin */}
                     <div className="tab-pane-text mt-50 mt-lg-0">
-                      <h3>Business approach -</h3>
-                      <p>
-                        Our experts follow the business strategy to grow up your
-                        business and engage more customers to your door.
-                      </p>
+                      <h3>Our Approach</h3>
                       <ul className="list-unstyled list-check">
                         <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Getting to know your business vision and the key
-                          strategic drivers.
+                          <i className="fa fa-check" aria-hidden="true"></i> We
+                          layout all the details and the timeline of each of the
+                          tasks that would be completed once you hire us for
+                          business setup.
                         </li>
                         <li>
                           <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                          Detailed research of the business environment, target
-                          market, and marketing as well as growth opportunities.
+                          Guide you throughout the process to make it easy
+                          during each step.
+                        </li>
+                        <li>
+                          <i className="fa fa-check" aria-hidden="true"></i>{" "}
+                          With extensive experience working with freezone
+                          authorities, we can complete the process of business
+                          setup of offshore license with relative ease.
                         </li>
                       </ul>
                       <a href="#" className="btn">
-                        <span>purchase</span>
+                        <span>Get a free Quote</span>
                       </a>
                     </div>
                     {/* Tab Pane Text End */}

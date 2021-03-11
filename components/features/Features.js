@@ -33,9 +33,9 @@ const Features = () => {
         className="pt-60 pb-90 section-pattern l-gray"
         data-bg-img="assets/img/section-pattern/feature-pattern.png"
       >
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title text-center">
+        <div className="row">
+          <div className="col-12">
+            <div className="section-title text-center">
               <h2>Multiple Options of Starting a Business in UAE</h2>
             </div>
           </div>

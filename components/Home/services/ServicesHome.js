@@ -6,26 +6,28 @@ const serviceData = [
   {
     title: "Business Setup",
     image: "assets/img/icons/service-1.png",
-    description:
-      "Get any business license anywhere in UAE. Mainland or Freezone.",
+    description: "Any business license anywhere in UAE. Mainland or Freezone.",
+    link: "/",
   },
   {
     title: "PRO Services",
     image: "assets/img/icons/service-2.png",
-    description:
-      "Saved he do fruit woody of to. Met defective are allowance two.",
+    description: "Visa for employees and other govt related approvals",
+    link: "/",
   },
   {
     title: "Business Center",
     image: "assets/img/icons/service-3.png",
     description:
-      "Saved he do fruit woody of to. Met defective are allowance two.",
+      "Hire office desks, cabins to full fledged office with meeting rooms.",
+    link: "/",
   },
   {
     title: "VAT Registration",
     image: "assets/img/icons/service-4.png",
     description:
-      "Saved he do fruit woody of to. Met defective are allowance two.",
+      "Register business under VAT, keep upto date with new regulations in UAE",
+    link: "/",
   },
 ];
 
@@ -67,12 +69,13 @@ const ServicesHome = () => {
 
             <div className="col-lg-6">
               <div className="row mt-40 mt-lg-0">
-                {serviceData.map(({ title, image, description }) => {
+                {serviceData.map(({ title, image, description, link }) => {
                   return (
                     <ServiceCard
                       title={title}
                       image={image}
                       description={description}
+                      link={link}
                       key={title}
                     />
                   );

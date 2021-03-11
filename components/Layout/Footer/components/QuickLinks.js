@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const QuickLinks = () => {
   return (
@@ -15,22 +16,19 @@ const QuickLinks = () => {
           {/* Menu Begin */}
           <ul className="menu">
             <li>
-              <a href="#">About Company</a>
+              <Link href="/dubai-business-setup-about-jbz">About JBZ</Link>
             </li>
             <li>
-              <a href="#">Our Services</a>
+              <Link href="/business-setup-pro-services">Services We Offer</Link>
             </li>
             <li>
-              <a href="#">Our Experts</a>
+              <Link href="/contact">Contact Us</Link>
             </li>
             <li>
-              <a href="#">Get Constultation</a>
+              <Link href="/dubai-business-setup-blogs">Blog</Link>
             </li>
             <li>
-              <a href="#">Terms & Condition</a>
-            </li>
-            <li>
-              <a href="#">Privacy policy</a>
+              <Link href="/">Privacy policy</Link>
             </li>
           </ul>
           {/* Menu End */}

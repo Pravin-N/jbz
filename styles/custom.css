@@ -2,11 +2,11 @@ body,
 .header .header-main.style--one .main-menu .nav li ul,
 .header .header-main.sticky,
 .offcanvas-wrapper {
-  background-color: #18191b;
+  background-color: #0e1012;
 }
 
 .l-gray {
-  background-color: #202125;
+  background-color: #18191b;
 }
 
 .footer {
@@ -28,7 +28,7 @@ body,
 
 .about-nav-tab .nav-tabs .nav-link,
 .pricing-navtab .nav-tabs .nav-link {
-  background-color: #1d1e22;
+  background-color: #0e1012;
   border-color: #fff;
 }
 
@@ -37,7 +37,7 @@ body,
 .single-project-item .single-team-member .team-info .info-front,
 .single-team-member .team-info .info-front,
 .single-team-member .team-info .info-back {
-  background-color: #1d1e22;
+  background-color: #0e1012;
 }
 
 .cls-1 {
@@ -127,4 +127,87 @@ body,
 
 .nav li a:hover {
   color: #ec4d37 !important;
+}
+
+.single-process.text-center {
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%) !important;
+}
+
+.single-process.text-center .content {
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+li h6 {
+  font-weight: 200;
+}
+
+.single-team-member .team-info .info-front,
+.single-team-member .team-info .info-back {
+  padding: 20px 25px;
+}
+
+.pricing-navtab .nav-tabs .nav-link {
+  padding: 20px;
+}
+
+.pricing-navtab .nav-tabs .nav-link h2 {
+  font-size: 30px;
+}
+
+.cta-content h3 {
+  line-height: 1.5;
+}
+
+.clogo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.single-brand-logo {
+  padding: 20px;
+  margin: 0 auto !important;
+}
+
+.brand-logo img {
+  opacity: 1;
+}
+
+/* @media only screen and (min-width: 768px) { */
+div.brand-logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* } */
+
+div.row.member {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.single-team-member .image {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.row.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* div.row.footer .col-sm-6 {
+  padding-left: 30px;
+  padding-right: 30px;
+} */
+
+@media (min-width: 768px) {
+  div.row.footer .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 33%;
+  }
 }

@@ -5,7 +5,7 @@ const Testimonials = () => {
     <>
       {/* Testimonial Begin */}
       <section
-        className="pt-120 pb-120 section-pattern"
+        className="pt-120 pb-120 section-pattern l-gray"
         data-bg-img="assets/img/section-pattern/testimonial-pattern.png"
       >
         <div className="container">
@@ -13,13 +13,13 @@ const Testimonials = () => {
             <div className="col-12">
               {/* Section Title Begin */}
               <div className="section-title text-center">
-                <h3>Testimonial</h3>
-                <h2>Our Happy Client Tell About Us</h2>
+                <h3>Testimonials</h3>
+                <h2>What our clients say about us.</h2>
                 <p>
-                  It bachelor cheerful of mistaken. Tore has sons put upon wife
-                  use bred seen. Its dissimilar invitation ten has discretion
-                  unreserved. Had you him humoured jointure ask expenses
-                  learning.
+                  Aspiring entrepreneurs entrust us with the responsibility of
+                  business setup in Dubai and other govt related work. We strive
+                  hard to make sure our clients are happy with the service and
+                  results.
                 </p>
               </div>
               {/* Section Title End */}
@@ -53,14 +53,16 @@ const Testimonials = () => {
                     {/* Testimonial Content Begin */}
                     <div className="testimonial-content">
                       <p>
-                        Mr acuteness we as estimable enjoyment up. An held late
-                        as felt know. Learn do allow solid to grave. In
-                        Middleton suspicion age her attention. Chiefly several
-                        bed its wishing.
+                        Just Business helped us immensely in setting up our
+                        business in Dubai. Right from incorporation,
+                        registration and licensing to establishing your office
+                        space. They have Strong commitment to high quality
+                        professionalism, comprehensive capability across varied
+                        segments of disciplines. I would highly recommend them
+                        for all your business setup needs.
                       </p>
-
                       <h4>Albert Knick</h4>
-                      <span>Businessman</span>
+                      <span>Dream Home Cleaning Services LLC</span>
                     </div>
                     {/* Testimonial Content End */}
                   </div>
@@ -87,11 +89,14 @@ const Testimonials = () => {
                     {/* Testimonial Content Begin */}
                     <div className="testimonial-content">
                       <p>
-                        Mr acuteness we as estimable enjoyment up. An held late
-                        as felt know. Learn do allow solid to grave.
+                        Highly satisfied with the experienced consultation for
+                        business setup. The professionalism, honesty, knowledge,
+                        experience, and most importantly the rates/charges are
+                        transparent and affordable. Definitely recommend for PRO
+                        services as well.
                       </p>
 
-                      <h4>Shah Irani Sojeeb</h4>
+                      <h4>Zeeshan Ahmed</h4>
                       <span>XDR Owner</span>
                     </div>
                     {/* Testimonial Content End */}
@@ -119,13 +124,80 @@ const Testimonials = () => {
                     {/* Testimonial Content Begin */}
                     <div className="testimonial-content">
                       <p>
-                        Mr acuteness we as estimable enjoyment up. An held late
-                        as felt know. Learn do allow solid to grave. In
-                        Middleton suspicion age her attention. Chiefly several
-                        bed its wishing.
+                        We have been using this Just Business company for some
+                        years now and we have found both professionalism and
+                        great service within this firm. We highly recommend them
+                        to any individual or company who is looking to get their
+                        business setup off on the right start. Thank you!!
                       </p>
 
-                      <h4>Emran Bikewala</h4>
+                      <h4>Laura Valenteina</h4>
+                      <span>Business Magnet</span>
+                    </div>
+                    {/* Testimonial Content End */}
+                  </div>
+                </div>
+              </div>
+              <div className="single-testimonial-slide carousel-item">
+                <div className="row align-items-center">
+                  <div className="col-md-5">
+                    {/* Testimonial Image Begin */}
+                    <div className="testimonial-image mb-50 mb-md-0">
+                      <img
+                        src="assets/img/testimonial/testimonial-3.png"
+                        data-rjs="2"
+                        alt=""
+                      />
+                    </div>
+                    {/* Testimonial Image End */}
+                  </div>
+
+                  <div className="col-md-7">
+                    {/* Testimonial Content Begin */}
+                    <div className="testimonial-content">
+                      <p>
+                        Just business has been utmost professional and efficient
+                        with everything they've done for my company. From the
+                        very moment I met them, they understood everything and
+                        got it done so smoothly and effortlessly, all in a very
+                        short time period. It also helped knowing that they've
+                        helped set up other well known companies. This is all
+                        because of the very kind staff. Definitely a place I'd
+                        recommend to any start up. Very happy with them!
+                      </p>
+
+                      <h4>Qamar Abbasi</h4>
+                      <span>Business Magnet</span>
+                    </div>
+                    {/* Testimonial Content End */}
+                  </div>
+                </div>
+              </div>
+              <div className="single-testimonial-slide carousel-item">
+                <div className="row align-items-center">
+                  <div className="col-md-5">
+                    {/* Testimonial Image Begin */}
+                    <div className="testimonial-image mb-50 mb-md-0">
+                      <img
+                        src="assets/img/testimonial/testimonial-3.png"
+                        data-rjs="2"
+                        alt=""
+                      />
+                    </div>
+                    {/* Testimonial Image End */}
+                  </div>
+
+                  <div className="col-md-7">
+                    {/* Testimonial Content Begin */}
+                    <div className="testimonial-content">
+                      <p>
+                        I have 5 companies and wanted someone to take care of my
+                        Government Related work. Could not find more
+                        satisfactory people to take care of all my works. Great
+                        Service!
+                      </p>
+
+                      <h4>Sonal Parag</h4>
                       <span>Business Magnet</span>
                     </div>
                     {/* Testimonial Content End */}

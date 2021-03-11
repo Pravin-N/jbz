@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
+import Link from "next/link";
 
+// TODO: change the see more button link to the page about us.
 const AboutHome = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -16,16 +18,18 @@ const AboutHome = () => {
             <div className="col-lg-7">
               {/* Section Title Begin */}
               <div className="section-title">
-                <h3>About Agency</h3>
+                <h3>Why Choose Just Business?</h3>
                 <h2>
-                  We’re Expertise & <br />
-                  Strategic Agency To Take <br />
-                  Care Of Your Business
+                  Over 10 yrs of Experience&nbsp;
+                  <br />
+                  in Business Setup in UAE,&nbsp;
+                  <br />
+                  You're in Safe hands.
                 </h2>
                 <p>
-                  Met defective are allowance two perceived listening consulted
-                  contained. It chicken oh colonel pressed excited suppose to
-                  shortly.
+                  Having helped 100's of entrepreneurs get the necessary
+                  approvals and license to start their businesses, we have
+                  extensive expertise in business setup in UAE.
                 </p>
               </div>
               {/* Section Title End */}
@@ -49,11 +53,11 @@ const AboutHome = () => {
                     <a
                       className="nav-link"
                       data-toggle="tab"
-                      href="#vission"
+                      href="#vision"
                       role="tab"
                       aria-selected="false"
                     >
-                      Our Vission
+                      Our Vision
                     </a>
                   </li>
                 </ul>
@@ -68,53 +72,57 @@ const AboutHome = () => {
                     role="tabpanel"
                   >
                     <p>
-                      Surprise not wandered speedily husbands although yet end.
-                      Are court tiled cease young built fat one man taken. We
-                      highest ye friends is exposed equally in. Ignorant had too
-                      strictly followed.
+                      For us our clients comes first. We adapt ourselves to the
+                      needs of our clients. We tailor our service as per the
+                      requirements laid out by our clients. We provide extensive
+                      services that make working with us easy and simple for
+                      you.
                     </p>
-
                     <ul className="list-unstyled list-check">
                       <li>
                         <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                        Become successful & superior
+                        Service level that beats our competitors in the
+                        industry.
                       </li>
                       <li>
-                        <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                        Provide quick & good solution for business
+                        <i className="fa fa-check" aria-hidden="true"></i> One
+                        stop shop for all business setup needs in UAE.
                       </li>
                     </ul>
-
-                    <a href="#" className="btn">
-                      <span>SEE MORE</span>
-                    </a>
+                    <Link href="/dubai-business-setup-about-jbz">
+                      <a className="btn">
+                        <span>LEARN MORE</span>
+                      </a>
+                    </Link>
                   </div>
                   {/* Mission Tab End */}
 
                   {/* Vission Tab Begin */}
-                  <div className="tab-pane fade" id="vission" role="tabpanel">
+                  <div className="tab-pane fade" id="vision" role="tabpanel">
                     <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum is that it
-                      has a more-or-less normal distribution of letters.
+                      Our vision is to become best in the industry for business
+                      setup services in UAE. With our growing experience we want
+                      to provide our clients all the relevant and correct
+                      information as quickly as possible.
                     </p>
 
                     <ul className="list-unstyled list-check">
                       <li>
                         <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                        Become successful & superior
+                        Maintain service level of excellence that dwarfs others.
                       </li>
                       <li>
-                        <i className="fa fa-check" aria-hidden="true"></i>{" "}
-                        Provide quick & good solution for business
+                        <i className="fa fa-check" aria-hidden="true"></i> Make
+                        the business setup process for entrepreneurs as simple
+                        as possible.
                       </li>
                       {/* <li><i className="fa fa-check" aria-hidden="true"></i> Customer dossier</li> */}
                     </ul>
-
-                    <a href="#" className="btn">
-                      <span>SEE MORE</span>
-                    </a>
+                    <Link href="/dubai-business-setup-about-jbz">
+                      <a className="btn">
+                        <span>LEARN MORE</span>
+                      </a>
+                    </Link>
                   </div>
                   {/* Vission Tab End */}
                 </div>
@@ -124,11 +132,13 @@ const AboutHome = () => {
             </div>
             <div className="col-lg-5 video-area mt-50 mt-lg-0">
               <img
-                src="assets/img/section-bg/about-feature.png"
+                src="/assets/img/section-bg/about jb business setup in dubai.webp"
                 data-rjs="2"
-                alt=""
+                alt="About just business mission and vision"
+                height="805"
+                width="1003"
               />
-              <ModalVideo
+              {/* <ModalVideo
                 channel="youtube"
                 autoplay
                 isOpen={isOpen}
@@ -142,7 +152,7 @@ const AboutHome = () => {
               >
                 <img src="assets/img/icons/play.svg" className="svg" alt="" />{" "}
                 Watch Video
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

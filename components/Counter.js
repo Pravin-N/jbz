@@ -13,7 +13,7 @@ const Counter = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-counter text-center text-white">
                 <h2 className="count">
-                  <CountUp end={15} redraw={true}>
+                  <CountUp end={10} redraw={true} suffix="+">
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span ref={countUpRef} />
@@ -30,7 +30,7 @@ const Counter = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-counter text-center text-white">
                 <h2 className="count">
-                  <CountUp end={1250} redraw={true} suffix="+">
+                  <CountUp end={200} redraw={true} suffix="+">
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span ref={countUpRef} />
@@ -47,7 +47,7 @@ const Counter = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-counter text-center text-white">
                 <h2 className="count">
-                  <CountUp end={1} redraw={true} suffix="k+">
+                  <CountUp end={3} redraw={true} suffix="">
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span ref={countUpRef} />
@@ -55,7 +55,7 @@ const Counter = () => {
                     )}
                   </CountUp>
                 </h2>
-                <p>Project Done</p>
+                <p>Business Centers</p>
               </div>
             </div>
             {/* End Single Counter */}
@@ -64,7 +64,7 @@ const Counter = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="single-counter text-center text-white">
                 <h2 className="count">
-                  <CountUp end={100} redraw={true} suffix="+">
+                  <CountUp end={1000} redraw={true} suffix="+">
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span ref={countUpRef} />
@@ -72,7 +72,7 @@ const Counter = () => {
                     )}
                   </CountUp>
                 </h2>
-                <p>Giving Consultancy</p>
+                <p>Visas Completed</p>
               </div>
             </div>
             {/* End Single Counter */}

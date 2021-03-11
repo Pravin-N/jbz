@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const TeamMember = ({
   name,
@@ -16,8 +17,8 @@ const TeamMember = ({
       <div className="single-team-member">
         {/* Team Image Begin */}
         <div className="image position-relative">
-          <img src={svg} className="svg" alt="" />
-          <img src={image} data-rjs="2" alt="" />
+          {/* <img src={svg} className="svg" alt="" /> */}
+          <Image src={image} alt="" width="348" height="283" quality="90" />
         </div>
         {/* Team Image End */}
 
@@ -35,11 +36,11 @@ const TeamMember = ({
                   <i className="fa fa-facebook" aria-hidden="true"></i>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href={twitter}>
                   <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href={linkedin}>
                   <i className="fa fa-linkedin" aria-hidden="true"></i>

@@ -16,9 +16,9 @@ const Footer = () => {
         {/* Footer Top Begin */}
         <div className="footer-top pt-60">
           <div className="container border-bottom">
-            <div className="row">
+            <div className="row footer">
               <ContactInfo />
-              <RecentPosts />
+              {/* <RecentPosts /> */}
               <QuickLinks />
               <Newsletter />
             </div>

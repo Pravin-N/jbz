@@ -15,9 +15,9 @@ const Newsletter = () => {
 
           <div className="newsletter-content">
             <p>
-              Cuteness you exquisite ourselves now end forfeited. Enquire ye
-              without it garrets himself. Interest our nor received followed
-              was.
+              Get the latest updates about business setup in UAE and our blogs
+              on a weekly basis. Contact us via the phone or email if you need
+              to get a free quote.
             </p>
 
             <form
