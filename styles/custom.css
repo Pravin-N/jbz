@@ -211,3 +211,11 @@ div.row.footer {
     max-width: 33%;
   }
 }
+
+.row.service-card {
+  justify-content: center;
+}
+
+.row .about-text p {
+  text-align: justify;
+}

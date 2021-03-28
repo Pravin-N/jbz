@@ -8,6 +8,7 @@ const featureData = [
       "Get a business license in Mainland Dubai and still control 100% of the ownership and have trusted local partner",
     image: "/assets/img/feature/dubai Mainland license.jpg",
     alt: "Mainland Business Setup in Dubai",
+    id: "how-to-get-a-business-license-in-mainland-dubai",
   },
   {
     title: "Freezone License",
@@ -15,6 +16,7 @@ const featureData = [
       "Freezones licenses offer more control and benefits than the Mainland. Get a business license in any of the freezones across UAE",
     image: "/assets/img/feature/freezone business license.jpg",
     alt: "Freezone Business Setup in Dubai",
+    id: "how-to-get-a-business-license-in-freezone-dubai",
   },
   {
     title: "Offshore License",
@@ -22,6 +24,7 @@ const featureData = [
       "Businesses registered outside UAE can easily open an offshore company in UAE to protect assets & intellectual property",
     image: "/assets/img/feature/offshore business license.jpg",
     alt: "Offshore Business Setup in Dubai",
+    id: "how-to-get-A-offshore-license-in-uae",
   },
 ];
 
@@ -42,14 +45,15 @@ const Features = () => {
         </div>
         <div className="container">
           <div className="row justify-content-center">
-            {featureData.map(({ title, text, image, alt }) => {
+            {featureData.map(({ title, text, image, alt, id }) => {
               return (
                 <Feature
                   title={title}
                   text={text}
-                  key={title}
+                  key={id}
                   image={image}
                   alt={alt}
+                  id={id}
                 />
               );
             })}

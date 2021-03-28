@@ -4,7 +4,7 @@ const WhoAreWe = () => {
   return (
     <>
       {/* About Section Begin */}
-      <section className="pt-120 pb-120">
+      <section className="pt-120 pb-120 l-gray">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -12,14 +12,14 @@ const WhoAreWe = () => {
               <div className="section-title text-center">
                 <h3>Who We Are</h3>
                 <h2>
-                  We’re Expertise & Strategic Agency <br />
-                  To Take Care Of Your Business
+                  We are experts in business setup, PRO services <br />& other
+                  support services in Dubai, UAE.
                 </h2>
-                <p>
+                {/* <p>
                   Met defective are allowance two perceived listening consulted
                   contained. It chicken oh colonel pressed excited suppose to
                   shortly.
-                </p>
+                </p> */}
               </div>
               {/* Section Title End */}
             </div>
@@ -35,17 +35,18 @@ const WhoAreWe = () => {
             <div className="col-lg-10">
               <div className="about-text mt-5">
                 <p>
-                  At as in understood an remarkably solicitude. Mean them very
-                  seen she she. Use totally written the observe pressed justice.
-                  Instantly cordially far intention recommend estimable yet her
-                  his. Ladies stairs enough esteem add fat all enable. Needed
-                  its design number winter see. Oh be me sure wise sons no.
-                  Piqued ye of am spirit regret. Stimulated discretion
-                  impossible admiration in particular conviction up. Pasture he
-                  invited mr company shyness. But when shot real her. Chamber
-                  her observe visited removal six sending himself boy. At
-                  exquisite existence if an oh dependent excellent. Are gay head
-                  need down draw.
+                  JBZ consultants is a one-stop destination for all your
+                  business startup needs. Established in 2009, we have more than
+                  10 years of experience in business setup. We offer a wide
+                  range of services designed to accommodate our client
+                  requirements. Just Business Corporate Services has proudly
+                  served a wide selection of clients from banks, general trading
+                  companies to real estate firms. We are always committed to
+                  offering the best customer service to our clients. Our
+                  professionals are expertly skilled to present the right
+                  information as fast as possible. We have teamed with numerous
+                  companies from other service sectors to provide supplementary
+                  services to our clients.
                 </p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-const Feature = ({ title, text, image, alt }) => {
+const Feature = ({ title, text, image, alt, id }) => {
   return (
     <div className="col-lg-4 col-md-6">
       {/* Single Feature Begin */}
@@ -13,7 +14,12 @@ const Feature = ({ title, text, image, alt }) => {
 
         {/* Feature Content Begin */}
         <div className="content">
-          <h3>{title}</h3>
+          <Link href={"/dubai-business-setup-blogs/" + id}>
+            <a>
+              <h3>{title}</h3>
+            </a>
+          </Link>
+
           <p>{text}</p>
         </div>
         {/* Feature Content End */}

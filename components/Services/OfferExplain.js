@@ -4,23 +4,24 @@ const OfferExplain = () => {
   return (
     <>
       {/* Service Section Begin */}
-      <section className="pt-120 pb-120">
+      <section className="pt-120 pb-120 l-gray">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               {/* Section Title Begin */}
               <div className="section-title mb-4">
-                <h3>What we offer</h3>
+                <h3>What We Offer</h3>
                 <h2>
-                  Wide Range of Result Oriented Leadership Support Services
+                  We offer a wide range of services to help you get your
+                  business up and running
                 </h2>
                 <p>
-                  Enjoyed minutes related on .fanny dried as often me. Goodness
-                  as reserved raptures to mistaken steepest oh he. Gravity he mr
-                  sixteen esteems. Mile home new way with high said. Finished
-                  horrible blessing landlord dwelling dissuade if. Rent fond am
-                  he in on read. Anxious cordial demands settled entered in do
-                  to colonel landlord dwelling dissuade.{" "}
+                  From getting a business license for any business activity in
+                  Dubai, UAE to getting visas for employees or flexi desk to
+                  meet the office requirements. We make these process easier for
+                  any aspiring entrepreneur. Our services are tailored as per
+                  your requirements and our aim is to provide the best services
+                  in the industry.{" "}
                 </p>
               </div>
               {/* Section Title End */}
@@ -28,16 +29,16 @@ const OfferExplain = () => {
               {/* About Feature List Begin */}
               <ul className="list-unstyled list-check">
                 <li>
-                  <i className="fa fa-check" aria-hidden="true"></i> Become
-                  successful & superior
+                  <i className="fa fa-check" aria-hidden="true"></i> Quick
+                  turnaround time for any service.
                 </li>
                 <li>
-                  <i className="fa fa-check" aria-hidden="true"></i> Provide
-                  quick & good solution for business
+                  <i className="fa fa-check" aria-hidden="true"></i> Tailor made
+                  solutions for your business.
                 </li>
                 <li>
-                  <i className="fa fa-check" aria-hidden="true"></i> Use
-                  opportunities to boost sales
+                  <i className="fa fa-check" aria-hidden="true"></i> Best in the
+                  industry business setup services.
                 </li>
               </ul>
               {/* About Feature List End */}

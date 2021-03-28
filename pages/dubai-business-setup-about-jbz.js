@@ -1,22 +1,23 @@
 import PageHeader from "../components/PageHeader";
 import WhoAreWe from "../components/About/WhoAreWe";
-import Mission from "../components/About/Mission";
-import Vision from "../components/About/Vision";
+// import Mission from "../components/About/Mission";
+import WhyChooseUs from "../components/About/WhyChooseUs";
 import Counter from "../components/Counter";
 import Testimonials from "../components/Testimonials";
 import ClientsLogo from "../components/ClientsLogo";
 import Meta from "../components/Layout/Meta";
+import AboutHome from "../components/Home/AboutHome";
 
 const AboutJbz = () => {
   return (
     <>
       <PageHeader />
       <WhoAreWe />
-      <Mission />
-      <Vision />
+      <AboutHome />
+      {/* <Mission /> */}
+      <WhyChooseUs />
 
       <Counter />
-
       <Testimonials />
       <ClientsLogo />
     </>

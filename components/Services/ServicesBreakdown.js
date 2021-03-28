@@ -10,23 +10,23 @@ const ServicesBreakdown = () => {
             <div className="col-12">
               {/* Section Title Begin */}
               <div className="section-title text-center">
-                <h3>Service</h3>
+                <h3>Our Services</h3>
                 <h2>
-                  We’re Providing Best Solutions
-                  <br />
-                  For Your Business
+                  Best in the industry business setup & PRO services.
+                  {/* <br />
+                  For Your Business */}
                 </h2>
-                <p>
+                {/* <p>
                   We highest ye friends is exposed equally in. Ignorant had too
                   strictly followed. Astonished as travelling assistance or
                   unreserved oh pianoforte ye.
-                </p>
+                </p> */}
               </div>
               {/* Section Title End */}
             </div>
           </div>
 
-          <div className="row">
+          <div className="row service-card">
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Begin */}
               <div className="single-service text-center">
@@ -42,10 +42,9 @@ const ServicesBreakdown = () => {
 
                 {/* Content Begin */}
                 <div className="content">
-                  <h4>Financial Planning</h4>
+                  <h4>Business Setup</h4>
                   <p>
-                    Saved he do fruit woody of to. Met defective are allowance
-                    two.
+                    Any business license anywhere in UAE. Mainland or Freezone.
                   </p>
                   <a href="#" className="btn-inline">
                     Read More
@@ -70,11 +69,8 @@ const ServicesBreakdown = () => {
 
                 {/* Content Begin */}
                 <div className="content">
-                  <h4>Advanced Analytics</h4>
-                  <p>
-                    {" "}
-                    Simplicity the far admiration preference thing.Up home head.
-                  </p>
+                  <h4>PRO Services</h4>
+                  <p> Visa for employees and other govt related approvals</p>
                   <a href="#" className="btn-inline">
                     Read More
                   </a>
@@ -98,10 +94,10 @@ const ServicesBreakdown = () => {
 
                 {/* Content Begin */}
                 <div className="content">
-                  <h4>Market Research</h4>
+                  <h4>Business Center</h4>
                   <p>
-                    Front no party young abode state up. Saved he do fruit woody
-                    of to.
+                    Hire office desks, cabins to full fledged office with
+                    meeting rooms.
                   </p>
                   <a href="#" className="btn-inline">
                     Read More
@@ -126,10 +122,10 @@ const ServicesBreakdown = () => {
 
                 {/* Content Begin */}
                 <div className="content">
-                  <h4>Business Campaign</h4>
+                  <h4>VAT Registration</h4>
                   <p>
-                    He improve started no we manners however effects. Prospect
-                    humoured.
+                    Register business under VAT, keep upto date with new
+                    regulations in UAE
                   </p>
                   <a href="#" className="btn-inline">
                     Read More
@@ -139,21 +135,21 @@ const ServicesBreakdown = () => {
               </div>
               {/* Single Service End */}
             </div>
-            <div className="col-lg-4 col-sm-6">
-              {/* Single Service Begin */}
-              <div className="single-service text-center">
-                {/* Icon Begin */}
-                <div className="icon">
+            {/* <div className="col-lg-4 col-sm-6"> */}
+            {/* Single Service Begin */}
+            {/* <div className="single-service text-center"> */}
+            {/* Icon Begin */}
+            {/* <div className="icon">
                   <img
                     src="assets/img/icons/service-5.png"
                     data-rjs="2"
                     alt=""
                   />
-                </div>
-                {/* Icon End  */}
+                </div> */}
+            {/* Icon End  */}
 
-                {/* Content Begin */}
-                <div className="content">
+            {/* Content Begin */}
+            {/* <div className="content">
                   <h4>Sales & Trading</h4>
                   <p>
                     Grave widow hours among him ﻿no you led. Power had met least
@@ -162,26 +158,26 @@ const ServicesBreakdown = () => {
                   <a href="#" className="btn-inline">
                     Read More
                   </a>
-                </div>
-                {/* Content End */}
-              </div>
-              {/* Single Service End */}
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              {/* Single Service Begin */}
-              <div className="single-service text-center">
-                {/* Icon Begin */}
-                <div className="icon">
+                </div> */}
+            {/* Content End */}
+            {/* </div> */}
+            {/* Single Service End */}
+            {/* </div> */}
+            {/* <div className="col-lg-4 col-sm-6"> */}
+            {/* Single Service Begin */}
+            {/* <div className="single-service text-center"> */}
+            {/* Icon Begin */}
+            {/* <div className="icon">
                   <img
                     src="assets/img/icons/service-6.png"
                     data-rjs="2"
                     alt=""
                   />
-                </div>
-                {/* Icon End  */}
+                </div> */}
+            {/* Icon End  */}
 
-                {/* Content Begin */}
-                <div className="content">
+            {/* Content Begin */}
+            {/* <div className="content">
                   <h4>Saving Strategy</h4>
                   <p>
                     Be ignorant so of suitable dissuade weddings together. Least
@@ -190,11 +186,11 @@ const ServicesBreakdown = () => {
                   <a href="#" className="btn-inline">
                     Read More
                   </a>
-                </div>
-                {/* Content End */}
-              </div>
-              {/* Single Service End */}
-            </div>
+                </div> */}
+            {/* Content End */}
+            {/* </div> */}
+            {/* Single Service End */}
+            {/* </div> */}
           </div>
         </div>
       </section>

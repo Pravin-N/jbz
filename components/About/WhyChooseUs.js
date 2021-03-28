@@ -1,10 +1,10 @@
 import React from "react";
 
-const Vision = () => {
+const WhyChooseUs = () => {
   return (
     <>
       {/* About Section Begin */}
-      <section className="pt-120 pb-120">
+      <section className="pt-120 pb-120 l-gray">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -19,22 +19,26 @@ const Vision = () => {
             <div className="col-lg-6">
               {/* Section Title Begin */}
               <div className="section-title mb-4 mt-50 mt-lg-0">
-                <h3>Our Vision</h3>
+                <h3>Why Choose Just Business</h3>
                 <h2>
-                  Our Vision Is To Provide <br />
-                  Best Solution For Client
+                  Understanding the needs of our clients and catering to those
+                  needs is our top most priority at Just Business.
+                  <br />
                 </h2>
                 <p>
-                  Cordially convinced did incommode existence put out suffering
-                  certainly. Besides another and saw ferrars limited ten say
-                  unknown. On at tolerably depending do perceived. Luckily eat
-                  joy see own shyness minuter.
+                  At Just Business, we come to work everyday because we want to
+                  help people like yourself set up their business without any
+                  hassles. You know your business and we would like to focus on
+                  that. Any information you need on where to set up a business,
+                  the rules of the region, the costs involved, the process and
+                  timeline is all available with us and we have the expertise to
+                  execute the same with ease.
                 </p>
               </div>
               {/* Section Title End */}
 
               {/* About Feature List Begin */}
-              <ul className="list-unstyled list-check">
+              {/* <ul className="list-unstyled list-check">
                 <li>
                   <i className="fa fa-check" aria-hidden="true"></i> Become
                   successful & superior
@@ -51,7 +55,7 @@ const Vision = () => {
                   <i className="fa fa-check" aria-hidden="true"></i> Planning &
                   executing projects
                 </li>
-              </ul>
+              </ul> */}
               {/* About Feature List End */}
             </div>
           </div>
@@ -62,4 +66,4 @@ const Vision = () => {
   );
 };
 
-export default Vision;
+export default WhyChooseUs;
