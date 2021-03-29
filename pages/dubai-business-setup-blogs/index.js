@@ -3,7 +3,24 @@ import SingleBlogCard from "../../components/Blogs/SingleBlogCard";
 import Pagination from "../../components/Blogs/Pagination";
 import SideBar from "../../components/SideBar";
 
-const Blogs = () => {
+let client = require("contentful").createClient({
+  space: process.env.NEXT_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
+});
+
+export async function getStaticProps() {
+  let data = await client.getEntries({
+    content_type: "jbzBlog",
+  });
+  return {
+    props: {
+      articles: data.items,
+    },
+  };
+}
+
+const Blogs = ({ articles }) => {
+  console.log(articles);
   return (
     <>
       {/* Page Title Begin TODO use the page header*/}
@@ -35,7 +52,12 @@ const Blogs = () => {
           <div className="row">
             <div className="col-lg-8">
               <div className="row">
-                <SingleBlogCard />
+                {articles.map((article) => (
+                  <SingleBlogCard
+                    article={article}
+                    key={article.fields.title}
+                  />
+                ))}
 
                 <Pagination />
               </div>
