@@ -8,7 +8,7 @@ const Feature = ({ title, text, image, alt, id }) => {
       <div className="single-feature text-center">
         {/* Feature Image Begin */}
         <div className="image">
-          <Image src={image} height="263" width="350" data-rjs="2" alt={alt} />
+          <Image src={"https:" + image} height="263" width="350" data-rjs="2" alt={alt} />
         </div>
         {/* Feature Image End */}
 

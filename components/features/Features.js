@@ -1,34 +1,35 @@
 import Feature from "./Feature";
 
 // TODO: replace the text
-const featureData = [
-  {
-    title: "Mainland License",
-    text:
-      "Get a business license in Mainland Dubai and still control 100% of the ownership and have trusted local partner",
-    image: "/assets/img/feature/dubai Mainland license.jpg",
-    alt: "Mainland Business Setup in Dubai",
-    id: "how-to-get-a-business-license-in-mainland-dubai",
-  },
-  {
-    title: "Freezone License",
-    text:
-      "Freezones licenses offer more control and benefits than the Mainland. Get a business license in any of the freezones across UAE",
-    image: "/assets/img/feature/freezone business license.jpg",
-    alt: "Freezone Business Setup in Dubai",
-    id: "how-to-get-a-business-license-in-freezone-dubai",
-  },
-  {
-    title: "Offshore License",
-    text:
-      "Businesses registered outside UAE can easily open an offshore company in UAE to protect assets & intellectual property",
-    image: "/assets/img/feature/offshore business license.jpg",
-    alt: "Offshore Business Setup in Dubai",
-    id: "how-to-get-A-offshore-license-in-uae",
-  },
-];
+// const featureData = [
+//   {
+//     title: "Mainland License",
+//     text:
+//       "Get a business license in Mainland Dubai and still control 100% of the ownership and have trusted local partner",
+//     image: "/assets/img/feature/dubai Mainland license.jpg",
+//     alt: "Mainland Business Setup in Dubai",
+//     id: "how-to-get-a-business-license-in-mainland-dubai",
+//   },
+//   {
+//     title: "Freezone License",
+//     text:
+//       "Freezones licenses offer more control and benefits than the Mainland. Get a business license in any of the freezones across UAE",
+//     image: "/assets/img/feature/freezone business license.jpg",
+//     alt: "Freezone Business Setup in Dubai",
+//     id: "how-to-get-a-business-license-in-freezone-dubai",
+//   },
+//   {
+//     title: "Offshore License",
+//     text:
+//       "Businesses registered outside UAE can easily open an offshore company in UAE to protect assets & intellectual property",
+//     image: "/assets/img/feature/offshore business license.jpg",
+//     alt: "Offshore Business Setup in Dubai",
+//     id: "how-to-get-A-offshore-license-in-uae",
+//   },
+// ];
 
-const Features = () => {
+const Features = ({ features }) => {
+  console.log(features)
   return (
     <>
       {/* Feature Begin */}
@@ -45,15 +46,15 @@ const Features = () => {
         </div>
         <div className="container">
           <div className="row justify-content-center">
-            {featureData.map(({ title, text, image, alt, id }) => {
+            {features.map((feature) => {
               return (
                 <Feature
-                  title={title}
-                  text={text}
-                  key={id}
-                  image={image}
-                  alt={alt}
-                  id={id}
+                  title={feature.fields.shortTitle}
+                  text={feature.fields.shortText}
+                  key={feature.sys.id}
+                  image={feature.fields.shortImage.fields.file.url}
+                  alt={feature.fields.altText}
+                  id={feature.fields.slug}
                 />
               );
             })}

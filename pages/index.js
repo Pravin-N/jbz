@@ -14,12 +14,28 @@ import CTASection from "../components/CTASection";
 // import BlogHome from "../components/Home/BlogHome";
 import ClientsLogo from "../components/ClientsLogo";
 
-export default function Home() {
+let client = require("contentful").createClient({
+  space: process.env.NEXT_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
+});
+
+export async function getStaticProps() {
+  let data = await client.getEntries({
+    content_type: "jbzFeatures",
+  });
+  return {
+    props: {
+      features: data.items,
+    },
+  };
+}
+
+export default function Home({ features }) {
   return (
     <>
       <Hero />
       <ModalForm />
-      <Features />
+      <Features features={features} />
       {/* <AboutHome /> */}
       <CTASection />
       <Steps />

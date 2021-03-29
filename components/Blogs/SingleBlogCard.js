@@ -46,8 +46,8 @@ const SingleBlogCard = ({ article }) => {
               Rooms oh fully taken by worse do. To points afraid but may end law
               lasted was out laughter raptures .
             </p>
-            <Link>
-              <a href="#" className="btn-inline">
+            <Link href='#'>
+              <a href="" className="btn-inline">
                 Read More
               </a>
             </Link>

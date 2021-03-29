@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.6.0",
-    "contentful": "^8.2.0",
+    "contentful": "^8.2.1",
     "lottie-web": "^5.7.6",
     "next": "10.0.6",
     "popper.js": "^1.14.7",
