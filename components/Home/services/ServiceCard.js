@@ -14,7 +14,11 @@ const ServiceCard = ({ title, image, description, link }) => {
 
         {/* Content Begin */}
         <div className="content">
-          <h4>{title}</h4>
+          <Link href={link}>
+            <a>
+              <h4>{title}</h4>
+            </a>
+          </Link>
           <p>{description}</p>
           <Link href={link}>
             <a className="btn-inline">Read More</a>

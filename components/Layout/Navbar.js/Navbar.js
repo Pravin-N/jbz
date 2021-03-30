@@ -232,22 +232,22 @@ const Navbar = () => {
                       </Link>
                       <ul className="sub-menu">
                         <li>
-                          <Link href="/single-service">
-                            <a>Business Registration / Licensing</a>
+                          <Link href="/business-setup-pro-services/business-setup-uae">
+                            <a>Business Setup / Licensing</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/single-service">
+                          <Link href="/business-setup-pro-services/business-center-dubai-service">
                             <a>Business Center</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/single-service">
+                          <Link href="/business-setup-pro-services/pro-service">
                             <a>PRO Services</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/single-service">
+                          <Link href="/business-setup-pro-services/vat-registration-service">
                             <a>VAT Registration</a>
                           </Link>
                         </li>

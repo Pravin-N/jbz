@@ -2,7 +2,7 @@ import React from "react";
 import ServiceInfo from "../../components/Service/ServiceInfo";
 import SideBar from "../../components/SideBar";
 
-const Service = () => {
+const BusinessSetup = () => {
   return (
     <>
       {/* Page Title Begin  TODO: Head section to use the page header component*/}
@@ -49,4 +49,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default BusinessSetup;

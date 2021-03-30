@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 
 const ServicesBreakdown = () => {
   return (
@@ -42,13 +43,19 @@ const ServicesBreakdown = () => {
 
                 {/* Content Begin */}
                 <div className="content">
-                  <h4>Business Setup</h4>
+                  <Link href="/business-setup-pro-services/business-setup-uae">
+                    <a>
+                      <h4>Business Setup</h4>
+                    </a>
+                  </Link>
                   <p>
                     Any business license anywhere in UAE. Mainland or Freezone.
                   </p>
-                  <a href="#" className="btn-inline">
-                    Read More
+                  <Link href="/business-setup-pro-services/business-setup-uae">
+                    <a className="btn-inline">
+                      Read More
                   </a>
+                  </Link>
                 </div>
                 {/* Content End */}
               </div>
@@ -69,11 +76,17 @@ const ServicesBreakdown = () => {
 
                 {/* Content Begin */}
                 <div className="content">
-                  <h4>PRO Services</h4>
+                  <Link href="/business-setup-pro-services/pro-service">
+                    <a>
+                      <h4>PRO Services</h4>
+                    </a>
+                  </Link>
                   <p> Visa for employees and other govt related approvals</p>
-                  <a href="#" className="btn-inline">
-                    Read More
+                  <Link href="/business-setup-pro-services/pro-service">
+                    <a className="btn-inline">
+                      Read More
                   </a>
+                  </Link>
                 </div>
                 {/* Content End */}
               </div>
@@ -94,14 +107,20 @@ const ServicesBreakdown = () => {
 
                 {/* Content Begin */}
                 <div className="content">
-                  <h4>Business Center</h4>
+                  <Link href="/business-setup-pro-services/business-center-dubai-service">
+                    <a>
+                      <h4>Business Center</h4>
+                    </a>
+                  </Link>
                   <p>
                     Hire office desks, cabins to full fledged office with
                     meeting rooms.
                   </p>
-                  <a href="#" className="btn-inline">
-                    Read More
-                  </a>
+                  <Link href="/business-setup-pro-services/business-center-dubai-service">
+                    <a className="btn-inline">
+                      Read More
+                    </a>
+                  </Link>
                 </div>
                 {/* Content End */}
               </div>
@@ -122,14 +141,20 @@ const ServicesBreakdown = () => {
 
                 {/* Content Begin */}
                 <div className="content">
-                  <h4>VAT Registration</h4>
+                  <Link href="/business-setup-pro-services/vat-registration-service">
+                    <a>
+                      <h4>VAT Registration</h4>
+                    </a>
+                  </Link>
                   <p>
                     Register business under VAT, keep upto date with new
                     regulations in UAE
                   </p>
-                  <a href="#" className="btn-inline">
-                    Read More
+                  <Link href="/business-setup-pro-services/vat-registration-service">
+                    <a className="btn-inline">
+                      Read More
                   </a>
+                  </Link>
                 </div>
                 {/* Content End */}
               </div>

@@ -7,27 +7,27 @@ const serviceData = [
     title: "Business Setup",
     image: "assets/img/icons/service-1.png",
     description: "Any business license anywhere in UAE. Mainland or Freezone.",
-    link: "/",
+    link: "/business-setup-pro-services/business-setup-uae",
   },
   {
     title: "PRO Services",
     image: "assets/img/icons/service-2.png",
     description: "Visa for employees and other govt related approvals",
-    link: "/",
+    link: "/business-setup-pro-services/pro-service",
   },
   {
     title: "Business Center",
     image: "assets/img/icons/service-3.png",
     description:
       "Hire office desks, cabins to full fledged office with meeting rooms.",
-    link: "/",
+    link: "/business-setup-pro-services/business-center-dubai-service",
   },
   {
     title: "VAT Registration",
     image: "assets/img/icons/service-4.png",
     description:
       "Register business under VAT, keep upto date with new regulations in UAE",
-    link: "/",
+    link: "/business-setup-pro-services/vat-registration-service",
   },
 ];
 
