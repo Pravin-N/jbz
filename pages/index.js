@@ -2,7 +2,7 @@
 import Hero from "../components/Hero/Hero";
 import ModalForm from "../components/ModalForm";
 import Features from "../components/features/Features";
-// import AboutHome from "../components/Home/AboutHome";
+import AboutHome from "../components/Home/AboutHome";
 import Steps from "../components/Home/Steps";
 import ServicesHome from "../components/Home/services/ServicesHome";
 import Counter from "../components/Counter";
@@ -36,7 +36,7 @@ export default function Home({ features }) {
       <Hero />
       <ModalForm />
       <Features features={features} />
-      {/* <AboutHome /> */}
+      <AboutHome />
       <CTASection />
       <Steps />
 

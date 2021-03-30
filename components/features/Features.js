@@ -29,7 +29,6 @@ import Feature from "./Feature";
 // ];
 
 const Features = ({ features }) => {
-  console.log(features)
   return (
     <>
       {/* Feature Begin */}
@@ -54,7 +53,7 @@ const Features = ({ features }) => {
                   key={feature.sys.id}
                   image={feature.fields.shortImage.fields.file.url}
                   alt={feature.fields.altText}
-                  id={feature.fields.slug}
+                  slug={feature.fields.slug}
                 />
               );
             })}

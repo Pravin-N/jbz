@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const AboutHeader = ({ title, background }) => {
+const AboutHeader = ({ header }) => {
   return (
     <>
       {/* Page Title Begin */}
@@ -13,14 +13,14 @@ const AboutHeader = ({ title, background }) => {
           <div className="row">
             <div className="col-12">
               <div className="page-title text-center">
-                <h2>About</h2>
+                <h2>{header}</h2>
                 <ul className="list-inline">
                   <li>
                     <Link href="/">
                       <a>Home</a>
                     </Link>
                   </li>
-                  <li>About</li>
+                  <li>{header}</li>
                 </ul>
               </div>
             </div>

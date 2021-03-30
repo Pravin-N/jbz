@@ -1,6 +1,6 @@
 import React from "react";
-import ServiceInfo from "../components/Service/ServiceInfo";
-import SideBar from "../components/SideBar";
+import ServiceInfo from "../../components/Service/ServiceInfo";
+import SideBar from "../../components/SideBar";
 
 const Service = () => {
   return (

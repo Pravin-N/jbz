@@ -66,12 +66,12 @@ const Sidebar = () => {
           {/* Flicker Widget Begin */}
           <div className="widget widget_flicker">
             {/* Widget Logo Begin */}
-            <div className="widget-title">
+            {/* <div className="widget-title">
               <h4>Latest Blogs</h4>
-            </div>
+            </div> */}
             {/* Widget Logo End */}
 
-            <ul className="d-flex flex-wrap">
+            {/* <ul className="d-flex flex-wrap">
               <li>
                 <a href="#">
                   <img src="assets/img/flicker/f1.png" data-rjs="2" alt="" />
@@ -102,7 +102,7 @@ const Sidebar = () => {
                   <img src="assets/img/flicker/f6.png" data-rjs="2" alt="" />
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
           {/* Flicker Widget End */}
 

@@ -216,6 +216,10 @@ div.row.footer {
   justify-content: center;
 }
 
+.project-image {
+  justify-content: center;
+}
+
 .row .about-text p {
   text-align: justify;
 }

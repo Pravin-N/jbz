@@ -11,7 +11,7 @@ import AboutHome from "../components/Home/AboutHome";
 const AboutJbz = () => {
   return (
     <>
-      <PageHeader />
+      <PageHeader header="About" />
       <WhoAreWe />
       <AboutHome />
       {/* <Mission /> */}
