@@ -1,4 +1,28 @@
 import React from "react";
+import Link from "next/link";
+
+const services = [
+  {
+    name: "Business Setup / Licensing",
+    link: "/business-setup-pro-services/business-setup-uae",
+  },
+  {
+    name: "Business Center",
+    link: "/business-setup-pro-services/business-center-dubai-service",
+  },
+  {
+    name: "PRO Services",
+    link: "/business-setup-pro-services/pro-service",
+  },
+  {
+    name: "VAT Registration",
+    link: "/business-setup-pro-services/vat-registration-service",
+  },
+  {
+    name: "Trademarks & Patent",
+    link: "/business-setup-pro-services/trademarks-patent-service",
+  },
+];
 
 const WidgetLinks = () => {
   return (
@@ -6,27 +30,19 @@ const WidgetLinks = () => {
       {/* Widget Categories Begin */}
       <div className="widget widget_categories">
         <div className="widget-title">
-          <h4>Categories</h4>
+          <h4>Our Services</h4>
         </div>
         <ul>
-          <li>
-            <a href="#">Financial Planning</a>
-          </li>
-          <li>
-            <a href="#">Busines Campaign</a>
-          </li>
-          <li>
-            <a href="#">Advanced Analytics</a>
-          </li>
-          <li>
-            <a href="#">Sales & Trading</a>
-          </li>
-          <li>
-            <a href="#">Saving Strategy</a>
-          </li>
-          <li>
-            <a href="#">Market Research</a>
-          </li>
+          {services.map((service) => {
+            console.log(service);
+            return (
+              <li>
+                <Link href={service.link}>
+                  <a>{service.name}</a>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
       {/* End Categories End */}

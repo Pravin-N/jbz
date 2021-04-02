@@ -1,6 +1,7 @@
 import React from "react";
+import Features from "../../features/Features";
 
-const Tags = () => {
+const Tags = (props) => {
   return (
     <>
       {/* Widget Tag Cloud Begin */}
@@ -9,12 +10,10 @@ const Tags = () => {
           <h4>Tags</h4>
         </div>
         <div className="tagcloud">
-          <a href="#">Finance</a>
-          <a href="#">Business</a>
-          <a href="#">Corporate</a>
-          <a href="#">Sales</a>
-          <a href="#">Marketting</a>
-          <a href="#">Trading</a>
+          {props.tags.map((tag) => {
+            console.log(tag);
+            return <a>{tag}</a>;
+          })}
         </div>
       </div>
       {/* Widget Tag Cloud End */}

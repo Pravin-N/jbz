@@ -1,6 +1,18 @@
 import React from "react";
 import ServiceInfo from "../../components/Service/ServiceInfo";
 import SideBar from "../../components/SideBar";
+import Link from "next/link";
+import CTASection from "../../components/CTASection";
+
+const tags = [
+  "business setup dubai",
+  "UAE",
+  "startup",
+  "mainland",
+  "freezone",
+  "DED",
+  "company formation",
+];
 
 const BusinessSetup = () => {
   return (
@@ -14,15 +26,19 @@ const BusinessSetup = () => {
           <div className="row">
             <div className="col-12">
               <div className="page-title text-center">
-                <h2>Business campaign</h2>
+                <h2>Business Setup in UAE</h2>
                 <ul className="list-inline">
                   <li>
-                    <a href="index.html">Home</a>
+                    <Link href="/">
+                      <a>Home</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <Link href="/business-setup-pro-services">
+                      <a>Services</a>
+                    </Link>
                   </li>
-                  <li>Business campaign</li>
+                  <li>Business Setup</li>
                 </ul>
               </div>
             </div>
@@ -36,7 +52,7 @@ const BusinessSetup = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 order-last order-lg-first">
-              <SideBar />
+              <SideBar tags={tags} />
             </div>
             <div className="col-lg-8">
               <ServiceInfo />
@@ -44,6 +60,7 @@ const BusinessSetup = () => {
           </div>
         </div>
       </section>
+      <CTASection />
       {/* Service details End */}
     </>
   );
