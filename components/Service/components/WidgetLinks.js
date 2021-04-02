@@ -34,7 +34,6 @@ const WidgetLinks = () => {
         </div>
         <ul>
           {services.map((service) => {
-            console.log(service);
             return (
               <li>
                 <Link href={service.link}>

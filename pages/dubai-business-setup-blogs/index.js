@@ -19,8 +19,17 @@ export async function getStaticProps() {
   };
 }
 
+const tags = [
+  "business setup dubai",
+  "UAE",
+  "startup",
+  "mainland",
+  "freezone",
+  "DED",
+  "company formation",
+];
+
 const Blogs = ({ articles }) => {
-  console.log(articles);
   return (
     <>
       {/* Page Title Begin TODO use the page header*/}
@@ -63,7 +72,7 @@ const Blogs = ({ articles }) => {
               </div>
             </div>
             <div className="col-lg-4">
-              <SideBar />
+              <SideBar tags={tags} />
             </div>
           </div>
         </div>

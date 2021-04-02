@@ -251,6 +251,11 @@ const Navbar = () => {
                             <a>VAT Registration</a>
                           </Link>
                         </li>
+                        <li>
+                          <Link href="/business-setup-pro-services/trademarks-patent-service">
+                            <a>Trademark & Patent Registration</a>
+                          </Link>
+                        </li>
                       </ul>
                     </li>
                     {/* <li className="menu-item-has-children">

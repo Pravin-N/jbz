@@ -11,7 +11,6 @@ const Tags = (props) => {
         </div>
         <div className="tagcloud">
           {props.tags.map((tag) => {
-            console.log(tag);
             return <a>{tag}</a>;
           })}
         </div>

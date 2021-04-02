@@ -28,7 +28,6 @@ export const getStaticProps = async (context) => {
 };
 
 const Blog = ({ article }) => {
-  console.log(article);
   return <div>Details Page</div>;
 };
 

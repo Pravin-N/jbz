@@ -1,213 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
+import Link from "next/link";
 
 const contact = () => {
-  // TODO: Add google maps to the contact form.
-  // useEffect(() => {
-  //   var map = document.querySelector('[data-trigger="map"]'),
-  //     mapOps;
-  //   console.log(map);
-
-  //   if (map) {
-  //     // Map Options
-  //     mapOps = map.dataset.mapOptions;
-
-  //     // Map Initialization
-  //     window.initMap = function () {
-  //       map.style.minHeight = "600px";
-  //       (function (mapOps, map) {
-  //         var map1, lat, lng, zoom;
-
-  //         lat = parseFloat(mapOps.latitude, 10);
-  //         lng = parseFloat(mapOps.longitude, 10);
-  //         zoom = parseFloat(mapOps.zoom, 10);
-
-  //         map1 = new google.maps.Map(map, {
-  //           center: { lat: lat, lng: lng },
-  //           zoom: zoom,
-  //           scrollwheel: false,
-  //           disableDefaultUI: true,
-  //           zoomControl: true,
-  //           styles: [
-  //             {
-  //               featureType: "all",
-  //               elementType: "labels.text.fill",
-  //               stylers: [
-  //                 {
-  //                   saturation: 36,
-  //                 },
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 40,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "all",
-  //               elementType: "labels.text.stroke",
-  //               stylers: [
-  //                 {
-  //                   visibility: "on",
-  //                 },
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 16,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "all",
-  //               elementType: "labels.icon",
-  //               stylers: [
-  //                 {
-  //                   visibility: "off",
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "administrative",
-  //               elementType: "geometry.fill",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 20,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "administrative",
-  //               elementType: "geometry.stroke",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 17,
-  //                 },
-  //                 {
-  //                   weight: 1.2,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "landscape",
-  //               elementType: "geometry",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 20,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "poi",
-  //               elementType: "geometry",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 21,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "road.highway",
-  //               elementType: "geometry.fill",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 17,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "road.highway",
-  //               elementType: "geometry.stroke",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 29,
-  //                 },
-  //                 {
-  //                   weight: 0.2,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "road.arterial",
-  //               elementType: "geometry",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 18,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "road.local",
-  //               elementType: "geometry",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 16,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "transit",
-  //               elementType: "geometry",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 19,
-  //                 },
-  //               ],
-  //             },
-  //             {
-  //               featureType: "water",
-  //               elementType: "geometry",
-  //               stylers: [
-  //                 {
-  //                   color: "#000000",
-  //                 },
-  //                 {
-  //                   lightness: 17,
-  //                 },
-  //               ],
-  //             },
-  //           ],
-  //         });
-
-  //         map1 = new google.maps.Marker({
-  //           position: { lat: lat, lng: lng },
-  //           map: map1,
-  //           animation: google.maps.Animation.DROP,
-  //           draggable: false,
-  //           icon: "assets/img/map-marker.png",
-  //         });
-  //       })(mapOps, map);
-  //     };
-  //     initMap();
-  //   }
-  // }, []);
   return (
     <>
       {/* Page Title Begin TODO: Change the header section.*/}
@@ -222,7 +16,9 @@ const contact = () => {
                 <h2>Contact Us</h2>
                 <ul className="list-inline">
                   <li>
-                    <a href="index.html">Home</a>
+                    <Link href="/">
+                      <a>Home</a>
+                    </Link>
                   </li>
                   <li>Contact</li>
                 </ul>
@@ -241,9 +37,7 @@ const contact = () => {
               {/* Contact Info Begin */}
               <div className="contact-info">
                 <h3>Contact Info</h3>
-                <p>
-                  Continue new you declared differed learning bringing honoured.
-                </p>
+                <p>Get in touch for a free consultation today.</p>
 
                 <div className="row">
                   {/* Single Contact Info */}
@@ -257,9 +51,7 @@ const contact = () => {
                     </div>
                     <div className="media-body">
                       <h4>Office Location</h4>
-                      <p>
-                        173 Collins Street West victoria, Melbourne, Australia
-                      </p>
+                      <p>103, Al Makhawi Building, Oud Metha, Dubai, UAE</p>
                     </div>
                   </div>
                   {/* End Single Contact Info */}
@@ -274,9 +66,10 @@ const contact = () => {
                       />
                     </div>
                     <div className="media-body">
-                      <h4>Business Phone</h4>
+                      <h4>Call Us On</h4>
                       <p>
-                        <a href="#">+0096665431</a> <a href="#">+0096667331</a>
+                        <a href="tel:+971557572069">+971 55 757 2069</a>{" "}
+                        <a href="tel:+971557780398">+971 55 778 0398</a>
                       </p>
                     </div>
                   </div>
@@ -292,29 +85,11 @@ const contact = () => {
                       />
                     </div>
                     <div className="media-body">
-                      <h4>Business Email</h4>
+                      <h4>Email</h4>
                       <p>
-                        <a href="#">bizidea@info.com</a>
-                        <a href="#">bizidea@gmail.com</a>
-                      </p>
-                    </div>
-                  </div>
-                  {/* End Single Contact Info */}
-
-                  {/* Single Contact Info */}
-                  <div className="col-sm-6 col-lg-12 single-contact-info media align-items-center">
-                    <div className="image">
-                      <img
-                        src="assets/img/icons/email.svg"
-                        className="svg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="media-body">
-                      <h4>Office Hours</h4>
-                      <p>
-                        Monday - Friday <br />
-                        8:30 AM - 6:00 PM
+                        <a href="mailto:faisal@jbz.ae">faisal@jbz.ae</a>
+                        <a href="mailto:pranitha@jbz.ae">pranitha@jbz.ae</a>
+                        <a href="mailto:info@jbz.ae">info@jbz.ae</a>
                       </p>
                     </div>
                   </div>
@@ -327,11 +102,10 @@ const contact = () => {
             <div className="col-lg-8">
               {/* Contact Form Begin */}
               <div className="contact-form-wrapper">
-                <h3>Send Us Message</h3>
+                <h3>Send Us a Message</h3>
                 <p>
-                  Our believe has request not how comfort evident. Up delight
-                  cousins we feeling minutes. Genius has looked end piqued
-                  spring. Down has rose feel find man.
+                  One stop shop for all needs regarding business setup and pro
+                  services in Dubai, UAE.
                 </p>
 
                 <form
@@ -380,6 +154,7 @@ const contact = () => {
                         name="message"
                         className="theme-input-style"
                         required
+                        placeholder="Your Message"
                       ></textarea>
                     </div>
 

@@ -1,9 +1,150 @@
+import SideBar from "../../components/SideBar";
+import Link from "next/link";
+import CTASection from "../../components/CTASection";
+
+const tags = [
+  "PRO Services Dubai",
+  "Visa Services",
+  "Document Clearing",
+  "Immigration",
+  "Labour Approval",
+];
+
 const ProService = () => {
-    return (
-        <>
-            <div>Hello</div>
-        </>
-    );
+  return (
+    <>
+      {/* Page Title Begin  TODO: Head section to use the page header component*/}
+      <section
+        className="page-title-bg pt-250 pb-100"
+        data-bg-img="assets/img/section-pattern/page-title.png"
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="page-title text-center">
+                <h2>PRO Services in Dubai</h2>
+                <ul className="list-inline">
+                  <li>
+                    <Link href="/">
+                      <a>Home</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/business-setup-pro-services">
+                      <a>Services</a>
+                    </Link>
+                  </li>
+                  <li>PRO Services</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Page Title End */}
+
+      {/* Service Details Begin */}
+      <section className="pt-120 pb-120">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 order-last order-lg-first">
+              <SideBar tags={tags} />
+            </div>
+            <div className="col-lg-8">
+              {/* Service Details Begin */}
+              <div className="service-details">
+                <h3 className="title">Professional PRO services</h3>
+                <p>
+                  Professional PRO services to get the required Visas and
+                  complete other govt formalities for smooth running of your
+                  business. Public Relations work is an integral and the most
+                  essential activity of any company in UAE right from the
+                  business setup and company formation procedures. PRO services
+                  in Dubai require professional expertise that can successfully
+                  manage the whole cycle of procedures and formalities.
+                </p>
+
+                <div className="row align-items-center">
+                  <div className="col-md-6">
+                    <h4 className="title">
+                      Why choose Just Business for PRO work?
+                    </h4>
+                    <p>
+                      Just Business Consultants will assist your company through
+                      all the business setup stages with our wide range of PRO
+                      services in Dubai and document clearing services. As our
+                      work closely depends on liaising with the Dubai government
+                      and officials of various ministries, we are best known as
+                      the providers of the most-efficient PRO Services in Dubai.
+                      Ultimately, you benefit from our PRO services in Dubai by
+                      saving time as part of queues in government offices as
+                      well as money. We ensure that clients are given maximum
+                      support for their business in the UAE.
+                    </p>
+                  </div>
+                  <div className="col-md-6">
+                    <img
+                      src="/assets/img/service-details.jpg"
+                      data-rjs="2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div className="row align-items-center">
+                  <div className="col-md-12">
+                    <p></p>
+                    <p>
+                      We have experts that are skilled and well experienced with
+                      legalities and the different formalities laid out by the
+                      UAE Government. As our work is dependent on government
+                      authorities, our strong ties with them facilitate quicker
+                      document clearances for your business.
+                    </p>
+
+                    <p></p>
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="col-md-6">
+                    <img
+                      src="/assets/img/service-details-2.jpg"
+                      data-rjs="2"
+                      alt=""
+                    />
+                  </div>
+                  <div className="col-md-6">
+                    <h4 className="title">
+                      Key Points regarding our PRO Service.
+                    </h4>
+                    <ul className="list-check">
+                      <li>
+                        <i className="fa fa-check"></i>Quick Turnaround Time
+                      </li>
+                      <li>
+                        <i className="fa fa-check"></i>Cost Effective for any
+                        Business
+                      </li>
+                      <li>
+                        <i className="fa fa-check"></i>Expert knowledge base for
+                        any business requirement
+                      </li>
+                      <li>
+                        <i className="fa fa-check"></i>Pay as you need service.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {/* Service Details End */}
+            </div>
+          </div>
+        </div>
+      </section>
+      <CTASection />
+      {/* Service details End */}
+    </>
+  );
 };
 
 export default ProService;

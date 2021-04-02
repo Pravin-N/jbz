@@ -1,5 +1,5 @@
 import React from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
 const ServicesBreakdown = () => {
   return (
@@ -52,9 +52,7 @@ const ServicesBreakdown = () => {
                     Any business license anywhere in UAE. Mainland or Freezone.
                   </p>
                   <Link href="/business-setup-pro-services/business-setup-uae">
-                    <a className="btn-inline">
-                      Read More
-                  </a>
+                    <a className="btn-inline">Read More</a>
                   </Link>
                 </div>
                 {/* Content End */}
@@ -83,9 +81,7 @@ const ServicesBreakdown = () => {
                   </Link>
                   <p> Visa for employees and other govt related approvals</p>
                   <Link href="/business-setup-pro-services/pro-service">
-                    <a className="btn-inline">
-                      Read More
-                  </a>
+                    <a className="btn-inline">Read More</a>
                   </Link>
                 </div>
                 {/* Content End */}
@@ -117,9 +113,7 @@ const ServicesBreakdown = () => {
                     meeting rooms.
                   </p>
                   <Link href="/business-setup-pro-services/business-center-dubai-service">
-                    <a className="btn-inline">
-                      Read More
-                    </a>
+                    <a className="btn-inline">Read More</a>
                   </Link>
                 </div>
                 {/* Content End */}
@@ -151,43 +145,45 @@ const ServicesBreakdown = () => {
                     regulations in UAE
                   </p>
                   <Link href="/business-setup-pro-services/vat-registration-service">
-                    <a className="btn-inline">
-                      Read More
-                  </a>
+                    <a className="btn-inline">Read More</a>
                   </Link>
                 </div>
                 {/* Content End */}
               </div>
               {/* Single Service End */}
             </div>
-            {/* <div className="col-lg-4 col-sm-6"> */}
-            {/* Single Service Begin */}
-            {/* <div className="single-service text-center"> */}
-            {/* Icon Begin */}
-            {/* <div className="icon">
+            <div className="col-lg-4 col-sm-6">
+              {/* Single Service Begin */}
+              <div className="single-service text-center">
+                {/* Icon Begin */}
+                <div className="icon">
                   <img
                     src="assets/img/icons/service-5.png"
                     data-rjs="2"
                     alt=""
                   />
-                </div> */}
-            {/* Icon End  */}
+                </div>
+                {/* Icon End  */}
 
-            {/* Content Begin */}
-            {/* <div className="content">
-                  <h4>Sales & Trading</h4>
+                {/* Content Begin */}
+                <div className="content">
+                  <Link href="/business-setup-pro-services/trademarks-patent-service">
+                    <a>
+                      <h4>Trademark & Patent</h4>
+                    </a>
+                  </Link>
                   <p>
-                    Grave widow hours among him ﻿no you led. Power had met least
-                    young.
+                    Get trademark and patent registered and protect your
+                    intellectual assets of your business.
                   </p>
-                  <a href="#" className="btn-inline">
-                    Read More
-                  </a>
-                </div> */}
-            {/* Content End */}
-            {/* </div> */}
-            {/* Single Service End */}
-            {/* </div> */}
+                  <Link href="/business-setup-pro-services/trademarks-patent-service">
+                    <a className="btn-inline">Read More</a>
+                  </Link>
+                </div>
+                {/* Content End */}
+              </div>
+              {/* Single Service End */}
+            </div>
             {/* <div className="col-lg-4 col-sm-6"> */}
             {/* Single Service Begin */}
             {/* <div className="single-service text-center"> */}
