@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Testimonials = () => {
   return (
@@ -40,10 +41,12 @@ const Testimonials = () => {
                   <div className="col-md-5">
                     {/* Testimonial Image Begin */}
                     <div className="testimonial-image mb-50 mb-md-0">
-                      <img
-                        src="assets/img/testimonial/testimonial-author-1.png"
+                      <Image
+                        src="/assets/img/testimonial/Saleem Khokhar-Peritus Software.JPG"
                         data-rjs="2"
                         alt=""
+                        height="391"
+                        width="435"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -53,16 +56,16 @@ const Testimonials = () => {
                     {/* Testimonial Content Begin */}
                     <div className="testimonial-content">
                       <p>
-                        Just Business helped us immensely in setting up our
+                        "Just Business helped us immensely in setting up our
                         business in Dubai. Right from incorporation,
                         registration and licensing to establishing your office
                         space. They have Strong commitment to high quality
                         professionalism, comprehensive capability across varied
                         segments of disciplines. I would highly recommend them
-                        for all your business setup needs.
+                        for all your business setup needs."
                       </p>
-                      <h4>Albert Knick</h4>
-                      <span>Dream Home Cleaning Services LLC</span>
+                      <h4>Saleem Khokhar</h4>
+                      <span>Business Magnet</span>
                     </div>
                     {/* Testimonial Content End */}
                   </div>
@@ -76,10 +79,12 @@ const Testimonials = () => {
                   <div className="col-md-5">
                     {/* Testimonial Image Begin */}
                     <div className="testimonial-image mb-50 mb-md-0">
-                      <img
-                        src="assets/img/testimonial/testimonial-2.png"
+                      <Image
+                        src="/assets/img/testimonial/Zeeshan Gaffar Khan-Al Hayat Al Mudisha.jpeg"
                         data-rjs="2"
                         alt=""
+                        height="391"
+                        width="435"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -89,15 +94,15 @@ const Testimonials = () => {
                     {/* Testimonial Content Begin */}
                     <div className="testimonial-content">
                       <p>
-                        Highly satisfied with the experienced consultation for
+                        "Highly satisfied with the experienced consultation for
                         business setup. The professionalism, honesty, knowledge,
                         experience, and most importantly the rates/charges are
                         transparent and affordable. Definitely recommend for PRO
-                        services as well.
+                        services as well."
                       </p>
 
-                      <h4>Zeeshan Ahmed</h4>
-                      <span>XDR Owner</span>
+                      <h4>Zeeshan Gaffar Khan</h4>
+                      <span>Al Hayat Al Mudisha</span>
                     </div>
                     {/* Testimonial Content End */}
                   </div>
@@ -111,10 +116,12 @@ const Testimonials = () => {
                   <div className="col-md-5">
                     {/* Testimonial Image Begin */}
                     <div className="testimonial-image mb-50 mb-md-0">
-                      <img
-                        src="assets/img/testimonial/testimonial-3.png"
+                      <Image
+                        src="/assets/img/testimonial/Usman Mehmood- Creations General Trading L.L.C.JPG"
                         data-rjs="2"
                         alt=""
+                        height="391"
+                        width="435"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -124,29 +131,32 @@ const Testimonials = () => {
                     {/* Testimonial Content Begin */}
                     <div className="testimonial-content">
                       <p>
-                        We have been using this Just Business company for some
+                        "We have been using this Just Business company for some
                         years now and we have found both professionalism and
                         great service within this firm. We highly recommend them
                         to any individual or company who is looking to get their
-                        business setup off on the right start. Thank you!!
+                        business setup off on the right start. Thank you!"
                       </p>
 
-                      <h4>Laura Valenteina</h4>
+                      <h4>Usman Mehmood</h4>
                       <span>Business Magnet</span>
                     </div>
                     {/* Testimonial Content End */}
                   </div>
                 </div>
               </div>
+
               <div className="single-testimonial-slide carousel-item">
                 <div className="row align-items-center">
                   <div className="col-md-5">
                     {/* Testimonial Image Begin */}
                     <div className="testimonial-image mb-50 mb-md-0">
-                      <img
-                        src="assets/img/testimonial/testimonial-3.png"
+                      <Image
+                        src="/assets/img/testimonial/Abdullah Madni- Nox Health General Trading L.L.C.JPG"
                         data-rjs="2"
                         alt=""
+                        height="391"
+                        width="435"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -156,17 +166,83 @@ const Testimonials = () => {
                     {/* Testimonial Content Begin */}
                     <div className="testimonial-content">
                       <p>
-                        Just business has been utmost professional and efficient
-                        with everything they've done for my company. From the
-                        very moment I met them, they understood everything and
-                        got it done so smoothly and effortlessly, all in a very
-                        short time period. It also helped knowing that they've
-                        helped set up other well known companies. This is all
-                        because of the very kind staff. Definitely a place I'd
-                        recommend to any start up. Very happy with them!
+                        "Just Business Corporate Services conveyed us the permit
+                        to operate that no other specialist had the option to do
+                        as such. We are really thankful and have been on task
+                        for as long as 4 years. Long may it proceed."
+                      </p>
+                      <h4>Abdullah Madni</h4>
+                      <span>Nox Health General Trading</span>
+                    </div>
+                    {/* Testimonial Content End */}
+                  </div>
+                </div>
+              </div>
+
+              <div className="single-testimonial-slide carousel-item">
+                <div className="row align-items-center">
+                  <div className="col-md-5">
+                    {/* Testimonial Image Begin */}
+                    <div className="testimonial-image mb-50 mb-md-0">
+                      <Image
+                        src="/assets/img/testimonial/Robert Reynolds-Mayfair Wrapping.jpg"
+                        data-rjs="2"
+                        alt=""
+                        height="391"
+                        width="435"
+                      />
+                    </div>
+                    {/* Testimonial Image End */}
+                  </div>
+
+                  <div className="col-md-7">
+                    {/* Testimonial Content Begin */}
+                    <div className="testimonial-content">
+                      <p>
+                        "Just Business corporate services has helped me open up
+                        my own business in difficult times through 2020.
+                        Pranitha and her team are all brilliant and provide
+                        excellent guidance and help with any of my company
+                        needs. Really recommend their service."
+                      </p>
+                      <h4>Robert Reynolds</h4>
+                      <span>Mayfair Wrapping Services</span>
+                    </div>
+                    {/* Testimonial Content End */}
+                  </div>
+                </div>
+              </div>
+
+              <div className="single-testimonial-slide carousel-item">
+                <div className="row align-items-center">
+                  <div className="col-md-5">
+                    {/* Testimonial Image Begin */}
+                    <div className="testimonial-image mb-50 mb-md-0">
+                      <Image
+                        src="/assets/img/testimonial/Taimur Rehman-Dream Home Technical Services.jpeg"
+                        data-rjs="2"
+                        alt=""
+                        height="391"
+                        width="435"
+                      />
+                    </div>
+                    {/* Testimonial Image End */}
+                  </div>
+
+                  <div className="col-md-7">
+                    {/* Testimonial Content Begin */}
+                    <div className="testimonial-content">
+                      <p>
+                        "Just business has been professional & efficient with
+                        everything they've done for my company. They understood
+                        everything and got it done so smoothly and effortlessly,
+                        all in a very short time period. It also helped knowing
+                        that they've helped set up other well known companies.
+                        Definitely a place I'd recommend to any start up. Very
+                        happy with them!"
                       </p>
 
-                      <h4>Qamar Abbasi</h4>
+                      <h4>Taimur Rehman</h4>
                       <span>Business Magnet</span>
                     </div>
                     {/* Testimonial Content End */}
@@ -178,10 +254,12 @@ const Testimonials = () => {
                   <div className="col-md-5">
                     {/* Testimonial Image Begin */}
                     <div className="testimonial-image mb-50 mb-md-0">
-                      <img
-                        src="assets/img/testimonial/testimonial-3.png"
+                      <Image
+                        src="/assets/img/testimonial/sonal.jpg"
                         data-rjs="2"
                         alt=""
+                        height="391"
+                        width="435"
                       />
                     </div>
                     {/* Testimonial Image End */}

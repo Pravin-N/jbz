@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const WhoAreWe = () => {
   return (
@@ -27,7 +28,13 @@ const WhoAreWe = () => {
 
           <div className="row">
             <div className="col-12">
-              <img src="assets/img/about-main.jpg" data-rjs="2" alt="" />
+              <Image
+                src="/assets/img/business setup-company formation meeting1.jpg"
+                alt="business setup - company formation - just business about us main image"
+                width="1112"
+                height="460"
+                quality="80"
+              />
             </div>
           </div>
 

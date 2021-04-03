@@ -3412,8 +3412,8 @@ blockquote {
 
 .testimonial-slider .owl-nav {
   position: absolute;
-  left: 250px;
-  bottom: 40px;
+  right: 0px;
+  bottom: 0px;
   z-index: 2;
 }
 

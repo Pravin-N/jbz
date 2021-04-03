@@ -1,6 +1,7 @@
 import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
+import Image from "next/image";
 
 const tags = [
   "PRO Services Dubai",
@@ -83,10 +84,11 @@ const ProService = () => {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <img
-                      src="/assets/img/service-details.jpg"
-                      data-rjs="2"
-                      alt=""
+                    <Image
+                      src="/assets/img/Pro services dubai uae.png"
+                      alt="PRO services dubai UAE"
+                      width="350"
+                      height="350"
                     />
                   </div>
                 </div>
@@ -107,10 +109,11 @@ const ProService = () => {
 
                 <div className="row">
                   <div className="col-md-6">
-                    <img
-                      src="/assets/img/service-details-2.jpg"
-                      data-rjs="2"
-                      alt=""
+                    <Image
+                      src="/assets/img/pro services dubai uae imag2.png"
+                      alt="PRO services dubai UAE- image2"
+                      width="350"
+                      height="300"
                     />
                   </div>
                   <div className="col-md-6">

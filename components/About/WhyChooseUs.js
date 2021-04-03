@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
@@ -8,11 +9,13 @@ const WhyChooseUs = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <img
-                src="assets/img/about02.jpg"
-                data-rjs="2"
+              <Image
+                src="/assets/img/why choose just business for business setup.png"
                 className="w-100"
-                alt=""
+                alt="why choose just business for business setup"
+                width="540"
+                height="540"
+                quality="100"
               />
             </div>
 

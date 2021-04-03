@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const OfferExplain = () => {
   return (
@@ -13,7 +14,7 @@ const OfferExplain = () => {
                 <h3>What We Offer</h3>
                 <h2>
                   We offer a wide range of services to help you get your
-                  business up and running
+                  business up and running.
                 </h2>
                 <p>
                   From getting a business license for any business activity in
@@ -44,7 +45,12 @@ const OfferExplain = () => {
               {/* About Feature List End */}
             </div>
             <div className="col-lg-6 mt-50 mt-lg-0">
-              <img src="assets/img/serviec-1.jpg" data-rjs="2" alt="" />
+              <Image
+                src="/assets/img/just business services for dubai business setup.png"
+                width="540"
+                height="680"
+                alt="just business services for dubai business setup"
+              />
             </div>
           </div>
         </div>

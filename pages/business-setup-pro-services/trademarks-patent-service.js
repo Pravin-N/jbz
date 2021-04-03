@@ -1,6 +1,7 @@
 import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
+import Image from "next/image";
 
 const tags = [
   "Trademark Registration",
@@ -83,10 +84,11 @@ const trademark = () => {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <img
-                      src="/assets/img/service-details.jpg"
-                      data-rjs="2"
-                      alt=""
+                    <Image
+                      src="/assets/img/trademark and patent service dubai uae.png"
+                      alt="Trademark and Patent Registration service dubai"
+                      width="350"
+                      height="350"
                     />
                   </div>
                 </div>

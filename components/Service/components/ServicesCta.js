@@ -1,11 +1,20 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const ServicesCta = () => {
   return (
     <>
       {/* Widget Ad Begin */}
       <div className="widget widget_ad">
-        <img src="/assets/img/widget_ad.png" data-rjs="2" alt="" />
+        <Link href="\contact">
+          <Image
+            src="/assets/img/business setup dubai contact image.png"
+            alt="business setup and company formation contact info image"
+            width="350"
+            height="305"
+          />
+        </Link>
       </div>
       {/* Widget Ad End */}
     </>

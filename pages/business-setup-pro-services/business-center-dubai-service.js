@@ -1,6 +1,7 @@
 import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
+import Image from "next/image";
 
 const tags = ["flexi desk", "business center", "startup", "office"];
 
@@ -80,20 +81,22 @@ const BusinessCenter = () => {
                   </div>
 
                   <div className="col-md-6">
-                    <img
-                      src="/assets/img/service-details.jpg"
-                      data-rjs="2"
-                      alt=""
+                    <Image
+                      src="/assets/img/business center dubai.png"
+                      alt="business center office spaces dubai"
+                      width="350"
+                      height="300"
                     />
                   </div>
                 </div>
                 <p></p>
                 <div className="row">
                   <div className="col-md-6">
-                    <img
-                      src="/assets/img/service-details-2.jpg"
-                      data-rjs="2"
-                      alt=""
+                    <Image
+                      src="/assets/img/business center conference room.png"
+                      alt="business center conference rooms dubai"
+                      width="350"
+                      height="300"
                     />
                   </div>
                   <div className="col-md-6">

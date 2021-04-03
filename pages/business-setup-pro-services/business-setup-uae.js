@@ -3,6 +3,7 @@ import React from "react";
 import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
+import Image from "next/image";
 
 const tags = [
   "business setup dubai",
@@ -92,10 +93,11 @@ const BusinessSetup = () => {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <img
-                      src="/assets/img/service-details.jpg"
-                      data-rjs="2"
-                      alt=""
+                    <Image
+                      src="/assets/img/business-setup in Dubai UAE service.png"
+                      alt="business-setup service"
+                      width="350"
+                      height="350"
                     />
                   </div>
                 </div>
@@ -125,10 +127,11 @@ const BusinessSetup = () => {
 
                 <div className="row">
                   <div className="col-md-6">
-                    <img
-                      src="/assets/img/service-details-2.jpg"
-                      data-rjs="2"
-                      alt=""
+                    <Image
+                      src="/assets/img/company formation dubai service image 2.png"
+                      alt="company formation dubai uae service"
+                      width="350"
+                      height="300"
                     />
                   </div>
                   <div className="col-md-6">
@@ -173,10 +176,11 @@ const BusinessSetup = () => {
 
                 <div className="row">
                   <div className="col-md-6">
-                    <img
-                      src="/assets/img/service-details-2.jpg"
-                      data-rjs="2"
-                      alt=""
+                    <Image
+                      src="/assets/img/business setup dubai steps.png"
+                      alt="business setup uae steps process"
+                      width="350"
+                      height="300"
                     />
                   </div>
                   <div className="col-md-6">

@@ -15,16 +15,14 @@ const AboutHome = () => {
       >
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-7">
+            <div className="col-lg-6">
               {/* Section Title Begin */}
               <div className="section-title">
                 <h3>Why Choose Just Business?</h3>
                 <h2>
-                  Over 10 yrs of Experience&nbsp;
+                  10+ yrs of Experience&nbsp;
                   <br />
-                  in Business Setup in UAE,&nbsp;
-                  <br />
-                  You're in Safe hands.
+                  of Business Setup in UAE,&nbsp; You're in Safe hands.
                 </h2>
                 <p>
                   Having helped 100's of entrepreneurs get the necessary
@@ -130,9 +128,9 @@ const AboutHome = () => {
               </div>
               {/* About Tabs End */}
             </div>
-            <div className="col-lg-5 video-area mt-50 mt-lg-0">
+            <div className="col-lg-6 video-area mt-50 mt-lg-0">
               <img
-                src="/assets/img/section-bg/about jb business setup in dubai.webp"
+                src="/assets/img/section-bg/about jb business setup in dubai1.png"
                 data-rjs="2"
                 alt="About just business mission and vision"
                 height="805"
