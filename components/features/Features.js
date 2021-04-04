@@ -32,10 +32,11 @@ const Features = ({ features }) => {
   return (
     <>
       {/* Feature Begin */}
-      <section
-        className="pt-60 pb-90 section-pattern l-gray"
-        data-bg-img="assets/img/section-pattern/feature-pattern.png"
-      >
+      <section className="pt-60 pb-90 section-pattern l-gray features">
+        <img src="/assets/img/wavyline.svg" className="wavySvg" />
+        <img src="/assets/img/circle.svg" className="heroSvg4" />
+        <img src="/assets/img/filled circle.svg" className="heroSvg3" />
+
         <div className="row">
           <div className="col-12">
             <div className="section-title text-center">

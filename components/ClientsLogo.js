@@ -29,7 +29,7 @@ const ClientsLogo = () => {
 
                 {/* Single Partner */}
                 <a
-                  href="https://www.mayfairwrapping.com/"
+                  href="https://www.mayfairwrapping.ae/"
                   className="single-brand-logo"
                   target="_blank"
                 >

@@ -77,15 +77,17 @@ const Hero = () => {
   // TODO: change the para
   return (
     <>
-      <section
-        className="banner section-pattern"
-        data-bg-img="assets/img/section-pattern/slider-pattern.png"
-      >
+      <section className="banner section-pattern">
+        <img src="/assets/img/circle.svg" className="heroSvg1" />
         <div
           id="carouselExampleIndicators"
           className="carousel slide banner-slider owl-carousel d-flex align-items-center justify-content-center"
           data-ride="carousel"
         >
+          <img src="/assets/img/circle.svg" className="heroSvg2" />
+          <img src="/assets/img/circle.svg" className="heroSvg3" />
+          <img src="/assets/img/filled circle.svg" className="heroSvg4" />
+          <img src="/assets/img/x.svg" className="heroSvg5" />
           <ol className="carousel-indicators">
             {heroData.map((singleData, count) => {
               return (

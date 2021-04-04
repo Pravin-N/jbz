@@ -28,7 +28,7 @@ const QuickLinks = () => {
               <Link href="/dubai-business-setup-blogs">Blog</Link>
             </li>
             <li>
-              <Link href="/">Privacy policy</Link>
+              <Link href="/privacy-policy">Privacy policy</Link>
             </li>
           </ul>
           {/* Menu End */}

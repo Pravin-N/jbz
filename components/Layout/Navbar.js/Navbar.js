@@ -307,7 +307,7 @@ const Navbar = () => {
                         </li>
                       </ul> */}
                     </li>
-                    <li>
+                    <li className="menu-item-has-children">
                       <Link href="/contact">
                         <a>Contact</a>
                       </Link>

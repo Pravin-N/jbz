@@ -9,10 +9,7 @@ const Footer = () => {
   return (
     <>
       {/* Footer Begin */}
-      <footer
-        className="footer section-pattern footer-bg"
-        data-bg-img="assets/img/section-pattern/footer-pattern.png"
-      >
+      <footer className="footer section-pattern footer-bg">
         {/* Footer Top Begin */}
         <div className="footer-top pt-60">
           <div className="container border-bottom">

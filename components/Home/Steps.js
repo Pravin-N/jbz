@@ -42,10 +42,14 @@ const Steps = () => {
   return (
     <>
       {/* Work Process Begin */}
-      <section
-        className="pt-120 pb-70 section-pattern l-gray"
-        data-bg-img="assets/img/section-pattern/work-process-pattern.png"
-      >
+      <section className="pt-120 pb-70 section-pattern l-gray steps">
+        <img src="/assets/img/circle.svg" className="stepSvg1" />
+        <img src="/assets/img/circle.svg" className="heroSvg3" />
+        <img src="/assets/img/filled circle.svg" className="heroSvg5" />
+        <img src="/assets/img/x.svg" className="heroSvg4" />
+        <img src="/assets/img/curvyline.svg" className="curline1" />
+        <img src="/assets/img/curvyline.svg" className="curline2" />
+        <img src="/assets/img/curvyline.svg" className="curline3" />
         <div className="container">
           <div className="row">
             <div className="col-12">

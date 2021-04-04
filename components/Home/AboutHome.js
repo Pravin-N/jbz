@@ -9,10 +9,11 @@ const AboutHome = () => {
   return (
     <>
       {/* About Begin */}
-      <section
-        className="pt-120 pb-120 section-pattern ov-hidden"
-        data-bg-img="assets/img/section-pattern/about-pattern.png"
-      >
+      <section className="pt-120 pb-120 section-pattern ov-hidden about">
+        <img src="/assets/img/triangle.svg" className="triSvg" />
+        <img src="/assets/img/circle.svg" className="heroSvg3" />
+        <img src="/assets/img/filled circle.svg" className="heroSvg4" />
+        <img src="/assets/img/x.svg" className="heroSvg5" />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
