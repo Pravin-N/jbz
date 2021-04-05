@@ -1,6 +1,45 @@
 import React from "react";
+import { useState } from "react";
 
 const ModalForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [company, setCompany] = useState("");
+  const [phone, setPhone] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Sending");
+    let data = {
+      name,
+      email,
+      message,
+      company,
+      phone,
+    };
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("Response received");
+      if (res.status === 200) {
+        console.log("Response succeeded!");
+        setSubmitted(true);
+        setName("");
+        setEmail("");
+        setCompany("");
+        setMessage("");
+        setPhone("");
+      }
+    });
+  };
+
   return (
     <>
       {/* Modal Form Begin */}
@@ -35,33 +74,65 @@ const ModalForm = () => {
                     <input
                       className="theme-input-style"
                       type="text"
+                      name="name"
                       placeholder="Full Name"
+                      onChange={(e) => {
+                        setName(e.target.value);
+                      }}
+                      required
                     />
                     <input
                       className="theme-input-style"
                       type="email"
+                      name="email"
                       placeholder="Email"
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                      }}
+                      required
                     />
+
                     <input
                       className="theme-input-style"
                       type="tel"
                       placeholder="Phone"
+                      required
+                    />
+                    <input
+                      className="theme-input-style"
+                      type="text"
+                      name="company"
+                      placeholder="Company Name"
+                      onChange={(e) => {
+                        setCompany(e.target.value);
+                      }}
                     />
 
-                    <select className="theme-input-style clearfix">
+                    {/* <select className="theme-input-style clearfix">
                       <option value="" disabled="" defaultValue="">
                         Select purpose
                       </option>
-                      <option value="01">Business</option>
-                      <option value="01">Consultancy</option>
-                    </select>
+                      <option value="01">Business Setup</option>
+                      <option value="01">PRO Services</option>
+                      <option value="01">Other</option>
+                    </select> */}
 
                     <textarea
                       className="theme-input-style"
                       placeholder="Message"
+                      onChange={(e) => {
+                        setMessage(e.target.value);
+                      }}
+                      required
                     ></textarea>
 
-                    <button className="btn" type="submit">
+                    <button
+                      className="btn"
+                      type="submit"
+                      onClick={(e) => {
+                        handleSubmit(e);
+                      }}
+                    >
                       <span>Send request</span>
                     </button>
                   </form>

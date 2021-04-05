@@ -586,3 +586,7 @@ div.row.footer {
     display: none;
   }
 }
+
+.appointment-modal.modal.fade {
+  margin-top: 1rem;
+}

@@ -1,7 +1,46 @@
 import React from "react";
 import Link from "next/link";
+import { useState } from "react";
 
 const contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [company, setCompany] = useState("");
+  const [phone, setPhone] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Sending");
+    let data = {
+      name,
+      email,
+      message,
+      company,
+      phone,
+    };
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("Response received");
+      if (res.status === 200) {
+        console.log("Response succeeded!");
+        setSubmitted(true);
+        setName("");
+        setEmail("");
+        setCompany("");
+        setMessage("");
+        setPhone("");
+      }
+    });
+  };
+
   return (
     <>
       {/* Page Title Begin TODO: Change the header section.*/}
@@ -46,7 +85,7 @@ const contact = () => {
                       <img
                         src="assets/img/icons/location.svg"
                         className="svg"
-                        alt=""
+                        alt="location icon"
                       />
                     </div>
                     <div className="media-body">
@@ -62,7 +101,7 @@ const contact = () => {
                       <img
                         src="assets/img/icons/phone.svg"
                         className="svg"
-                        alt=""
+                        alt="phone icon"
                       />
                     </div>
                     <div className="media-body">
@@ -81,7 +120,7 @@ const contact = () => {
                       <img
                         src="assets/img/icons/email.svg"
                         className="svg"
-                        alt=""
+                        alt="email icon"
                       />
                     </div>
                     <div className="media-body">
@@ -108,11 +147,7 @@ const contact = () => {
                   services in Dubai, UAE.
                 </p>
 
-                <form
-                  method="POST"
-                  action="sendmail.php"
-                  className="contact-form"
-                >
+                <for className="contact-form">
                   <div className="row">
                     <div className="col-md-6">
                       <input
@@ -121,6 +156,9 @@ const contact = () => {
                         className="theme-input-style"
                         placeholder="Your Name"
                         required
+                        onChange={(e) => {
+                          setName(e.target.value);
+                        }}
                       />
                     </div>
                     <div className="col-md-6">
@@ -130,6 +168,9 @@ const contact = () => {
                         className="theme-input-style"
                         placeholder="Your Email"
                         required
+                        onChange={(e) => {
+                          setEmail(e.target.value);
+                        }}
                       />
                     </div>
                     <div className="col-md-6">
@@ -138,6 +179,9 @@ const contact = () => {
                         name="company"
                         className="theme-input-style"
                         placeholder="Company Name"
+                        onChange={(e) => {
+                          setCompany(e.target.value);
+                        }}
                       />
                     </div>
                     <div className="col-md-6">
@@ -146,6 +190,9 @@ const contact = () => {
                         name="phone"
                         className="theme-input-style"
                         placeholder="Phone"
+                        onChange={(e) => {
+                          setPhone(e.target.value);
+                        }}
                       />
                     </div>
 
@@ -155,17 +202,26 @@ const contact = () => {
                         className="theme-input-style"
                         required
                         placeholder="Your Message"
+                        onChange={(e) => {
+                          setMessage(e.target.value);
+                        }}
                       ></textarea>
                     </div>
 
                     <div className="col-12">
-                      <button type="submit" className="btn">
+                      <button
+                        type="submit"
+                        className="btn"
+                        onClick={(e) => {
+                          handleSubmit(e);
+                        }}
+                      >
                         <span>Submit</span>
                       </button>
                     </div>
                   </div>
                   <div className="form-response"></div>
-                </form>
+                </for>
               </div>
               {/* Contact Form End */}
             </div>
@@ -173,14 +229,6 @@ const contact = () => {
         </div>
       </section>
       {/* Contact Info End */}
-
-      {/* Start Map */}
-      <div
-        className="map"
-        data-trigger="map"
-        data-map-options='{"latitude": "40.6785635", "longitude": "-73.9664109", "zoom": "11"}'
-      ></div>
-      {/* End Map */}
     </>
   );
 };
