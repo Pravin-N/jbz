@@ -3,31 +3,31 @@ let client = require("contentful").createClient({
   accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
 });
 
-export const getStaticPaths = async () => {
-  // const res = await fetch("");
-  // const data = await res.json();
-  let data = await client.getEntries({
-    content_type: "jbzBlog",
-  });
+// export const getStaticPaths = async () => {
+//   // const res = await fetch("");
+//   // const data = await res.json();
+//   let data = await client.getEntries({
+//     content_type: "jbzBlog",
+//   });
 
-  return {
-    paths: [data.items.map((item) => ({ params: { slug: item.fields.slug } }))],
-    fallback: false,
-  };
-};
+//   return {
+//     paths: data.items.map((item) => ({ params: { slug: item.fields.slug } })),
+//     fallback: false,
+//   };
+// };
 
-export const getStaticProps = async (context) => {
-  let data = await client.getEntries({
-    content_type: "jbzBlog",
-    "fields.slug": context.params.slug,
-  });
+// export const getStaticProps = async (context) => {
+//   let data = await client.getEntries({
+//     content_type: "jbzBlog",
+//     "fields.slug": context.params.slug,
+//   });
 
-  return {
-    props: { article: data.item[0] },
-  };
-};
+//   return {
+//     props: { article: data.item[0] },
+//   };
+// };
 
-const Blog = ({ article }) => {
+const Blog = ({}) => {
   return <div>Details Page</div>;
 };
 
