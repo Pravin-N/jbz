@@ -46,7 +46,7 @@ const Steps = () => {
         <img src="/assets/img/circle.svg" className="stepSvg1" />
         <img src="/assets/img/circle.svg" className="heroSvg3" />
         <img src="/assets/img/filled circle.svg" className="heroSvg5" />
-        <img src="/assets/img/x.svg" className="heroSvg4" />
+        <img src="/assets/img/cross.svg" className="heroSvg4" />
         <img src="/assets/img/curvyline.svg" className="curline1" />
         <img src="/assets/img/curvyline.svg" className="curline2" />
         <img src="/assets/img/curvyline.svg" className="curline3" />
