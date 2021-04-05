@@ -13,7 +13,7 @@ const AboutHome = () => {
         <img src="/assets/img/triangle.svg" className="triSvg" />
         <img src="/assets/img/circle.svg" className="heroSvg3" />
         <img src="/assets/img/filled circle.svg" className="heroSvg4" />
-        <img src="/assets/img/x.svg" className="heroSvg5" />
+        <img src="/assets/img/cross.svg" className="heroSvg5" />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
