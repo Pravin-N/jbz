@@ -69,10 +69,11 @@ const Team = () => {
   return (
     <>
       {/* Team Begin */}
-      <section
-        className="pt-120 pb-70 section-pattern "
-        data-bg-img="assets/img/section-pattern/testimonial-pattern.png"
-      >
+      <section className="pt-120 pb-70 section-pattern team">
+        <img src="/assets/img/triangle.svg" className="triSvg" />
+        <img src="/assets/img/wavyline.svg" className="wavySvg" />
+        <img src="/assets/img/circle.svg" className="heroSvg4" />
+        <img src="/assets/img/filled circle.svg" className="heroSvg3" />
         <div className="container">
           <div className="row">
             <div className="col-12">

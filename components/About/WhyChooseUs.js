@@ -5,7 +5,10 @@ const WhyChooseUs = () => {
   return (
     <>
       {/* About Section Begin */}
-      <section className="pt-120 pb-120 l-gray">
+      <section className="pt-120 pb-120 l-gray whowe">
+        <img src="/assets/img/filled circle.svg" className="heroSvg3" />
+        <img src="/assets/img/wavyline.svg" className="wavySvg" />
+        <img src="/assets/img/circle.svg" className="heroSvg4" />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

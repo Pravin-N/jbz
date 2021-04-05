@@ -68,10 +68,7 @@ const Steps = () => {
             </div>
           </div>
 
-          <div
-            className="row process-bg"
-            data-bg-img="assets/img/process_shape.png"
-          >
+          <div className="row process-bg">
             <div className="col-lg-3 col-sm-6 single-process-wrapper">
               {/* Single Work Process Begin */}
               <div className="single-process text-center">

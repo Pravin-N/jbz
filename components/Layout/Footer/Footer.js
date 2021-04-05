@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       {/* Footer Begin */}
-      <footer className="footer section-pattern footer-bg">
+      <footer className="footer footer-bg">
         {/* Footer Top Begin */}
         <div className="footer-top pt-60">
           <div className="container border-bottom">

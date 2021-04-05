@@ -35,10 +35,10 @@ const ServicesHome = () => {
   return (
     <>
       {/* Service Begin */}
-      <section
-        className="pt-120 pb-120 section-pattern"
-        data-bg-img="assets/img/section-pattern/service-pattern.png"
-      >
+      <section className="pt-120 pb-120 section-pattern services">
+        <img src="/assets/img/wavyline.svg" className="wavySvg" />
+        <img src="/assets/img/circle.svg" className="heroSvg4" />
+        <img src="/assets/img/filled circle.svg" className="heroSvg3" />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
