@@ -590,3 +590,8 @@ div.row.footer {
 .appointment-modal.modal.fade {
   margin-top: 1rem;
 }
+
+.appointment-form p,
+.contact-form p {
+  color: red;
+}

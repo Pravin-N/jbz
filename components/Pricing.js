@@ -166,7 +166,12 @@ const Pricing = () => {
                           business setup with relative ease.
                         </li>
                       </ul>
-                      <a href="#" className="btn">
+                      <a
+                        href=""
+                        className="btn"
+                        data-toggle="modal"
+                        data-target="#appointmentModalForm"
+                      >
                         <span>Get a free Quote</span>
                       </a>
                     </div>
@@ -245,7 +250,12 @@ const Pricing = () => {
                           business setup with relative ease.
                         </li>
                       </ul>
-                      <a href="#" className="btn">
+                      <a
+                        href=""
+                        className="btn"
+                        data-toggle="modal"
+                        data-target="#appointmentModalForm"
+                      >
                         <span>Get a free Quote</span>
                       </a>
                     </div>
@@ -320,7 +330,12 @@ const Pricing = () => {
                           setup with relative ease.
                         </li>
                       </ul>
-                      <a href="#" className="btn">
+                      <a
+                        href=""
+                        className="btn"
+                        data-toggle="modal"
+                        data-target="#appointmentModalForm"
+                      >
                         <span>Get a free Quote</span>
                       </a>
                     </div>
@@ -391,7 +406,12 @@ const Pricing = () => {
                           setup of offshore license with relative ease.
                         </li>
                       </ul>
-                      <a href="#" className="btn">
+                      <a
+                        href=""
+                        className="btn"
+                        data-toggle="modal"
+                        data-target="#appointmentModalForm"
+                      >
                         <span>Get a free Quote</span>
                       </a>
                     </div>

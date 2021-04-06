@@ -1,7 +1,33 @@
 import React from "react";
 import SocialMedia from "./SocialMedia";
+import { useState } from "react";
 
 const Newsletter = () => {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Sending");
+    let data = {
+      email,
+    };
+    fetch("/api/emailsub", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("Response received");
+      if (res.status === 200) {
+        console.log("Response succeeded!");
+        setSubmitted(true);
+        setEmail("");
+      }
+    });
+  };
   return (
     <>
       <div className="col-lg-4 col-sm-6">
@@ -9,7 +35,7 @@ const Newsletter = () => {
         <div className="widget widget_newsletter">
           {/* Widget Title Begin  */}
           <div className="widget-title">
-            <h4>Newsletter</h4>
+            <h4>Get More Information</h4>
           </div>
           {/* Widget Title End  */}
 
@@ -21,15 +47,24 @@ const Newsletter = () => {
             </p>
 
             <form
-              action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&amp;id=f4e0e93d1d"
-              method="post"
               name="mc-embedded-subscribe-form"
               target="_blank"
               className="newsletter-form"
             >
               <div className="theme-input-group">
-                <input type="text" placeholder="Your Email" />
-                <button type="submit">
+                <input
+                  type="text"
+                  placeholder="Your Email"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
+                <button
+                  type="submit"
+                  onClick={(e) => {
+                    handleSubmit(e);
+                  }}
+                >
                   <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
                 </button>
               </div>

@@ -21,7 +21,12 @@ const CTASection = () => {
                   contempt ecstatic. Loud wish made on is am as hard. Court so
                   avoid in plate hence.
                 </p> */}
-                <a href="#" className="btn btn-white">
+                <a
+                  href=""
+                  className="btn btn-white"
+                  data-toggle="modal"
+                  data-target="#appointmentModalForm"
+                >
                   <span>Contact Us Today</span>
                 </a>
               </div>

@@ -31,7 +31,7 @@ const HeroSlide = ({
               </h1>
               <p>{para}</p>
               <a
-                href="#"
+                href=""
                 data-toggle="modal"
                 data-target="#appointmentModalForm"
                 className="banner-btn btn"

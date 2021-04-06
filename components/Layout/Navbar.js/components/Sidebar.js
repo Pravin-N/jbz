@@ -145,7 +145,12 @@ const Sidebar = () => {
 
           {/* Offcanvas Button Begin */}
           <div className="offcanvas-btn">
-            <a href="#" className="btn">
+            <a
+              href=""
+              className="btn"
+              data-toggle="modal"
+              data-target="#appointmentModalForm"
+            >
               <span>Get Appointment</span>
             </a>
           </div>
