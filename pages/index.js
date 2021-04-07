@@ -1,6 +1,6 @@
 // import dynamic from "next/dynamic";
 import Hero from "../components/Hero/Hero";
-import ModalForm from "../components/ModalForm";
+
 import Features from "../components/features/Features";
 import AboutHome from "../components/Home/AboutHome";
 import Steps from "../components/Home/Steps";
@@ -34,7 +34,7 @@ export default function Home({ features }) {
   return (
     <>
       <Hero />
-      <ModalForm />
+
       <Features features={features} />
       <AboutHome />
       <CTASection />

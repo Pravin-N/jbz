@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Footer from "./Footer/Footer";
 import Meta from "./Meta";
 import Navbar from "./Navbar.js/Navbar";
-import Preloader from "./Preloader/Preloader";
+import ModalForm from "../../components/ModalForm";
 
 const Layout = ({ children }) => {
   // TODO: Remove all the background images and replace it with svg.
@@ -92,8 +92,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Meta />
-      {/* <Preloader /> */}
       <Navbar />
+      <ModalForm />
       {children}
       <Footer />
       {/* <!-- Back to Top Begin --> */}

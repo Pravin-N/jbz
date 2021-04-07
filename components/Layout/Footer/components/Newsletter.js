@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -53,8 +52,11 @@ const Newsletter = () => {
             >
               <div className="theme-input-group">
                 <input
-                  type="text"
+                  type="email"
+                  name="email"
                   placeholder="Your Email"
+                  required
+                  value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
