@@ -8,13 +8,54 @@ const ModalForm = () => {
   function submitForm() {
     setIsSubmitted(true);
   }
+  function formView() {
+    setIsSubmitted(false);
+  }
+
   return (
     <>
-      {!isSubmitted ? (
-        <ContactFormModal submitForm={submitForm} />
-      ) : (
-        <FormSuccess />
-      )}
+      {/* Modal Form Begin */}
+      <div
+        className="appointment-modal modal fade"
+        id="appointmentModalForm"
+        tabIndex="1"
+        role="dialog"
+        aria-labelledby="appointmentModalForm"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog d-flex align-items-center" role="document">
+          <div className="container">
+            <div className=" row justify-content-center">
+              <div className="col-lg-8 col-12">
+                {/* Modal Content Begin */}
+                <div className="modal-content">
+                  {/* Modal Close Button Begin */}
+                  <button
+                    type="button"
+                    className="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                    onClick={formView}
+                  >
+                    <img src="assets/img/icons/close.svg" alt="" />
+                  </button>
+                  {/* End Modal Close End */}
+                  {!isSubmitted ? (
+                    <ContactFormModal submitForm={submitForm} />
+                  ) : (
+                    <FormSuccess />
+                  )}
+                  {/* Appointment Form Begin */}
+
+                  {/* End Appointment Form End */}
+                </div>
+                {/* Modal Content End */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Modal Form End */}
     </>
   );
 };

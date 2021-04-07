@@ -48,7 +48,7 @@ const ContactFormModal = ({ submitForm }) => {
           setCompany("");
           setMessage("");
           setPhone("");
-          setData({})
+          setData({});
           submitForm();
         }
       });
@@ -57,85 +57,59 @@ const ContactFormModal = ({ submitForm }) => {
 
   return (
     <>
-      {/* Modal Form Begin */}
-      <div
-        className="appointment-modal modal fade"
-        id="appointmentModalForm"
-        tabIndex="1"
-        role="dialog"
-        aria-labelledby="appointmentModalForm"
-        aria-hidden="true"
+      {/* Appointment Form Begin */}
+      <form
+        className="appointment-form"
+        onSubmit={(e) => {
+          handleSubmit(e);
+        }}
       >
-        <div className="modal-dialog d-flex align-items-center" role="document">
-          <div className="container">
-            <div className=" row justify-content-center">
-              <div className="col-lg-8 col-12">
-                {/* Modal Content Begin */}
-                <div className="modal-content">
-                  {/* Modal Close Button Begin */}
-                  <button
-                    type="button"
-                    className="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <img src="assets/img/icons/close.svg" alt="" />
-                  </button>
-                  {/* End Modal Close End */}
+        <h2 className="form-title">Get a Free Quote</h2>
+        <input
+          className="theme-input-style"
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+          required
+        />
+        {errors.name && <p>{errors.name}</p>}
+        <input
+          className="theme-input-style"
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          required
+        />
+        {errors.email && <p>{errors.email}</p>}
+        <input
+          className="theme-input-style"
+          type="tel"
+          placeholder="Phone"
+          value={phone}
+          onChange={(e) => {
+            setPhone(e.target.value);
+          }}
+        />
+        <input
+          className="theme-input-style"
+          type="text"
+          name="company"
+          placeholder="Company Name"
+          value={company}
+          onChange={(e) => {
+            setCompany(e.target.value);
+          }}
+        />
 
-                  {/* Appointment Form Begin */}
-                  <form
-                    className="appointment-form"
-                    onSubmit={(e) => {
-                      handleSubmit(e);
-                    }}
-                  >
-                    <h2 className="form-title">Get a Free Quote</h2>
-                    <input
-                      className="theme-input-style"
-                      type="text"
-                      name="name"
-                      placeholder="Full Name"
-                      value={name}
-                      onChange={(e) => {
-                        setName(e.target.value);
-                      }}
-                      required
-                    />
-                    {errors.name && <p>{errors.name}</p>}
-                    <input
-                      className="theme-input-style"
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                      value={email}
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                      }}
-                      required
-                    />
-                    {errors.email && <p>{errors.email}</p>}
-                    <input
-                      className="theme-input-style"
-                      type="tel"
-                      placeholder="Phone"
-                      value={phone}
-                      onChange={(e) => {
-                        setPhone(e.target.value);
-                      }}
-                    />
-                    <input
-                      className="theme-input-style"
-                      type="text"
-                      name="company"
-                      placeholder="Company Name"
-                      value={company}
-                      onChange={(e) => {
-                        setCompany(e.target.value);
-                      }}
-                    />
-
-                    {/* <select className="theme-input-style clearfix">
+        {/* <select className="theme-input-style clearfix">
                       <option value="" disabled="" defaultValue="">
                         Select purpose
                       </option>
@@ -144,29 +118,21 @@ const ContactFormModal = ({ submitForm }) => {
                       <option value="01">Other</option>
                     </select> */}
 
-                    <textarea
-                      className="theme-input-style"
-                      placeholder="Message"
-                      value={message}
-                      onChange={(e) => {
-                        setMessage(e.target.value);
-                      }}
-                      required
-                    ></textarea>
-                    {errors.message && <p>{errors.message}</p>}
-                    <button className="btn" type="submit">
-                      <span>Send request</span>
-                    </button>
-                  </form>
-                  {/* End Appointment Form End */}
-                </div>
-                {/* Modal Content End */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Modal Form End */}
+        <textarea
+          className="theme-input-style"
+          placeholder="Message"
+          value={message}
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
+          required
+        ></textarea>
+        {errors.message && <p>{errors.message}</p>}
+        <button className="btn" type="submit">
+          <span>Send request</span>
+        </button>
+      </form>
+      {/* End Appointment Form End */}
     </>
   );
 };

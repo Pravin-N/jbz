@@ -595,3 +595,15 @@ div.row.footer {
 .contact-form p {
   color: red;
 }
+
+.modal-content .contact-form-wrapper h3,
+.modal-content .contact-form-wrapper p {
+  color: #000;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav {
+    display: none;
+    box-sizing: border-box;
+  }
+}
