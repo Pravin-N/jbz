@@ -49,6 +49,7 @@ const ContactForm = ({ submitForm }) => {
           setCompany("");
           setMessage("");
           setPhone("");
+          setData({})
           submitForm();
         }
       });

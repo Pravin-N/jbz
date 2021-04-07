@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Validate from "./ValidateInfo";
 
 const ContactFormModal = ({ submitForm }) => {
   const [name, setName] = useState("");
@@ -8,20 +9,23 @@ const ContactFormModal = ({ submitForm }) => {
   const [company, setCompany] = useState("");
   const [phone, setPhone] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [data, setData] = useState({});
 
   const [errors, setErrors] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     console.log("Sending");
-    let data = {
+    let input = {
       name,
       email,
       message,
       company,
       phone,
     };
-    setErrors(validate(data));
+    setData(input);
+    setErrors(Validate(input));
     setIsSubmitting(true);
   };
 
@@ -33,6 +37,7 @@ const ContactFormModal = ({ submitForm }) => {
           Accept: "application/json, text/plain, */*",
           "Content-Type": "application/json",
         },
+
         body: JSON.stringify(data),
       }).then((res) => {
         console.log("Response received");
@@ -43,6 +48,7 @@ const ContactFormModal = ({ submitForm }) => {
           setCompany("");
           setMessage("");
           setPhone("");
+          setData({})
           submitForm();
         }
       });

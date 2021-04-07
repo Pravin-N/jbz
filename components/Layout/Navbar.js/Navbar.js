@@ -1,83 +1,89 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar";
+import useReactPath from "./components/useReactPath";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const path = useReactPath();
+  const router = useRouter();
   const [navBar, setnavBar] = useState(false);
 
-  /* SLIDE UP */
-  let slideUp = (target, duration = 500) => {
-    target.style.transitionProperty = "height, margin, padding";
-    target.style.transitionDuration = duration + "ms";
-    target.style.boxSizing = "border-box";
-    target.style.height = target.offsetHeight + "px";
-    target.offsetHeight;
-    target.style.overflow = "hidden";
-    target.style.height = 0;
-    target.style.paddingTop = 0;
-    target.style.paddingBottom = 0;
-    target.style.marginTop = 0;
-    target.style.marginBottom = 0;
-    window.setTimeout(() => {
-      target.style.display = "none";
-      target.style.removeProperty("height");
+
+
+  useEffect(() => {
+    /* SLIDE UP */
+    let slideUp = (target, duration = 500) => {
+      target.style.transitionProperty = "height, margin, padding";
+      target.style.transitionDuration = duration + "ms";
+      target.style.boxSizing = "border-box";
+      target.style.height = target.offsetHeight + "px";
+      target.offsetHeight;
+      target.style.overflow = "hidden";
+      target.style.height = 0;
+      target.style.paddingTop = 0;
+      target.style.paddingBottom = 0;
+      target.style.marginTop = 0;
+      target.style.marginBottom = 0;
+      window.setTimeout(() => {
+        target.style.display = "none";
+        target.style.removeProperty("height");
+        target.style.removeProperty("padding-top");
+        target.style.removeProperty("padding-bottom");
+        target.style.removeProperty("margin-top");
+        target.style.removeProperty("margin-bottom");
+        target.style.removeProperty("overflow");
+        target.style.removeProperty("transition-duration");
+        target.style.removeProperty("transition-property");
+        //alert("!");
+      }, duration);
+    };
+
+    /* SLIDE DOWN */
+    let slideDown = (target, duration = 500) => {
+      target.style.removeProperty("display");
+      let display = window.getComputedStyle(target).display;
+      if (display === "none") display = "block";
+      target.style.display = display;
+      let height = target.offsetHeight;
+      target.style.overflow = "hidden";
+      target.style.height = 0;
+      target.style.paddingTop = 0;
+      target.style.paddingBottom = 0;
+      target.style.marginTop = 0;
+      target.style.marginBottom = 0;
+      target.offsetHeight;
+      target.style.boxSizing = "border-box";
+      target.style.transitionProperty = "height, margin, padding";
+      target.style.transitionDuration = duration + "ms";
+      target.style.height = height + "px";
       target.style.removeProperty("padding-top");
       target.style.removeProperty("padding-bottom");
       target.style.removeProperty("margin-top");
       target.style.removeProperty("margin-bottom");
-      target.style.removeProperty("overflow");
-      target.style.removeProperty("transition-duration");
-      target.style.removeProperty("transition-property");
-      //alert("!");
-    }, duration);
-  };
+      window.setTimeout(() => {
+        target.style.removeProperty("height");
+        target.style.removeProperty("overflow");
+        target.style.removeProperty("transition-duration");
+        target.style.removeProperty("transition-property");
+      }, duration);
+    };
 
-  /* SLIDE DOWN */
-  let slideDown = (target, duration = 500) => {
-    target.style.removeProperty("display");
-    let display = window.getComputedStyle(target).display;
-    if (display === "none") display = "block";
-    target.style.display = display;
-    let height = target.offsetHeight;
-    target.style.overflow = "hidden";
-    target.style.height = 0;
-    target.style.paddingTop = 0;
-    target.style.paddingBottom = 0;
-    target.style.marginTop = 0;
-    target.style.marginBottom = 0;
-    target.offsetHeight;
-    target.style.boxSizing = "border-box";
-    target.style.transitionProperty = "height, margin, padding";
-    target.style.transitionDuration = duration + "ms";
-    target.style.height = height + "px";
-    target.style.removeProperty("padding-top");
-    target.style.removeProperty("padding-bottom");
-    target.style.removeProperty("margin-top");
-    target.style.removeProperty("margin-bottom");
-    window.setTimeout(() => {
-      target.style.removeProperty("height");
-      target.style.removeProperty("overflow");
-      target.style.removeProperty("transition-duration");
-      target.style.removeProperty("transition-property");
-    }, duration);
-  };
+    let settings = {
+      title: "<span></span>",
+      format: "multitoggle",
+      sticky: false,
+    };
 
-  let settings = {
-    title: "<span></span>",
-    format: "multitoggle",
-    sticky: false,
-  };
+    const navSticky = () => {
+      if (window.scrollY >= 20) {
+        setnavBar(true);
+      } else {
+        setnavBar(false);
+      }
+    };
 
-  const navSticky = () => {
-    if (window.scrollY >= 20) {
-      setnavBar(true);
-    } else {
-      setnavBar(false);
-    }
-  };
-
-  useEffect(() => {
     document.addEventListener("click", function (event) {
       if (event.target.matches('.header-main a[href="#"]')) {
         event.preventDefault();
@@ -169,7 +175,7 @@ const Navbar = () => {
     }
 
     menumaker(settings, appenderHtml, slideUp, slideDown, show, hide);
-  }, []);
+  }, [path]);
 
   return (
     <>
@@ -216,17 +222,17 @@ const Navbar = () => {
                 {/* Main Menu Begin */}
                 <div className="main-menu d-flex align-items-center justify-content-end">
                   <ul className="nav align-items-center">
-                    <li className="current-menu-parent menu-item-has-children">
+                    <li className={`${router.pathname == "/" ? "current-menu-parent" : ""} menu-item-has-children`}>
                       <Link href="/">
                         <a>Home</a>
                       </Link>
                     </li>
-                    <li className="menu-item-has-children">
+                    <li className={`${router.pathname == "/dubai-business-setup-about-jbz" ? "current-menu-parent" : ""} menu-item-has-children`}>
                       <Link href="/dubai-business-setup-about-jbz">
                         <a>About</a>
                       </Link>
                     </li>
-                    <li className="menu-item-has-children">
+                    <li className={`${router.pathname.includes("/business-setup-pro-services") ? "current-menu-parent" : ""} menu-item-has-children`}>
                       <Link href="/business-setup-pro-services">
                         <a>Services</a>
                       </Link>
@@ -283,7 +289,7 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li> */}
-                    <li className="menu-item-has-children">
+                    <li className={`${router.pathname == "/dubai-business-setup-blogs" ? "current-menu-parent" : ""} menu-item-has-children`}>
                       <Link href="/dubai-business-setup-blogs">
                         <a>Blog</a>
                       </Link>
@@ -307,7 +313,7 @@ const Navbar = () => {
                         </li>
                       </ul> */}
                     </li>
-                    <li className="menu-item-has-children">
+                    <li className={`${router.pathname == "/contact" ? "current-menu-parent" : ""} menu-item-has-children`}>
                       <Link href="/contact">
                         <a>Contact</a>
                       </Link>
