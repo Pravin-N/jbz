@@ -594,6 +594,8 @@ div.row.footer {
 .appointment-form p,
 .contact-form p {
   color: red;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .modal-content .contact-form-wrapper h3,

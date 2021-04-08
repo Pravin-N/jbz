@@ -76,6 +76,7 @@ const ContactForm = ({ submitForm }) => {
           >
             <div className="row">
               <div className="col-md-6">
+                {errors.name && <p>{errors.name}</p>}
                 <input
                   type="text"
                   name="name"
@@ -87,9 +88,9 @@ const ContactForm = ({ submitForm }) => {
                     setName(e.target.value);
                   }}
                 />
-                {errors.name && <p>{errors.name}</p>}
               </div>
               <div className="col-md-6">
+                {errors.email && <p>{errors.email}</p>}
                 <input
                   type="email"
                   name="email"
@@ -102,7 +103,6 @@ const ContactForm = ({ submitForm }) => {
                   }}
                 />
               </div>
-              {errors.email && <p>{errors.email}</p>}
 
               <div className="col-md-6">
                 <input
@@ -129,6 +129,7 @@ const ContactForm = ({ submitForm }) => {
                 />
               </div>
               <div className="col-12">
+                {errors.message && <p>{errors.message}</p>}
                 <textarea
                   name="message"
                   className="theme-input-style"
@@ -139,7 +140,6 @@ const ContactForm = ({ submitForm }) => {
                     setMessage(e.target.value);
                   }}
                 ></textarea>
-                {errors.message && <p>{errors.message}</p>}
               </div>
 
               <div className="col-12">

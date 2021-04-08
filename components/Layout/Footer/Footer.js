@@ -3,19 +3,8 @@ import ContactInfo from "./components/ContactInfo";
 import Copyright from "./components/Copyright";
 import Newsletter from "./components/Newsletter";
 import QuickLinks from "./components/QuickLinks";
-import RecentPosts from "./components/RecentPosts";
-import { useState } from "react";
-import FormSuccess from "../../../components/FormSuccess";
 
 const Footer = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  function submitForm() {
-    setIsSubmitted(true);
-  }
-  function formView() {
-    setIsSubmitted(false);
-  }
   return (
     <>
       {/* Footer Begin */}
@@ -27,11 +16,7 @@ const Footer = () => {
               <ContactInfo />
               {/* <RecentPosts /> */}
               <QuickLinks />
-              {!isSubmitted ? (
-                <Newsletter submitForm={submitForm} />
-              ) : (
-                <FormSuccess />
-              )}
+              <Newsletter />
             </div>
           </div>
         </div>

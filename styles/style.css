@@ -1144,7 +1144,8 @@ body,
   border: none;
   padding-left: 15px;
   padding-right: 50px;
-  color: #ffffff;
+  color: #000;
+  background-color: #fff;
 }
 
 .theme-input-group input::-webkit-input-placeholder {

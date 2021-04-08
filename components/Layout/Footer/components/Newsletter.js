@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -49,27 +50,37 @@ const Newsletter = () => {
               name="mc-embedded-subscribe-form"
               target="_blank"
               className="newsletter-form"
+              validate
+              onSubmit={(e) => {
+                handleSubmit(e);
+              }}
             >
-              <div className="theme-input-group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                  value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
-                />
-                <button
-                  type="submit"
-                  onClick={(e) => {
-                    handleSubmit(e);
-                  }}
-                >
-                  <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
-                </button>
-              </div>
+              {submitted ? (
+                <>
+                  <div className="">
+                    <p>Thank you for submitting your email. </p>
+                    <p>We will get back to you shortly. </p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="theme-input-group">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                      value={email}
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                      }}
+                    />{" "}
+                    <button type="submit">
+                      <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </>
+              )}
             </form>
           </div>
         </div>
