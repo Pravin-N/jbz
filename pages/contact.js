@@ -2,6 +2,7 @@ import { useState } from "react";
 import ContactForm from "../components/contactform";
 import FormSuccess from "../components/FormSuccess";
 import Link from "next/link";
+import SimpleMap from "../components/SimpleMap";
 
 const contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -112,6 +113,22 @@ const contact = () => {
               <FormSuccess />
             )}
           </div>
+        </div>
+      </section>
+      <section className="section-maps">
+        <div className=" map">
+          <iframe
+            width="100%"
+            height="100%"
+            loading="lazy"
+            allowFullScreen
+            aria-hidden="false"
+            tabIndex="0"
+            style={{
+              border: 0,
+            }}
+            src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFSMjeB9dXz4RbOFj8-OI9fI&key=${process.env.GOOGLE_API}`}
+          ></iframe>
         </div>
       </section>
       {/* Contact Info End */}
