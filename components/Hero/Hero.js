@@ -1,6 +1,6 @@
 import HeroSlide from "./HeroSlide";
 import CarouselIndicators from "./CarouselIndicators";
-// import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Hero = () => {
   // const [count, setCount] = useState(0);
@@ -60,19 +60,7 @@ const Hero = () => {
     },
   ];
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     console.log(count);
-  //     if (count < 3) {
-  //       setCount(count + 1);
-  //     } else {
-  //       setCount(0);
-  //     }
-  //   }, 5000);
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, [count]);
+  useEffect(() => {}, [heroData]);
 
   // TODO: change the para
   return (
