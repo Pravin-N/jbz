@@ -50,7 +50,7 @@ const Newsletter = () => {
               name="mc-embedded-subscribe-form"
               target="_blank"
               className="newsletter-form"
-              validate
+              validate="true"
               onSubmit={(e) => {
                 handleSubmit(e);
               }}
