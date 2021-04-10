@@ -638,3 +638,8 @@ div.row.footer {
     box-sizing: border-box;
   }
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1 !important;
+}
