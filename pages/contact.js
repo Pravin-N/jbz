@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ContactForm from "../components/contactform";
+import ContactForm from "../components/ContactForm";
 import FormSuccess from "../components/FormSuccess";
 import Link from "next/link";
 
