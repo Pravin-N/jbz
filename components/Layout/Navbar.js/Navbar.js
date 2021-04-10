@@ -181,14 +181,12 @@ const Navbar = () => {
                     <span></span>
                   </div>
                   <ul
-                    className={`nav align-items-center ${
-                      menuOpen ? "open" : ""
-                    }`}
+                    className={`nav align-items-center nav-menu ${menuOpen ? "open" : ""
+                      }`}
                   >
                     <li
-                      className={`${
-                        router.pathname == "/" ? "current-menu-parent" : ""
-                      } menu-item-has-children`}
+                      className={`${router.pathname == "/" ? "current-menu-parent" : ""
+                        } menu-item-has-children`}
                       onClick={closeMenu}
                     >
                       <Link href="/">
@@ -196,11 +194,10 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li
-                      className={`${
-                        router.pathname == "/dubai-business-setup-about-jbz"
-                          ? "current-menu-parent"
-                          : ""
-                      } menu-item-has-children`}
+                      className={`${router.pathname == "/dubai-business-setup-about-jbz"
+                        ? "current-menu-parent"
+                        : ""
+                        } menu-item-has-children`}
                       onClick={closeMenu}
                     >
                       <Link href="/dubai-business-setup-about-jbz">
@@ -208,19 +205,17 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li
-                      className={`${
-                        router.pathname.includes("/business-setup-pro-services")
-                          ? "current-menu-parent"
-                          : ""
-                      } menu-item-has-children has-sub-item`}
+                      className={`${router.pathname.includes("/business-setup-pro-services")
+                        ? "current-menu-parent"
+                        : ""
+                        } menu-item-has-children has-sub-item`}
                     >
                       <Link href="/business-setup-pro-services">
                         <a>Services</a>
                       </Link>
                       <span
-                        className={`submenu-button ${
-                          subMenuOpen ? "submenu-opened" : ""
-                        }`}
+                        className={`submenu-button ${subMenuOpen ? "submenu-opened" : ""
+                          }`}
                         onClick={openSubMenu}
                       ></span>
                       <ul className={`sub-menu ${subMenuOpen ? "open" : ""}`}>
@@ -279,11 +274,10 @@ const Navbar = () => {
                       </ul>
                     </li> */}
                     <li
-                      className={`${
-                        router.pathname == "/dubai-business-setup-blogs"
-                          ? "current-menu-parent"
-                          : ""
-                      } menu-item-has-children`}
+                      className={`${router.pathname == "/dubai-business-setup-blogs"
+                        ? "current-menu-parent"
+                        : ""
+                        } menu-item-has-children`}
                       onClick={openMenu}
                     >
                       <Link href="/dubai-business-setup-blogs">
@@ -310,11 +304,10 @@ const Navbar = () => {
                       </ul> */}
                     </li>
                     <li
-                      className={`${
-                        router.pathname == "/contact"
-                          ? "current-menu-parent"
-                          : ""
-                      } menu-item-has-children`}
+                      className={`${router.pathname == "/contact"
+                        ? "current-menu-parent"
+                        : ""
+                        } menu-item-has-children`}
                       onClick={closeMenu}
                     >
                       <Link href="/contact">

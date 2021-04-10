@@ -5,26 +5,26 @@ import Link from "next/link";
 const serviceData = [
   {
     title: "Business Setup",
-    image: "assets/img/icons/service-1.png",
+    image: "/assets/img/icons/service-1.svg",
     description: "Any business license anywhere in UAE. Mainland or Freezone.",
     link: "/business-setup-pro-services/business-setup-uae",
   },
   {
     title: "PRO Services",
-    image: "assets/img/icons/service-2.png",
+    image: "/assets/img/icons/service-2.svg",
     description: "Visa for employees and other govt related approvals",
     link: "/business-setup-pro-services/pro-service",
   },
   {
     title: "Business Center",
-    image: "assets/img/icons/service-3.png",
+    image: "/assets/img/icons/service-3.svg",
     description:
       "Hire office desks, cabins to full fledged office with meeting rooms.",
     link: "/business-setup-pro-services/business-center-dubai-service",
   },
   {
     title: "VAT Registration",
-    image: "assets/img/icons/service-4.png",
+    image: "/assets/img/icons/service-4.svg",
     description:
       "Register business under VAT, keep upto date with new regulations in UAE",
     link: "/business-setup-pro-services/vat-registration-service",

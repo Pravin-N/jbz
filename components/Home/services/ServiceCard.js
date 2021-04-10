@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image"
 
 const ServiceCard = ({ title, image, description, link }) => {
   return (
@@ -8,7 +9,7 @@ const ServiceCard = ({ title, image, description, link }) => {
       <div className="single-service text-center">
         {/* Icon Begin */}
         <div className="icon">
-          <img src={image} data-rjs="2" alt="" />
+          <Image src={image} data-rjs="2" alt="" height="65" width="83" />
         </div>
         {/* Icon End  */}
 

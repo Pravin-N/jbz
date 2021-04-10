@@ -633,7 +633,7 @@ div.row.footer {
 }
 
 @media only screen and (max-width: 991px) {
-  .nav {
+  .nav-menu {
     display: none;
     box-sizing: border-box;
   }
