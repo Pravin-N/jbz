@@ -742,11 +742,13 @@ blockquote,
 .single-project-item .project-body .project-meta,
 .project-details .project-meta li {
   font-family: "Rubik", sans-serif;
+  font-display: swap;
 }
 
 body,
 .muli {
   font-family: "Muli", sans-serif;
+  font-display: swap;
 }
 
 /* Gradient Background */
