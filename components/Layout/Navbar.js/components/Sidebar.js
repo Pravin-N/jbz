@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
-const Sidebar = () => {
+const Sidebar = ({ close }) => {
+  const ref = useRef();
+  const refx = useRef();
+
   const offCanvasOpen = () => {
     var el1 = document.querySelector(".offcanvas-wrapper");
     var el2 = document.querySelector(".offcanvas-overlay");
@@ -8,33 +11,58 @@ const Sidebar = () => {
     el2.classList.add("show");
   };
 
-  const offCanvasClose = () => {
-    var el1 = document.querySelector(".offcanvas-wrapper");
-    var el2 = document.querySelector(".offcanvas-overlay");
-    el2.classList.remove("show");
-    el1.classList.remove("active");
+  // const offCanvasClose = () => {
+  //   // var el1 = document.querySelector(".offcanvas-wrapper");
+  //   // var el2 = document.querySelector(".offcanvas-overlay");
+  //   // el2.classList.remove("show");
+  //   // el1.classList.remove("active");
+  //   close();
+  // };
+
+  const menuClose = () => {
+    close();
   };
+
+  const handleClick = (e) => {
+    if (!ref.current.contains(e.target) || refx.current.contains(e.target)) {
+      var el1 = document.querySelector(".offcanvas-wrapper");
+      var el2 = document.querySelector(".offcanvas-overlay");
+      el2.classList.remove("show");
+      el1.classList.remove("active");
+      menuClose();
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("click", handleClick);
+
+    offCanvasOpen();
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  });
 
   return (
     <>
       {/* Offcanvas Holder Trigger */}
-      <span
+      {/* <span
         className="offcanvas-trigger text-right d-none d-lg-block"
         onClick={offCanvasOpen}
       >
         <span></span>
         <span></span>
         <span></span>
-      </span>
+      </span> */}
       {/* Offcanvas Trigger End */}
 
       {/* Offcanvas Begin */}
-      <div className="offcanvas-overlay fixed-top w-100 h-100"></div>
-      <div className="offcanvas-wrapper fixed-top h-100">
+      <div className={`offcanvas-overlay fixed-top w-100 h-100 `}></div>
+      <div className={`offcanvas-wrapper fixed-top h-100 `} ref={ref}>
         {/* Offcanvas Close Button Begin */}
         <div
           className="offcanvas-close position-absolute"
-          onClick={offCanvasClose}
+          // onClick={offCanvasClose}
+          ref={refx}
         >
           <img src="assets/img/icons/close.svg" className="svg" alt="" />
         </div>

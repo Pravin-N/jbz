@@ -7,18 +7,11 @@ const HeroSlide = ({
   line4,
   para,
   contact,
-  active,
   image,
   alt,
 }) => {
   return (
-    <div
-      className={
-        active
-          ? "single-banner-slider carousel-item active"
-          : "single-banner-slider carousel-item"
-      }
-    >
+    <div className={"single-banner-slider carousel-item active"}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">

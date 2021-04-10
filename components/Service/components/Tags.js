@@ -11,7 +11,7 @@ const Tags = (props) => {
         </div>
         <div className="tagcloud">
           {props.tags.map((tag) => {
-            return <a>{tag}</a>;
+            return <a key={tag}>{tag}</a>;
           })}
         </div>
       </div>

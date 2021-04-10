@@ -9,6 +9,15 @@ const Navbar = () => {
   const [navBar, setNavBar] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
+  const [offCanvas, setOffCanvas] = useState(false);
+
+  const handleClick = () => {
+    if (!offCanvas) {
+      setOffCanvas(true);
+    } else {
+      setOffCanvas(false);
+    }
+  };
 
   const navSticky = () => {
     if (window.scrollY >= 20) {
@@ -313,7 +322,15 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
-                  <Sidebar />
+                  <span
+                    className="offcanvas-trigger text-right d-none d-lg-block"
+                    onClick={handleClick}
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  {offCanvas ? <Sidebar close={handleClick} /> : null}
                 </div>
                 {/* Main Menu ENd */}
               </div>

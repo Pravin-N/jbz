@@ -33,7 +33,7 @@ const Testimonials = () => {
             id="carouselExampleFade"
             className="carousel slide carousel-fade testimonial-slider owl-carousel"
             data-ride="carousel"
-            data-interval="2000"
+            data-interval="3000"
           >
             {/* Single Testimonial Begin */}
             <div className="carousel-inner">
@@ -299,7 +299,7 @@ const Testimonials = () => {
                   width="25px"
                   height="19px"
                   className="svg replaced-svg"
-                  viewBox="0 0 19px 25px"
+                  viewBox="0 0 19 25"
                   aria-hidden="true"
                 >
                   <path
@@ -322,7 +322,7 @@ const Testimonials = () => {
                   width="26px"
                   height="19px"
                   className="svg replaced-svg"
-                  viewBox="0 0 19px 26px"
+                  viewBox="0 0 19 25"
                   aria-hidden="true"
                 >
                   <path
@@ -330,8 +330,8 @@ const Testimonials = () => {
                     fill="rgb(255, 255, 255)"
                     d="M16.862,1.165 C16.511,0.808 15.958,0.808 15.606,1.165 C15.266,1.512 15.266,2.084 15.606,2.432 L21.977,8.903 L0.954,8.903 C0.463,8.903 0.061,9.300 0.061,9.795 C0.061,10.294 0.463,10.703 0.954,10.703 L21.977,10.703 L15.606,17.163 C15.266,17.518 15.266,18.097 15.606,18.439 C15.958,18.796 16.511,18.796 16.862,18.439 L24.741,10.435 C25.082,10.089 25.082,9.515 24.741,9.170 L16.862,1.165 Z"
                   ></path>
-                  <span className="sr-only">Next</span>
                 </svg>
+                <span className="sr-only">Next</span>
               </button>
             </div>
           </div>

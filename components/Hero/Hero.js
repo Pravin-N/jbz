@@ -1,5 +1,6 @@
+import Carousel from "react-bootstrap/Carousel";
 import HeroSlide from "./HeroSlide";
-import CarouselIndicators from "./CarouselIndicators";
+
 import { useEffect } from "react";
 
 const Hero = () => {
@@ -67,41 +68,40 @@ const Hero = () => {
     <>
       <section className="banner section-pattern">
         <img src="/assets/img/circle.svg" className="heroSvg1" />
-        <div
-          id="carouselExampleIndicators"
-          className="carousel slide banner-slider owl-carousel d-flex align-items-center justify-content-center"
-          data-ride="carousel"
-        >
-          <img src="/assets/img/circle.svg" className="heroSvg2" />
-          <img src="/assets/img/circle.svg" className="heroSvg3" />
-          <img src="/assets/img/filled circle.svg" className="heroSvg4" />
-          <img src="/assets/img/cross.svg" className="heroSvg5" />
-          <ol className="carousel-indicators">
-            {heroData.map((singleData, count) => {
-              return (
-                <CarouselIndicators id={singleData.id} key={singleData.id} />
-              );
-            })}
-          </ol>
-          <div className="carousel-inner">
-            {heroData.map((singleData) => {
-              return (
-                <HeroSlide
-                  line1={singleData.line1}
-                  bold={singleData.bold}
-                  line3={singleData.line3}
-                  line4={singleData.line4}
-                  para={singleData.para}
-                  contact={singleData.contact}
-                  active={singleData.active}
-                  key={singleData.id}
-                  image={singleData.image}
-                  alt={singleData.alt}
-                />
-              );
-            })}
-          </div>
-        </div>
+        <Carousel controls={false}>
+          {heroData.map((singleData) => {
+            return (
+              <Carousel.Item key={singleData.id}>
+                <div
+                  id="carouselExampleIndicators"
+                  className="slide banner-slider owl-carousel d-flex align-items-center justify-content-center"
+                >
+                  <img src="/assets/img/circle.svg" className="heroSvg2" />
+                  <img src="/assets/img/circle.svg" className="heroSvg3" />
+                  <img
+                    src="/assets/img/filled circle.svg"
+                    className="heroSvg4"
+                  />
+                  <img src="/assets/img/cross.svg" className="heroSvg5" />
+
+                  <div className="">
+                    <HeroSlide
+                      line1={singleData.line1}
+                      bold={singleData.bold}
+                      line3={singleData.line3}
+                      line4={singleData.line4}
+                      para={singleData.para}
+                      contact={singleData.contact}
+                      key={singleData.id}
+                      image={singleData.image}
+                      alt={singleData.alt}
+                    />
+                  </div>
+                </div>
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
       </section>
     </>
   );
