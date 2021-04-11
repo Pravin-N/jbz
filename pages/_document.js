@@ -15,13 +15,30 @@ class MyDocument extends Document {
           <meta httpEquiv="content-type" content="text/html" charSet="utf-8" />
           <meta name="description" content="" />
           <meta name="keywords" content="" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
 
           {/* Web Fonts */}
           <link
-            rel="stylesheet"
+            rel="preload"
+            as="style"
             href="https://fonts.googleapis.com/css?family=Muli%7CRubik:400,400i,500,700&display=swap"
           />
-
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Muli%7CRubik:400,400i,500,700&display=swap"
+            media="print"
+            onLoad="this.media='all'"
+          />
+          <noscript>
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Muli%7CRubik:400,400i,500,700&display=swap"
+            />
+          </noscript>
           {/* ======= Bootstrap CSS ======= */}
           <link
             rel="stylesheet"
