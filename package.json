@@ -8,15 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "@popperjs/core": "^2.6.0",
-    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "contentful": "^8.2.1",
     "jquery": "^3.6.0",
-    "lottie-web": "^5.7.6",
     "next": "10.0.6",
     "nodemailer": "^6.5.0",
-    "popper.js": "^1.14.7",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-countup": "^4.3.3",
