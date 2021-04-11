@@ -37,7 +37,12 @@ const ModalForm = () => {
                     aria-label="Close"
                     onClick={formView}
                   >
-                    <img src="assets/img/icons/close.svg" alt="" />
+                    <img
+                      src="assets/img/icons/close.svg"
+                      alt=""
+                      height="20"
+                      width="20"
+                    />
                   </button>
                   {/* End Modal Close End */}
                   {!isSubmitted ? (
