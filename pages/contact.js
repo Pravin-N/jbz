@@ -12,10 +12,7 @@ const contact = () => {
   return (
     <>
       {/* Page Title Begin TODO: Change the header section.*/}
-      <section
-        className="page-title-bg pt-250 pb-100"
-        data-bg-img="assets/img/section-pattern/page-title.png"
-      >
+      <section className="page-title-bg pt-250 pb-100">
         <div className="container">
           <div className="row">
             <div className="col-12">

@@ -10,7 +10,6 @@ const ContactInfo = () => {
           <div className="widget-logo">
             <img
               src="/assets/img/Just Business Dubai.png"
-              data-rjs="2"
               alt="JBZ Business setup in Dubai Logo"
               width="108"
               height="25"

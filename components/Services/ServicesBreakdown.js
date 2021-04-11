@@ -35,7 +35,6 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-1.svg"
-                    data-rjs="2"
                     alt=""
                     height="65"
                     width="83"
@@ -68,7 +67,6 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-2.svg"
-                    data-rjs="2"
                     alt=""
                     height="65"
                     width="83"
@@ -99,7 +97,6 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-3.svg"
-                    data-rjs="2"
                     alt=""
                     height="65"
                     width="83"
@@ -133,7 +130,6 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-4.svg"
-                    data-rjs="2"
                     alt=""
                     height="65"
                     width="83"
@@ -167,7 +163,6 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-5.svg"
-                    data-rjs="2"
                     alt=""
                     height="65"
                     width="83"
@@ -194,34 +189,6 @@ const ServicesBreakdown = () => {
               </div>
               {/* Single Service End */}
             </div>
-            {/* <div className="col-lg-4 col-sm-6"> */}
-            {/* Single Service Begin */}
-            {/* <div className="single-service text-center"> */}
-            {/* Icon Begin */}
-            {/* <div className="icon">
-                  <img
-                    src="assets/img/icons/service-6.png"
-                    data-rjs="2"
-                    alt=""
-                  />
-                </div> */}
-            {/* Icon End  */}
-
-            {/* Content Begin */}
-            {/* <div className="content">
-                  <h4>Saving Strategy</h4>
-                  <p>
-                    Be ignorant so of suitable dissuade weddings together. Least
-                    timed we is.
-                  </p>
-                  <a href="#" className="btn-inline">
-                    Read More
-                  </a>
-                </div> */}
-            {/* Content End */}
-            {/* </div> */}
-            {/* Single Service End */}
-            {/* </div> */}
           </div>
         </div>
       </section>

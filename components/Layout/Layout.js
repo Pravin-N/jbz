@@ -7,13 +7,6 @@ import ModalForm from "../../components/ModalForm";
 const Layout = ({ children }) => {
   // TODO: Remove all the background images and replace it with svg.
   useEffect(() => {
-    // var bgimg = document.querySelectorAll("[data-bg-img]");
-    // bgimg.forEach((bimg) => {
-    //   bimg.style.backgroundImage = 'url("' + bimg.dataset.bgImg + '")';
-    //   bimg.removeAttribute("data-bg-img");
-    //   bimg.classList.add("bg-img");
-    // });
-
     var backToTopBtn = document.querySelector(".back-to-top");
 
     if (backToTopBtn) {

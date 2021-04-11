@@ -36,10 +36,7 @@ const Info = ({ info }) => {
   return (
     <>
       {/* <!-- Page Title Begin --> */}
-      <section
-        className="page-title-bg pt-250 pb-100"
-        data-bg-img="assets/img/section-pattern/page-title.png"
-      >
+      <section className="page-title-bg pt-250 pb-100">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -126,77 +123,6 @@ const Info = ({ info }) => {
                     </div>
                   </div>
                 </div>
-
-                {/* <div className="row justify-content-center pt-100">
-                  <div className="col-lg-10">
-                    <!-- Post Pagination Begin -->
-                    <div className="post-pagination d-flex align-items-center justify-content-between flex-column flex-md-row">
-                      <!-- Single Post Pagination Begin -->
-                      <div className="single-post-pagination media align-items-center mb-50 mb-md-0">
-                        <div className="pagination-image">
-                          <a href="#">
-                            <img
-                              src="assets/img/post-pegination-1.png"
-                              data-rjs="2"
-                              alt=""
-                            />
-                          </a>
-                        </div>
-                        <div className="media-body">
-                          <a
-                            href="#"
-                            className="d-inline-flex align-items-center"
-                          >
-                            <img
-                              src="assets/img/icons/angle-left.svg"
-                              data-rjs="2"
-                              className="svg"
-                              alt=""
-                            />
-                            previous
-                          </a>
-                          <h6>
-                            Role of Hedge Funds in Institutional Portfolios:
-                            Florida Retirement System
-                          </h6>
-                        </div>
-                      </div>
-                      <!-- Single Post Pagination End -->
-              
-                                  <!-- Single Post Pagination Begin -->
-                      <div className="single-post-pagination next media flex-row-reverse align-items-center">
-                        <div className="pagination-image">
-                          <a href="#">
-                            <img
-                              src="assets/img/post-pegination-2.png"
-                              data-rjs="2"
-                              alt=""
-                            />
-                          </a>
-                        </div>
-                        <div className="media-body text-right">
-                          <a
-                            href="#"
-                            className="d-inline-flex flex-row-reverse align-items-center"
-                          >
-                            <img
-                              src="assets/img/icons/angle-right.svg"
-                              alt=""
-                              className="svg"
-                            />
-                            next
-                          </a>
-                          <h6>
-                            Role of Hedge Funds in Institutional Portfolios:
-                            Florida Retirement System
-                          </h6>
-                        </div>
-                      </div>
-                      <!-- Single Post Pagination End -->
-                    </div>
-                    <!-- Post Pagination End -->
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>

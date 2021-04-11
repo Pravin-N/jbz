@@ -6,7 +6,7 @@ const BlogContent = () => {
         <div className="blog-details">
           {/* Blog Details Image Begin */}
           <div className="blog-details-image">
-            <img src="assets/img/blog/blog-details.jpg" data-rjs="2" alt="" />
+            <img src="assets/img/blog/blog-details.jpg" alt="" />
           </div>
           {/* Blog Details Image End */}
 
@@ -61,11 +61,7 @@ const BlogContent = () => {
                 </p>
               </div>
               <div className="col-md-6">
-                <img
-                  src="assets/img/blog/blog-details_2.jpg"
-                  data-rjs="2"
-                  alt=""
-                />
+                <img src="assets/img/blog/blog-details_2.jpg" alt="" />
               </div>
             </div>
 
@@ -128,14 +124,13 @@ const BlogContent = () => {
             <div className="single-post-pagination media align-items-center mb-50 mb-md-0">
               <div className="pagination-image">
                 <a href="#">
-                  <img src="assets/img/blog/nav1.png" data-rjs="2" alt="" />
+                  <img src="assets/img/blog/nav1.png" alt="" />
                 </a>
               </div>
               <div className="media-body">
                 <a href="#" className="d-inline-flex align-items-center">
                   <img
                     src="assets/img/icons/angle-left.svg"
-                    data-rjs="2"
                     className="svg"
                     alt=""
                   />
@@ -150,7 +145,7 @@ const BlogContent = () => {
             <div className="single-post-pagination next media flex-row-reverse align-items-center">
               <div className="pagination-image">
                 <a href="#">
-                  <img src="assets/img/blog/nav2.png" data-rjs="2" alt="" />
+                  <img src="assets/img/blog/nav2.png" alt="" />
                 </a>
               </div>
               <div className="media-body text-right">
@@ -179,11 +174,7 @@ const BlogContent = () => {
             <div className="single-comment-wrapper">
               <div className="single-post-comment media flex-column flex-sm-row">
                 <div className="comment-author-image mb-30 mb-sm-0">
-                  <img
-                    src="assets/img/blog/comment-1.png"
-                    data-rjs="2"
-                    alt=""
-                  />
+                  <img src="assets/img/blog/comment-1.png" alt="" />
                 </div>
                 <div className="comment-content media-body">
                   <div className="d-flex align-items-sm-end justify-content-between mb-1">
@@ -206,11 +197,7 @@ const BlogContent = () => {
               {/* Comment Reply */}
               <div className="post-comment-reply single-post-comment media flex-column flex-sm-row">
                 <div className="comment-author-image mb-30 mb-sm-0">
-                  <img
-                    src="assets/img/blog/comment-2.png"
-                    data-rjs="2"
-                    alt=""
-                  />
+                  <img src="assets/img/blog/comment-2.png" alt="" />
                 </div>
                 <div className="comment-content media-body">
                   <div className="d-flex align-items-sm-end justify-content-between mb-1">
@@ -237,11 +224,7 @@ const BlogContent = () => {
             <div className="single-comment-wrapper">
               <div className="single-post-comment media flex-column flex-sm-row">
                 <div className="comment-author-image mb-30 mb-sm-0">
-                  <img
-                    src="assets/img/blog/comment-3.png"
-                    data-rjs="2"
-                    alt=""
-                  />
+                  <img src="assets/img/blog/comment-3.png" alt="" />
                 </div>
                 <div className="comment-content media-body">
                   <div className="d-flex align-items-sm-end justify-content-between mb-1">

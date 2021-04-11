@@ -14,7 +14,6 @@ const Feature = ({ title, text, image, alt, slug }) => {
                 src={"https:" + image}
                 height="263"
                 width="350"
-                data-rjs="2"
                 alt={alt}
               />
             </div>

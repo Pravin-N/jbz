@@ -8,7 +8,7 @@ const ServiceCard = ({ title, image, description, link }) => {
       <div className="single-service text-center">
         {/* Icon Begin */}
         <div className="icon">
-          <Image src={image} data-rjs="2" alt="" height="65" width="83" />
+          <Image src={image} alt="" height="65" width="83" />
         </div>
         {/* Icon End  */}
 

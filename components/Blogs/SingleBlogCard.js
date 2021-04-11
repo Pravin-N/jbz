@@ -18,7 +18,7 @@ const SingleBlogCard = ({ article }) => {
           <p className="posted-on position-absolute">18 Feb</p>
           {/* Blog Image Begin */}
           <div className="blog-image">
-            <img src="assets/img/blog/blog-1.jpg" data-rjs="2" alt="" />
+            <img src="assets/img/blog/blog-1.jpg" alt="" />
           </div>
           {/* Blog Image End */}
 

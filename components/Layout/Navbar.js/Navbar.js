@@ -151,7 +151,6 @@ const Navbar = () => {
                       <img
                         className="default-logo"
                         src="/assets/img/Just Business Dubai.png"
-                        data-rjs="2"
                         alt="Just Business Setup Dubai Logo"
                         width={200}
                         height={55}
@@ -159,7 +158,6 @@ const Navbar = () => {
                       <img
                         className="sticky-logo"
                         src="/assets/img/Just Business Dubai.png"
-                        data-rjs="2"
                         alt="Just Business Setup Dubai Logo"
                         width={200}
                         height={55}

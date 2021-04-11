@@ -13,7 +13,7 @@ const RecentPosts = () => {
           {/* Single Latest Post Begin */}
           <div className="single-post media">
             <div className="post-image">
-              <img src="assets/img/blog/recent-post.png" data-rjs="2" alt="" />
+              <img src="assets/img/blog/recent-post.png" alt="" />
             </div>
             <div className="post-content media-body">
               <span className="posted-on">18 Feb, 2019</span>
@@ -27,7 +27,7 @@ const RecentPosts = () => {
           {/* Single Latest Post Begin */}
           <div className="single-post media">
             <div className="post-image">
-              <img src="assets/img/blog/recent-post.png" data-rjs="2" alt="" />
+              <img src="assets/img/blog/recent-post.png" alt="" />
             </div>
             <div className="post-content media-body">
               <span className="posted-on">18 Feb, 2019</span>

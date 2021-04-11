@@ -75,7 +75,6 @@ const Sidebar = ({ close }) => {
             <div className="widget-logo">
               <img
                 src="/assets/img/Just Business Dubai.png"
-                data-rjs="2"
                 alt="Just Business Setup Dubai Logo"
                 width={200}
                 height={55}
@@ -92,46 +91,7 @@ const Sidebar = ({ close }) => {
           {/* About Widget End */}
 
           {/* Flicker Widget Begin */}
-          <div className="widget widget_flicker">
-            {/* Widget Logo Begin */}
-            {/* <div className="widget-title">
-              <h4>Latest Blogs</h4>
-            </div> */}
-            {/* Widget Logo End */}
-
-            {/* <ul className="d-flex flex-wrap">
-              <li>
-                <a href="#">
-                  <img src="assets/img/flicker/f1.png" data-rjs="2" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="assets/img/flicker/f2.png" data-rjs="2" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="assets/img/flicker/f3.png" data-rjs="2" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="assets/img/flicker/f4.png" data-rjs="2" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="assets/img/flicker/f5.png" data-rjs="2" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="assets/img/flicker/f6.png" data-rjs="2" alt="" />
-                </a>
-              </li>
-            </ul> */}
-          </div>
+          <div className="widget widget_flicker"></div>
           {/* Flicker Widget End */}
 
           {/* Contact Widget Begin */}

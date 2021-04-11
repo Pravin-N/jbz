@@ -4,10 +4,7 @@ const AboutHeader = ({ header }) => {
   return (
     <>
       {/* Page Title Begin */}
-      <section
-        className="page-title-bg pt-250 pb-100"
-        data-bg-img="assets/img/section-pattern/page-title.png"
-      >
+      <section className="page-title-bg pt-250 pb-100">
         <div className="container">
           <div className="row">
             <div className="col-12">

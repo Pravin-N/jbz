@@ -43,7 +43,6 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Saleem Khokhar-Peritus Software.JPG"
-                        data-rjs="2"
                         alt=""
                         height="391"
                         width="435"
@@ -81,7 +80,6 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Zeeshan Gaffar Khan-Al Hayat Al Mudisha.jpeg"
-                        data-rjs="2"
                         alt=""
                         height="391"
                         width="435"
@@ -118,7 +116,6 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Usman Mehmood- Creations General Trading L.L.C.JPG"
-                        data-rjs="2"
                         alt=""
                         height="391"
                         width="435"
@@ -153,7 +150,6 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Abdullah Madni- Nox Health General Trading L.L.C.JPG"
-                        data-rjs="2"
                         alt=""
                         height="391"
                         width="435"
@@ -220,7 +216,6 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Taimur Rehman-Dream Home Technical Services.jpeg"
-                        data-rjs="2"
                         alt=""
                         height="391"
                         width="435"
@@ -256,7 +251,6 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/sonal.jpg"
-                        data-rjs="2"
                         alt=""
                         height="391"
                         width="435"

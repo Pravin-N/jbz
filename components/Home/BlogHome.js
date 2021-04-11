@@ -2,11 +2,7 @@ const BlogHome = () => {
   return (
     <>
       {/* Blog Begin */}
-      <section
-        className="pt-120 pb-120 section-pattern"
-        id="l-gray"
-        data-bg-img="assets/img/section-pattern/blog-pattern.png"
-      >
+      <section className="pt-120 pb-120 section-pattern" id="l-gray">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -28,13 +24,7 @@ const BlogHome = () => {
           <div className="row">
             <div className="col-12">
               {/* Blog Slider Begin */}
-              <div
-                className="blog-slider owl-carousel custom-owl dots-horizontal"
-                data-owl-items="2"
-                data-owl-margin="30"
-                data-owl-dots="true"
-                data-owl-responsive='{"0": {"items": "1"},"992": {"items": "2"}}'
-              >
+              <div className="blog-slider owl-carousel custom-owl dots-horizontal">
                 {/* Single Blog Item Begin */}
                 <div className="single-blog-item position-relative">
                   {/* Blog Bg Shape */}
@@ -65,10 +55,7 @@ const BlogHome = () => {
                   {/* Blog Content End */}
 
                   {/* Blog Hover Begin */}
-                  <div
-                    className="blog-hover text-center text-white position-absolute w-100 h-100 d-flex align-items-center justify-content-center bg-overlay"
-                    data-bg-img="assets/img/blog/blog-1.jpg"
-                  >
+                  <div className="blog-hover text-center text-white position-absolute w-100 h-100 d-flex align-items-center justify-content-center bg-overlay">
                     <h3 className="blog-title">
                       <a href="#">
                         How Can You Maximize Your Savings in the New Year
@@ -78,10 +65,7 @@ const BlogHome = () => {
                   {/* Blog Hover End */}
 
                   {/* Blog Button Begin */}
-                  <div
-                    className="blog-button position-absolute w-100 d-flex align-items-center justify-content-center"
-                    data-bg-img=""
-                  >
+                  <div className="blog-button position-absolute w-100 d-flex align-items-center justify-content-center">
                     <img
                       src="assets/img/shapes/blog-shape.svg"
                       className="svg"
@@ -126,10 +110,7 @@ const BlogHome = () => {
                   {/* Blog Content End */}
 
                   {/* Blog Hover Begin */}
-                  <div
-                    className="blog-hover text-center text-white position-absolute w-100 h-100 d-flex align-items-center justify-content-center bg-overlay"
-                    data-bg-img="assets/img/blog/blog-2.jpg"
-                  >
+                  <div className="blog-hover text-center text-white position-absolute w-100 h-100 d-flex align-items-center justify-content-center bg-overlay">
                     <h3 className="blog-title">
                       <a href="#">
                         Funds in Institutional Portfolios: Florida Retirement
@@ -140,10 +121,7 @@ const BlogHome = () => {
                   {/* Blog Hover End */}
 
                   {/* Blog Button Begin */}
-                  <div
-                    className="blog-button position-absolute w-100 d-flex align-items-center justify-content-center"
-                    data-bg-img=""
-                  >
+                  <div className="blog-button position-absolute w-100 d-flex align-items-center justify-content-center">
                     <img
                       src="assets/img/shapes/blog-shape.svg"
                       className="svg"
@@ -187,10 +165,7 @@ const BlogHome = () => {
                   {/* Blog Content End */}
 
                   {/* Blog Hover Begin */}
-                  <div
-                    className="blog-hover text-center text-white position-absolute w-100 h-100 d-flex align-items-center justify-content-center bg-overlay"
-                    data-bg-img="assets/img/blog/blog-3.jpg"
-                  >
+                  <div className="blog-hover text-center text-white position-absolute w-100 h-100 d-flex align-items-center justify-content-center bg-overlay">
                     <h3 className="blog-title">
                       <a href="#">
                         Funds in Institutional Portfolios: Florida Retirement
@@ -201,10 +176,7 @@ const BlogHome = () => {
                   {/* Blog Hover End */}
 
                   {/* Blog Button Begin */}
-                  <div
-                    className="blog-button position-absolute w-100 d-flex align-items-center justify-content-center"
-                    data-bg-img=""
-                  >
+                  <div className="blog-button position-absolute w-100 d-flex align-items-center justify-content-center">
                     <img
                       src="assets/img/shapes/blog-shape.svg"
                       className="svg"
