@@ -31,9 +31,7 @@ class MyDocument extends Document {
           />
 
           {/* ======= Font Awesome CSS ======= */}
-          <link rel="preload" rel="stylesheet" href="assets/css/font-awesome.min.css" />
-
-
+          <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
         </Head>
         <body>
           <Main />
@@ -43,7 +41,6 @@ class MyDocument extends Document {
             integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossOrigin="anonymous"
           ></script>
-
 
           <script
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
