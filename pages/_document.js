@@ -48,20 +48,7 @@ class MyDocument extends Document {
           />
 
           {/* ======= Font Awesome CSS ======= */}
-          <link
-            rel="preload"
-            as="style"
-            href="assets/css/font-awesome.min.css"
-          />
-          <link
-            rel="stylesheet"
-            href="assets/css/font-awesome.min.css"
-            media="print"
-            onLoad="this.media='all'"
-          />
-          <noscript>
-            <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-          </noscript>
+          <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
         </Head>
         <body>
           <Main />
