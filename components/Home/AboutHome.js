@@ -136,6 +136,7 @@ const AboutHome = () => {
                 alt="About just business mission and vision"
                 height="805"
                 width="1003"
+                loading="lazy"
               />
               {/* <ModalVideo
                 channel="youtube"
