@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const ServicesBreakdown = () => {
   return (
@@ -32,10 +33,12 @@ const ServicesBreakdown = () => {
               <div className="single-service text-center">
                 {/* Icon Begin */}
                 <div className="icon">
-                  <img
-                    src="assets/img/icons/service-1.png"
+                  <Image
+                    src="/assets/img/icons/service-1.svg"
                     data-rjs="2"
                     alt=""
+                    height="65"
+                    width="83"
                   />
                 </div>
                 {/* Icon End  */}
@@ -63,10 +66,12 @@ const ServicesBreakdown = () => {
               <div className="single-service text-center">
                 {/* Icon Begin */}
                 <div className="icon">
-                  <img
-                    src="assets/img/icons/service-2.png"
+                  <Image
+                    src="/assets/img/icons/service-2.svg"
                     data-rjs="2"
                     alt=""
+                    height="65"
+                    width="83"
                   />
                 </div>
                 {/* Icon End  */}
@@ -92,10 +97,12 @@ const ServicesBreakdown = () => {
               <div className="single-service text-center">
                 {/* Icon Begin */}
                 <div className="icon">
-                  <img
-                    src="assets/img/icons/service-3.png"
+                  <Image
+                    src="/assets/img/icons/service-3.svg"
                     data-rjs="2"
                     alt=""
+                    height="65"
+                    width="83"
                   />
                 </div>
                 {/* Icon End  */}
@@ -124,10 +131,12 @@ const ServicesBreakdown = () => {
               <div className="single-service text-center">
                 {/* Icon Begin */}
                 <div className="icon">
-                  <img
-                    src="assets/img/icons/service-4.png"
+                  <Image
+                    src="/assets/img/icons/service-4.svg"
                     data-rjs="2"
                     alt=""
+                    height="65"
+                    width="83"
                   />
                 </div>
                 {/* Icon End  */}
@@ -156,10 +165,12 @@ const ServicesBreakdown = () => {
               <div className="single-service text-center">
                 {/* Icon Begin */}
                 <div className="icon">
-                  <img
-                    src="assets/img/icons/service-5.png"
+                  <Image
+                    src="/assets/img/icons/service-5.svg"
                     data-rjs="2"
                     alt=""
+                    height="65"
+                    width="83"
                   />
                 </div>
                 {/* Icon End  */}
