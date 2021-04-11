@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"
 
 const Mission = () => {
   return (
@@ -57,13 +58,14 @@ const Mission = () => {
             </div>
             {/* Video Area */}
             <div className="col-lg-5 video-area mt-50 mt-lg-0">
-              <img
-                src="assets/img/section-bg/about-feature.png"
+              <Image
+                src="/assets/img/section-bg/about-feature.png"
                 data-rjs="2"
                 alt=""
+                height="100px" width="200px"
               />
               <a href="#" className="vdo-btn popup-video">
-                <img src="assets/img/icons/play.svg" className="svg" alt="" />{" "}
+                <Image src="/assets/img/icons/play.svg" className="svg" alt="" height="100px" width="200px" />{" "}
                 Watch Video
               </a>
             </div>
