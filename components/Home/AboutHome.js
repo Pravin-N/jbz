@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ModalVideo from "react-modal-video";
 import Link from "next/link";
 
 // TODO: change the see more button link to the page about us.
@@ -131,12 +130,11 @@ const AboutHome = () => {
             </div>
             <div className="col-lg-6 video-area mt-50 mt-lg-0">
               <img
-                src="/assets/img/section-bg/about jb business setup in dubai1.png"
+                src="/assets/img/section-bg/about jb business setup in dubai1.webp"
                 data-rjs="2"
                 alt="About just business mission and vision"
                 height="805"
                 width="1003"
-                loading="lazy"
               />
               {/* <ModalVideo
                 channel="youtube"
