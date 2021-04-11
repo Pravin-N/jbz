@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from "react";
 import Lottie from "react-lottie";
 import step1 from "../../public/assets/anim/step1-prepare-documents.json";
 import step2 from "../../public/assets/anim/step2-issue-business-license.json";

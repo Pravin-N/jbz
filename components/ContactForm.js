@@ -1,5 +1,3 @@
-import React from "react";
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import Validate from "./ValidateInfo";
 

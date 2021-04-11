@@ -1,5 +1,3 @@
-import React from "react";
-
 import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";

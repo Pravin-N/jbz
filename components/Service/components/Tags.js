@@ -1,4 +1,3 @@
-import React from "react";
 import Features from "../../features/Features";
 
 const Tags = (props) => {

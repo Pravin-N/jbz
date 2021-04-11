@@ -1,5 +1,3 @@
-import React from "react";
-// import Search from "./Service/components/Search";
 import WidgetLinks from "./Service/components/WidgetLinks";
 
 import Tags from "./Service/components/Tags";

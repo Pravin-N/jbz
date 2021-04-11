@@ -1,4 +1,3 @@
-import React from "react";
 import SingleBlogCard from "../../components/Blogs/SingleBlogCard";
 import Pagination from "../../components/Blogs/Pagination";
 import SideBar from "../../components/SideBar";

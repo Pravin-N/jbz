@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import Link from "next/link";
 

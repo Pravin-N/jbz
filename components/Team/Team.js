@@ -1,4 +1,3 @@
-import React from "react";
 import TeamMember from "./TeamMember";
 
 // TODO: change the info below to as per the site. use react loading skeleton.

@@ -1,4 +1,3 @@
-import React from "react";
 import ContactInfo from "./components/ContactInfo";
 import Copyright from "./components/Copyright";
 import Newsletter from "./components/Newsletter";
