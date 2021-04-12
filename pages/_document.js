@@ -25,18 +25,18 @@ class MyDocument extends Document {
           <link
             rel="preload"
             as="style"
-            href="/fonts/LucidaFax/Lucida Fax Regular.ttf"
+            href="/fonts/LucidaFax/Lucida-Fax-Regular.ttf"
           />
           <link
             rel="stylesheet"
-            href="/fonts/LucidaFax/Lucida Fax Regular.ttf"
+            href="/fonts/LucidaFax/Lucida-Fax-Regular.ttf"
             media="print"
             onLoad="this.media='all'"
           />
           <noscript>
             <link
               rel="stylesheet"
-              href="/fonts/LucidaFax/Lucida Fax Regular.ttf"
+              href="/fonts/LucidaFax/Lucida-Fax-Regular.ttf"
             />
           </noscript>
           {/* ======= Bootstrap CSS ======= */}
