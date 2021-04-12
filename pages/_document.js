@@ -68,7 +68,7 @@ class MyDocument extends Document {
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossOrigin="anonymous"
           ></script>
-          {/* <script type="text/javascript" src="/js/chat.js"></script> */}
+          <script type="text/javascript" src="/js/chat.js"></script>
         </body>
       </Html>
     );
