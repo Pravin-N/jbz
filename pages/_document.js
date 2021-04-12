@@ -22,7 +22,7 @@ class MyDocument extends Document {
           />
 
           {/* Web Fonts */}
-          <link
+          {/* <link
             rel="preload"
             as="style"
             href="/fonts/LucidaFax/Lucida-Fax-Regular.ttf"
@@ -38,7 +38,7 @@ class MyDocument extends Document {
               rel="stylesheet"
               href="/fonts/LucidaFax/Lucida-Fax-Regular.ttf"
             />
-          </noscript>
+          </noscript> */}
           {/* ======= Bootstrap CSS ======= */}
           <link
             rel="stylesheet"
