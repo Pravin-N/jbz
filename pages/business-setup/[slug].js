@@ -35,9 +35,8 @@ export async function getStaticProps(context) {
 
 const Info = ({ info }) => {
   const metaData = {
-    title: `${info.fields.Title} | Just Business`,
-    description:
-      "Just Business operates 2 Business Centers in Dubai's prime locations with all the facilities required to run a profitable business like reception facilities, conference rooms, concierge facilities and world class workstations all at affordable prices. Fully serviced offices and virtual office service also provided at these centers.",
+    title: `${info.fields.title} | Just Business`,
+    description: `${info.fields.altText} | ${info.fields.shortText}`,
     keywords: `starting a business in dubai, business setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, startup in uae, business license in Dubai, ${info.fields.shortTitle}, ${info.fields.category}`,
     website: "https://jbz.vercel.app/",
   };
