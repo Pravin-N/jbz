@@ -15,11 +15,11 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta httpEquiv="content-type" content="text/html" charSet="utf-8" />
 
-          <link
+          {/* <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
             crossOrigin="true"
-          />
+          /> */}
 
           {/* Web Fonts */}
           {/* <link
