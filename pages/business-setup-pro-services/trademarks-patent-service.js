@@ -2,6 +2,7 @@ import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
 import Image from "next/image";
+import Meta from "../../components/Layout/Meta";
 
 const tags = [
   "Trademark Registration",
@@ -10,8 +11,22 @@ const tags = [
 ];
 
 const trademark = () => {
+  const metaData = {
+    title: "Trademark & Patent registration in Dubai, UAE | Just Business",
+    description:
+      "Just Business provides services for trademark registration in Dubai, UAE. Our experts can guide and help you get the required formalities completed with the ministry of Economy. Our experts are registered agents with the ministry of economy",
+    keywords:
+      "Intellectual Property registration, Intellectual property law, patent registration uae, trademark & copyright registration in uae, trademark experts in dubai, trademark experts in UAE, Patent experts in Dubai, Patent & trademark specialist in UAE",
+    website: "https://jbz.vercel.app/",
+  };
   return (
     <>
+      <Meta
+        title={metaData.title}
+        description={metaData.description}
+        keywords={metaData.keywords}
+        website={metaData.website}
+      />
       {/* Page Title Begin  TODO: Head section to use the page header component*/}
       <section className="page-title-bg pt-250 pb-100">
         <div className="container">
