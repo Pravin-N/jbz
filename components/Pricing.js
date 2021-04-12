@@ -3,11 +3,31 @@ const Pricing = () => {
     <>
       {/* Pricing Plan Begin */}
       <section className="pt-120 pb-120 section-pattern l-gray pricing">
-        <img src="/assets/img/circle.svg" className="stepSvg1" />
-        <img src="/assets/img/circle.svg" className="heroSvg5" />
-        <img src="/assets/img/circle.svg" className="heroSvg4" />
-        <img src="/assets/img/filled circle.svg" className="heroSvg3" />
-        <img src="/assets/img/cross.svg" className="heroSvg2" />
+        <img
+          src="/assets/img/circle.svg"
+          className="stepSvg1"
+          alt="background shape 1"
+        />
+        <img
+          src="/assets/img/circle.svg"
+          className="heroSvg5"
+          alt="background shape 2"
+        />
+        <img
+          src="/assets/img/circle.svg"
+          className="heroSvg4"
+          alt="background shape 3"
+        />
+        <img
+          src="/assets/img/filled circle.svg"
+          className="heroSvg3"
+          alt="background shape 4"
+        />
+        <img
+          src="/assets/img/cross.svg"
+          className="heroSvg2"
+          alt="background shape 5"
+        />
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -29,14 +49,21 @@ const Pricing = () => {
           {/* Pricing NavTab Begin */}
           <div className="pricing-navtab">
             {/* Pricing Nav Begin */}
-            <ul className="row nav nav-tabs" role="tablist">
+            <ul
+              className="row nav nav-tabs"
+              role="tablist"
+              aria-owns="pricing-1 pricing-2 pricing-3 pricing-4"
+            >
               {/* Single Nav Begin */}
-              <li className="nav-item col-lg-3 col-sm-6">
+              <li className="nav-item col-lg-3 col-sm-6" role="presentation">
                 <a
                   href="#personal"
                   className="nav-link text-center active"
                   data-toggle="tab"
+                  aria-selected="true"
+                  id="pricing-1"
                   role="tab"
+                  aria-label="Commercial License"
                 >
                   <h4>Commercial License</h4>
                   <h2>AED 28,970*</h2>
@@ -46,12 +73,15 @@ const Pricing = () => {
               {/* Single Nav End */}
 
               {/* Single Nav Begin */}
-              <li className="nav-item col-lg-3 col-sm-6">
+              <li className="nav-item col-lg-3 col-sm-6" role="presentation">
                 <a
                   href="#startup"
                   className="nav-link text-center"
                   data-toggle="tab"
+                  aria-selected="false"
+                  id="pricing-2"
                   role="tab"
+                  aria-label="Professional License"
                 >
                   <h4>Professional License</h4>
                   <h2>AED 19,770*</h2>
@@ -60,12 +90,15 @@ const Pricing = () => {
               {/* Single Nav End */}
 
               {/* Single Nav Begin */}
-              <li className="nav-item col-lg-3 col-sm-6">
+              <li className="nav-item col-lg-3 col-sm-6" role="presentation">
                 <a
                   href="#business"
                   className="nav-link text-center"
                   data-toggle="tab"
+                  aria-selected="false"
+                  id="pricing-3"
                   role="tab"
+                  aria-label="Freezone License"
                 >
                   <h4>Freezone License</h4>
                   <h2>AED 25,700*</h2>
@@ -74,12 +107,15 @@ const Pricing = () => {
               {/* Single Nav End */}
 
               {/* Single Nav Begin */}
-              <li className="nav-item col-lg-3 col-sm-6">
+              <li className="nav-item col-lg-3 col-sm-6" role="presentation">
                 <a
                   href="#entrepreneur"
                   className="nav-link text-center"
                   data-toggle="tab"
+                  aria-selected="false"
+                  id="pricing-4"
                   role="tab"
+                  aria-label="Offshore License"
                 >
                   <h4>Offshore License</h4>
                   <h2>AED 8,000*</h2>
@@ -165,10 +201,11 @@ const Pricing = () => {
                         </li>
                       </ul>
                       <a
-                        href=""
+                        href="#"
                         className="btn"
                         data-toggle="modal"
                         data-target="#appointmentModalForm"
+                        aria-label="Contact Form"
                       >
                         <span>Get a free Quote</span>
                       </a>
@@ -249,10 +286,11 @@ const Pricing = () => {
                         </li>
                       </ul>
                       <a
-                        href=""
+                        href="#"
                         className="btn"
                         data-toggle="modal"
                         data-target="#appointmentModalForm"
+                        aria-label="Contact Form"
                       >
                         <span>Get a free Quote</span>
                       </a>
@@ -329,10 +367,11 @@ const Pricing = () => {
                         </li>
                       </ul>
                       <a
-                        href=""
+                        href="#"
                         className="btn"
                         data-toggle="modal"
                         data-target="#appointmentModalForm"
+                        aria-label="Contact Form"
                       >
                         <span>Get a free Quote</span>
                       </a>
@@ -405,10 +444,11 @@ const Pricing = () => {
                         </li>
                       </ul>
                       <a
-                        href=""
+                        href="#"
                         className="btn"
                         data-toggle="modal"
                         data-target="#appointmentModalForm"
+                        aria-label="Contact Form"
                       >
                         <span>Get a free Quote</span>
                       </a>

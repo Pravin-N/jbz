@@ -64,7 +64,11 @@ const Sidebar = ({ close }) => {
           // onClick={offCanvasClose}
           ref={refx}
         >
-          <img src="assets/img/icons/close.svg" className="svg" alt="" />
+          <img
+            src="assets/img/icons/close.svg"
+            className="svg"
+            alt="close form"
+          />
         </div>
         {/* Offcanvas Close Button End */}
 
@@ -138,6 +142,8 @@ const Sidebar = ({ close }) => {
               className="btn"
               data-toggle="modal"
               data-target="#appointmentModalForm"
+              aria-label="Contact Form Link"
+              rel="nofollow"
             >
               <span>Get Appointment</span>
             </a>

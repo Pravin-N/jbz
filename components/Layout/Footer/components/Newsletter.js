@@ -74,7 +74,7 @@ const Newsletter = () => {
                         setEmail(e.target.value);
                       }}
                     />{" "}
-                    <button type="submit">
+                    <button type="submit" aria-label="Submit Email">
                       <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
                     </button>
                   </div>

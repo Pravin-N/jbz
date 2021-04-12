@@ -16,6 +16,8 @@ const ClientsLogo = () => {
                   href="https://dreamhomecleaning.ae/"
                   className="single-brand-logo"
                   target="_blank"
+                  rel="noreferrer"
+                  aria-label="Client logo-1"
                 >
                   <Image
                     src="/assets/img/brand/dreamhome.png"
@@ -31,6 +33,8 @@ const ClientsLogo = () => {
                   href="https://www.mayfairwrapping.ae/"
                   className="single-brand-logo"
                   target="_blank"
+                  rel="noreferrer"
+                  aria-label="Client logo-2"
                 >
                   <Image
                     src="/assets/img/brand/mayfair.webp"
@@ -46,6 +50,8 @@ const ClientsLogo = () => {
                   href="https://peritussoft.com/"
                   className="single-brand-logo"
                   target="_blank"
+                  rel="noreferrer"
+                  aria-label="Client logo-3"
                 >
                   <Image
                     src="/assets/img/brand/peritas.png"
@@ -61,6 +67,8 @@ const ClientsLogo = () => {
                   href="http://shinesquarebuilders.com/"
                   className="single-brand-logo"
                   target="_blank"
+                  rel="noreferrer"
+                  aria-label="Client logo-4"
                 >
                   <Image
                     src="/assets/img/brand/shinesquare.png"
@@ -76,6 +84,8 @@ const ClientsLogo = () => {
                   href="http://theleelahotel.ae/"
                   className="single-brand-logo"
                   target="_blank"
+                  rel="noreferrer"
+                  aria-label="Client logo-5"
                 >
                   <Image
                     src="/assets/img/brand/theleela.jpg"
@@ -91,6 +101,8 @@ const ClientsLogo = () => {
                   href="https://www.facebook.com/badshahpalace.uae/"
                   className="single-brand-logo"
                   target="_blank"
+                  rel="noreferrer"
+                  aria-label="Client logo-6"
                 >
                   <Image
                     src="/assets/img/brand/badshah.png"

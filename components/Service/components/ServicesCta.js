@@ -7,7 +7,7 @@ const ServicesCta = () => {
       {/* Widget Ad Begin */}
       <div className="widget widget_ad">
         <Link href="\contact">
-          <a>
+          <a aria-label="Contact Page Link">
             <Image
               src="/assets/img/business setup dubai contact image.png"
               alt="business setup and company formation contact info image"

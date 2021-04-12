@@ -9,10 +9,26 @@ const AboutHome = () => {
     <>
       {/* About Begin */}
       <section className="pt-120 pb-120 section-pattern ov-hidden about">
-        <img src="/assets/img/triangle.svg" className="triSvg" />
-        <img src="/assets/img/circle.svg" className="heroSvg3" />
-        <img src="/assets/img/filled circle.svg" className="heroSvg4" />
-        <img src="/assets/img/cross.svg" className="heroSvg5" />
+        <img
+          src="/assets/img/triangle.svg"
+          className="triSvg"
+          alt="background shape 1"
+        />
+        <img
+          src="/assets/img/circle.svg"
+          className="heroSvg3"
+          alt="background shape 2"
+        />
+        <img
+          src="/assets/img/filled circle.svg"
+          className="heroSvg4"
+          alt="background shape 3"
+        />
+        <img
+          src="/assets/img/cross.svg"
+          className="heroSvg5"
+          alt="background shape 4"
+        />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -35,9 +51,14 @@ const AboutHome = () => {
               {/* About Tabs Begin */}
               <div className="about-nav-tab">
                 {/* Nav Tabs Begin */}
-                <ul className="nav nav-tabs" role="tablist">
-                  <li className="nav-items">
+                <ul
+                  className="nav nav-tabs"
+                  role="tablist"
+                  aria-owns="mission-tab vision-tab"
+                >
+                  <li className="nav-items" role="presentation">
                     <a
+                      id="mission-tab"
                       className="nav-link active"
                       data-toggle="tab"
                       href="#mission"
@@ -47,8 +68,9 @@ const AboutHome = () => {
                       Our Mission
                     </a>
                   </li>
-                  <li className="nav-items">
+                  <li className="nav-items" role="presentation">
                     <a
+                      id="vision-tab"
                       className="nav-link"
                       data-toggle="tab"
                       href="#vision"
@@ -88,8 +110,8 @@ const AboutHome = () => {
                       </li>
                     </ul>
                     <Link href="/dubai-business-setup-about-jbz">
-                      <a className="btn">
-                        <span>LEARN MORE</span>
+                      <a className="btn" aria-label="About Us Link">
+                        <span>ABOUT US</span>
                       </a>
                     </Link>
                   </div>
@@ -117,8 +139,8 @@ const AboutHome = () => {
                       {/* <li><i className="fa fa-check" aria-hidden="true"></i> Customer dossier</li> */}
                     </ul>
                     <Link href="/dubai-business-setup-about-jbz">
-                      <a className="btn">
-                        <span>LEARN MORE</span>
+                      <a className="btn" aria-label="About Us Link">
+                        <span>ABOUT US</span>
                       </a>
                     </Link>
                   </div>

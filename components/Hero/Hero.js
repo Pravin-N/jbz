@@ -44,7 +44,7 @@ const Hero = () => {
       contact: "Free Consultation",
       active: false,
       image: "/assets/img/banner/freezone business setup.png",
-      alt: "",
+      alt: "freezone business setup",
     },
     {
       id: "3",
@@ -67,7 +67,11 @@ const Hero = () => {
   return (
     <>
       <section className="banner section-pattern">
-        <img src="/assets/img/circle.svg" className="heroSvg1" />
+        <img
+          src="/assets/img/circle.svg"
+          className="heroSvg1"
+          alt="background shape 1"
+        />
         <Carousel controls={false}>
           {heroData.map((singleData) => {
             return (
@@ -76,13 +80,26 @@ const Hero = () => {
                   id="carouselExampleIndicators"
                   className="slide banner-slider owl-carousel d-flex align-items-center justify-content-center"
                 >
-                  <img src="/assets/img/circle.svg" className="heroSvg2" />
-                  <img src="/assets/img/circle.svg" className="heroSvg3" />
+                  <img
+                    src="/assets/img/circle.svg"
+                    className="heroSvg2"
+                    alt="background shape 2"
+                  />
+                  <img
+                    src="/assets/img/circle.svg"
+                    className="heroSvg3"
+                    alt="background shape 3"
+                  />
                   <img
                     src="/assets/img/filled circle.svg"
                     className="heroSvg4"
+                    alt="background shape 4"
                   />
-                  <img src="/assets/img/cross.svg" className="heroSvg5" />
+                  <img
+                    src="/assets/img/cross.svg"
+                    className="heroSvg5"
+                    alt="background shape 5"
+                  />
 
                   <div className="">
                     <HeroSlide

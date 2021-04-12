@@ -7,16 +7,16 @@ const Pagination = () => {
           {/* Start theme pagination */}
           <ul className="nav align-items-center">
             <li className="nav-btn prev">
-              <a href="#">
+              <a href="#" aria-label="Twitter">
                 <img
                   src="assets/img/icons/pagination-left.svg"
                   className="svg"
-                  alt=""
+                  alt="navigate left"
                 />
                 <img
                   src="assets/img/icons/angle-left-red.svg"
                   className="svg"
-                  alt=""
+                  alt="navigate left arrow"
                 />
               </a>
             </li>
@@ -34,12 +34,12 @@ const Pagination = () => {
                 <img
                   src="assets/img/icons/pagination-right.svg"
                   className="svg"
-                  alt=""
+                  alt="navigate right"
                 />
                 <img
                   src="assets/img/icons/angle-right-red.svg"
                   className="svg"
-                  alt=""
+                  alt="navigate right arrow"
                 />
               </a>
             </li>

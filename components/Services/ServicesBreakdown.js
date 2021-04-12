@@ -35,7 +35,7 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-1.svg"
-                    alt=""
+                    alt="Business Setup Dubai"
                     height="65"
                     width="83"
                   />
@@ -45,7 +45,7 @@ const ServicesBreakdown = () => {
                 {/* Content Begin */}
                 <div className="content">
                   <Link href="/business-setup-pro-services/business-setup-uae">
-                    <a>
+                    <a aria-label="Business Setup Service">
                       <h4>Business Setup</h4>
                     </a>
                   </Link>
@@ -53,7 +53,12 @@ const ServicesBreakdown = () => {
                     Any business license anywhere in UAE. Mainland or Freezone.
                   </p>
                   <Link href="/business-setup-pro-services/business-setup-uae">
-                    <a className="btn-inline">Read More</a>
+                    <a
+                      className="btn-inline"
+                      aria-label="Business Setup Service"
+                    >
+                      Know More
+                    </a>
                   </Link>
                 </div>
                 {/* Content End */}
@@ -67,7 +72,7 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-2.svg"
-                    alt=""
+                    alt="PRO Services Dubai"
                     height="65"
                     width="83"
                   />
@@ -77,13 +82,15 @@ const ServicesBreakdown = () => {
                 {/* Content Begin */}
                 <div className="content">
                   <Link href="/business-setup-pro-services/pro-service">
-                    <a>
+                    <a aria-label="PRO Services">
                       <h4>PRO Services</h4>
                     </a>
                   </Link>
                   <p> Visa for employees and other govt related approvals</p>
                   <Link href="/business-setup-pro-services/pro-service">
-                    <a className="btn-inline">Read More</a>
+                    <a className="btn-inline" aria-label="PRO Services">
+                      Know More
+                    </a>
                   </Link>
                 </div>
                 {/* Content End */}
@@ -97,7 +104,7 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-3.svg"
-                    alt=""
+                    alt="Business Center dubai"
                     height="65"
                     width="83"
                   />
@@ -107,7 +114,7 @@ const ServicesBreakdown = () => {
                 {/* Content Begin */}
                 <div className="content">
                   <Link href="/business-setup-pro-services/business-center-dubai-service">
-                    <a>
+                    <a aria-label="Business Center Service">
                       <h4>Business Center</h4>
                     </a>
                   </Link>
@@ -116,7 +123,12 @@ const ServicesBreakdown = () => {
                     meeting rooms.
                   </p>
                   <Link href="/business-setup-pro-services/business-center-dubai-service">
-                    <a className="btn-inline">Read More</a>
+                    <a
+                      className="btn-inline"
+                      aria-label="Business Center Service"
+                    >
+                      Know More
+                    </a>
                   </Link>
                 </div>
                 {/* Content End */}
@@ -130,7 +142,7 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-4.svg"
-                    alt=""
+                    alt="VAT registration Dubai"
                     height="65"
                     width="83"
                   />
@@ -140,7 +152,7 @@ const ServicesBreakdown = () => {
                 {/* Content Begin */}
                 <div className="content">
                   <Link href="/business-setup-pro-services/vat-registration-service">
-                    <a>
+                    <a aria-label="VAT Registration Service">
                       <h4>VAT Registration</h4>
                     </a>
                   </Link>
@@ -149,7 +161,12 @@ const ServicesBreakdown = () => {
                     regulations in UAE
                   </p>
                   <Link href="/business-setup-pro-services/vat-registration-service">
-                    <a className="btn-inline">Read More</a>
+                    <a
+                      className="btn-inline"
+                      aria-label="VAT Registration Service"
+                    >
+                      Know More
+                    </a>
                   </Link>
                 </div>
                 {/* Content End */}
@@ -163,7 +180,7 @@ const ServicesBreakdown = () => {
                 <div className="icon">
                   <Image
                     src="/assets/img/icons/service-5.svg"
-                    alt=""
+                    alt="Trademark and Patent Registration dubai"
                     height="65"
                     width="83"
                   />
@@ -173,7 +190,7 @@ const ServicesBreakdown = () => {
                 {/* Content Begin */}
                 <div className="content">
                   <Link href="/business-setup-pro-services/trademarks-patent-service">
-                    <a>
+                    <a aria-label="Trademark & Patent Service">
                       <h4>Trademark & Patent</h4>
                     </a>
                   </Link>
@@ -182,7 +199,12 @@ const ServicesBreakdown = () => {
                     intellectual assets of your business.
                   </p>
                   <Link href="/business-setup-pro-services/trademarks-patent-service">
-                    <a className="btn-inline">Read More</a>
+                    <a
+                      className="btn-inline"
+                      aria-label="Trademark & Patent Service"
+                    >
+                      Know More
+                    </a>
                   </Link>
                 </div>
                 {/* Content End */}

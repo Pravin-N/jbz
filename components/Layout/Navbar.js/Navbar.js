@@ -147,7 +147,7 @@ const Navbar = () => {
                 {/* Logo Begin */}
                 <div className="logo">
                   <Link href="/">
-                    <a>
+                    <a aria-label="Home page link and logo">
                       <img
                         className="default-logo"
                         src="/assets/img/Just Business Dubai.png"
@@ -251,31 +251,7 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
-                    {/* <li className="menu-item-has-children">
-                      <a href="#">Project</a>
-                      <ul className="sub-menu">
-                        <li>
-                          <a href="projects.html">Projects</a>
-                        </li>
-                        <li>
-                          <a href="project-details.html">project details</a>
-                        </li>
-                      </ul>
-                    </li> */}
-                    {/* <li className="menu-item-has-children">
-                      <a href="#">Pages</a>
-                      <ul className="sub-menu">
-                        <li>
-                          <a href="about.html">About Us</a>
-                        </li>
-                        <li>
-                          <a href="coming-soon.html">Coming Soon</a>
-                        </li>
-                        <li>
-                          <a href="404.html">404</a>
-                        </li>
-                      </ul>
-                    </li> */}
+
                     <li
                       className={`${
                         router.pathname == "/dubai-business-setup-blogs"
@@ -287,25 +263,6 @@ const Navbar = () => {
                       <Link href="/dubai-business-setup-blogs">
                         <a>Blog</a>
                       </Link>
-                      {/* <ul className="sub-menu">
-                        <li>
-                          <a href="blog.html">Blog Default</a>
-                        </li>
-                        <li>
-                          <a href="blog-single-column.html">
-                            Blog Single Colunm
-                          </a>
-                        </li>
-                        <li>
-                          <a href="blog-two-column.html">Blog two Colunm</a>
-                        </li>
-                        <li>
-                          <a href="blog-with-sidebar.html">Blog with Sidebar</a>
-                        </li>
-                        <li>
-                          <a href="blog-details.html">blog details</a>
-                        </li>
-                      </ul> */}
                     </li>
                     <li
                       className={`${

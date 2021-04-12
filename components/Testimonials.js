@@ -5,10 +5,26 @@ const Testimonials = () => {
     <>
       {/* Testimonial Begin */}
       <section className="pt-120 pb-120 section-pattern l-gray testimon">
-        <img src="/assets/img/circle.svg" className="stepSvg1" />
-        <img src="/assets/img/circle.svg" className="heroSvg3" />
-        <img src="/assets/img/filled circle.svg" className="heroSvg5" />
-        <img src="/assets/img/cross.svg" className="heroSvg4" />
+        <img
+          src="/assets/img/circle.svg"
+          className="stepSvg1"
+          alt="background shape 1"
+        />
+        <img
+          src="/assets/img/circle.svg"
+          className="heroSvg3"
+          alt="background shape 2"
+        />
+        <img
+          src="/assets/img/filled circle.svg"
+          className="heroSvg5"
+          alt="background shape 3"
+        />
+        <img
+          src="/assets/img/cross.svg"
+          className="heroSvg4"
+          alt="background shape 4"
+        />
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -43,7 +59,7 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Saleem Khokhar-Peritus Software.JPG"
-                        alt=""
+                        alt="Client 1"
                         height="391"
                         width="435"
                       />
@@ -80,7 +96,7 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Zeeshan Gaffar Khan-Al Hayat Al Mudisha.jpeg"
-                        alt=""
+                        alt="Client 2"
                         height="391"
                         width="435"
                       />
@@ -116,7 +132,7 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Usman Mehmood- Creations General Trading L.L.C.JPG"
-                        alt=""
+                        alt="Client 3"
                         height="391"
                         width="435"
                       />
@@ -150,7 +166,7 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Abdullah Madni- Nox Health General Trading L.L.C.JPG"
-                        alt=""
+                        alt="Client 4"
                         height="391"
                         width="435"
                       />
@@ -183,7 +199,7 @@ const Testimonials = () => {
                       <Image
                         src="/assets/img/testimonial/Robert Reynolds-Mayfair Wrapping.jpg"
                         data-rjs="2"
-                        alt=""
+                        alt="Client 5"
                         height="391"
                         width="435"
                       />
@@ -216,7 +232,7 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/Taimur Rehman-Dream Home Technical Services.jpeg"
-                        alt=""
+                        alt="Client 6"
                         height="391"
                         width="435"
                       />
@@ -251,7 +267,7 @@ const Testimonials = () => {
                     <div className="testimonial-image mb-50 mb-md-0">
                       <Image
                         src="/assets/img/testimonial/sonal.jpg"
-                        alt=""
+                        alt="Client 7"
                         height="391"
                         width="435"
                       />

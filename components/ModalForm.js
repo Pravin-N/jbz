@@ -39,7 +39,7 @@ const ModalForm = () => {
                   >
                     <img
                       src="assets/img/icons/close.svg"
-                      alt=""
+                      alt="close form"
                       height="20"
                       width="20"
                     />

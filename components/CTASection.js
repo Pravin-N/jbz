@@ -21,10 +21,11 @@ const CTASection = () => {
                 </p> */}
 
                 <a
-                  href=""
+                  href="#"
                   className="btn btn-white"
                   data-toggle="modal"
                   data-target="#appointmentModalForm"
+                  aria-label="Contact Form"
                 >
                   <span>Contact Us Today</span>
                 </a>

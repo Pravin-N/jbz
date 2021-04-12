@@ -42,13 +42,41 @@ const Steps = () => {
     <>
       {/* Work Process Begin */}
       <section className="pt-120 pb-70 section-pattern l-gray steps">
-        <img src="/assets/img/circle.svg" className="stepSvg1" />
-        <img src="/assets/img/circle.svg" className="heroSvg3" />
-        <img src="/assets/img/filled circle.svg" className="heroSvg5" />
-        <img src="/assets/img/cross.svg" className="heroSvg4" />
-        <img src="/assets/img/curvyline.svg" className="curline1" />
-        <img src="/assets/img/curvyline.svg" className="curline2" />
-        <img src="/assets/img/curvyline.svg" className="curline3" />
+        <img
+          src="/assets/img/circle.svg"
+          className="stepSvg1"
+          alt="background shape 1"
+        />
+        <img
+          src="/assets/img/circle.svg"
+          className="heroSvg3"
+          alt="background shape 2"
+        />
+        <img
+          src="/assets/img/filled circle.svg"
+          className="heroSvg5"
+          alt="background shape 3"
+        />
+        <img
+          src="/assets/img/cross.svg"
+          className="heroSvg4"
+          alt="background shape 4"
+        />
+        <img
+          src="/assets/img/curvyline.svg"
+          className="curline1"
+          alt="background shape 5"
+        />
+        <img
+          src="/assets/img/curvyline.svg"
+          className="curline2"
+          alt="background shape 6"
+        />
+        <img
+          src="/assets/img/curvyline.svg"
+          className="curline3"
+          alt="background shape 7"
+        />
         <div className="container">
           <div className="row">
             <div className="col-12">

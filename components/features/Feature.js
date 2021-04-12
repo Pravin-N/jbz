@@ -8,7 +8,7 @@ const Feature = ({ title, text, image, alt, slug }) => {
       <div className="single-feature text-center">
         {/* Feature Image Begin */}
         <Link href={"/business-setup/" + slug}>
-          <a>
+          <a aria-label={"image for " + title}>
             <div className="image">
               <Image
                 src={"https:" + image}
@@ -24,7 +24,7 @@ const Feature = ({ title, text, image, alt, slug }) => {
         {/* Feature Content Begin */}
         <div className="content">
           <Link href={"/business-setup/" + slug}>
-            <a>
+            <a aria-label={"link to " + title}>
               <h3>{title}</h3>
             </a>
           </Link>

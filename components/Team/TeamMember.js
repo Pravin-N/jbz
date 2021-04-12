@@ -3,10 +3,8 @@ import Image from "next/image";
 const TeamMember = ({
   name,
   designation,
-  svg,
   image,
   facebook,
-  twitter,
   linkedin,
   instagram,
 }) => {
@@ -16,8 +14,13 @@ const TeamMember = ({
       <div className="single-team-member">
         {/* Team Image Begin */}
         <div className="image position-relative">
-          {/* <img src={svg} className="svg" alt="" /> */}
-          <Image src={image} alt="" width="348" height="283" quality="90" />
+          <Image
+            src={image}
+            alt={"Team member " + name}
+            width="348"
+            height="283"
+            quality="90"
+          />
         </div>
         {/* Team Image End */}
 
@@ -31,7 +34,12 @@ const TeamMember = ({
           <div className="info-back">
             <ul className="social_icon_list list-inline text-center w-100 d-flex justify-content-around">
               <li>
-                <a href={facebook}>
+                <a
+                  href={facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                >
                   <i className="fa fa-facebook" aria-hidden="true"></i>
                 </a>
               </li>
@@ -41,12 +49,22 @@ const TeamMember = ({
                 </a>
               </li> */}
               <li>
-                <a href={linkedin}>
+                <a
+                  href={linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Linkedin"
+                >
                   <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href={instagram}>
+                <a
+                  href={instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                >
                   <i className="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>

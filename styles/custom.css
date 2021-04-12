@@ -56,12 +56,13 @@ body,
 }
 
 .btn {
-  background-color: #ec4d37 !important;
+  background-color: #d93d33 !important;
   color: #fff !important;
 }
 
 .btn.btn-white span {
-  color: #ec4d37 !important;
+  color: #d93d33 !important;
+  font-weight: bold;
 }
 
 .single-feature,

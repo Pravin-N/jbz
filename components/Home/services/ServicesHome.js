@@ -8,12 +8,14 @@ const serviceData = [
     image: "/assets/img/icons/service-1.svg",
     description: "Any business license anywhere in UAE. Mainland or Freezone.",
     link: "/business-setup-pro-services/business-setup-uae",
+    alt: "Dubai Business setup service",
   },
   {
     title: "PRO Services",
     image: "/assets/img/icons/service-2.svg",
     description: "Visa for employees and other govt related approvals",
     link: "/business-setup-pro-services/pro-service",
+    alt: "Pro Services Dubai UAE",
   },
   {
     title: "Business Center",
@@ -21,6 +23,7 @@ const serviceData = [
     description:
       "Hire office desks, cabins to full fledged office with meeting rooms.",
     link: "/business-setup-pro-services/business-center-dubai-service",
+    alt: "Business Center office Space Dubai",
   },
   {
     title: "VAT Registration",
@@ -28,6 +31,7 @@ const serviceData = [
     description:
       "Register business under VAT, keep upto date with new regulations in UAE",
     link: "/business-setup-pro-services/vat-registration-service",
+    alt: "VAT Registration service Dubai",
   },
 ];
 
@@ -36,9 +40,21 @@ const ServicesHome = () => {
     <>
       {/* Service Begin */}
       <section className="pt-120 pb-120 section-pattern services">
-        <img src="/assets/img/wavyline.svg" className="wavySvg" />
-        <img src="/assets/img/circle.svg" className="heroSvg4" />
-        <img src="/assets/img/filled circle.svg" className="heroSvg3" />
+        <img
+          src="/assets/img/wavyline.svg"
+          className="wavySvg"
+          alt="background shape 1"
+        />
+        <img
+          src="/assets/img/circle.svg"
+          className="heroSvg4"
+          alt="background shape 2"
+        />
+        <img
+          src="/assets/img/filled circle.svg"
+          className="heroSvg3"
+          alt="background shape 3"
+        />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -60,8 +76,8 @@ const ServicesHome = () => {
 
               {/* Button Begin */}
               <Link href="/business-setup-pro-services">
-                <a className="btn">
-                  <span>view All</span>
+                <a className="btn" aria-label="Link to Services">
+                  <span>View All</span>
                 </a>
               </Link>
               {/* Button End */}
@@ -69,13 +85,14 @@ const ServicesHome = () => {
 
             <div className="col-lg-6">
               <div className="row mt-40 mt-lg-0">
-                {serviceData.map(({ title, image, description, link }) => {
+                {serviceData.map(({ title, image, description, link, alt }) => {
                   return (
                     <ServiceCard
                       title={title}
                       image={image}
                       description={description}
                       link={link}
+                      alt={alt}
                       key={title}
                     />
                   );

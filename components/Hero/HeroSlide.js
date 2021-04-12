@@ -24,7 +24,8 @@ const HeroSlide = ({
               </h1>
               <p>{para}</p>
               <a
-                href=""
+                aria-label="contact form button"
+                href="#"
                 data-toggle="modal"
                 data-target="#appointmentModalForm"
                 className="banner-btn btn"

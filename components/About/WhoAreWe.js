@@ -5,9 +5,21 @@ const WhoAreWe = () => {
     <>
       {/* About Section Begin */}
       <section className="pt-120 pb-120 l-gray whowe">
-        <img src="/assets/img/wavyline.svg" className="wavySvg" />
-        <img src="/assets/img/circle.svg" className="heroSvg4" />
-        <img src="/assets/img/filled circle.svg" className="heroSvg3" />
+        <img
+          src="/assets/img/wavyline.svg"
+          className="wavySvg"
+          alt="background shape 1"
+        />
+        <img
+          src="/assets/img/circle.svg"
+          className="heroSvg4"
+          alt="background shape 2"
+        />
+        <img
+          src="/assets/img/filled circle.svg"
+          className="heroSvg3"
+          alt="background shape 3"
+        />
         <div className="container">
           <div className="row">
             <div className="col-12">
