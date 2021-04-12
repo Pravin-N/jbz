@@ -29,7 +29,7 @@ const serviceData = [
     title: "VAT Registration",
     image: "/assets/img/icons/service-4.svg",
     description:
-      "Register business under VAT, keep upto date with new regulations in UAE",
+      "Register business under VAT, keep up to date with new regulations in UAE",
     link: "/business-setup-pro-services/vat-registration-service",
     alt: "VAT Registration service Dubai",
   },
