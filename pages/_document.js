@@ -51,9 +51,12 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
         </Head>
 
+        <script type="text/javascript" src="/js/chat.js"></script>
         <body>
           <Main />
           <NextScript />
+          {/* <!--Start of Tawk.to Script--> */}
+
           <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="

@@ -7,9 +7,9 @@ import WhatsApp from "./WhatsApp";
 
 import dynamic from "next/dynamic";
 
-const ChatWithNoSSR = dynamic(() => import("../Chat"), {
-  ssr: false,
-});
+// const ChatWithNoSSR = dynamic(() => import("../Chat"), {
+//   ssr: false,
+// });
 
 const Layout = ({ children }) => {
   // TODO: Remove all the background images and replace it with svg.
@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
       <ModalForm />
       {children}
       <WhatsApp />
-      <ChatWithNoSSR />
+      {/* <ChatWithNoSSR /> */}
       <Footer />
       {/* <!-- Back to Top Begin --> */}
       <a
