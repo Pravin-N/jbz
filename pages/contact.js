@@ -2,15 +2,31 @@ import { useState } from "react";
 import ContactForm from "../components/ContactForm";
 import FormSuccess from "../components/FormSuccess";
 import Link from "next/link";
+import Meta from "../components/Layout/Meta";
 
 const contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const metaData = {
+    title:
+      "Contact Us | Just Business - Helping clients to setup businesses in Dubai, UAE with ease",
+    description:
+      "Contact our Company Formation Specialists and Business setup Experts today to know more about setting up your company in the UAE. Call us at +971 55 757 2069, +971 55 778 0398",
+    keywords:
+      "Contact Just Business, Contact us for UAE business setup, Contact us for Dubai business setup, Assistance with your business licensing, Assistance with business visa requirements",
+    website: "https://jbz.vercel.app/",
+  };
 
   function submitForm() {
     setIsSubmitted(true);
   }
   return (
     <>
+      <Meta
+        title={metaData.title}
+        description={metaData.description}
+        keywords={metaData.keywords}
+        website={metaData.website}
+      />
       {/* Page Title Begin TODO: Change the header section.*/}
       <section className="page-title-bg pt-250 pb-100">
         <div className="container">

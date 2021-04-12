@@ -2,12 +2,27 @@ import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
 import Image from "next/image";
+import Meta from "../../components/Layout/Meta";
 
 const tags = ["flexi desk", "business center", "startup", "office"];
 
 const BusinessCenter = () => {
+  const metaData = {
+    title: "Business Center Services in Dubai, UAE | Just Business",
+    description:
+      "Just Business operates 2 Business Centers in Dubai's prime locations with all the facilities required to run a profitable business like reception facilities, conference rooms, concierge facilities and world class workstations all at affordable prices. Fully serviced offices and virtual office service also provided at these centers.",
+    keywords:
+      "rent shared office space in dubai, serviced offices, affordable office space in dubai for business license, office cabin on rent, business center in Dubai UAE ",
+    website: "https://jbz.vercel.app/",
+  };
   return (
     <>
+      <Meta
+        title={metaData.title}
+        description={metaData.description}
+        keywords={metaData.keywords}
+        website={metaData.website}
+      />
       {/* Page Title Begin  TODO: Head section to use the page header component*/}
       <section className="page-title-bg pt-250 pb-100">
         <div className="container">

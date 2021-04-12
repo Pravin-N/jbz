@@ -2,6 +2,7 @@ import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
 import Image from "next/image";
+import Meta from "../../components/Layout/Meta";
 
 const tags = [
   "business setup dubai",
@@ -14,8 +15,22 @@ const tags = [
 ];
 
 const BusinessSetup = () => {
+  const metaData = {
+    title: "Business setup and Company formation in Dubai, UAE | Just Business",
+    description:
+      "We are experts in Business Setup and company formation services in Dubai, UAE. Business setup in Dubai is one of our core services. If you are looking to start a business in UAE. Our experts can help you get the right information and costs associated with starting a business in Dubai. Get in touch with us today. Over the past 10 years we have helped multiple individuals and entrepreneurs to get the required license to start their business in UAE. Just business has formed  a number of mainland, freezone and offshore companies in the UAE.",
+    keywords:
+      "starting a business in dubai, business setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, mainland business license, freezone license in dubai, offshore license in uae, startup in uae, business license in Dubai",
+    website: "https://jbz.vercel.app/",
+  };
   return (
     <>
+      <Meta
+        title={metaData.title}
+        description={metaData.description}
+        keywords={metaData.keywords}
+        website={metaData.website}
+      />
       {/* Page Title Begin  TODO: Head section to use the page header component*/}
       <section className="page-title-bg pt-250 pb-100">
         <div className="container">

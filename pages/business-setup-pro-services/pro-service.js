@@ -2,6 +2,7 @@ import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
 import Image from "next/image";
+import Meta from "../../components/Layout/Meta";
 
 const tags = [
   "PRO Services Dubai",
@@ -12,8 +13,22 @@ const tags = [
 ];
 
 const ProService = () => {
+  const metaData = {
+    title: "PRO & Visa Services in Dubai, UAE | Just Business",
+    description:
+      "Just Business are experts in providing corporate PRO services and solutions to businesses in Dubai. From business visas, labour cards, employee visa, immigration & ministry of labour approvals Just Business provides end to end PRO services. We provide tailor made solutions to your PRO services needs.",
+    keywords:
+      "pro services in dubai,  best pro services in dubai,  best pro services company in dubai,  pro company in dubai,  corporate pro services company in dubai, employee visas dubai uae, immigration approval dubai, visa stamping dubai, labour card, ministry of labour approval.",
+    website: "https://jbz.vercel.app/",
+  };
   return (
     <>
+      <Meta
+        title={metaData.title}
+        description={metaData.description}
+        keywords={metaData.keywords}
+        website={metaData.website}
+      />
       {/* Page Title Begin  TODO: Head section to use the page header component*/}
       <section className="page-title-bg pt-250 pb-100">
         <div className="container">

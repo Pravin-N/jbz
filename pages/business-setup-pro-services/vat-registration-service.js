@@ -2,6 +2,7 @@ import SideBar from "../../components/SideBar";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
 import Image from "next/image";
+import Meta from "../../components/Layout/Meta";
 
 const tags = [
   "Trademark Registration",
@@ -14,8 +15,23 @@ const tags = [
 ];
 
 const Vat = () => {
+  const metaData = {
+    title:
+      "VAT Registration Service in Dubai | Business Tax Dubai | Just Business",
+    description:
+      "Just business can help you with VAT registration and help you get your Tax Registration Number. VAT registration has become a requirement to operate a business in UAE. Tax rate can vary from 0%-5% depending on the goods and services being given. contact us today to get your business VAT registered.",
+    keywords:
+      "VAT Registration Dubai, Tax formalities Dubai, Mandatory VAT registration, Tax Registration Number (TRN), Register your business with FTA, TRN number, VAT Registration system",
+    website: "https://jbz.vercel.app/",
+  };
   return (
     <>
+      <Meta
+        title={metaData.title}
+        description={metaData.description}
+        keywords={metaData.keywords}
+        website={metaData.website}
+      />
       {/* Page Title Begin  TODO: Head section to use the page header component*/}
       <section className="page-title-bg pt-250 pb-100">
         <div className="container">

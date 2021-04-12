@@ -1,6 +1,21 @@
+import Meta from "../components/Layout/Meta";
+
 const privacypolicy = () => {
+  const metaData = {
+    title: "Privacy and data policy of the website | Just Business Dubai, UAE",
+    description: "Privacy policy and data policy of the website www.jbz.ae",
+    keywords: "Privacy policy of www.jbz.ae",
+    website: "https://jbz.vercel.app/",
+  };
+
   return (
     <>
+      <Meta
+        title={metaData.title}
+        description={metaData.description}
+        keywords={metaData.keywords}
+        website={metaData.website}
+      />
       <section
         className="banner section-pattern policy"
         id="carouselExampleIndicators"
