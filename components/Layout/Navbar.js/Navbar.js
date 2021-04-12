@@ -153,14 +153,14 @@ const Navbar = () => {
                         src="/assets/img/Just Business Dubai.png"
                         alt="Just Business Setup Dubai Logo"
                         width={200}
-                        height={55}
+                        height={72}
                       />
                       <img
                         className="sticky-logo"
                         src="/assets/img/Just Business Dubai.png"
                         alt="Just Business Setup Dubai Logo"
                         width={200}
-                        height={55}
+                        height={72}
                       />
                     </a>
                   </Link>
