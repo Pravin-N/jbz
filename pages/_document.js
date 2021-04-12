@@ -14,6 +14,7 @@ class MyDocument extends Document {
 
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta httpEquiv="content-type" content="text/html" charSet="utf-8" />
+
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
@@ -24,18 +25,18 @@ class MyDocument extends Document {
           <link
             rel="preload"
             as="style"
-            href="https://fonts.googleapis.com/css?family=Muli%7CRubik:400,400i,500,700&display=swap"
+            href="/fonts/LucidaFax/Lucida Fax Regular.ttf"
           />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Muli%7CRubik:400,400i,500,700&display=swap"
+            href="/fonts/LucidaFax/Lucida Fax Regular.ttf"
             media="print"
             onLoad="this.media='all'"
           />
           <noscript>
             <link
               rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Muli%7CRubik:400,400i,500,700&display=swap"
+              href="/fonts/LucidaFax/Lucida Fax Regular.ttf"
             />
           </noscript>
           {/* ======= Bootstrap CSS ======= */}
@@ -49,6 +50,7 @@ class MyDocument extends Document {
           {/* ======= Font Awesome CSS ======= */}
           <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
         </Head>
+
         <body>
           <Main />
           <NextScript />

@@ -3,6 +3,13 @@ import Footer from "./Footer/Footer";
 import Meta from "./Meta";
 import Navbar from "./Navbar.js/Navbar";
 import ModalForm from "../../components/ModalForm";
+import WhatsApp from "./WhatsApp";
+
+import dynamic from "next/dynamic";
+
+const ChatWithNoSSR = dynamic(() => import("../Chat"), {
+  ssr: false,
+});
 
 const Layout = ({ children }) => {
   // TODO: Remove all the background images and replace it with svg.
@@ -47,6 +54,8 @@ const Layout = ({ children }) => {
       <Navbar />
       <ModalForm />
       {children}
+      <WhatsApp />
+      <ChatWithNoSSR />
       <Footer />
       {/* <!-- Back to Top Begin --> */}
       <a

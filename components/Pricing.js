@@ -3,31 +3,6 @@ const Pricing = () => {
     <>
       {/* Pricing Plan Begin */}
       <section className="pt-120 pb-120 section-pattern l-gray pricing">
-        <img
-          src="/assets/img/circle.svg"
-          className="stepSvg1"
-          alt="background shape 1"
-        />
-        <img
-          src="/assets/img/circle.svg"
-          className="heroSvg5"
-          alt="background shape 2"
-        />
-        <img
-          src="/assets/img/circle.svg"
-          className="heroSvg4"
-          alt="background shape 3"
-        />
-        <img
-          src="/assets/img/filled circle.svg"
-          className="heroSvg3"
-          alt="background shape 4"
-        />
-        <img
-          src="/assets/img/cross.svg"
-          className="heroSvg2"
-          alt="background shape 5"
-        />
         <div className="container">
           <div className="row">
             <div className="col-12">

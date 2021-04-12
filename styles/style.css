@@ -741,12 +741,12 @@ blockquote,
 .project-nav li,
 .single-project-item .project-body .project-meta,
 .project-details .project-meta li {
-  font-family: "Rubik", sans-serif;
+  font-family: "LucidaFax", sans-serif;
 }
 
 body,
 .muli {
-  font-family: "Muli", sans-serif;
+  font-family: "LucidaFax", sans-serif;
 }
 
 /* Gradient Background */
@@ -2486,7 +2486,7 @@ blockquote {
 }
 
 .banner .banner-content h1 {
-  font-size: 64px;
+  font-size: 55px;
   line-height: 1.1;
 }
 
@@ -2498,13 +2498,13 @@ blockquote {
 
 @media only screen and (max-width: 767px) {
   .banner .banner-content h1 {
-    font-size: 56px;
+    font-size: 45px;
   }
 }
 
 @media only screen and (max-width: 379px) {
   .banner .banner-content h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
