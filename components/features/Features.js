@@ -33,7 +33,7 @@ const Features = ({ features }) => {
     <>
       {/* Feature Begin */}
       <section className="pt-60 pb-90 section-pattern l-gray features">
-        <div className="row">
+        <div className="row feature">
           <div className="col-12">
             <div className="section-title text-center">
               <h2>Multiple Options of Starting a Business in UAE</h2>
