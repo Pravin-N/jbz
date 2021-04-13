@@ -69,7 +69,7 @@ const BusinessCenter = () => {
                   productivity in an inspiring and hospitable atmosphere. We
                   have 2 Business Centers on our panel, which are situated, in
                   the prominent areas of Dubai. Our Business Centers offer
-                  stylish furnished offices of different sizes and capacity,
+                  stylish furnished offices of different sizes and capacities,
                   meeting rooms, stylish visitors' receptions, secretary
                   assistance, high-speed Wi-Fi and much more. Our virtual office
                   services include personalized telephone answering, mail

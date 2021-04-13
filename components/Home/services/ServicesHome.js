@@ -13,7 +13,7 @@ const serviceData = [
   {
     title: "PRO Services",
     image: "/assets/img/icons/service-2.svg",
-    description: "Visa for employees and other govt related approvals",
+    description: "Visa for employees and other govt related approvals.",
     link: "/business-setup-pro-services/pro-service",
     alt: "Pro Services Dubai UAE",
   },
@@ -21,7 +21,7 @@ const serviceData = [
     title: "Business Center",
     image: "/assets/img/icons/service-3.svg",
     description:
-      "Hire office desks, cabins to full fledged office with meeting rooms.",
+      "Hire office desks, cabins and even full-fledged offices with meeting rooms.",
     link: "/business-setup-pro-services/business-center-dubai-service",
     alt: "Business Center office Space Dubai",
   },
@@ -29,7 +29,7 @@ const serviceData = [
     title: "VAT Registration",
     image: "/assets/img/icons/service-4.svg",
     description:
-      "Register business under VAT, keep upto date with new regulations in UAE",
+      "Register business under VAT, keep up to date with new regulations in UAE.",
     link: "/business-setup-pro-services/vat-registration-service",
     alt: "VAT Registration service Dubai",
   },

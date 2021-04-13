@@ -75,7 +75,7 @@ const Pricing = () => {
                   role="tab"
                   aria-label="Freezone License"
                 >
-                  <h4>Freezone License</h4>
+                  <h4>Free Zone License</h4>
                   <h2>AED 25,700*</h2>
                 </a>
               </li>

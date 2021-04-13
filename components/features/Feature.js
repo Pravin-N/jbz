@@ -10,12 +10,7 @@ const Feature = ({ title, text, image, alt, slug }) => {
         <Link href={"/business-setup/" + slug}>
           <a aria-label={"image for " + title}>
             <div className="image">
-              <Image
-                src={"https:" + image}
-                height="263"
-                width="350"
-                alt={alt}
-              />
+              <Image src={image} height="263" width="350" alt={alt} />
             </div>
           </a>
         </Link>

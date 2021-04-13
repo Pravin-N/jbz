@@ -45,12 +45,12 @@ const Features = ({ features }) => {
             {features.map((feature) => {
               return (
                 <Feature
-                  title={feature.fields.shortTitle}
-                  text={feature.fields.shortText}
-                  key={feature.sys.id}
-                  image={feature.fields.shortImage.fields.file.url}
-                  alt={feature.fields.altText}
-                  slug={feature.fields.slug}
+                  title={feature.shortTitle}
+                  text={feature.shortText}
+                  key={feature.id}
+                  image={feature.shortImage}
+                  alt={feature.altText}
+                  slug={feature.slug}
                 />
               );
             })}

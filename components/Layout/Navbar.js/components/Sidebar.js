@@ -87,7 +87,7 @@ const Sidebar = ({ close }) => {
 
             <div className="about-content">
               <p>
-                One stop shop for all needs regarding business setup and pro
+                One stop shop for all needs regarding business setup and PRO
                 services in Dubai, UAE.
               </p>
             </div>

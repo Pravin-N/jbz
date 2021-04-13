@@ -72,11 +72,11 @@ const Vat = () => {
                 <h3 className="title">VAT Registration services in Dubai</h3>
                 <p>
                   The UAE has implemented a Value Added Tax (VAT) from January
-                  1, 2018. Businesses with Dhs 375,000 or more annual return is
+                  1, 2018. Businesses with Dhs 375,000 or more annual return are
                   expected to register as a vendor and charge VAT on the
-                  provision of their goods and services, except if their goods
-                  and services these are categorized to exempt VAT. Contact us
-                  to know if your business is exempt from VAT.
+                  provision of their goods and services, except those goods and
+                  services that are categorized under exemption of VAT. Contact
+                  us to know if your business is exempted from VAT.
                 </p>
 
                 <div className="row align-items-center">
@@ -87,12 +87,13 @@ const Vat = () => {
                     </h4>
                     <p>
                       The first step is to decide whether you are registering
-                      your company or yourself as an individual. If you have
-                      more than one company in operation, will you be
-                      registering them separately or as a Tax Group? Once you
-                      decide to register for VAT, what are the documents that
-                      need to be kept ready before you proceed for registration?
-                      Can you opt for group VAT registration?
+                      your company or are you registering yourself as an
+                      individual. If you have more than one companies in
+                      operation, will you be registering them separately or as a
+                      Tax Group? Once you decide to register for VAT, what are
+                      the documents that are needed to be kept ready before you
+                      proceed for registration? Can you opt for group VAT
+                      registration?
                     </p>
                   </div>
                   <div className="col-md-6">
@@ -109,9 +110,9 @@ const Vat = () => {
                     <p></p>
                     <p>
                       We at Just Business Corporate Services can help you get
-                      VAT registration in Dubai. We have immense expertise in
-                      solving problems related to businesses in Dubai and other
-                      emirates of UAE. You can contact us on info@jbz.ae
+                      VAT registered in Dubai. We have expertise in solving
+                      problems related to businesses in Dubai and other emirates
+                      of UAE. You can contact us on info@jbz.ae
                     </p>
                     <p></p>
                   </div>

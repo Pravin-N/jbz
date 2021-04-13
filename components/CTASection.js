@@ -11,7 +11,7 @@ const CTASection = () => {
                 <h3>
                   Business setup & company formation services under one roof
                   <br />
-                  Get your business license in 48 hours in Dubai.
+                  Get your business license within 48 hours in Dubai.
                 </h3>
                 {/* <p>
                   Distrusts fulfilled happiness unwilling as explained of

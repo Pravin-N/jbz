@@ -74,8 +74,9 @@ const Steps = () => {
                 <div className="content">
                   <h3>Prepare Documents</h3>
                   <p>
-                    Provide a detailed list of documents required from you and
-                    how to obtain these if not available.
+                    Provide a detailed list of documents required for setting up
+                    the business and suggest ways to obtain these if not
+                    available.
                   </p>
                 </div>
                 {/* Content End */}
@@ -137,8 +138,8 @@ const Steps = () => {
                 <div className="content">
                   <h3>Open Bank Account</h3>
                   <p>
-                    Open your business bank account with one of the top National
-                    or international banks in UAE.
+                    Open your business bank account with any of the top National
+                    or International banks in UAE.
                   </p>
                 </div>
                 {/* Content End */}

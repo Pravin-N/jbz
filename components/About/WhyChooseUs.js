@@ -24,12 +24,12 @@ const WhyChooseUs = () => {
                 <h3>Why Choose Just Business</h3>
                 <h2>
                   Understanding the needs of our clients and catering to those
-                  needs is our top most priority at Just Business.
+                  needs is our topmost priority at Just Business.
                   <br />
                 </h2>
                 <p>
                   At Just Business, we come to work everyday because we want to
-                  help people like yourself set up their business without any
+                  help people like yourself set up businesses without any
                   hassles. You know your business and we would like to focus on
                   that. Any information you need on where to set up a business,
                   the rules of the region, the costs involved, the process and

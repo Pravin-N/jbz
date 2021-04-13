@@ -2,42 +2,37 @@ import Image from "next/image";
 import Link from "next/link";
 import CTASection from "../../components/CTASection";
 import Meta from "../../components/Layout/Meta";
+import FeaturePostData from "../../components/data";
 
-let client = require("contentful").createClient({
-  space: process.env.NEXT_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
-});
+// let client = require("contentful").createClient({
+//   space: process.env.NEXT_CONTENTFUL_SPACE_ID,
+//   accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
+// });
 
 export async function getStaticPaths() {
-  let data = await client.getEntries({
-    content_type: "jbzFeatures",
-  });
-
+  const paths = await FeaturePostData.map((feature) => ({
+    params: { slug: feature.slug },
+  }));
   return {
-    paths: data.items.map((item) => ({
-      params: { slug: item.fields.slug },
-    })),
+    paths,
     fallback: false,
   };
 }
 
-export async function getStaticProps(context) {
-  let data = await client.getEntries({
-    content_type: "jbzFeatures",
-    "fields.slug": context.params.slug,
-  });
+export async function getStaticProps({ params }) {
+  let data = FeaturePostData.filter((p) => p.slug === params.slug);
   return {
     props: {
-      info: data.items[0],
+      info: data[0],
     },
   };
 }
 
 const Info = ({ info }) => {
   const metaData = {
-    title: `${info.fields.title} | Just Business`,
-    description: `${info.fields.altText} | ${info.fields.shortText}`,
-    keywords: `starting a business in dubai, business setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, startup in uae, business license in Dubai, ${info.fields.shortTitle}, ${info.fields.category}`,
+    title: `${info.title} | Just Business`,
+    description: `${info.altText} | ${info.shortText}`,
+    keywords: `starting a business in dubai, business setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, startup in uae, business license in Dubai, ${info.shortTitle}, ${info.category}`,
     website: "https://jbz.vercel.app/",
   };
   return (
@@ -55,7 +50,7 @@ const Info = ({ info }) => {
             <div className="col-12">
               <div className="page-title text-center">
                 <h2>
-                  {info.fields.title}
+                  {info.title}
                   {/* Business consultant finds more <br /> ways to bring business
                   to light */}
                 </h2>
@@ -65,7 +60,7 @@ const Info = ({ info }) => {
                       <a>Home</a>
                     </Link>
                   </li>
-                  <li>{info.fields.shortTitle}</li>
+                  <li>{info.shortTitle}</li>
                 </ul>
               </div>
             </div>
@@ -85,10 +80,10 @@ const Info = ({ info }) => {
                     {/* <!-- Project Image Begin --> */}
                     <div className="project-image">
                       <Image
-                        src={"https:" + info.fields.shortImage.fields.file.url}
+                        src={info.shortImage}
                         height="550"
                         width="1110"
-                        alt={info.fields.altText}
+                        alt={info.alt}
                       />
                     </div>
                     {/* <!-- Project Image End --> */}
@@ -98,7 +93,7 @@ const Info = ({ info }) => {
                 <div className="row justify-content-center">
                   <div className="col-lg-10">
                     <ul className="list-inline project-meta">
-                      <li>Category: {info.fields.category}</li>
+                      <li>Category: {info.category}</li>
                       <li>Author: Admin</li>
                     </ul>
                   </div>
@@ -107,13 +102,13 @@ const Info = ({ info }) => {
                 <div className="row justify-content-center pb-30">
                   <div className="col-lg-10">
                     <div className="project-details-content">
-                      <h3>{info.fields.subtitle1}</h3>
+                      <h3>{info.subtitle1}</h3>
 
-                      <p>{info.fields.content1}</p>
-                      <h3>{info.fields.subtitle2}</h3>
-                      <p>{info.fields.content2}</p>
-                      <h3>{info.fields.subtitle3}</h3>
-                      <p>{info.fields.content3}</p>
+                      <p>{info.content1}</p>
+                      <h3>{info.subtitle2}</h3>
+                      <p>{info.content2}</p>
+                      <h3>{info.subtitle3}</h3>
+                      <p>{info.content3}</p>
 
                       {/* <ul className="list-check mb-5">
                         <li>

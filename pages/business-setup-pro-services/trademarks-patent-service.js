@@ -70,10 +70,10 @@ const trademark = () => {
                 <p>
                   If you have built a brand or an identity that your customers
                   associate with your business then protecting that Brand
-                  becomes an important part of the business. This where
+                  becomes an important part of the business. This is where
                   Trademark and Patent registration comes into the picture. This
                   type of protection provides the rights to a business so that
-                  no one can else other than your business can copy or duplicate
+                  no one else other than your business can copy or duplicate
                   similar products or services using your brand or intellectual
                   property.
                 </p>
@@ -90,9 +90,10 @@ const trademark = () => {
                       UAE. We liaise with the Govt authority to accept the
                       application and provide any missing information during the
                       registration process. Because of our extensive experience,
-                      we know all the requirements to get the approvals the
-                      first time of the application so there is no time wastage
-                      and hurdles after the application has been submitted.
+                      we know all the requirements to get the approvals for
+                      application correctly in the first time itself, so that
+                      there is no time wastage and hurdles after the documents
+                      have been submitted.
                     </p>
                   </div>
                   <div className="col-md-6">

@@ -49,10 +49,10 @@ const WhoAreWe = () => {
                   served a wide selection of clients from banks, general trading
                   companies to real estate firms. We are always committed to
                   offering the best customer service to our clients. Our
-                  professionals are expertly skilled to present the right
-                  information as fast as possible. We have teamed with numerous
-                  companies from other service sectors to provide supplementary
-                  services to our clients.
+                  professionals are skilled experts and strive to present the
+                  right information as fast as possible. We have teamed with
+                  numerous companies from various other service sectors to
+                  provide supplementary services to our clients.
                 </p>
               </div>
             </div>
