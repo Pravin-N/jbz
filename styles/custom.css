@@ -253,16 +253,16 @@ div.row.footer {
 /* for mobile */
 @media screen and (max-width: 767px) {
   .whatsapp-icon {
-    margin-top: 10px;
+    margin-top: 16px;
   }
 
   .whatsapp_float {
-    width: 40px;
-    height: 40px;
-    left: 170px;
+    width: 60px;
+    height: 60px;
+    left: 100px;
     bottom: 15px;
 
-    font-size: 22px;
+    font-size: 30px;
   }
 }
 
@@ -352,4 +352,8 @@ div.row.footer {
 
 div.row.feature {
   width: 100%;
+}
+
+.btn.right span {
+  text-align: right;
 }

@@ -127,7 +127,7 @@ const ContactFormModal = ({ submitForm }) => {
           required
         ></textarea>
         {errors.message && <p>{errors.message}</p>}
-        <button className="btn" type="submit">
+        <button className="btn right" type="submit">
           <span>Send request</span>
         </button>
       </form>
