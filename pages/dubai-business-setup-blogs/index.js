@@ -1,19 +1,20 @@
 import SingleBlogCard from "../../components/Blogs/SingleBlogCard";
 import Pagination from "../../components/Blogs/Pagination";
 import SideBar from "../../components/SideBar";
+import articles from "../../components/articles";
 
-let client = require("contentful").createClient({
-  space: process.env.NEXT_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
-});
+// let client = require("contentful").createClient({
+//   space: process.env.NEXT_CONTENTFUL_SPACE_ID,
+//   accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
+// });
 
 export async function getStaticProps() {
-  let data = await client.getEntries({
-    content_type: "jbzBlog",
-  });
+  // let data = await client.getEntries({
+  //   content_type: "jbzFeatures",
+  // });
   return {
     props: {
-      articles: data.items,
+      articles: articles,
     },
   };
 }
@@ -57,12 +58,16 @@ const Blogs = ({ articles }) => {
           <div className="row">
             <div className="col-lg-8">
               <div className="row">
-                {articles.map((article) => (
-                  <SingleBlogCard
-                    article={article}
-                    key={article.fields.title}
-                  />
-                ))}
+                {articles.length === 0 ? (
+                  <h2>No Blog Articles</h2>
+                ) : (
+                  articles.map((article) => (
+                    <SingleBlogCard
+                      article={article}
+                      key={article.fields.title}
+                    />
+                  ))
+                )}
 
                 <Pagination />
               </div>
