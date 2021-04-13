@@ -46,6 +46,11 @@ const Layout = ({ children }) => {
         scrollToTop();
       });
     }
+    return () => {
+      if (backToTopBtn) {
+        backToTopBtn.classList.remove("show");
+      }
+    };
   }, []);
 
   return (
