@@ -15,14 +15,14 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta httpEquiv="content-type" content="text/html" charSet="utf-8" />
 
-          <link
+          {/* <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
             crossOrigin="true"
-          />
+          /> */}
 
           {/* Web Fonts */}
-          <link
+          {/* <link
             rel="preload"
             as="style"
             href="/fonts/LucidaFax/Lucida-Fax-Regular.ttf"
@@ -38,7 +38,7 @@ class MyDocument extends Document {
               rel="stylesheet"
               href="/fonts/LucidaFax/Lucida-Fax-Regular.ttf"
             />
-          </noscript>
+          </noscript> */}
           {/* ======= Bootstrap CSS ======= */}
           <link
             rel="stylesheet"
@@ -51,7 +51,7 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
         </Head>
 
-        <script type="text/javascript" src="/js/chat.js"></script>
+
         <body>
           <Main />
           <NextScript />
@@ -68,6 +68,7 @@ class MyDocument extends Document {
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossOrigin="anonymous"
           ></script>
+          <script type="text/javascript" src="/js/chat.js"></script>
         </body>
       </Html>
     );
