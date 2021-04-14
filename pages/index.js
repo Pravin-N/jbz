@@ -34,8 +34,7 @@ export async function getStaticProps() {
 
 export default function Home({ features }) {
   const metaData = {
-    title:
-      "Business Setup and Company Formation Services in Dubai / UAE",
+    title: "Business Setup and Company Formation Services in Dubai / UAE",
     description:
       "Setup your business in Dubai easily with the help of Just Business. Depending on you business needs, Just Business guides you on choosing the correct license and provide transparent pricing.",
     keywords:
@@ -54,7 +53,9 @@ export default function Home({ features }) {
       <Hero />
 
       <Features features={features} />
-      <AboutHome />
+      <AboutHome
+        img={"/assets/img/section-bg/about jb business setup in dubai.webp"}
+      />
       <CTASection />
       <Steps />
 

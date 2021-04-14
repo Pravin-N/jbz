@@ -2,7 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 // TODO: change the see more button link to the page about us.
-const AboutHome = () => {
+const AboutHome = ({ img }) => {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -132,7 +132,7 @@ const AboutHome = () => {
             </div>
             <div className="col-lg-6 video-area mt-50 mt-lg-0">
               <img
-                src="/assets/img/section-bg/about jb business setup in dubai1.webp"
+                src={img}
                 data-rjs="2"
                 alt="About just business mission and vision"
                 height="805"

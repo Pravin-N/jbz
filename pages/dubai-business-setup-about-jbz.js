@@ -28,7 +28,9 @@ const AboutJbz = () => {
       />
       <PageHeader header="About Just Business" />
       <WhoAreWe />
-      <AboutHome />
+      <AboutHome
+        img={"/assets/img/section-bg/about jb business setup in dubai1.webp"}
+      />
       {/* <Mission /> */}
       <WhyChooseUs />
 

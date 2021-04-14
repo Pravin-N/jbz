@@ -19,7 +19,7 @@ const HeroSlide = ({
             <div className="banner-content">
               <h1>
                 {line1}
-                <span> {bold}</span> {line3}&nbsp;
+                <span> {bold}</span> {line3}
                 {line4}
               </h1>
               <p>{para}</p>

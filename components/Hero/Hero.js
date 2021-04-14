@@ -11,7 +11,7 @@ const Hero = () => {
       id: "0",
       line1: "Setup Your",
       bold: "Business",
-      line3: "in",
+      line3: "in ",
       line4: "Dubai Today",
       para:
         "With more than 10 years of experience, we have the expertise and know how to help your business get started in Dubai or UAE immediately.",
@@ -24,7 +24,7 @@ const Hero = () => {
       id: "1",
       line1: "Hassle Free",
       bold: "Business Setup",
-      line3: "Services",
+      line3: "Services ",
       line4: "in UAE",
       para:
         "Stop wasting time trying to figure out the necessary license requirements to start your business. Contact us and we will do that for you.",
@@ -37,7 +37,7 @@ const Hero = () => {
       id: "2",
       line1: "Start a Company in",
       bold: "Mainland or Free Zone",
-      line3: "of",
+      line3: "of ",
       line4: "Your Choice",
       para:
         "Worried about ownership, start a business in any Free Zone in UAE and own 100% of your business.",
@@ -50,7 +50,7 @@ const Hero = () => {
       id: "3",
       line1: "Professional",
       bold: "PRO Services",
-      line3: "in",
+      line3: "in ",
       line4: "Dubai",
       para:
         "We provide pro services to help your business get employee visas and other regulatory approvals, so you can focus on your core business rather than government formalities.",
