@@ -26,7 +26,7 @@ const AboutJbz = () => {
         keywords={metaData.keywords}
         website={metaData.website}
       />
-      <PageHeader header="About" />
+      <PageHeader header="About Just Business" />
       <WhoAreWe />
       <AboutHome />
       {/* <Mission /> */}

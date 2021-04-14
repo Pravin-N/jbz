@@ -86,7 +86,7 @@ const ServicesBreakdown = () => {
                       <h4>PRO Services</h4>
                     </a>
                   </Link>
-                  <p> Visa for employees and other govt related approvals</p>
+                  <p> Visa for employees and other govt related approvals.</p>
                   <Link href="/business-setup-pro-services/pro-service">
                     <a className="btn-inline" aria-label="PRO Services">
                       Know More
@@ -158,7 +158,7 @@ const ServicesBreakdown = () => {
                   </Link>
                   <p>
                     Register business under VAT, keep upto date with new
-                    regulations in UAE
+                    regulations in UAE.
                   </p>
                   <Link href="/business-setup-pro-services/vat-registration-service">
                     <a

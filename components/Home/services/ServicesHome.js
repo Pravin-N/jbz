@@ -6,7 +6,7 @@ const serviceData = [
   {
     title: "Business Setup",
     image: "/assets/img/icons/service-1.svg",
-    description: "Any business license anywhere in UAE. Mainland or Freezone.",
+    description: "Any business license anywhere in UAE. Mainland or Free Zone.",
     link: "/business-setup-pro-services/business-setup-uae",
     alt: "Dubai Business setup service",
   },

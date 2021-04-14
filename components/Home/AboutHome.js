@@ -18,7 +18,7 @@ const AboutHome = () => {
                 <h2>
                   10+ yrs of Experience&nbsp;
                   <br />
-                  of Business Setup in UAE,&nbsp; You're in Safe hands.
+                  of Business Setup in UAE,&nbsp;You're in Safe hands.
                 </h2>
                 <p>
                   Having helped 100's of entrepreneurs get the necessary

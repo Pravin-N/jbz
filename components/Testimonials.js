@@ -11,7 +11,7 @@ const Testimonials = () => {
               {/* Section Title Begin */}
               <div className="section-title text-center">
                 <h3>Testimonials</h3>
-                <h2>What our clients say about us.</h2>
+                <h2>What our clients say about us</h2>
                 <p>
                   Aspiring entrepreneurs entrust us with the responsibility of
                   business setup in Dubai and other govt related work. We strive

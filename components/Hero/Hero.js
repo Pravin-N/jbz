@@ -36,11 +36,11 @@ const Hero = () => {
     {
       id: "2",
       line1: "Start a Company in",
-      bold: "Mainland or Freezone",
+      bold: "Mainland or Free Zone",
       line3: "of",
       line4: "Your Choice",
       para:
-        "Worried about ownership, start a business in any freezone in UAE and own 100% of your business.",
+        "Worried about ownership, start a business in any Free Zone in UAE and own 100% of your business.",
       contact: "Free Consultation",
       active: false,
       image: "/assets/img/banner/freezone business setup.png",

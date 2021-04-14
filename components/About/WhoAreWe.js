@@ -42,8 +42,8 @@ const WhoAreWe = () => {
               <div className="about-text mt-5">
                 <p>
                   JBZ consultants is a one-stop destination for all your
-                  business startup needs. Established in 2009, we have more than
-                  10 years of experience in business setup. We offer a wide
+                  business start-up needs. Established in 2009, we have more
+                  than 10 years of experience in business setup. We offer a wide
                   range of services designed to accommodate our client
                   requirements. Just Business Corporate Services has proudly
                   served a wide selection of clients from banks, general trading

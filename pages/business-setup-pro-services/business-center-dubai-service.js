@@ -4,7 +4,7 @@ import CTASection from "../../components/CTASection";
 import Image from "next/image";
 import Meta from "../../components/Layout/Meta";
 
-const tags = ["flexi desk", "business center", "startup", "office"];
+const tags = ["flexi desk", "business center", "start-up", "office"];
 
 const BusinessCenter = () => {
   const metaData = {

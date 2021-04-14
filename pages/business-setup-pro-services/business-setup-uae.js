@@ -5,11 +5,11 @@ import Image from "next/image";
 import Meta from "../../components/Layout/Meta";
 
 const tags = [
-  "business setup dubai",
+  "business setup Dubai",
   "UAE",
-  "startup",
+  "start-up",
   "mainland",
-  "freezone",
+  "Free Zone",
   "DED",
   "company formation",
 ];

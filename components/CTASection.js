@@ -9,7 +9,8 @@ const CTASection = () => {
               {/* CTA Content Begin */}
               <div className="cta-content text-center text-white">
                 <h3>
-                  Business setup & company formation services under one roof
+                  Business setup & company formation services under one
+                  roof.&nbsp;
                   <br />
                   Get your business license within 48 hours in Dubai.
                 </h3>

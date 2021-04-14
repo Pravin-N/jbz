@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
             <div className="col-lg-6">
               {/* Section Title Begin */}
               <div className="section-title mb-4 mt-50 mt-lg-0">
-                <h3>Why Choose Just Business</h3>
+                <h3>How We Cater to Our Clients?</h3>
                 <h2>
                   Understanding the needs of our clients and catering to those
                   needs is our topmost priority at Just Business.

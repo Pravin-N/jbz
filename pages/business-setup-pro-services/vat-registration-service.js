@@ -5,13 +5,12 @@ import Image from "next/image";
 import Meta from "../../components/Layout/Meta";
 
 const tags = [
-  "Trademark Registration",
+  "VAT Registration",
   "Patent Registration",
-  "startup",
-  "mainland",
-  "freezone",
-  "DED",
-  "company formation",
+  "Taxes",
+  "Taxes in Dubai",
+  "Business Tax",
+  "Value Added Tax",
 ];
 
 const Vat = () => {
@@ -38,7 +37,7 @@ const Vat = () => {
           <div className="row">
             <div className="col-12">
               <div className="page-title text-center">
-                <h2>Value Added Tax Registration in Dubai</h2>
+                <h2>Value Added Tax Registration in Dubai.</h2>
                 <ul className="list-inline">
                   <li>
                     <Link href="/">
