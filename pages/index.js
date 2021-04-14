@@ -15,6 +15,7 @@ import CTASection from "../components/CTASection";
 import ClientsLogo from "../components/ClientsLogo";
 import Meta from "../components/Layout/Meta";
 import FeaturePostData from "../components/data";
+import Slider from "../components/Slider";
 
 // let client = require("contentful").createClient({
 //   space: process.env.NEXT_CONTENTFUL_SPACE_ID,
@@ -56,6 +57,7 @@ export default function Home({ features }) {
       <AboutHome
         img={"/assets/img/section-bg/about jb business setup in dubai.webp"}
       />
+      <Slider />
       <CTASection />
       <Steps />
 

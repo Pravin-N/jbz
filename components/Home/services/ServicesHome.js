@@ -6,7 +6,7 @@ const serviceData = [
   {
     title: "Business Setup",
     image: "/assets/img/icons/service-1.svg",
-    description: "Any business license anywhere in UAE. Mainland or Free Zone.",
+    description: "Any business license anywhere in UAE. Mainland or FreeZone.",
     link: "/business-setup-pro-services/business-setup-uae",
     alt: "Dubai Business setup service",
   },
@@ -26,12 +26,13 @@ const serviceData = [
     alt: "Business Center office Space Dubai",
   },
   {
-    title: "VAT Registration",
-    image: "/assets/img/icons/service-4.svg",
+    title: "Corporate Bank A/c",
+    image: "/assets/img/icons/service-6.svg",
     description:
-      "Register business under VAT, keep up to date with new regulations in UAE.",
-    link: "/business-setup-pro-services/vat-registration-service",
-    alt: "VAT Registration service Dubai",
+      "Start to end assistance with opening a corporate bank account in Dubai",
+    link:
+      "/business-setup-pro-services/corporate-bank-account-opening-service-dubai",
+    alt: "Business Bank A/c Opening Service Dubai",
   },
 ];
 

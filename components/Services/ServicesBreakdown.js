@@ -211,6 +211,44 @@ const ServicesBreakdown = () => {
               </div>
               {/* Single Service End */}
             </div>
+            <div className="col-lg-4 col-sm-6">
+              {/* Single Service Begin */}
+              <div className="single-service text-center">
+                {/* Icon Begin */}
+                <div className="icon">
+                  <Image
+                    src="/assets/img/icons/service-5.svg"
+                    alt="Trademark and Patent Registration dubai"
+                    height="65"
+                    width="83"
+                  />
+                </div>
+                {/* Icon End  */}
+
+                {/* Content Begin */}
+                <div className="content">
+                  <Link href="/business-setup-pro-services/trademarks-patent-service">
+                    <a aria-label="Trademark & Patent Service">
+                      <h4>Corporate Bank A/c</h4>
+                    </a>
+                  </Link>
+                  <p>
+                    Start to end assistance with opening a corporate bank
+                    account in Dubai.
+                  </p>
+                  <Link href="/business-setup-pro-services/corporate-bank-account-opening-service-dubai">
+                    <a
+                      className="btn-inline"
+                      aria-label="Trademark & Patent Service"
+                    >
+                      Know More
+                    </a>
+                  </Link>
+                </div>
+                {/* Content End */}
+              </div>
+              {/* Single Service End */}
+            </div>
           </div>
         </div>
       </section>

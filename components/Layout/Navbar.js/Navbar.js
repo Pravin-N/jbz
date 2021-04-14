@@ -249,6 +249,11 @@ const Navbar = () => {
                             </a>
                           </Link>
                         </li>
+                        <li>
+                          <Link href="/business-setup-pro-services/corporate-bank-account-opening-service-dubai">
+                            <a onClick={closeMenu}>Corporate Bank Account</a>
+                          </Link>
+                        </li>
                       </ul>
                     </li>
 
