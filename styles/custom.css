@@ -124,6 +124,93 @@ body,
   margin-right: 15px;
 } */
 
+.article {
+  max-width: auto;
+  overflow: hidden;
+  position: relative;
+  min-height: 120px;
+}
+
+.article div {
+  display: inline-block;
+}
+
+.example-left {
+  white-space: nowrap;
+  position: absolute;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.example-left {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: mymove 80s linear infinite;
+  animation: mymove 80s linear infinite;
+}
+
+.svg-tape {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.article {
+  overflow: hidden;
+  position: relative;
+  min-height: 120px;
+}
+
+.svg-logos {
+  height: 80px;
+  width: 200px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  opacity: 0.6;
+  fill: #000;
+  transition: 0.3s;
+}
+
+.svg-logos:hover {
+  opacity: 1;
+  /* fill: #fff; */
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes mymove {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.early {
+  animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  background-color: #edd382;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
+
 .btn:hover {
   background-color: #b12b1a !important;
 }
@@ -307,6 +394,22 @@ div.row.footer {
 }
 
 @media (max-width: 768px) {
+  .article {
+    overflow: hidden;
+    position: relative;
+    min-height: 100px;
+  }
+
+  .svg-logos {
+    height: 70px;
+    width: 180px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    opacity: 0.6;
+    fill: #000;
+    transition: 0.3s;
+  }
+
   .section-maps {
     position: relative;
     width: 100%;
@@ -323,6 +426,22 @@ div.row.footer {
     position: relative;
     width: 100%;
     height: 300px;
+  }
+
+  .article {
+    overflow: hidden;
+    position: relative;
+    min-height: 70px;
+  }
+
+  .svg-logos {
+    height: 50px;
+    width: 120px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    opacity: 0.6;
+    fill: #000;
+    transition: 0.3s;
   }
 }
 
@@ -360,93 +479,4 @@ div.row.feature {
 
 .btn.right span {
   text-align: right;
-}
-
-.article {
-  max-width: auto;
-  overflow: hidden;
-  position: relative;
-  min-height: 120px;
-}
-
-.article div {
-  display: inline-block;
-}
-
-.example-left {
-  white-space: nowrap;
-  position: absolute;
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-.example-left2 {
-  white-space: nowrap;
-  position: absolute;
-  text-transform: uppercase;
-}
-
-.example-left {
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: mymove 80s linear infinite;
-  animation: mymove 80s linear infinite;
-}
-
-.svg-tape {
-  white-space: nowrap;
-  overflow: hidden;
-  /* -webkit-animation: mymove 80s linear infinite;
-  animation: mymove 80s linear infinite; */
-  display: inline-block;
-}
-
-.svg-logos {
-  height: 80px;
-  width: 200px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  opacity: 0.6;
-  fill: #000;
-  transition: 0.3s;
-}
-
-.svg-logos:hover {
-  opacity: 1;
-  /* fill: #fff; */
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    -webkit-transform: translate3d(-50%, 0, 0);
-    -ms-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
-@keyframes mymove {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    -webkit-transform: translate3d(-50%, 0, 0);
-    -ms-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
-.early {
-  animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  background-color: #edd382;
-  animation-duration: 1s;
-  animation-delay: 1.5s;
 }
