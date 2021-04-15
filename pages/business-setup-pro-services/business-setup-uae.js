@@ -3,6 +3,7 @@ import Link from "next/link";
 import CTASection from "../../components/CTASection";
 import Image from "next/image";
 import Meta from "../../components/Layout/Meta";
+import Slider from "../../components/Slider";
 
 const tags = [
   "business setup Dubai",
@@ -244,6 +245,7 @@ const BusinessSetup = () => {
           </div>
         </div>
       </section>
+      <Slider />
       <CTASection />
       {/* Service details End */}
     </>

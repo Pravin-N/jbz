@@ -3,6 +3,7 @@ import Link from "next/link";
 import CTASection from "../../components/CTASection";
 import Image from "next/image";
 import Meta from "../../components/Layout/Meta";
+import Slider2 from "../../components/Slider2";
 
 const tags = [
   "Corporate bank account opening",
@@ -136,6 +137,7 @@ const BankAccount = () => {
           </div>
         </div>
       </section>
+      <Slider2 />
       <CTASection />
       {/* Service details End */}
     </>
