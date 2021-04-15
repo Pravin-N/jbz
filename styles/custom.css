@@ -125,8 +125,6 @@ body,
 } */
 
 .article {
-  max-width: auto;
-  overflow: hidden;
   position: relative;
   min-height: 120px;
   vertical-align: middle;
@@ -397,7 +395,6 @@ div.row.footer {
 
 @media (max-width: 768px) {
   .article {
-    overflow: hidden;
     position: relative;
     min-height: 100px;
     vertical-align: middle;
@@ -431,7 +428,6 @@ div.row.footer {
   }
 
   .article {
-    overflow: hidden;
     position: relative;
     min-height: 70px;
     vertical-align: middle;
