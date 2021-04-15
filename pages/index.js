@@ -16,16 +16,9 @@ import ClientsLogo from "../components/ClientsLogo";
 import Meta from "../components/Layout/Meta";
 import FeaturePostData from "../components/data";
 import Slider from "../components/Slider";
-
-// let client = require("contentful").createClient({
-//   space: process.env.NEXT_CONTENTFUL_SPACE_ID,
-//   accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
-// });
+import Slider2 from "../components/Slider2";
 
 export async function getStaticProps() {
-  // let data = await client.getEntries({
-  //   content_type: "jbzFeatures",
-  // });
   return {
     props: {
       features: FeaturePostData,
@@ -52,16 +45,18 @@ export default function Home({ features }) {
         website={metaData.website}
       />
       <Hero />
-
+      <Slider />
       <Features features={features} />
+
       <AboutHome
         img={"/assets/img/section-bg/about jb business setup in dubai.webp"}
       />
-      <Slider />
+
       <CTASection />
       <Steps />
 
       <ServicesHome />
+      <Slider2 />
       <Counter />
       <Pricing />
       <CTASection />

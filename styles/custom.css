@@ -366,7 +366,7 @@ div.row.feature {
   max-width: auto;
   overflow: hidden;
   position: relative;
-  min-height: 10rem;
+  min-height: 120px;
 }
 
 .article div {
@@ -376,31 +376,58 @@ div.row.feature {
 .example-left {
   white-space: nowrap;
   position: absolute;
-  opacity: 0.4;
+  display: inline-block;
   text-transform: uppercase;
 }
 
 .example-left2 {
   white-space: nowrap;
   position: absolute;
-  opacity: 0.4;
   text-transform: uppercase;
 }
 
-/* .example-left {
+.example-left {
+  white-space: nowrap;
+  overflow: hidden;
+  /* -webkit-animation: mymove 80s linear infinite; */
+  /* animation: mymove 80s linear infinite; */
+}
+
+.svg-tape {
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: mymove 80s linear infinite;
-  white-space: nowrap;
   animation: mymove 80s linear infinite;
+  display: inline-block;
 }
 
-.example-left2 {
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: mymove 100s linear infinite;
-  white-space: nowrap;
-  animation: mymove 100s linear infinite;
+.svg-logos {
+  height: 80px;
+  width: 200px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  opacity: 0.6;
+  fill: #000;
+  transition: 0.3s;
+}
+
+/* .svg-logos path {
+  fill: #9ba2b2;
+  transition: 0.3s;
+}
+
+.svg-stroke {
+  stroke: #9ba2b2;
+  transition: 0.3s;
+} */
+
+.svg-logos:hover {
+  opacity: 1;
+  /* fill: #fff; */
+}
+
+/* .svg-logos:hover path {
+  fill: #fff;
 } */
 
 /* Safari 4.0 - 8.0 */
@@ -411,9 +438,9 @@ div.row.feature {
     transform: translate3d(0, 0, 0);
   }
   to {
-    -webkit-transform: translate3d(-50%, 0, 0);
-    -ms-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
@@ -424,17 +451,16 @@ div.row.feature {
     transform: translate3d(0, 0, 0);
   }
   to {
-    -webkit-transform: translate3d(-50%, 0, 0);
-    -ms-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
 .early {
   animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-
   animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-
+  background-color: #edd382;
   animation-duration: 1s;
   animation-delay: 1.5s;
 }
