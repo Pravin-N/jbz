@@ -59,7 +59,6 @@ export default function Home({ features }) {
       <Slider2 />
       <Counter />
       <Pricing />
-      <CTASection />
       {/* <Projects /> */}
       <Team />
       <Testimonials />

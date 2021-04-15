@@ -389,15 +389,15 @@ div.row.feature {
 .example-left {
   white-space: nowrap;
   overflow: hidden;
-  /* -webkit-animation: mymove 80s linear infinite; */
-  /* animation: mymove 80s linear infinite; */
+  -webkit-animation: mymove 80s linear infinite;
+  animation: mymove 80s linear infinite;
 }
 
 .svg-tape {
   white-space: nowrap;
   overflow: hidden;
-  -webkit-animation: mymove 80s linear infinite;
-  animation: mymove 80s linear infinite;
+  /* -webkit-animation: mymove 80s linear infinite;
+  animation: mymove 80s linear infinite; */
   display: inline-block;
 }
 
@@ -411,24 +411,10 @@ div.row.feature {
   transition: 0.3s;
 }
 
-/* .svg-logos path {
-  fill: #9ba2b2;
-  transition: 0.3s;
-}
-
-.svg-stroke {
-  stroke: #9ba2b2;
-  transition: 0.3s;
-} */
-
 .svg-logos:hover {
   opacity: 1;
   /* fill: #fff; */
 }
-
-/* .svg-logos:hover path {
-  fill: #fff;
-} */
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
@@ -438,9 +424,9 @@ div.row.feature {
     transform: translate3d(0, 0, 0);
   }
   to {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
@@ -451,9 +437,9 @@ div.row.feature {
     transform: translate3d(0, 0, 0);
   }
   to {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
