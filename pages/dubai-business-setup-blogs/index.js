@@ -69,7 +69,7 @@ const Blogs = ({ articles }) => {
                   ))
                 )}
 
-                <Pagination />
+                {/* <Pagination /> */}
               </div>
             </div>
             <div className="col-lg-4">
