@@ -1,4 +1,16 @@
 const Pricing = () => {
+  // const data = [{
+  //   license: "Commercial License",
+  //   price: "AED 19,770*",
+  //   detailList: ["Initial Approval - Trade Name Reservation", "Trade License Fee", "Annual Sponsorship Fee", "Establishment Card", "Labour Card", "Partner Visa", "JBZ Service Fee", ],
+  //   approData: ["We layout all the details and the timeline of each of the tasks that would be completed once you hire us for business setup.", "Guide you throughout the process to make it easy during each step.", "With extensive experience working with mainland government authorities, we can complete the process of business setup with relative ease."]
+  // }, {
+  //   license: "Professional License",
+  //   price: "AED 19,770*",
+  //   detailList: ["Initial Approval - Trade Name Reservation", "Trade License Fee", "Annual Sponsorship Fee", "Establishment Card", "Labour Card", "Partner Visa", "JBZ Service Fee", ],
+  //   approData: ["We layout all the details and the timeline of each of the tasks that would be completed once you hire us for business setup.", "Guide you throughout the process to make it easy during each step.", "With extensive experience working with mainland government authorities, we can complete the process of business setup with relative ease."]
+  // }, ]
+
   return (
     <>
       {/* Pricing Plan Begin */}

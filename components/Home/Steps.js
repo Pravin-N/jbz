@@ -1,8 +1,8 @@
-import Lottie from "react-lottie";
 import step1 from "../../public/assets/anim/step1-prepare-documents.json";
 import step2 from "../../public/assets/anim/step2-issue-business-license.json";
 import step3 from "../../public/assets/anim/step3-Get-Investor-visa.json";
 import step4 from "../../public/assets/anim/step4-bank-account.json";
+import StepsCard from "./StepsCard";
 
 const Steps = () => {
   const defaultOptions1 = {
@@ -38,6 +38,37 @@ const Steps = () => {
     },
   };
 
+  const data = [
+    {
+      id: "1",
+      title: "Prepare Documents",
+      lottie: defaultOptions1,
+      desc:
+        "Provide a detailed list of documents required for setting up the business and suggest ways to obtain these if not available.",
+    },
+    {
+      id: "2",
+      title: "Issue Business license",
+      lottie: defaultOptions2,
+      desc:
+        "Approach the relevant government authorities on your behalf to get the necessary license and approvals.",
+    },
+    {
+      id: "3",
+      title: "Get Investor Visa",
+      lottie: defaultOptions3,
+      desc:
+        "Obtain the visa so you could immediately start doing business with your new license and travel in and out of UAE.",
+    },
+    {
+      id: "4",
+      title: "Open Bank Account",
+      lottie: defaultOptions4,
+      desc:
+        "Open your business bank account with any of the top National or International banks in UAE.",
+    },
+  ];
+
   return (
     <>
       {/* Work Process Begin */}
@@ -61,91 +92,11 @@ const Steps = () => {
           </div>
 
           <div className="row process-bg">
-            <div className="col-lg-3 col-sm-6 single-process-wrapper">
-              {/* Single Work Process Begin */}
-              <div className="single-process text-center">
-                {/* Image Begin */}
-                <div className="image">
-                  <Lottie options={defaultOptions1} height={157} width={183} />
-                </div>
-                {/* Image End */}
-
-                {/* Content Begin */}
-                <div className="content">
-                  <h3>Prepare Documents</h3>
-                  <p>
-                    Provide a detailed list of documents required for setting up
-                    the business and suggest ways to obtain these if not
-                    available.
-                  </p>
-                </div>
-                {/* Content End */}
-              </div>
-              {/* Single Work Process End */}
-            </div>
-            <div className="col-lg-3 col-sm-6 single-process-wrapper">
-              {/* Single Work Process Begin */}
-              <div className="single-process text-center">
-                {/* Image Begin */}
-                <div className="image">
-                  <Lottie options={defaultOptions2} height={157} width={183} />
-                </div>
-                {/* Image End */}
-
-                {/* Content Begin */}
-                <div className="content">
-                  <h3>Issue Business license</h3>
-                  <p>
-                    Approach the relevant government authorities on your behalf
-                    to get the necessary license and approvals.
-                  </p>
-                </div>
-                {/* Content End */}
-              </div>
-              {/* Single Work Process End */}
-            </div>
-            <div className="col-lg-3 col-sm-6 single-process-wrapper">
-              {/* Single Work Process Begin */}
-              <div className="single-process text-center">
-                {/* Image Begin */}
-                <div className="image">
-                  <Lottie options={defaultOptions3} height={157} width={183} />
-                </div>
-                {/* Image End */}
-
-                {/* Content Begin */}
-                <div className="content">
-                  <h3>Get Investor Visa</h3>
-                  <p>
-                    Obtain the visa so you could immediately start doing
-                    business with your new license and travel in and out of UAE.
-                  </p>
-                </div>
-                {/* Content End */}
-              </div>
-              {/* Single Work Process End */}
-            </div>
-            <div className="col-lg-3 col-sm-6 single-process-wrapper">
-              {/* Single Work Process Begin */}
-              <div className="single-process text-center">
-                {/* Image Begin */}
-                <div className="image">
-                  <Lottie options={defaultOptions4} height={157} width={183} />
-                </div>
-                {/* Image End */}
-
-                {/* Content Begin */}
-                <div className="content">
-                  <h3>Open Bank Account</h3>
-                  <p>
-                    Open your business bank account with any of the top National
-                    or International banks in UAE.
-                  </p>
-                </div>
-                {/* Content End */}
-              </div>
-              {/* Single Work Process End */}
-            </div>
+            {data.map(({ id, title, desc, lottie }) => {
+              return (
+                <StepsCard key={id} title={title} lottie={lottie} desc={desc} />
+              );
+            })}
           </div>
         </div>
       </section>
