@@ -129,10 +129,12 @@ body,
   overflow: hidden;
   position: relative;
   min-height: 120px;
+  vertical-align: middle;
 }
 
 .article div {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .example-left {
@@ -165,7 +167,7 @@ body,
   height: 80px;
   width: 200px;
   margin-right: 25px;
-  margin-bottom: 10px;
+
   opacity: 0.6;
   fill: #000;
   transition: 0.3s;
@@ -398,13 +400,13 @@ div.row.footer {
     overflow: hidden;
     position: relative;
     min-height: 100px;
+    vertical-align: middle;
   }
 
   .svg-logos {
     height: 70px;
     width: 180px;
     margin-right: 20px;
-    margin-bottom: 8px;
     opacity: 0.6;
     fill: #000;
     transition: 0.3s;
@@ -432,13 +434,13 @@ div.row.footer {
     overflow: hidden;
     position: relative;
     min-height: 70px;
+    vertical-align: middle;
   }
 
   .svg-logos {
     height: 50px;
     width: 120px;
     margin-right: 15px;
-    margin-bottom: 5px;
     opacity: 0.6;
     fill: #000;
     transition: 0.3s;
