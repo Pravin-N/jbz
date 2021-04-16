@@ -11,8 +11,6 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/* Meta Data */}
-
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta httpEquiv="content-type" content="text/html" charSet="utf-8" />
 
           {/* <link
