@@ -341,8 +341,13 @@ div.row.footer {
   color: #ec4d37;
 }
 
-.single-feature .content h3 {
+.single-feature .content h3,
+.single-process .content h3 {
   color: #ec4d37;
+}
+
+.testimonial-image {
+  border-radius: 50% !important;
 }
 
 .servbtn {
