@@ -204,11 +204,11 @@ body,
 }
 
 .early {
-  animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  /* animation: fadeIn ease-in 1;  call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  /* animation-fill-mode: forwards;  this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
   background-color: #edd382;
-  animation-duration: 1s;
-  animation-delay: 1.5s;
+  /* animation-duration: 1s; */
+  /* animation-delay: 1.5s; */
 }
 
 .btn:hover {

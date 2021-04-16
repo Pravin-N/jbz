@@ -1,3 +1,6 @@
+import { useRef } from "react";
+import useVisible from "../../components/useIsVisible";
+
 import step1 from "../../public/assets/anim/step1-prepare-documents.json";
 import step2 from "../../public/assets/anim/step2-issue-business-license.json";
 import step3 from "../../public/assets/anim/step3-Get-Investor-visa.json";
@@ -38,6 +41,16 @@ const Steps = () => {
     },
   };
 
+  const elemRef1 = useRef();
+  const elemRef2 = useRef();
+  const elemRef3 = useRef();
+  const elemRef4 = useRef();
+
+  const lotanim1 = useVisible(elemRef1);
+  const lotanim2 = useVisible(elemRef2);
+  const lotanim3 = useVisible(elemRef3);
+  const lotanim4 = useVisible(elemRef4);
+
   const data = [
     {
       id: "1",
@@ -45,6 +58,8 @@ const Steps = () => {
       lottie: defaultOptions1,
       desc:
         "Provide a detailed list of documents required for setting up the business and suggest ways to obtain these if not available.",
+      refe: elemRef1,
+      lotanim: lotanim1,
     },
     {
       id: "2",
@@ -52,6 +67,8 @@ const Steps = () => {
       lottie: defaultOptions2,
       desc:
         "Approach the relevant government authorities on your behalf to get the necessary license and approvals.",
+      refe: elemRef2,
+      lotanim: lotanim2,
     },
     {
       id: "3",
@@ -59,6 +76,8 @@ const Steps = () => {
       lottie: defaultOptions3,
       desc:
         "Obtain the visa so you could immediately start doing business with your new license and travel in and out of UAE.",
+      refe: elemRef3,
+      lotanim: lotanim3,
     },
     {
       id: "4",
@@ -66,6 +85,8 @@ const Steps = () => {
       lottie: defaultOptions4,
       desc:
         "Open your business bank account with any of the top National or International banks in UAE.",
+      refe: elemRef4,
+      lotanim: lotanim4,
     },
   ];
 
@@ -92,9 +113,16 @@ const Steps = () => {
           </div>
 
           <div className="row process-bg">
-            {data.map(({ id, title, desc, lottie }) => {
+            {data.map(({ id, title, desc, lottie, refe, lotanim }) => {
               return (
-                <StepsCard key={id} title={title} lottie={lottie} desc={desc} />
+                <StepsCard
+                  key={id}
+                  title={title}
+                  lottie={lottie}
+                  desc={desc}
+                  refe={refe}
+                  lotanim={lotanim}
+                />
               );
             })}
           </div>
