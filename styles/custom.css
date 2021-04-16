@@ -233,8 +233,8 @@ body,
   padding-left: 10px;
 }
 
-li h6 {
-  font-weight: 200;
+.list-unstyled li p {
+  font-size: 12px;
 }
 
 .single-team-member .team-info .info-front,
@@ -425,6 +425,10 @@ div.row.footer {
     vertical-align: middle;
   }
 
+  .list-unstyled li p {
+    font-size: 10px;
+  }
+
   .svg-logos {
     height: 70px;
     width: 180px;
@@ -450,6 +454,10 @@ div.row.footer {
     position: relative;
     width: 100%;
     height: 300px;
+  }
+
+  .list-unstyled li p {
+    font-size: 8px;
   }
 
   .pricing-navtab .nav-tabs .nav-link h4 {

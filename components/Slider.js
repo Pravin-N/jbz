@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import useVisible from "../../hooks/useIsVisible";
+import React, { useRef } from "react";
+import useVisible from "../components/useIsVisible";
 
 const Slider = () => {
   const elemRef1 = useRef();

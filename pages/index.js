@@ -1,6 +1,8 @@
 // import dynamic from "next/dynamic";
 import Hero from "../components/Hero/Hero";
 
+import dynamic from "next/dynamic";
+
 import Features from "../components/features/Features";
 import AboutHome from "../components/Home/AboutHome";
 import Steps from "../components/Home/Steps";
@@ -15,8 +17,10 @@ import CTASection from "../components/CTASection";
 import ClientsLogo from "../components/ClientsLogo";
 import Meta from "../components/Layout/Meta";
 import FeaturePostData from "../components/data";
-import Slider from "../components/Slider";
-import Slider2 from "../components/Slider2";
+
+const Slider = dynamic(() => import("../components/Slider"), { ssr: false });
+
+const Slider2 = dynamic(() => import("../components/Slider2"), { ssr: false });
 
 export async function getStaticProps() {
   return {

@@ -155,10 +155,10 @@ const Pricing = () => {
                           JBZ Service Fee
                         </li>
                         <li>
-                          <h6>
+                          <p>
                             * Approx Costs - Depends on the type to business
                             activity.
-                          </h6>
+                          </p>
                         </li>
                       </ul>
                     </div>
@@ -240,10 +240,10 @@ const Pricing = () => {
                           JBZ Service Fee
                         </li>
                         <li>
-                          <h6>
+                          <p>
                             * Approx Costs - Depends on the type to business
                             activity.
-                          </h6>
+                          </p>
                         </li>
                       </ul>
                     </div>
@@ -321,10 +321,10 @@ const Pricing = () => {
                           JBZ Service Fee
                         </li>
                         <li>
-                          <h6>
+                          <p>
                             * Approx Costs - Depends on the type to business
                             activity.
-                          </h6>
+                          </p>
                         </li>
                       </ul>
                     </div>
@@ -398,10 +398,10 @@ const Pricing = () => {
                           JBZ Service Fee
                         </li>
                         <li>
-                          <h6>
+                          <p>
                             * Approx Costs - Depends on the type to business
                             activity.
-                          </h6>
+                          </p>
                         </li>
                       </ul>
                     </div>
