@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
 import "../styles/videomodal.css";
 import "../styles/style.css";

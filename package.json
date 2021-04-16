@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
     "contentful": "^8.2.1",
     "next": "10.0.6",
     "nodemailer": "^6.5.0",
