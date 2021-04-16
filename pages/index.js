@@ -57,8 +57,9 @@ export default function Home({ features }) {
 
       <ServicesHome />
       <Slider2 />
-      <Counter />
+
       <Pricing />
+      <Counter />
       {/* <Projects /> */}
       <Team />
       <Testimonials />

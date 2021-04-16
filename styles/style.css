@@ -720,6 +720,7 @@ span:after,
 .single-process .content h3,
 .single-service,
 .single-service h4,
+.single-service h3,
 .single-service.style--two svg path,
 .post-pagination .single-post-pagination .media-body a svg {
   -webkit-transition: 0.3s linear;
@@ -3217,7 +3218,7 @@ blockquote {
   font-size: 50px;
 }
 
-.single-service h4 {
+.single-service h3 {
   margin: 20px 0 13px 0;
 }
 
@@ -3315,7 +3316,7 @@ blockquote {
    04.5: Counter
    ********************* */
 .single-counter {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .single-counter h2 {

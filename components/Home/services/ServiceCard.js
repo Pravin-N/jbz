@@ -16,13 +16,13 @@ const ServiceCard = ({ title, image, description, link, alt }) => {
         <div className="content">
           <Link href={link}>
             <a aria-label={"Link to " + title}>
-              <h4>{title}</h4>
+              <h3 className="servTitle">{title}</h3>
             </a>
           </Link>
 
           <p>{description}</p>
           <Link href={link}>
-            <a aria-label={"Link to " + title} className="btn-inline">
+            <a aria-label={"Link to " + title} className="btn-inline servbtn">
               Know More
             </a>
           </Link>

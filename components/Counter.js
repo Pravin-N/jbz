@@ -5,7 +5,7 @@ const Counter = () => {
   return (
     <>
       {/* Counter Begin */}
-      <section className="pt-120 pb-70 gradient-bg">
+      <section className="pt-30 pb-10 gradient-bg">
         <div className="container">
           <div className="row align-items-center">
             {/* Single Counter */}

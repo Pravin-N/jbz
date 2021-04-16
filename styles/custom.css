@@ -337,6 +337,14 @@ div.row.footer {
   margin-top: 16px;
 }
 
+.servTitle {
+  color: #ec4d37;
+}
+
+.servbtn {
+  font-weight: 500;
+}
+
 /* for mobile */
 @media screen and (max-width: 767px) {
   .whatsapp-icon {
