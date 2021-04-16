@@ -246,10 +246,6 @@ li h6 {
   padding: 20px;
 }
 
-.pricing-navtab .nav-tabs .nav-link h2 {
-  font-size: 30px;
-}
-
 .cta-content h3 {
   line-height: 1.5;
 }
@@ -292,6 +288,10 @@ div.row.footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.testimg {
+  border-radius: 50%;
 }
 
 /* div.row.footer .col-sm-6 {

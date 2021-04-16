@@ -1708,19 +1708,26 @@ blockquote {
     margin-bottom: 42px;
   }
   .section-title h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
   .section-title p {
-    margin-top: 28px;
+    margin-top: 20px;
   }
 }
 
 @media only screen and (max-width: 379px) {
   .section-title h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .section-title h2 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  .list-check li {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 25px;
   }
 }
 
@@ -2999,7 +3006,7 @@ blockquote {
 }
 
 #countdown li .single-countdown h2 {
-  font-size: 36px;
+  font-size: 25px;
 }
 
 #countdown li.seperator {
@@ -3319,13 +3326,13 @@ blockquote {
 
 @media only screen and (max-width: 767px) {
   .single-counter h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
 @media only screen and (max-width: 379px) {
   .single-counter h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -3371,12 +3378,12 @@ blockquote {
 }
 
 .pricing-navtab .nav-tabs .nav-link h2 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 379px) {
   .pricing-navtab .nav-tabs .nav-link h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -3396,7 +3403,7 @@ blockquote {
 
 @media only screen and (max-width: 379px) {
   .pricing-navtab .tab-content .tab-pane .tab-pane-text h3 {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -3416,14 +3423,14 @@ blockquote {
 }
 
 .testimonial-slider .single-testimonial-slide .testimonial-content p {
-  font-size: 26px;
+  font-size: 20px;
   font-style: italic;
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 379px) {
   .testimonial-slider .single-testimonial-slide .testimonial-content p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -3739,13 +3746,13 @@ blockquote {
     display: none;
   }
   .cta-content h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
 @media only screen and (max-width: 379px) {
   .cta-content h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
