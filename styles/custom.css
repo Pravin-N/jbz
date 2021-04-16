@@ -341,6 +341,10 @@ div.row.footer {
   color: #ec4d37;
 }
 
+.single-feature .content h3 {
+  color: #ec4d37;
+}
+
 .servbtn {
   font-weight: 500;
 }
