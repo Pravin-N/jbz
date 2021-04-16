@@ -348,6 +348,7 @@ div.row.footer {
 
 .testimonial-image {
   border-radius: 50% !important;
+  width: 100%;
 }
 
 .servbtn {

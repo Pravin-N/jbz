@@ -40,8 +40,8 @@ const Testimonials = () => {
                       <Image
                         src="/assets/img/testimonial/Saleem Khokhar-Peritus Software.JPG"
                         alt="Client 1"
-                        height="391"
-                        width="435"
+                        height="291"
+                        width="335"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -77,8 +77,8 @@ const Testimonials = () => {
                       <Image
                         src="/assets/img/testimonial/Zeeshan Gaffar Khan-Al Hayat Al Mudisha.jpeg"
                         alt="Client 2"
-                        height="391"
-                        width="435"
+                        height="291"
+                        width="335"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -113,8 +113,8 @@ const Testimonials = () => {
                       <Image
                         src="/assets/img/testimonial/Usman Mehmood- Creations General Trading L.L.C.JPG"
                         alt="Client 3"
-                        height="391"
-                        width="435"
+                        height="291"
+                        width="335"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -147,8 +147,8 @@ const Testimonials = () => {
                       <Image
                         src="/assets/img/testimonial/Abdullah Madni- Nox Health General Trading L.L.C.JPG"
                         alt="Client 4"
-                        height="391"
-                        width="435"
+                        height="291"
+                        width="335"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -180,8 +180,8 @@ const Testimonials = () => {
                         src="/assets/img/testimonial/Robert Reynolds-Mayfair Wrapping.jpg"
                         data-rjs="2"
                         alt="Client 5"
-                        height="391"
-                        width="435"
+                        height="291"
+                        width="335"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -213,8 +213,8 @@ const Testimonials = () => {
                       <Image
                         src="/assets/img/testimonial/Taimur Rehman-Dream Home Technical Services.jpeg"
                         alt="Client 6"
-                        height="391"
-                        width="435"
+                        height="291"
+                        width="335"
                       />
                     </div>
                     {/* Testimonial Image End */}
@@ -248,8 +248,8 @@ const Testimonials = () => {
                       <Image
                         src="/assets/img/testimonial/sonal.jpg"
                         alt="Client 7"
-                        height="391"
-                        width="435"
+                        height="291"
+                        width="335"
                       />
                     </div>
                     {/* Testimonial Image End */}
