@@ -52,8 +52,8 @@ const Pricing = () => {
                   role="tab"
                   aria-label="Commercial License"
                 >
-                  <h4>Commercial License</h4>
-                  <h2>AED 28,970*</h2>
+                  <h2>Commercial License</h2>
+                  <h3>AED 28,970*</h3>
                 </a>
               </li>
 
@@ -70,8 +70,8 @@ const Pricing = () => {
                   role="tab"
                   aria-label="Professional License"
                 >
-                  <h4>Professional License</h4>
-                  <h2>AED 19,770*</h2>
+                  <h2>Professional License</h2>
+                  <h3>AED 19,770*</h3>
                 </a>
               </li>
               {/* Single Nav End */}
@@ -87,8 +87,8 @@ const Pricing = () => {
                   role="tab"
                   aria-label="Freezone License"
                 >
-                  <h4>Free Zone License</h4>
-                  <h2>AED 25,700*</h2>
+                  <h2>Free Zone License</h2>
+                  <h3>AED 25,700*</h3>
                 </a>
               </li>
               {/* Single Nav End */}
@@ -104,8 +104,8 @@ const Pricing = () => {
                   role="tab"
                   aria-label="Offshore License"
                 >
-                  <h4>Offshore License</h4>
-                  <h2>AED 8,000*</h2>
+                  <h2>Offshore License</h2>
+                  <h3>AED 8,000*</h3>
                 </a>
               </li>
               {/* Single Nav End */}

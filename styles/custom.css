@@ -333,6 +333,13 @@ div.row.footer {
   z-index: 100;
 }
 
+.pricing-navtab .nav-tabs .nav-link h2 {
+  font-weight: 500;
+  color: #ec4d37;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
 .whatsapp-icon {
   margin-top: 16px;
 }
@@ -443,6 +450,10 @@ div.row.footer {
     position: relative;
     width: 100%;
     height: 300px;
+  }
+
+  .pricing-navtab .nav-tabs .nav-link h4 {
+    font-size: 25px;
   }
 
   .article {

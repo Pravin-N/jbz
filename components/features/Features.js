@@ -49,7 +49,7 @@ const Features = ({ features }) => {
                   text={feature.shortText}
                   key={feature.id}
                   image={feature.shortImage}
-                  alt={feature.altText}
+                  alt={feature.alt}
                   slug={feature.slug}
                 />
               );

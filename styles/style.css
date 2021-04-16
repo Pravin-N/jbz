@@ -3382,8 +3382,13 @@ blockquote {
   font-size: 30px;
 }
 
+.pricing-navtab .nav-tabs .nav-link h3 {
+  font-size: 30px;
+  color: white;
+}
+
 @media only screen and (max-width: 379px) {
-  .pricing-navtab .nav-tabs .nav-link h2 {
+  .pricing-navtab .nav-tabs .nav-link h3 {
     font-size: 25px;
   }
 }
