@@ -48,9 +48,9 @@ export default function Home({ features }) {
       <Slider />
       <Features features={features} />
 
-      <AboutHome
+      {/* <AboutHome
         img={"/assets/img/section-bg/about jb business setup in dubai.webp"}
-      />
+      /> */}
 
       <CTASection />
       <Steps />
