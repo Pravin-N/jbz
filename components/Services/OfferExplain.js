@@ -11,10 +11,10 @@ const OfferExplain = () => {
               {/* Section Title Begin */}
               <div className="section-title mb-4">
                 <h3>What We Offer?</h3>
-                <h2>
+                <h1>
                   We offer a wide range of services to help you get your
-                  business up and running.
-                </h2>
+                  business up and running in Dubai, UAE.
+                </h1>
                 <p>
                   From getting a business license for any business activity in
                   Dubai, UAE to getting visas for employees or flexi desk to

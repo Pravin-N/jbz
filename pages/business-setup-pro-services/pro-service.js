@@ -66,7 +66,7 @@ const ProService = () => {
             <div className="col-lg-8">
               {/* Service Details Begin */}
               <div className="service-details">
-                <h3 className="title">Professional PRO services</h3>
+                <h1 className="title">Professional PRO services in Dubai</h1>
                 <p>
                   Professional PRO services to get the required Visas and
                   complete other govt formalities for smooth running of your

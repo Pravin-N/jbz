@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
                 <h3>How We Cater to Our Clients?</h3>
                 <h2>
                   Understanding the needs of our clients and catering to those
-                  needs is our topmost priority at Just Business.
+                  needs is our topmost priority at Just Business
                   <br />
                 </h2>
                 <p>

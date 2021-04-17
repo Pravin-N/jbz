@@ -64,9 +64,9 @@ const trademark = () => {
             <div className="col-lg-8">
               {/* Service Details Begin */}
               <div className="service-details">
-                <h3 className="title">
-                  Trademark and Patent Registration Service.
-                </h3>
+                <h1 className="title">
+                  Trademark and Patent Registration Service
+                </h1>
                 <p>
                   If you have built a brand or an identity that your customers
                   associate with your business then protecting that Brand

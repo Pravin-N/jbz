@@ -37,7 +37,7 @@ const Vat = () => {
           <div className="row">
             <div className="col-12">
               <div className="page-title text-center">
-                <h2>Value Added Tax Registration in Dubai.</h2>
+                <h2>Value Added Tax Registration in Dubai</h2>
                 <ul className="list-inline">
                   <li>
                     <Link href="/">
@@ -68,7 +68,7 @@ const Vat = () => {
             <div className="col-lg-8">
               {/* Service Details Begin */}
               <div className="service-details">
-                <h3 className="title">VAT Registration services in Dubai</h3>
+                <h1 className="title">VAT Registration services in Dubai</h1>
                 <p>
                   The UAE has implemented a Value Added Tax (VAT) from January
                   1, 2018. Businesses with Dhs 375,000 or more annual return are

@@ -10,11 +10,11 @@ const WhoAreWe = () => {
             <div className="col-12">
               {/* Section Title Begin */}
               <div className="section-title text-center">
-                <h3>Who We Are</h3>
-                <h2>
+                <h3>Who are we?</h3>
+                <h1>
                   We are experts in business setup, PRO services <br />& other
-                  support services in Dubai, UAE.
-                </h2>
+                  business support services in Dubai, UAE
+                </h1>
                 {/* <p>
                   Met defective are allowance two perceived listening consulted
                   contained. It chicken oh colonel pressed excited suppose to

@@ -41,7 +41,7 @@ const BankAccount = () => {
           <div className="row">
             <div className="col-12">
               <div className="page-title text-center">
-                <h2>Corporate Bank A/c Opening Service in Dubai.</h2>
+                <h2>Corporate Bank A/c Opening Service in Dubai</h2>
                 <ul className="list-inline">
                   <li>
                     <Link href="/">
@@ -72,9 +72,9 @@ const BankAccount = () => {
             <div className="col-lg-8">
               {/* Service Details Begin */}
               <div className="service-details">
-                <h3 className="title">
+                <h1 className="title">
                   Open Corporate Bank Account in Dubai, UAE
-                </h3>
+                </h1>
                 <p>
                   Dubai is one of the top tier locations to do business in the
                   middle east. Many businesses from different industries operate

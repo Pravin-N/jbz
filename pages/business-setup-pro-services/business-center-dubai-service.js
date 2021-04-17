@@ -60,9 +60,9 @@ const BusinessCenter = () => {
             <div className="col-lg-8">
               {/* Service Details Begin */}
               <div className="service-details">
-                <h3 className="title">
-                  Best business center facilities in Dubai.
-                </h3>
+                <h1 className="title">
+                  Best business center facilities in Dubai
+                </h1>
                 <p>
                   We, at Just Business, provide to our customers, unique
                   business environment to optimize clients' levels of

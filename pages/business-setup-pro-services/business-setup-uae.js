@@ -69,10 +69,10 @@ const BusinessSetup = () => {
             <div className="col-lg-8">
               {/* Service Details Begin */}
               <div className="service-details">
-                <h3 className="title">
+                <h1 className="title">
                   Business Setup and Licensing service in Dubai or any other
-                  emirate in UAE.
-                </h3>
+                  emirate in UAE
+                </h1>
                 <p>
                   Business setup service is one of the main services we provide
                   at Just Business. We have extensive experience in business
