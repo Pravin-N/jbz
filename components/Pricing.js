@@ -1,15 +1,93 @@
+import Prices from "./Prices";
+import PricingDetails from "./PricingDetails";
+import { useState } from "react";
+
 const Pricing = () => {
-  // const data = [{
-  //   license: "Commercial License",
-  //   price: "AED 19,770*",
-  //   detailList: ["Initial Approval - Trade Name Reservation", "Trade License Fee", "Annual Sponsorship Fee", "Establishment Card", "Labour Card", "Partner Visa", "JBZ Service Fee", ],
-  //   approData: ["We layout all the details and the timeline of each of the tasks that would be completed once you hire us for business setup.", "Guide you throughout the process to make it easy during each step.", "With extensive experience working with mainland government authorities, we can complete the process of business setup with relative ease."]
-  // }, {
-  //   license: "Professional License",
-  //   price: "AED 19,770*",
-  //   detailList: ["Initial Approval - Trade Name Reservation", "Trade License Fee", "Annual Sponsorship Fee", "Establishment Card", "Labour Card", "Partner Visa", "JBZ Service Fee", ],
-  //   approData: ["We layout all the details and the timeline of each of the tasks that would be completed once you hire us for business setup.", "Guide you throughout the process to make it easy during each step.", "With extensive experience working with mainland government authorities, we can complete the process of business setup with relative ease."]
-  // }, ]
+  const data = [
+    {
+      id: "pricing-1",
+      detailId: "Commercial",
+      href: "#Commercial",
+      license: "Commercial License",
+      price: "AED 19,770*",
+      detailList: [
+        "Initial Approval - Trade Name Reservation",
+        "Trade License Fee",
+        "Annual Sponsorship Fee",
+        "Establishment Card",
+        "Labour Card",
+        "Partner Visa",
+        "JBZ Service Fee",
+      ],
+      approData: [
+        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us for business setup.",
+        "Guide you throughout the process to make it easy during each step.",
+        "With extensive experience working with mainland government authorities, we can complete the process of business setup with relative ease.",
+      ],
+    },
+    {
+      id: "pricing-2",
+      href: "#Professional",
+      detailId: "Professional",
+      license: "Professional License",
+      price: "AED 19,770*",
+      detailList: [
+        "Initial Approval - Trade Name Reservation",
+        "Trade License Fee",
+        "Annual Sponsorship Fee",
+        "Establishment Card",
+        "Labour Card",
+        "1 Visa",
+        "JBZ Service Fee",
+      ],
+      approData: [
+        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us for business setup.",
+        "Guide you throughout the process to make it easy during each step.",
+        "With extensive experience working with mainland government authorities, we can complete the process of business setup with relative ease.",
+      ],
+    },
+    {
+      id: "pricing-3",
+      href: "#FreeZone",
+      detailId: "FreeZone",
+      license: "Free Zone License",
+      price: "AED 25,700*",
+      detailList: [
+        "License Fees",
+        "E-Channel",
+        "Investor Visa",
+        "Security Deposit",
+        "JBZ Service Fee",
+      ],
+      approData: [
+        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us forbusiness setup.",
+        "Guide you throughout the process to make it easy during each step.",
+        "Guide you throughout the process to make it easy during each step.",
+        "With extensive experience working with Free Zone authorities, we can complete the process of business setup with relative ease.",
+      ],
+    },
+    {
+      id: "pricing-4",
+      href: "#Offshore",
+      detailId: "Offshore",
+      license: "Offshore License",
+      price: "AED 8,000*",
+      detailList: [
+        "License Fees",
+        "Offshore Agent Fee",
+        "Security Deposit",
+        "JBZ Service Fee",
+      ],
+      approData: [
+        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us forbusiness setup.",
+        "Guide you throughout the process to make it easy during each step.",
+        "Guide you throughout the process to make it easy during each step.",
+        "With extensive experience working with Free Zone authorities, we can complete the process of business setup with relative ease.",
+      ],
+    },
+  ];
+
+  const [active, setActive] = useState(data[0].id);
 
   return (
     <>
@@ -42,88 +120,44 @@ const Pricing = () => {
               aria-owns="pricing-1 pricing-2 pricing-3 pricing-4"
             >
               {/* Single Nav Begin */}
-              <li className="nav-item col-lg-3 col-sm-6" role="presentation">
-                <a
-                  href="#personal"
-                  className="nav-link text-center active"
-                  data-toggle="tab"
-                  aria-selected="true"
-                  id="pricing-1"
-                  role="tab"
-                  aria-label="Commercial License"
-                >
-                  <h2>Commercial License</h2>
-                  <h3>AED 28,970*</h3>
-                </a>
-              </li>
-
-              {/* Single Nav End */}
-
-              {/* Single Nav Begin */}
-              <li className="nav-item col-lg-3 col-sm-6" role="presentation">
-                <a
-                  href="#startup"
-                  className="nav-link text-center"
-                  data-toggle="tab"
-                  aria-selected="false"
-                  id="pricing-2"
-                  role="tab"
-                  aria-label="Professional License"
-                >
-                  <h2>Professional License</h2>
-                  <h3>AED 19,770*</h3>
-                </a>
-              </li>
-              {/* Single Nav End */}
-
-              {/* Single Nav Begin */}
-              <li className="nav-item col-lg-3 col-sm-6" role="presentation">
-                <a
-                  href="#business"
-                  className="nav-link text-center"
-                  data-toggle="tab"
-                  aria-selected="false"
-                  id="pricing-3"
-                  role="tab"
-                  aria-label="Freezone License"
-                >
-                  <h2>Free Zone License</h2>
-                  <h3>AED 25,700*</h3>
-                </a>
-              </li>
-              {/* Single Nav End */}
-
-              {/* Single Nav Begin */}
-              <li className="nav-item col-lg-3 col-sm-6" role="presentation">
-                <a
-                  href="#entrepreneur"
-                  className="nav-link text-center"
-                  data-toggle="tab"
-                  aria-selected="false"
-                  id="pricing-4"
-                  role="tab"
-                  aria-label="Offshore License"
-                >
-                  <h2>Offshore License</h2>
-                  <h3>AED 8,000*</h3>
-                </a>
-              </li>
-              {/* Single Nav End */}
+              {data.map(({ license, price, href, id }) => {
+                return (
+                  <Prices
+                    license={license}
+                    price={price}
+                    href={href}
+                    id={id}
+                    key={id}
+                    active={id === active}
+                    onClick={() => setActive(id)}
+                  />
+                );
+              })}
             </ul>
-            {/* Pricing Nav End */}
-
-            {/* Pricing Tab Content Begin */}
             <div className="tab-content">
               {/* Single Content Begin */}
-              <div
+              {data.map((d) => {
+                return d.id === active ? (
+                  <PricingDetails
+                    detailList={d.detailList}
+                    approData={d.approData}
+                    detailId={d.detailId}
+                    key={d.id}
+                  />
+                ) : (
+                  ""
+                );
+              })}
+
+              {/* <div
                 className="tab-pane fadeInUp animated show active"
                 id="personal"
                 role="tabpanel"
               >
                 <div className="row">
-                  <div className="col-lg-6">
-                    {/* Tab Pane Text Begin */}
-                    <div className="tab-pane-text">
+                  <div className="col-lg-6"> */}
+              {/* Tab Pane Text Begin */}
+              {/* <div className="tab-pane-text">
                       <h3>What’s included in this package?</h3>
                       <ul className="list-unstyled list-check">
                         <li>
@@ -161,12 +195,12 @@ const Pricing = () => {
                           </p>
                         </li>
                       </ul>
-                    </div>
-                    {/* Tab Pane Text End */}
-                  </div>
-                  <div className="col-lg-6">
-                    {/* Tab Pane Text Begin */}
-                    <div className="tab-pane-text mt-50 mt-lg-0">
+                    </div> */}
+              {/* Tab Pane Text End */}
+              {/* </div>
+                  <div className="col-lg-6"> */}
+              {/* Tab Pane Text Begin */}
+              {/* <div className="tab-pane-text mt-50 mt-lg-0">
                       <h3>Our Approach</h3>
                       <ul className="list-unstyled list-check">
                         <li>
@@ -196,23 +230,23 @@ const Pricing = () => {
                       >
                         <span>Get a free Quote</span>
                       </a>
-                    </div>
-                    {/* Tab Pane Text End */}
-                  </div>
+                    </div> */}
+              {/* Tab Pane Text End */}
+              {/* </div>
                 </div>
-              </div>
+              </div> */}
               {/* Single Content End */}
 
               {/* Single Content Begin */}
-              <div
+              {/* <div
                 className="tab-pane fadeInUp animated"
                 id="startup"
                 role="tabpanel"
               >
                 <div className="row">
-                  <div className="col-lg-6">
-                    {/* Tab Pane Text Begin */}
-                    <div className="tab-pane-text">
+                  <div className="col-lg-6"> */}
+              {/* Tab Pane Text Begin */}
+              {/* <div className="tab-pane-text">
                       <h3>What’s included in this package?</h3>
                       <ul className="list-unstyled list-check">
                         <li>
@@ -246,12 +280,12 @@ const Pricing = () => {
                           </p>
                         </li>
                       </ul>
-                    </div>
-                    {/* Tab Pane Text End */}
-                  </div>
-                  <div className="col-lg-6">
-                    {/* Tab Pane Text Begin */}
-                    <div className="tab-pane-text mt-50 mt-lg-0">
+                    </div> */}
+              {/* Tab Pane Text End */}
+              {/* </div>
+                  <div className="col-lg-6"> */}
+              {/* Tab Pane Text Begin */}
+              {/* <div className="tab-pane-text mt-50 mt-lg-0">
                       <h3>Our Approach</h3>
                       <ul className="list-unstyled list-check">
                         <li>
@@ -281,23 +315,23 @@ const Pricing = () => {
                       >
                         <span>Get a free Quote</span>
                       </a>
-                    </div>
-                    {/* Tab Pane Text End */}
-                  </div>
+                    </div> */}
+              {/* Tab Pane Text End */}
+              {/* </div>
                 </div>
-              </div>
+              </div> */}
               {/* Single Content End */}
 
               {/* Single Content Begin */}
-              <div
+              {/* <div
                 className="tab-pane fadeInUp animated"
                 id="business"
                 role="tabpanel"
               >
                 <div className="row">
-                  <div className="col-lg-6">
-                    {/* Tab Pane Text Begin */}
-                    <div className="tab-pane-text">
+                  <div className="col-lg-6"> */}
+              {/* Tab Pane Text Begin */}
+              {/* <div className="tab-pane-text">
                       <h3>What’s included in this package?</h3>
                       <ul className="list-unstyled list-check">
                         <li>
@@ -327,12 +361,12 @@ const Pricing = () => {
                           </p>
                         </li>
                       </ul>
-                    </div>
-                    {/* Tab Pane Text End */}
-                  </div>
-                  <div className="col-lg-6">
-                    {/* Tab Pane Text Begin */}
-                    <div className="tab-pane-text mt-50 mt-lg-0">
+                    </div> */}
+              {/* Tab Pane Text End */}
+              {/* </div>
+                  <div className="col-lg-6"> */}
+              {/* Tab Pane Text Begin */}
+              {/* <div className="tab-pane-text mt-50 mt-lg-0">
                       <h3>Our Approach</h3>
                       <ul className="list-unstyled list-check">
                         <li>
@@ -362,23 +396,23 @@ const Pricing = () => {
                       >
                         <span>Get a free Quote</span>
                       </a>
-                    </div>
-                    {/* Tab Pane Text End */}
-                  </div>
+                    </div> */}
+              {/* Tab Pane Text End */}
+              {/* </div>
                 </div>
-              </div>
+              </div> */}
               {/* Single Content End */}
 
               {/* Single Content Begin */}
-              <div
+              {/* <div
                 className="tab-pane fadeInUp animated"
                 id="entrepreneur"
                 role="tabpanel"
               >
                 <div className="row">
-                  <div className="col-lg-6">
-                    {/* Tab Pane Text Begin */}
-                    <div className="tab-pane-text">
+                  <div className="col-lg-6"> */}
+              {/* Tab Pane Text Begin */}
+              {/* <div className="tab-pane-text">
                       <h3>What’s included in this package?</h3>
                       <ul className="list-unstyled list-check">
                         <li>
@@ -404,12 +438,12 @@ const Pricing = () => {
                           </p>
                         </li>
                       </ul>
-                    </div>
-                    {/* Tab Pane Text End */}
-                  </div>
-                  <div className="col-lg-6">
-                    {/* Tab Pane Text Begin */}
-                    <div className="tab-pane-text mt-50 mt-lg-0">
+                    </div> */}
+              {/* Tab Pane Text End */}
+              {/* </div>
+                  <div className="col-lg-6"> */}
+              {/* Tab Pane Text Begin */}
+              {/* <div className="tab-pane-text mt-50 mt-lg-0">
                       <h3>Our Approach</h3>
                       <ul className="list-unstyled list-check">
                         <li>
@@ -439,11 +473,11 @@ const Pricing = () => {
                       >
                         <span>Get a free Quote</span>
                       </a>
-                    </div>
-                    {/* Tab Pane Text End */}
-                  </div>
-                </div>
-              </div>
+                    </div> */}
+              {/* Tab Pane Text End */}
+              {/* </div> */}
+              {/* </div> */}
+              {/* </div> */}
               {/* Single Content End */}
             </div>
             {/* Pricing Tab Content End */}

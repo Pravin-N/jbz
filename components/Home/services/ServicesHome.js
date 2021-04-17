@@ -50,7 +50,7 @@ const ServicesHome = () => {
                 <h2>
                   We Offer a Wide <br />
                   Range of Services <br />
-                  to Kick Start Your Business in UAE.
+                  to Kick Start Your Business in UAE
                 </h2>
                 {/* <p>
                   We highest ye friends is exposed equally in. Ignorant had too
