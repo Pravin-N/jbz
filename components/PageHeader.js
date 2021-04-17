@@ -4,7 +4,7 @@ const AboutHeader = ({ header }) => {
   return (
     <>
       {/* Page Title Begin */}
-      <section className="page-title-bg pt-250 pb-100">
+      <section className="page-title-bg pt-150 pb-50">
         <div className="container">
           <div className="row">
             <div className="col-12">

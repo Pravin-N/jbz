@@ -16,9 +16,8 @@ const AboutHome = ({ img }) => {
               <div className="section-title">
                 <h3>Why Choose Just Business?</h3>
                 <h2>
-                  10+ yrs of Experience&nbsp;
-                  <br />
-                  of Business Setup in UAE,&nbsp;You're in Safe hands.
+                  10+ yrs of Experience of Business Setup in UAE, You're in Safe
+                  hands.
                 </h2>
                 <p>
                   Having helped 100's of entrepreneurs get the necessary

@@ -44,7 +44,7 @@ const Info = ({ info }) => {
         website={metaData.website}
       />
       {/* <!-- Page Title Begin --> */}
-      <section className="page-title-bg pt-250 pb-100">
+      <section className="page-title-bg pt-150 pb-50">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -70,7 +70,7 @@ const Info = ({ info }) => {
       {/* <!-- Page Title End -->
 
   <!-- Project Details Begin --> */}
-      <section className="pt-120 pb-60">
+      <section className="pt-60 pb-60">
         <div className="container">
           <div className="row">
             <div className="col-12">

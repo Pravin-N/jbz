@@ -547,16 +547,16 @@ body {
 
 @media only screen and (max-width: 991px) {
   .pt-120 {
-    padding-top: 80px;
+    padding-top: 40px;
   }
   .pb-120 {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
   .pb-90 {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   .pb-70 {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1709,7 +1709,7 @@ blockquote {
     margin-bottom: 42px;
   }
   .section-title h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .section-title p {
     margin-top: 20px;
@@ -1751,6 +1751,10 @@ blockquote {
   .page-title h2 br {
     display: none;
   }
+}
+
+.page-title h2 {
+  font-size: 35px;
 }
 
 .page-title li {
@@ -2280,7 +2284,7 @@ blockquote {
     background: #202125;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-    max-height: 350px;
+    /* max-height: 350px; */
     overflow-y: auto;
     padding: 15px 20px;
     max-width: 800px;

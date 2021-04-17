@@ -4,7 +4,7 @@ const OfferExplain = () => {
   return (
     <>
       {/* Service Section Begin */}
-      <section className="pt-120 pb-120 l-gray">
+      <section className="pt-60 pb-60 l-gray">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

@@ -4,7 +4,7 @@ const WhyChooseUs = () => {
   return (
     <>
       {/* About Section Begin */}
-      <section className="pt-120 pb-120 l-gray whowe">
+      <section className="pt-60 pb-60 l-gray whowe">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

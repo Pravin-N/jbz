@@ -456,6 +456,10 @@ div.row.footer {
     height: 300px;
   }
 
+  .row .about-text p {
+    text-align: left;
+  }
+
   .list-unstyled li p {
     font-size: 8px;
   }

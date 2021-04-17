@@ -28,7 +28,7 @@ const contact = () => {
         website={metaData.website}
       />
       {/* Page Title Begin TODO: Change the header section.*/}
-      <section className="page-title-bg pt-250 pb-100">
+      <section className="page-title-bg pt-150 pb-50">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -50,7 +50,7 @@ const contact = () => {
       {/* Page Title End */}
 
       {/* Contact Info Begin */}
-      <section className="pt-120 pb-120">
+      <section className="pt-60 pb-60">
         <div className="container">
           <div className="row">
             <div className="col-lg-4">

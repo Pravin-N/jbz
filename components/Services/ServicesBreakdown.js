@@ -5,7 +5,7 @@ const ServicesBreakdown = () => {
   return (
     <>
       {/* Service Begin */}
-      <section className="pt-120 pb-90">
+      <section className="pt-60 pb-60">
         <div className="container">
           <div className="row">
             <div className="col-12">
