@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "generate-sitemap": "node sitemap-generator.js"
   },
   "dependencies": {
     "@sergeymyssak/nextjs-sitemap": "^1.1.1",
