@@ -8,11 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sergeymyssak/nextjs-sitemap": "^1.1.1",
     "contentful": "^8.2.1",
-    "globby": "^11.0.3",
     "next": "10.0.6",
     "nodemailer": "^6.5.0",
-    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-countup": "^4.3.3",
