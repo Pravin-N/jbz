@@ -10,8 +10,6 @@ async function getDynamicPaths() {
     return data.map((item) => `/business-setup/${item}`);
 }
 
-
-
 getDynamicPaths().then((paths) => {
     const Sitemap = configureSitemap({
         baseUrl: 'https://jbz.vercel.app',
