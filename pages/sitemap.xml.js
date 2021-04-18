@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const FeaturePostData = require("../components/data.js");
 const articles = require("../components/articles.js");
 
