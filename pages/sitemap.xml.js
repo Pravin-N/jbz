@@ -1,5 +1,5 @@
-const FeaturePostData = require("../components/data.js");
-const articles = require("../components/articles.js");
+import FeaturePostData from "../components/data.js";
+import articles from "../components/articles.js";
 
 const featuredata = FeaturePostData.map(
   (feature) => "/business-setup/" + feature.slug
