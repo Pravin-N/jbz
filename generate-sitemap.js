@@ -1,7 +1,11 @@
-import glob from "glob";
-import fs from "fs";
-import prettier from "prettier";
-import prettierConfig from "./.prettierrc.js";
+// import glob from "glob";
+// import fs from "fs";
+// import prettier from "prettier";
+// import prettierConfig from "./.prettierrc.js";
+
+const fs = require("fs");
+const glob = require("glob");
+const prettier = require("prettier");
 
 (() => {
   // default next js output is `out`
