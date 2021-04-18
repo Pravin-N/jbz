@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import FeaturePostData from "../../components/data.js";
-import articles from "../../components/articles.js";
+const FeaturePostData = require("../components/data.js");
+const articles = require("../components/articles.js");
 
 const featuredata = FeaturePostData.map(
   (feature) => "/business-setup/" + feature.slug
