@@ -1,6 +1,5 @@
 import glob from "glob";
 import fs from "fs";
-import { red } from "chalk";
 import prettier from "prettier";
 import prettierConfig from "./.prettierrc.js";
 
@@ -10,7 +9,7 @@ import prettierConfig from "./.prettierrc.js";
   glob("./out/**/*.html", (err, files) => {
     // If there's no files in the output, a build probably hasn't been run
     if (!files.length) {
-      console.error(red("Could not find output directory"));
+      console.error("Could not find output directory");
       process.exit(1);
     }
 
