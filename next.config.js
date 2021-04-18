@@ -6,7 +6,7 @@ module.exports = {
   },
   webpack: (config, { isServer }) => {
     if (isServer) {
-      require("./scripts/generate-sitemap");
+      require("/api/generate-sitemap");
     }
     return config;
   },
