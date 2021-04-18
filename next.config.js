@@ -4,10 +4,11 @@ module.exports = {
   images: {
     domains: ["images.ctfassets.net"],
   },
-  // webpack: (config, { isServer }) => {
-  //   if (isServer) {
-  //     require("./pages/sitemap.xml");
-  //   }
-  //   return config;
-  // },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./scripts/generate-sitemap");
+    }
+
+    return config;
+  },
 };
