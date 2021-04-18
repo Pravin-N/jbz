@@ -8,6 +8,8 @@ const glob = require("glob");
 const prettier = require("prettier");
 
 (() => {
+
+    const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   // default next js output is `out`
   // all the pages are guaranteed to be html
   glob("./out/**/*.html", (err, files) => {
