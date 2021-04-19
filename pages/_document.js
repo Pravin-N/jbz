@@ -46,7 +46,7 @@ class MyDocument extends Document {
           />
 
           {/* ======= Font Awesome CSS ======= */}
-          {/* <link rel="stylesheet" href="/assets/css/font-awesome.min.css" /> */}
+          <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
         </Head>
 
         <body>
