@@ -11,6 +11,7 @@
   "dependencies": {
     "contentful": "^8.2.1",
     "esm": "^3.2.25",
+    "fs": "*",
     "globby": "^11.0.3",
     "next": "10.0.6",
     "nodemailer": "^6.5.0",
