@@ -1,11 +1,14 @@
 // next.config.js
-const withCss = require("@zeit/next-css");
-const withPurgeCss = require("next-purgecss");
 
-// next.config.js
+module.exports = {
+  images: {
+    domains: ["images.ctfassets.net"],
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./scripts/generate-sitemap");
+    }
 
-module.exports = withCss(
-  withPurgeCss({
-    purgeCssEnabled: ({ dev, isServer }) => !dev && !isServer, // Only enable PurgeCSS for client-side production builds
-  })
-);
+    return config;
+  },
+};

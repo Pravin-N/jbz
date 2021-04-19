@@ -21,9 +21,5 @@
     "react-lottie": "^1.2.3",
     "react-modal-video": "^1.2.6",
     "react-visibility-sensor": "^5.1.1"
-  },
-  "devDependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "next-purgecss": "^4.0.0"
   }
 }
