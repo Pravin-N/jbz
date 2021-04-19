@@ -39,7 +39,7 @@ const ContactForm = ({ submitForm }) => {
 
         body: JSON.stringify(data),
       }).then((res) => {
-        console.log(res);
+        console.log("Response received");
         if (res.status === 200) {
           console.log("Response succeeded!");
           setName("");
