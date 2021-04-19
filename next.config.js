@@ -4,11 +4,14 @@ module.exports = {
   images: {
     domains: ["images.ctfassets.net"],
   },
-  // webpack: (config, { isServer }) => {
-  //   if (isServer) {
-  //     require("./scripts/generate-sitemap");
-  //   }
+  webpack: (config, { isServer }) => {
+    // Fixes npm packages that depend on `fs` module
+    if (!isServer) {
+      config.node = {
+        fs: "empty",
+      };
+    }
 
-  //   return config;
-  // },
+    return config;
+  },
 };
