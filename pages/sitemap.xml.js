@@ -4,11 +4,7 @@ import globby from "globby";
 
 const EXTERNAL_DATA_URL = "https://jbz.vercel.app/posts";
 
-const pages = await globby([
-  "pages/**/*{.js,.mdx}",
-  "!pages/_*.js",
-  "!pages/api",
-]);
+const pages = globby(["pages/**/*{.js,.mdx}", "!pages/_*.js", "!pages/api"]);
 
 const createSitemap = (posts) => `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
