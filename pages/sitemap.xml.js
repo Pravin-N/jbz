@@ -77,6 +77,7 @@ class Sitemap extends React.Component {
       "!pages/api",
       "!pages/**/[slug]*{.js,.mdx}",
     ]);
+    console.log(pages);
     res.setHeader("Content-Type", "text/xml");
     res.write(createSitemap(features, blogs, pages));
     res.end();
