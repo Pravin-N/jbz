@@ -1,6 +1,5 @@
 import React from "react";
 import globby from "globby";
-import fs from "fs";
 
 const EXTERNAL_DATA_URL = "https://jbz.vercel.app/posts";
 
