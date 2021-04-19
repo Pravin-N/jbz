@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://jbz.vercel.app/sitemap.xml
+Sitemap: https://jbz.ae/sitemap.xml
