@@ -31,7 +31,7 @@ export default async function (req, res) {
       </div>`,
   };
 
-  await transporter.sendMail(mailData, function (err, info) {
+  transporter.sendMail(mailData, function (err, info) {
     if (err) {
       console.log(err);
     } else {
