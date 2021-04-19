@@ -1,17 +1,11 @@
 // next.config.js
+const withCss = require("@zeit/next-css");
+const withPurgeCss = require("next-purgecss");
 
-module.exports = {
-  images: {
-    domains: ["images.ctfassets.net"],
-  },
-  webpack: (config, { isServer }) => {
-    // Fixes npm packages that depend on `fs` module
-    if (!isServer) {
-      config.node = {
-        fs: "empty",
-      };
-    }
+// next.config.js
 
-    return config;
-  },
-};
+module.exports = withCss(
+  withPurgeCss({
+    purgeCssEnabled: ({ dev, isServer }) => !dev && !isServer, // Only enable PurgeCSS for client-side production builds
+  })
+);
