@@ -65,7 +65,7 @@ const Sidebar = ({ close }) => {
           ref={refx}
         >
           <img
-            src="assets/img/icons/close.svg"
+            src="/assets/img/icons/close.svg"
             className="svg"
             alt="close form"
           />

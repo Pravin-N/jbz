@@ -9,7 +9,7 @@ const SingleBlogCard = ({ article }) => {
           {/* Blog Bg Shape */}
           <div className="date-bg-shape position-absolute">
             <img
-              src="assets/img/shapes/blog-date-shape.svg"
+              src="/assets/img/shapes/blog-date-shape.svg"
               className="svg"
               alt="date"
             />
@@ -18,7 +18,7 @@ const SingleBlogCard = ({ article }) => {
           <p className="posted-on position-absolute">18 Feb</p>
           {/* Blog Image Begin */}
           <div className="blog-image">
-            <img src="assets/img/blog/blog-1.jpg" alt="blog image" />
+            <img src="/assets/img/blog/blog-1.jpg" alt="blog image" />
           </div>
           {/* Blog Image End */}
 

@@ -9,12 +9,12 @@ const Pagination = () => {
             <li className="nav-btn prev">
               <a href="#" aria-label="Twitter">
                 <img
-                  src="assets/img/icons/pagination-left.svg"
+                  src="/assets/img/icons/pagination-left.svg"
                   className="svg"
                   alt="navigate left"
                 />
                 <img
-                  src="assets/img/icons/angle-left-red.svg"
+                  src="/assets/img/icons/angle-left-red.svg"
                   className="svg"
                   alt="navigate left arrow"
                 />
@@ -32,12 +32,12 @@ const Pagination = () => {
             <li className="nav-btn next">
               <a href="#">
                 <img
-                  src="assets/img/icons/pagination-right.svg"
+                  src="/assets/img/icons/pagination-right.svg"
                   className="svg"
                   alt="navigate right"
                 />
                 <img
-                  src="assets/img/icons/angle-right-red.svg"
+                  src="/assets/img/icons/angle-right-red.svg"
                   className="svg"
                   alt="navigate right arrow"
                 />

@@ -38,7 +38,7 @@ const ModalForm = () => {
                     onClick={formView}
                   >
                     <img
-                      src="assets/img/icons/close.svg"
+                      src="/assets/img/icons/close.svg"
                       alt="close form"
                       height="20"
                       width="20"

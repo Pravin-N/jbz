@@ -6,7 +6,7 @@ const BlogContent = () => {
         <div className="blog-details">
           {/* Blog Details Image Begin */}
           <div className="blog-details-image">
-            <img src="assets/img/blog/blog-details.jpg" alt="" />
+            <img src="/assets/img/blog/blog-details.jpg" alt="" />
           </div>
           {/* Blog Details Image End */}
 
