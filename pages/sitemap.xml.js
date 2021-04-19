@@ -1,6 +1,5 @@
 import React from "react";
-import fs from "fs";
-import globby from "globby";
+import glob from "glob";
 
 const EXTERNAL_DATA_URL = "https://jbz.vercel.app/posts";
 
@@ -38,11 +37,15 @@ class Sitemap extends React.Component {
   static async getInitialProps({ res }) {
     const request = await fetch(EXTERNAL_DATA_URL);
     const posts = await request.json();
-    const pages = await globby([
-      "pages/**/*{.js,.mdx}",
-      "!pages/_*.js",
-      "!pages/api",
-    ]);
+    const pages = await glob("./**/*.html", (err, files) => {
+      // If there's no files in the output, a build probably hasn't been run
+      if (!files.length) {
+        console.error(red("Could not find output directory"));
+        process.exit(1);
+      }
+      return files;
+    });
+    console.log(pages);
     res.setHeader("Content-Type", "text/xml");
     res.write(createSitemap(posts, pages));
     res.end();
