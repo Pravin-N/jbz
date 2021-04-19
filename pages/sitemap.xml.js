@@ -1,5 +1,4 @@
 import React from "react";
-import globby from "globby";
 import FeaturePostData from "../components/data";
 import articles from "../components/articles";
 
@@ -71,13 +70,20 @@ class Sitemap extends React.Component {
 
     // const request = await fetch(EXTERNAL_DATA_URL);
     // const posts = await request.json();
-    const pages = await globby([
-      "pages/**/*{.js,.mdx}",
-      "!pages/_*.js",
-      "!pages/api",
-      "!pages/**/[slug]*{.js,.mdx}",
-    ]);
-    console.log("pages:", pages);
+    const pages = [
+      "/contact",
+      "/dubai-business-setup-about-jbz",
+      "/index",
+      "/privacy-policy",
+      "/business-setup-pro-services/business-center-dubai-service",
+      "/business-setup-pro-services/business-setup-uae",
+      "/business-setup-pro-services/corporate-bank-account-opening-service-dubai",
+      "/business-setup-pro-services/index",
+      "/business-setup-pro-services/pro-service",
+      "/business-setup-pro-services/trademarks-patent-service",
+      "/business-setup-pro-services/vat-registration-service",
+      "/dubai-business-setup-blogs/index",
+    ];
     res.setHeader("Content-Type", "text/xml");
     res.write(createSitemap(features, blogs, pages));
     res.end();
