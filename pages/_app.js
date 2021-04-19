@@ -3,7 +3,7 @@ import "../styles/global.css";
 import "../styles/videomodal.css";
 import "../styles/style.css";
 import "../styles/custom.css";
-import "../font-awesome/css/font-awesome.min.css";
+import "font-awesome/css/font-awesome.min.css";
 
 import Layout from "../components/Layout/Layout";
 
