@@ -6,6 +6,8 @@ import ModalForm from "../../components/ModalForm";
 import WhatsApp from "./WhatsApp";
 
 import dynamic from "next/dynamic";
+import CookieConsent from "react-cookie-consent";
+import Link from "next/link";
 
 // const ChatWithNoSSR = dynamic(() => import("../Chat"), {
 //   ssr: false,
@@ -62,6 +64,23 @@ const Layout = ({ children }) => {
       <WhatsApp />
       {/* <ChatWithNoSSR /> */}
       <Footer />
+      <CookieConsent
+        style={{ background: "#18191b" }}
+        buttonStyle={{
+          color: "#000",
+          fontSize: "13px",
+          background: "#edd382",
+        }}
+        expires={150}
+      >
+        This site uses cookies. See our{" "}
+        <Link href="/privacy-policy">
+          <a aria-label="privscy policy" className="privacy-policy">
+            privacy policy
+          </a>
+        </Link>{" "}
+        for more information.
+      </CookieConsent>
       {/* <!-- Back to Top Begin --> */}
       <a
         href=""
