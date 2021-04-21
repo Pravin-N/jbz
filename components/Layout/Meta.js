@@ -42,7 +42,7 @@ const Meta = ({ title, description, keywords, website }) => {
         />
 
         {/* Open Graph */}
-        <link rel="canonical" href={website + router.pathname} />
+        {/* <link rel="canonical" href={website + router.pathname} /> */}
         <meta
           property="og:url"
           content={website + router.pathname}
