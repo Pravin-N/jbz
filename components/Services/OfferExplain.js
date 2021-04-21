@@ -38,7 +38,7 @@ const OfferExplain = () => {
                 </li>
                 <li>
                   <i className="fa fa-check" aria-hidden="true"></i> Best in the
-                  industry business setup services.
+                  industry Business Setup services.
                 </li>
               </ul>
               {/* About Feature List End */}
