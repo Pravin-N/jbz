@@ -72,7 +72,7 @@ const ProService = () => {
                   complete other govt formalities for smooth running of your
                   business. Public Relations work is an integral and the most
                   essential activity of any company in UAE right from the
-                  business setup and company formation procedures. PRO services
+                  Business Setup and company formation procedures. PRO services
                   in Dubai require professional expertise that can successfully
                   manage the whole cycle of procedures and formalities.
                 </p>
@@ -84,7 +84,7 @@ const ProService = () => {
                     </h4>
                     <p>
                       Just Business Consultants will assist your company through
-                      all the business setup stages with our wide range of PRO
+                      all the Business Setup stages with our wide range of PRO
                       services in Dubai and document clearing services. As our
                       work closely depends on liaising with the Dubai government
                       and officials of various ministries, we are best known as

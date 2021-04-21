@@ -14,7 +14,7 @@ const Testimonials = () => {
                 <h2>What our clients say about us</h2>
                 <p>
                   Aspiring entrepreneurs entrust us with the responsibility of
-                  business setup in Dubai and other govt related work. We strive
+                  Business Setup in Dubai and other govt related work. We strive
                   hard to make sure our clients are happy with the service and
                   results.
                 </p>
@@ -57,7 +57,7 @@ const Testimonials = () => {
                         space. They have Strong commitment to high quality
                         professionalism, comprehensive capability across varied
                         segments of disciplines. I would highly recommend them
-                        for all your business setup needs."
+                        for all your Business Setup needs."
                       </p>
                       <h4>Saleem Khokhar</h4>
                       <span>Business Magnet</span>
@@ -89,7 +89,7 @@ const Testimonials = () => {
                     <div className="testimonial-content">
                       <p>
                         "Highly satisfied with the experienced consultation for
-                        business setup. The professionalism, honesty, knowledge,
+                        Business Setup. The professionalism, honesty, knowledge,
                         experience, and most importantly the rates/charges are
                         transparent and affordable. Definitely recommend for PRO
                         services as well."
@@ -128,7 +128,7 @@ const Testimonials = () => {
                         years now and we have found both professionalism and
                         great service within this firm. We highly recommend them
                         to any individual or company who is looking to get their
-                        business setup off on the right start. Thank you!"
+                        Business Setup off on the right start. Thank you!"
                       </p>
 
                       <h4>Usman Mehmood</h4>

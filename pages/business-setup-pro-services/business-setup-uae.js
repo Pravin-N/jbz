@@ -6,7 +6,7 @@ import Meta from "../../components/Layout/Meta";
 import Slider from "../../components/Slider";
 
 const tags = [
-  "business setup Dubai",
+  "Business Setup Dubai",
   "UAE",
   "start-up",
   "mainland",
@@ -21,7 +21,7 @@ const BusinessSetup = () => {
     description:
       "We are experts in Business Setup and company formation services in Dubai, UAE. Business setup in Dubai is one of our core services. If you are looking to start a business in UAE. Our experts can help you get the right information and costs associated with starting a business in Dubai. Get in touch with us today. Over the past 10 years we have helped multiple individuals and entrepreneurs to get the required license to start their business in UAE. Just business has formed  a number of mainland, freezone and offshore companies in the UAE.",
     keywords:
-      "starting a business in dubai, business setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, mainland business license, freezone license in dubai, offshore license in uae, startup in uae, business license in Dubai",
+      "starting a business in dubai, Business Setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, mainland business license, freezone license in dubai, offshore license in uae, startup in uae, business license in Dubai",
     website: "https://jbz.vercel.app/",
   };
   return (
@@ -74,7 +74,7 @@ const BusinessSetup = () => {
                   emirate in UAE
                 </h1>
                 <p>
-                  Business setup service is one of the main services we provide
+                  Business Setup service is one of the main services we provide
                   at Just Business. We have extensive experience in business
                   setup. We have helped over 500 entrepreneurs to start their
                   business in Dubai. We help them get the required license for
@@ -189,7 +189,7 @@ const BusinessSetup = () => {
                   <div className="col-md-6">
                     <Image
                       src="/assets/img/business setup dubai steps.png"
-                      alt="business setup uae steps process"
+                      alt="Business Setup uae steps process"
                       width="350"
                       height="300"
                     />

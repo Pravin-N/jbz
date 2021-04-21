@@ -21,7 +21,7 @@ const ClientsLogo = () => {
                 >
                   <Image
                     src="/assets/img/brand/dreamhome.png"
-                    alt="business setup in uae client 1"
+                    alt="Business Setup in uae client 1"
                     height="80"
                     width="130"
                   />
@@ -38,7 +38,7 @@ const ClientsLogo = () => {
                 >
                   <Image
                     src="/assets/img/brand/mayfair.webp"
-                    alt="business setup in dubai client 2"
+                    alt="Business Setup in dubai client 2"
                     height="80"
                     width="130"
                   />
@@ -55,7 +55,7 @@ const ClientsLogo = () => {
                 >
                   <Image
                     src="/assets/img/brand/peritas.png"
-                    alt="business setup in uae client 3"
+                    alt="Business Setup in uae client 3"
                     height="80"
                     width="130"
                   />
@@ -89,7 +89,7 @@ const ClientsLogo = () => {
                 >
                   <Image
                     src="/assets/img/brand/theleela.jpg"
-                    alt="business setup in uae client 5"
+                    alt="Business Setup in uae client 5"
                     height="80"
                     width="130"
                   />

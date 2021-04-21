@@ -62,7 +62,7 @@ const ContactForm = ({ submitForm }) => {
         <div className="contact-form-wrapper">
           <h3>Send Us a Message</h3>
           <p>
-            One stop shop for all needs regarding business setup and pro
+            One stop shop for all needs regarding Business Setup and PRO
             services in Dubai, UAE.
           </p>
 

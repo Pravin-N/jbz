@@ -20,7 +20,7 @@ export async function getStaticProps() {
 }
 
 const tags = [
-  "business setup dubai",
+  "Business Setup dubai",
   "UAE",
   "startup",
   "mainland",

@@ -20,9 +20,9 @@ const Pricing = () => {
         "JBZ Service Fee",
       ],
       approData: [
-        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us for business setup.",
+        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us for Business Setup.",
         "Guide you throughout the process to make it easy during each step.",
-        "With extensive experience working with mainland government authorities, we can complete the process of business setup with relative ease.",
+        "With extensive experience working with mainland government authorities, we can complete the process of Business Setup with relative ease.",
       ],
     },
     {
@@ -41,9 +41,9 @@ const Pricing = () => {
         "JBZ Service Fee",
       ],
       approData: [
-        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us for business setup.",
+        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us for Business Setup.",
         "Guide you throughout the process to make it easy during each step.",
-        "With extensive experience working with mainland government authorities, we can complete the process of business setup with relative ease.",
+        "With extensive experience working with mainland government authorities, we can complete the process of Business Setup with relative ease.",
       ],
     },
     {
@@ -60,10 +60,10 @@ const Pricing = () => {
         "JBZ Service Fee",
       ],
       approData: [
-        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us forbusiness setup.",
+        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us for Business Setup.",
         "Guide you throughout the process to make it easy during each step.",
         "Guide you throughout the process to make it easy during each step.",
-        "With extensive experience working with Free Zone authorities, we can complete the process of business setup with relative ease.",
+        "With extensive experience working with Free Zone authorities, we can complete the process of Business Setup with relative ease.",
       ],
     },
     {
@@ -79,10 +79,10 @@ const Pricing = () => {
         "JBZ Service Fee",
       ],
       approData: [
-        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us forbusiness setup.",
+        "We layout all the details and the timeline of each of the tasks that would be completed once you hire us for Business Setup.",
         "Guide you throughout the process to make it easy during each step.",
         "Guide you throughout the process to make it easy during each step.",
-        "With extensive experience working with Free Zone authorities, we can complete the process of business setup with relative ease.",
+        "With extensive experience working with Free Zone authorities, we can complete the process of Business Setup with relative ease.",
       ],
     },
   ];

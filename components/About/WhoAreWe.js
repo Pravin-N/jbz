@@ -12,8 +12,8 @@ const WhoAreWe = () => {
               <div className="section-title text-center">
                 <h3>Who are we?</h3>
                 <h1>
-                  We are experts in business setup, PRO services <br />& other
-                  business support services in Dubai, UAE
+                  We are experts in Business Setup, PRO services <br />& other
+                  Business Support services in Dubai, UAE
                 </h1>
                 {/* <p>
                   Met defective are allowance two perceived listening consulted
@@ -43,7 +43,7 @@ const WhoAreWe = () => {
                 <p>
                   JBZ consultants is a one-stop destination for all your
                   business start-up needs. Established in 2009, we have more
-                  than 10 years of experience in business setup. We offer a wide
+                  than 10 years of experience in Business Setup. We offer a wide
                   range of services designed to accommodate our client
                   requirements. Just Business Corporate Services has proudly
                   served a wide selection of clients from banks, general trading

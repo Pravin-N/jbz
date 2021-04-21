@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // TODO: change the see more button link to the page about us.
 const AboutHome = ({ img }) => {
@@ -9,7 +10,7 @@ const AboutHome = ({ img }) => {
     <>
       {/* About Begin */}
       <section className="pt-120 pb-120 section-pattern ov-hidden about">
-        <div className="container">
+        <div className="container about-cont">
           <div className="row align-items-center">
             <div className="col-lg-6">
               {/* Section Title Begin */}
@@ -22,7 +23,7 @@ const AboutHome = ({ img }) => {
                 <p>
                   Having helped 100's of entrepreneurs get the necessary
                   approvals and license to start their businesses, we have
-                  extensive expertise in business setup in UAE.
+                  extensive expertise in Business Setup in UAE.
                 </p>
               </div>
               {/* Section Title End */}
@@ -85,7 +86,7 @@ const AboutHome = ({ img }) => {
                       </li>
                       <li>
                         <i className="fa fa-check" aria-hidden="true"></i> One
-                        stop shop for all business setup needs in UAE.
+                        stop shop for all Business Setup needs in UAE.
                       </li>
                     </ul>
                     <Link href="/dubai-business-setup-about-jbz">
@@ -112,7 +113,7 @@ const AboutHome = ({ img }) => {
                       </li>
                       <li>
                         <i className="fa fa-check" aria-hidden="true"></i> Make
-                        the business setup process for entrepreneurs as simple
+                        the Business Setup process for entrepreneurs as simple
                         as possible.
                       </li>
                       {/* <li><i className="fa fa-check" aria-hidden="true"></i> Customer dossier</li> */}
@@ -130,13 +131,13 @@ const AboutHome = ({ img }) => {
               {/* About Tabs End */}
             </div>
             <div className="col-lg-6 video-area mt-50 mt-lg-0">
-              <img
+              <Image
                 src={img}
                 data-rjs="2"
                 alt="About just business mission and vision"
                 height="805"
                 width="1003"
-                loading="lazy"
+                // loading="lazy"
               />
               {/* <ModalVideo
                 channel="youtube"

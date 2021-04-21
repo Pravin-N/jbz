@@ -8,16 +8,16 @@ const FeaturePostData = [
     alt: "Mainland Business Setup in Dubai",
     slug: "how-to-get-a-business-license-in-mainland-dubai",
     title: "Get a business license in Mainland Dubai, UAE",
-    category: "mainland, business setup, dubai, uae",
+    category: "mainland, Business Setup, dubai, uae",
     subtitle1: "Why open a business in Dubai, UAE?",
     content1:
-      "Dubai is well known for being business friendly. It offers investors a quality infrastructure and facilities that match the highest international standards, facilitating efficiency, quality and service for businesses to thrive. Dubai mainland company registration is the most preferred route for most of the organizations when establishing their business in Dubai. We, at Just Business, understand that company formation in Dubai Mainland can be very challenging and time consuming task. We pride ourselves in being the best business setup consultancy that offers the best services for mainland company formation in Dubai, UAE.",
+      "Dubai is well known for being business friendly. It offers investors a quality infrastructure and facilities that match the highest international standards, facilitating efficiency, quality and service for businesses to thrive. Dubai mainland company registration is the most preferred route for most of the organizations when establishing their business in Dubai. We, at Just Business, understand that company formation in Dubai Mainland can be very challenging and time consuming task. We pride ourselves in being the best Business Setup consultancy that offers the best services for mainland company formation in Dubai, UAE.",
     subtitle2: "Things to know to get a business license in Mainland - Dubai",
     content2:
       "Mainland Company in UAE is registered in the Department of Economic Development (DED). This would suit those who are planning to set up a company locally. To set up a mainland company you need a local sponsor (UAE citizen) who will be a co-owner of the business, or a local agent who will own 51% shares. We at Just Business will provide you with Local Sponsors who will give you the full power of attorney to do the business your way with no involvement in the profit or loss of the company. Some of the main advantages of setting up a mainland company is that give you no limitations on activities but different approvals may be required for specific activities. Registering your company on UAE Mainland (outside any freezone) requires you to have a local sponsor who owns 51% share capital in your company.",
     subtitle3: "Need help with getting a sponsor for your business?",
     content3:
-      "We have provided local and corporate sponsorship to a number of organisations at extremely affordable rates. Get in touch with us on info@jbz.ae if you are looking to find a sponsor or transfer your local sponsorship. We also take care of the entire business setup process and have extensive experience in the process having setup 100's of businesses in Dubai, UAE. Don't hesistate to get in touch with us.",
+      "We have provided local and corporate sponsorship to a number of organisations at extremely affordable rates. Get in touch with us on info@jbz.ae if you are looking to find a sponsor or transfer your local sponsorship. We also take care of the entire Business Setup process and have extensive experience in the process having setup 100's of businesses in Dubai, UAE. Don't hesistate to get in touch with us.",
   },
   {
     id: "2",

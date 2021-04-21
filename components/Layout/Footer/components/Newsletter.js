@@ -40,7 +40,7 @@ const Newsletter = () => {
 
           <div className="newsletter-content">
             <p>
-              Get the latest updates about business setup in UAE through our
+              Get the latest updates about Business Setup in UAE through our
               blogs section on a weekly basis. Contact us via a phone call or
               drop an email if you need to get a free quote.
             </p>

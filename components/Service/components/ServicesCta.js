@@ -10,7 +10,7 @@ const ServicesCta = () => {
           <a aria-label="Contact Page Link">
             <Image
               src="/assets/img/business setup dubai contact image.png"
-              alt="business setup and company formation contact info image"
+              alt="Business Setup and company formation contact info image"
               width="350"
               height="305"
             />

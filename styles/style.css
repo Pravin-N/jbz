@@ -2560,6 +2560,10 @@ blockquote {
   .banner .banner-slider .owl-dots {
     right: 100px;
   }
+
+  .about-cont {
+    max-width: 1800px;
+  }
 }
 
 .banner .banner-slider .owl-dots .owl-dot {

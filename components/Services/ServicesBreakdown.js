@@ -13,7 +13,7 @@ const ServicesBreakdown = () => {
               <div className="section-title text-center">
                 <h3>Our Services</h3>
                 <h2>
-                  Best in the industry business setup & PRO services.
+                  Best in the industry Business Setup & PRO services.
                   {/* <br />
                   For Your Business */}
                 </h2>

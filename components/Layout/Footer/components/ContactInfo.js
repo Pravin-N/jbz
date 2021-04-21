@@ -10,7 +10,7 @@ const ContactInfo = () => {
           <div className="widget-logo">
             <img
               src="/assets/img/Just Business Dubai.png"
-              alt="JBZ Business setup in Dubai Logo"
+              alt="JBZ Business Setup in Dubai Logo"
               width="108"
               height="25"
             />

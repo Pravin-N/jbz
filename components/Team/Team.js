@@ -49,7 +49,7 @@ const Team = () => {
                 <p>
                   We are a small team of passionate people who want to see
                   people succeed in their ventures and guide them in the right
-                  direction with their business setup needs in UAE.
+                  direction with their Business Setup needs in UAE.
                 </p>
               </div>
               {/* Section Title End */}

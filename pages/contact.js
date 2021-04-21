@@ -12,7 +12,7 @@ const contact = () => {
     description:
       "Contact our Company Formation Specialists and Business setup Experts today to know more about setting up your company in the UAE. Call us at +971 55 757 2069, +971 55 778 0398",
     keywords:
-      "Contact Just Business, Contact us for UAE business setup, Contact us for Dubai business setup, Assistance with your business licensing, Assistance with business visa requirements",
+      "Contact Just Business, Contact us for UAE Business Setup, Contact us for Dubai Business Setup, Assistance with your business licensing, Assistance with business visa requirements",
     website: "https://jbz.vercel.app/",
   };
 

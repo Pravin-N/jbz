@@ -93,7 +93,7 @@ Meta.defaultProps = {
   description:
     "Setup your business in Dubai easily with the help of Just Business. Depending on you business needs, Just Business guides you on choosing the correct license and provide transparent pricing. Get in touch for a free quote!",
   keywords:
-    "starting a business in dubai, business setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, PRO services, Startup in UAE",
+    "starting a business in dubai, Business Setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, PRO services, Startup in UAE",
   website: "https://jbz.vercel.app/",
 };
 
