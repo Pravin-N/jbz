@@ -17,7 +17,7 @@ const trademark = () => {
       "Just Business provides services for trademark registration in Dubai, UAE. Our experts can guide and help you get the required formalities completed with the ministry of Economy. Our experts are registered agents with the ministry of economy",
     keywords:
       "Intellectual Property registration, Intellectual property law, patent registration uae, trademark & copyright registration in uae, trademark experts in dubai, trademark experts in UAE, Patent experts in Dubai, Patent & trademark specialist in UAE",
-    website: "https://jbz.vercel.app/",
+    website: "https://jbz.ae/",
   };
   return (
     <>

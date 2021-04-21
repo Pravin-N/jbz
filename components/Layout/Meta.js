@@ -32,7 +32,7 @@ const Meta = ({ title, description, keywords, website }) => {
         />
         <meta
           name="twitter:url"
-          content={"https://jbz.vercel.app/" + router.pathname}
+          content={"https://jbz.ae/" + router.pathname}
           key="twurl"
         />
         <meta
@@ -69,7 +69,6 @@ const Meta = ({ title, description, keywords, website }) => {
         />
         <meta property="og:image:alt" content="Just Business" key="ogalt" />
         <meta property="og:locale" content="en_US" key="ogloc" />
-        <meta name="robots" content="noindex, nofollow" key="rob" />
         <meta property="og:type" content="article" key="ogtyp" />
         <meta
           property="article:publisher"
@@ -94,7 +93,7 @@ Meta.defaultProps = {
     "Setup your business in Dubai easily with the help of Just Business. Depending on you business needs, Just Business guides you on choosing the correct license and provide transparent pricing. Get in touch for a free quote!",
   keywords:
     "starting a business in dubai, Business Setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, PRO services, Startup in UAE",
-  website: "https://jbz.vercel.app/",
+  website: "https://jbz.ae/",
 };
 
 export default Meta;

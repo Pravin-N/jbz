@@ -15,7 +15,7 @@ const JBZServices = () => {
       "Want to start a Business in Dubai? Need a business license? or need to get visas for employees?, Just Business provides a wide range of business support services from Business Setup services, PRO services, Business Center facilities, VAT registration service, Trademark and Patent services can also provide you with a sponsor for your company. Get in touch today to more about Business Setup services.",
     keywords:
       "starting a business in dubai, Business Setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, PRO services, Startup in UAE, PRO services, VAT Registration services, Business center Dubai",
-    website: "https://jbz.vercel.app/",
+    website: "https://jbz.ae/",
   };
   return (
     <>

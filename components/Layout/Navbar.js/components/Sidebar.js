@@ -126,6 +126,7 @@ const Sidebar = ({ close }) => {
               <div className="single-info">
                 <span>Email</span>
                 <p>
+                  <a href="mailto:info@jbz.ae">info@jbz.ae</a>
                   <a href="mailto:faisal@jbz.ae">faisal@jbz.ae</a>
                   <a href="mailto:pranitha@jbz.ae">pranitha@jbz.ae</a>
                 </p>
