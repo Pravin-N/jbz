@@ -71,10 +71,8 @@ class Sitemap extends React.Component {
     // const request = await fetch(EXTERNAL_DATA_URL);
     // const posts = await request.json();
     const pages = [
-      "/contact",
-      "/dubai-business-setup-about-jbz",
       "/index",
-      "/privacy-policy",
+      "/dubai-business-setup-about-jbz",
       "/business-setup-pro-services/business-center-dubai-service",
       "/business-setup-pro-services/business-setup-uae",
       "/business-setup-pro-services/corporate-bank-account-opening-service-dubai",
@@ -82,6 +80,8 @@ class Sitemap extends React.Component {
       "/business-setup-pro-services/pro-service",
       "/business-setup-pro-services/trademarks-patent-service",
       "/business-setup-pro-services/vat-registration-service",
+      "/privacy-policy",
+      "/contact",
       "/dubai-business-setup-blogs/index",
     ];
     res.setHeader("Content-Type", "text/xml");
