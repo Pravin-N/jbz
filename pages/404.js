@@ -15,7 +15,7 @@ const Custom404 = () => {
     <>
       <section className="pt-150 pb-120 section-pattern">
         <Lottie options={defaultOptions1} height={300} width={350} />
-        <div class="section-title text-center">
+        <div className="section-title text-center">
           <h2>Page Not Found</h2>
         </div>
       </section>
