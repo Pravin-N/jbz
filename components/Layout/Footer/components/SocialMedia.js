@@ -55,7 +55,11 @@ const SocialMedia = () => {
               rel="noreferrer"
               aria-label="YouTube"
             >
-              <i class="fa fa-youtube" aria-hidden="true" rel="noreferrer"></i>
+              <i
+                class="fa fa-youtube-play"
+                aria-hidden="true"
+                rel="noreferrer"
+              ></i>
             </a>
           </li>
         </ul>
