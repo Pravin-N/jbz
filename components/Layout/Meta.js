@@ -27,7 +27,7 @@ const Meta = ({ title, description, keywords, website }) => {
 
         <meta
           name="twitter:creator"
-          content="@JustBusiness_UAE"
+          content="@UAEJustBusiness"
           key="twhandle"
         />
         <meta

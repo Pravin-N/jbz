@@ -38,6 +38,26 @@ const SocialMedia = () => {
               ></i>
             </a>
           </li>
+          <li>
+            <a
+              href="https://twitter.com/UAEJustBusiness"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Twitter"
+            >
+              <i class="fa fa-twitter" aria-hidden="true" rel="noreferrer"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCyWJb1YleWSA0MYt8noX8YA"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa fa-youtube" aria-hidden="true" rel="noreferrer"></i>
+            </a>
+          </li>
         </ul>
       </div>
       {/* Widget Social Icon End */}
