@@ -59,7 +59,7 @@ const SocialMedia = () => {
                 class="fa fa-youtube-play"
                 aria-hidden="true"
                 rel="noreferrer"
-                style="color:red"
+                style={{ color: "red" }}
               ></i>
             </a>
           </li>
