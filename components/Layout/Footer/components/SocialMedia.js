@@ -16,7 +16,7 @@ const SocialMedia = () => {
           </li>
           <li>
             <a
-              href="https://www.facebook.com/BusinessSetupUAE"
+              href="https://www.linkedin.com/company/just-business-setup-experts-uae"
               target="_blank"
               rel="noreferrer"
               aria-label="Linkedin"

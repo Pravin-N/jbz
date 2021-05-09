@@ -29,7 +29,8 @@ const teamMembers = [
     image: "/assets/img/team/team-faisal-sponsor.png",
     facebook: "https://www.facebook.com/BusinessSetupUAE",
 
-    linkedin: "https://www.facebook.com/BusinessSetupUAE",
+    linkedin:
+      "https://www.linkedin.com/company/just-business-setup-experts-uae",
     instagram: "https://www.instagram.com/justbusinessdubai/",
   },
 ];
