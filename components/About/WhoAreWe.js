@@ -41,10 +41,10 @@ const WhoAreWe = () => {
             <div className="col-lg-10">
               <div className="about-text mt-5">
                 <p>
-                  JBZ consultants is a one-stop destination for all your
-                  business start-up needs. Established in 2009, we have more
-                  than 10 years of experience in Business Setup. We offer a wide
-                  range of services designed to accommodate our client
+                  Just Business Corporate Services is a one-stop destination for
+                  all your business start-up needs. Established in 2009, we have
+                  more than 10 years of experience in Business Setup. We offer a
+                  wide range of services designed to accommodate our client
                   requirements. Just Business Corporate Services has proudly
                   served a wide selection of clients from banks, general trading
                   companies to real estate firms. We are always committed to
