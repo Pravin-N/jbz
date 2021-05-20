@@ -22,7 +22,7 @@ const BusinessSetup = () => {
       "We are experts in Business Setup and company formation services in Dubai, UAE. Business setup in Dubai is one of our core services. If you are looking to start a business in UAE. Our experts can help you get the right information and costs associated with starting a business in Dubai. Get in touch with us today. Over the past 10 years we have helped multiple individuals and entrepreneurs to get the required license to start their business in UAE. Just business has formed  a number of mainland, freezone and offshore companies in the UAE.",
     keywords:
       "starting a business in dubai, Business Setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, mainland business license, freezone license in dubai, offshore license in uae, startup in uae, business license in Dubai",
-    website: "https://jbz.ae/",
+    website: "https://jbz.ae",
   };
   return (
     <>

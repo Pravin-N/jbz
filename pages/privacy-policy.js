@@ -5,7 +5,7 @@ const privacypolicy = () => {
     title: "Privacy and data policy of the website | Just Business Dubai, UAE",
     description: "Privacy policy and data policy of the website www.jbz.ae",
     keywords: "Privacy policy of www.jbz.ae",
-    website: "https://jbz.ae/",
+    website: "https://jbz.ae",
   };
 
   return (

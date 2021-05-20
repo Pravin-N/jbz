@@ -25,7 +25,7 @@ const BankAccount = () => {
       "Just Business can help you with opening your corporate bank account in any of the top international banks in UAE. Opening a business bank account has become extremely cumbersome for businesses in Dubai, Just Business by using internal connections within the banking industry can make this process extremely easy for you with much less documentation than normal.",
     keywords:
       "Corporate bank Account opening Dubai, corporate bank account, business account opening assistance, corporate banking current account, unable to open corporate bank account dubai",
-    website: "https://jbz.ae/",
+    website: "https://jbz.ae",
   };
   return (
     <>

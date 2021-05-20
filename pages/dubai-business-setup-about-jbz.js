@@ -16,7 +16,7 @@ const AboutJbz = () => {
       "At Just Business our aim to make the business setup and PRO work easier for entrepreneurs to start and run businesses in Dubai. Our experts help startups, incubators, small and medium scale businesses or individual entrepreneurs with getting their trade licenses. Get in touch with us today!",
     keywords:
       "About Just Business, UAE company setup process, setting up a business in the UAE, Dubai company setup specialists, UAE company setup specialists, Dubai company setup guidance, UAE company setup guidance",
-    website: "https://jbz.ae/",
+    website: "https://jbz.ae",
   };
   return (
     <>

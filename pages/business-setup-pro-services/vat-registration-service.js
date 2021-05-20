@@ -21,7 +21,7 @@ const Vat = () => {
       "Just business can help you with VAT registration and help you get your Tax Registration Number. VAT registration has become a requirement to operate a business in UAE. Tax rate can vary from 0%-5% depending on the goods and services being given. contact us today to get your business VAT registered.",
     keywords:
       "VAT Registration Dubai, Tax formalities Dubai, Mandatory VAT registration, Tax Registration Number (TRN), Register your business with FTA, TRN number, VAT Registration system",
-    website: "https://jbz.ae/",
+    website: "https://jbz.ae",
   };
   return (
     <>

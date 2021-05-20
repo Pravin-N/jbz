@@ -13,7 +13,7 @@ const BusinessCenter = () => {
       "Just Business operates 2 Business Centers in Dubai's prime locations with all the facilities required to run a profitable business like reception facilities, conference rooms, concierge facilities and world class workstations all at affordable prices. Fully serviced offices and virtual office service also provided at these centers.",
     keywords:
       "rent shared office space in dubai, serviced offices, affordable office space in dubai for business license, office cabin on rent, business center in Dubai UAE ",
-    website: "https://jbz.ae/",
+    website: "https://jbz.ae",
   };
   return (
     <>

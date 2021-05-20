@@ -33,7 +33,7 @@ const Info = ({ info }) => {
     title: `${info.title} | Just Business`,
     description: `${info.altText} | ${info.shortText}`,
     keywords: `starting a business in dubai, Business Setup in dubai, open company in uae, company formation in dubai, company formation in uae, Start a company in Dubai, startup in uae, business license in Dubai, ${info.shortTitle}, ${info.category}`,
-    website: "https://jbz.ae/",
+    website: "https://jbz.ae",
   };
   return (
     <>
