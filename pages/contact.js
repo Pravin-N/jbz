@@ -122,7 +122,8 @@ const contact = () => {
             {!isSubmitted ? (
               <ContactForm submitForm={submitForm} />
             ) : (
-              <FormSuccess />
+              // <FormSuccess />
+              ""
             )}
           </div>
         </div>
