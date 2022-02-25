@@ -65,8 +65,8 @@ const ContactForm = ({ submitForm }) => {
             One stop shop for all needs regarding Business Setup and PRO
             services in Dubai, UAE.
           </p>
-
-          <form
+          <p>Drop us an email or call us for a free consultation.</p>
+          {/* <form
             className="contact-form"
             onSubmit={(e) => {
               handleSubmit(e);
@@ -147,7 +147,7 @@ const ContactForm = ({ submitForm }) => {
               </div>
             </div>
             <div className="form-response"></div>
-          </form>
+          </form> */}
         </div>
         {/* Contact Form End */}
       </div>
